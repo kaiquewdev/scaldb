@@ -1,0 +1,37 @@
+[0m[[0minfo[0m] [0m[32mAxisSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe point class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should has value[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should has points[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should increase the x points[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should decrease the x points[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should increase the y points[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should decrease the y points[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should increase the z points[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should decrease the z points[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should divide x by a default value[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should divide y by a default value[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should divide z by a default value[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show an history of ins for x[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show an history of ins for y[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show an history of ins outs for z[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show an history of outs for x[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show an history of outs for y[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show an history of outs for z[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show decreased values without increased ones[0m[0m
