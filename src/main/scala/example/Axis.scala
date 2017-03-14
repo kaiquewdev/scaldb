@@ -11,13 +11,19 @@ class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, v
   var dZ: Int = (new Point()).value
   // History of increased and decreased values for x
   var historyOfIncreasedX = List(x)
+  var observableHistoryOfIncreasedX = Observable.from(historyOfIncreasedX)
   var historyOfDecreasedX = List(x)
+  var observableHistoryOfDecreasedX = Observable.from(historyOfDecreasedX)
   // History of increased and decreased values for y
   var historyOfIncreasedY = List(y)
+  var observableHistoryOfIncreasedY = Observable.from(historyOfIncreasedY)
   var historyOfDecreasedY = List(y)
+  var observableHistoryOfDecreasedY = Observable.from(historyOfDecreasedY)
   // History of increased and decreased values for z
   var historyOfIncreasedZ = List(z)
+  var observableHistoryOfIncreasedZ = Observable.from(historyOfIncreasedZ)
   var historyOfDecreasedZ = List(z)
+  var observableHistoryOfDecreasedZ = Observable.from(historyOfDecreasedZ)
 
   // Group of methods to increase and decrease the x point with co-ligation with history
   def increaseX(v: Int) = {
@@ -68,4 +74,18 @@ class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, v
   // Retrieve the increase and decrease history of z
   def increaseHistoryZ() = historyOfIncreasedZ
   def decreaseHistoryZ() = historyOfDecreasedZ
+}
+
+class Edge(var first: Axis = new Axis(), var last: Axis = new Axis()) extends Axis {}
+class Face(var top: Edge = new Edge(), var left: Edge = new Edge(), var bottom: Edge = new Edge(), var right: Edge = new Edge()) extends Axis {
+  val draw = new Draw()
+  val drawFormatIndex = 0
+  val drawFormatName = draw.choice(drawFormatIndex)
+}
+
+class Draw() {
+  def choice(index: Int): String = index match {
+    case 0 => "square"
+    case 1 => "circle"
+  }
 }
