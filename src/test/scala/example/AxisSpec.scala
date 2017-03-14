@@ -207,12 +207,30 @@ class AxisSpec extends FlatSpec with Matchers {
     val draw = new Draw()
     draw.choice(0) shouldEqual "square"
     draw.choice(1) shouldEqual "circle"
+    draw.choice(2) shouldEqual "triangle"
   }
 
   "The face class" should "have a default draw" in {
     val face = new Face()
     face.drawFormatIndex shouldEqual 0
     face.drawFormatName shouldEqual "square"
+  }
+
+  "The rotation class" should "have a degree" in {
+    val rotation = new Rotation()
+    rotation.degree shouldEqual 0
+  }
+
+  "The clock class" should "have default points" in {
+    val clock = new Clock()
+    clock.x shouldEqual 0
+    clock.y shouldEqual 0
+    clock.z shouldEqual 0
+  }
+
+  "The clock class" should "have a degree for a rotation" in {
+    val clock = new Clock()
+    clock.degree shouldEqual 0
   }
 
   //"The axis class" should "show decreased values without increased ones" in {

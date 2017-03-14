@@ -90,5 +90,10 @@ class Draw() {
   def choice(index: Int): String = index match {
     case 0 => "square"
     case 1 => "circle"
+    case 2 => "triangle"
   }
 }
+
+class Rotation(var degree: Int = 0) {}
+
+class Clock(var degree: Int = (new Rotation().degree)) extends Axis {}
