@@ -252,6 +252,13 @@ class AxisSpec extends FlatSpec with Matchers {
     clock.rotation.degree shouldEqual 0
   }
 
+  "The feet class" should "have axis points" in {
+    val feet = new Feet()
+    feet.x shouldEqual 0
+    feet.y shouldEqual 0
+    feet.z shouldEqual 0
+  }
+
   //"The axis class" should "show decreased values without increased ones" in {
   //  val neseq: Observable[Int] = Observable.from(1 to 15000)
 

@@ -100,3 +100,4 @@ class Rotation(var degree: Int = 0) extends Object {
 }
 
 class Clock(var rotation: Rotation = new Rotation()) extends Axis {}
+class Feet() extends Axis {}
