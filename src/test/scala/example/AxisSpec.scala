@@ -221,6 +221,25 @@ class AxisSpec extends FlatSpec with Matchers {
     rotation.degree shouldEqual 0
   }
 
+  "The rotation class" should "be increase" in {
+    val rotation = new Rotation()
+    rotation.degree shouldEqual 0
+    rotation.increase(10)
+    rotation.degree shouldEqual 10
+    rotation.increase(20)
+    rotation.degree shouldEqual 30
+  }
+
+  "The rotation class" should "be decrease" in {
+    val rotation = new Rotation()
+    rotation.increase(50)
+    rotation.degree shouldEqual 50
+    rotation.decrease(25)
+    rotation.degree shouldEqual 25
+    rotation.decrease(5)
+    rotation.degree shouldEqual 20
+  }
+
   "The clock class" should "have default points" in {
     val clock = new Clock()
     clock.x shouldEqual 0
@@ -230,7 +249,7 @@ class AxisSpec extends FlatSpec with Matchers {
 
   "The clock class" should "have a degree for a rotation" in {
     val clock = new Clock()
-    clock.degree shouldEqual 0
+    clock.rotation.degree shouldEqual 0
   }
 
   //"The axis class" should "show decreased values without increased ones" in {

@@ -94,6 +94,9 @@ class Draw() {
   }
 }
 
-class Rotation(var degree: Int = 0) {}
+class Rotation(var degree: Int = 0) {
+  def increase(v: Int) = degree += v
+  def decrease(v: Int) = degree -= v
+}
 
-class Clock(var degree: Int = (new Rotation().degree)) extends Axis {}
+class Clock(var rotation: Rotation = new Rotation()) extends Axis {}
