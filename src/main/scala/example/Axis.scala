@@ -102,4 +102,5 @@ class Rotation(var degree: Int = 0) extends Object {
 class Clock(var rotation: Rotation = new Rotation()) extends Axis {}
 class Feet() extends Axis {}
 
-class Measurement(val firstClock: Clock = (new Clock()), val secondClock: Clock = (new Clock())) extends Object {}
+class ClockMeasurement(val first: Clock = (new Clock()), val second: Clock = (new Clock())) extends Object {}
+class FeetMeasurement(val first: Feet = (new Feet()), val second: Feet = (new Feet())) extends Object {}

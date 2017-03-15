@@ -259,18 +259,30 @@ class AxisSpec extends FlatSpec with Matchers {
     feet.z shouldEqual 0
   }
 
-  "The measurement class" should "be flexible for clocks" in {
-    val measurement = new Measurement()
+  "The clock measurement class" should "be flexible for clocks" in {
+    val clockMeasurement = new ClockMeasurement()
 
-    measurement.firstClock.x shouldEqual 0
-    measurement.firstClock.y shouldEqual 0
-    measurement.firstClock.z shouldEqual 0
-    measurement.firstClock.rotation.degree shouldEqual 0
+    clockMeasurement.first.x shouldEqual 0
+    clockMeasurement.first.y shouldEqual 0
+    clockMeasurement.first.z shouldEqual 0
+    clockMeasurement.first.rotation.degree shouldEqual 0
 
-    measurement.secondClock.x shouldEqual 0
-    measurement.secondClock.y shouldEqual 0
-    measurement.secondClock.z shouldEqual 0
-    measurement.secondClock.rotation.degree shouldEqual 0
+    clockMeasurement.second.x shouldEqual 0
+    clockMeasurement.second.y shouldEqual 0
+    clockMeasurement.second.z shouldEqual 0
+    clockMeasurement.second.rotation.degree shouldEqual 0
+  }
+
+  "The feet measurement class" should "be flexible for feets" in {
+    val feetMeasurement = new FeetMeasurement()
+
+    feetMeasurement.first.x shouldEqual 0
+    feetMeasurement.first.y shouldEqual 0
+    feetMeasurement.first.z shouldEqual 0
+
+    feetMeasurement.second.x shouldEqual 0
+    feetMeasurement.second.y shouldEqual 0
+    feetMeasurement.second.z shouldEqual 0
   }
 
   //"The axis class" should "show decreased values without increased ones" in {

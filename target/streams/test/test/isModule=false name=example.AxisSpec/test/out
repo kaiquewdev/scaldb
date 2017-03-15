@@ -65,5 +65,7 @@
 [0m[[0minfo[0m] [0m[32m- should have a degree for a rotation[0m[0m
 [0m[[0minfo[0m] [0m[32mThe feet class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have axis points[0m[0m
-[0m[[0minfo[0m] [0m[32mThe measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should be flexible for clocks[0m[0m
+[0m[[0minfo[0m] [0m[32mThe feet measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be flexible for feets[0m[0m
