@@ -3,9 +3,9 @@ package example
 
 import rx.lang.scala.Observable
 
-class Point(var value: Int = 0) {}
+class Point(var value: Int = 0) extends Object {}
 
-class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, var z: Int = (new Point()).value) {
+class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, var z: Int = (new Point()).value) extends Object {
   var dX: Int = (new Point()).value
   var dY: Int = (new Point()).value
   var dZ: Int = (new Point()).value
@@ -86,7 +86,7 @@ class Face(var top: Edge = new Edge(), var left: Edge = new Edge(), var bottom: 
   val drawFormatName = draw.choice(drawFormatIndex)
 }
 
-class Draw() {
+class Draw() extends Object {
   def choice(index: Int): String = index match {
     case 0 => "square"
     case 1 => "circle"
@@ -94,7 +94,7 @@ class Draw() {
   }
 }
 
-class Rotation(var degree: Int = 0) {
+class Rotation(var degree: Int = 0) extends Object {
   def increase(v: Int) = degree += v
   def decrease(v: Int) = degree -= v
 }
