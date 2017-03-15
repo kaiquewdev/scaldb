@@ -265,10 +265,12 @@ class AxisSpec extends FlatSpec with Matchers {
     measurement.firstClock.x shouldEqual 0
     measurement.firstClock.y shouldEqual 0
     measurement.firstClock.z shouldEqual 0
+    measurement.firstClock.rotation.degree shouldEqual 0
 
     measurement.secondClock.x shouldEqual 0
     measurement.secondClock.y shouldEqual 0
     measurement.secondClock.z shouldEqual 0
+    measurement.secondClock.rotation.degree shouldEqual 0
   }
 
   //"The axis class" should "show decreased values without increased ones" in {
