@@ -2,39 +2,14 @@
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	modified: Set(/home/kaique/war/shaft_alignment_algorithm/src/main/scala/example/Axis.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/kaique/war/shaft_alignment_algorithm/src/main/scala/example/Axis.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/kaique/war/shaft_alignment_algorithm/src/main/scala/example/Axis.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/kaique/war/shaft_alignment_algorithm/src/main/scala/example/Axis.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/kaique/war/shaft_alignment_algorithm/target/scala-2.12/classes...[0m
-[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
-[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 2b578a4d, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
-[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
-[0m[[0mdebug[0m] [0m	-bootclasspath[0m
-[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/kaique/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar[0m
-[0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	/home/kaique/war/shaft_alignment_algorithm/target/scala-2.12/classes:/home/kaique/.ivy2/cache/io.reactivex/rxscala_2.12/jars/rxscala_2.12-0.26.5.jar:/home/kaique/.ivy2/cache/io.reactivex/rxjava/jars/rxjava-1.2.4.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 5.099713157 s[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating /home/kaique/war/shaft_alignment_algorithm/src/main/scala/example/Axis.scala...[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/kaique/war/shaft_alignment_algorithm/src/main/scala/example/Axis.scala...[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/kaique/war/shaft_alignment_algorithm/src/main/scala/example/Axis.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/home/kaique/war/shaft_alignment_algorithm/src/main/scala/example/Axis.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] The /home/kaique/war/shaft_alignment_algorithm/src/main/scala/example/Axis.scala source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	notify, x, observableHistoryOfIncreasedY, historyOfIncreasedZ, wait, $asInstanceOf, decreaseHistoryY, historyOfDecreasedY, divY$default$1, equals, divX, y, dY, asInstanceOf, increaseZ, synchronized, increaseHistoryY, historyOfIncreasedY, decreaseZ, observableHistoryOfIncreasedX, $isInstanceOf, historyOfDecreasedX, decreaseHistoryZ, notifyAll, dZ, isInstanceOf, increaseY, historyOfIncreasedX, <init>, increaseHistoryX, observableHistoryOfDecreasedY, ==, clone, observableHistoryOfDecreasedZ, decreaseX, toString, observableHistoryOfDecreasedX, !=, observableHistoryOfIncreasedZ, dX, getClass, increaseX, ne, decreaseHistoryX, divZ$default$1, historyOfDecreasedZ, decreaseY, divX$default$1, eq, ##, finalize, Feet, z, hashCode, divZ, divY, increaseHistoryZ.[0m
-[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
-[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
-[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
