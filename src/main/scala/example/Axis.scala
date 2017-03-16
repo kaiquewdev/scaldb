@@ -95,7 +95,13 @@ class Draw() extends Object {
 }
 
 class Rotation(var degree: Int = 0) extends Object {
-  def increase(v: Int) = degree += v
+  var increasedStates = List(0)
+  def increase(v: Int) = {
+    if (degree > 0) {
+      increasedStates = increasedStates :+ degree
+    }
+    degree += v
+  }
   def decrease(v: Int) = degree -= v
 }
 
