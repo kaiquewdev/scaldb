@@ -42,7 +42,7 @@ class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, v
   }
   // Group of methods to increase and decrease the y point with co-ligation with history
   def increaseY(v: Int) = {
-    if (y > 0) {
+    if (y != 0) {
       historyOfIncreasedY = historyOfIncreasedY :+ y
     }
     y += v
@@ -54,7 +54,7 @@ class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, v
   }
   // Group of methods to increase and decrease the z point with co-ligation with history
   def increaseZ(v: Int) = {
-    if (z > 0) {
+    if (z != 0) {
       historyOfIncreasedZ = historyOfIncreasedZ :+ z
     }
     z += v
@@ -96,13 +96,21 @@ class Draw() extends Object {
 
 class Rotation(var degree: Int = 0) extends Object {
   var increasedStates = List(degree)
+  var observableIncreasedStates = Observable.from(increasedStates)
+  var decreasedStates = List(degree)
+  var observableDecreasedStates = Observable.from(decreasedStates)
   def increase(v: Int) = {
-    if (degree > 0) {
+    if (degree != 0) {
       increasedStates = increasedStates :+ degree
     }
     degree += v
   }
-  def decrease(v: Int) = degree -= v
+  def decrease(v: Int) = {
+    if (degree != 0) {
+      decreasedStates = decreasedStates :+ degree
+    }
+    degree -= v
+  }
 }
 
 class Clock(var rotation: Rotation = new Rotation()) extends Axis {}
