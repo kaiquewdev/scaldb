@@ -24,7 +24,7 @@ class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, v
 
   // History of increased and decreased values for z
   var historyOfIncreasedZ = List(z)
-  var observableHistoryOfIncreasedZ = Observable.from(historyOfIncreasedZ)
+  def observableHistoryOfIncreasedZ() = Observable.from(historyOfIncreasedZ)
   var historyOfDecreasedZ = List(z)
   var observableHistoryOfDecreasedZ = Observable.from(historyOfDecreasedZ)
 
