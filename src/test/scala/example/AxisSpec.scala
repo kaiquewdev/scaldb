@@ -85,6 +85,22 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.increaseHistoryX() shouldEqual List(0,10,30)
   }
 
+  "The axis class" should "show an history observable of ins for x" in {
+    val axis = new Axis()
+    axis.increaseX(10)
+    axis.increaseX(20)
+    axis.increaseX(30)
+    axis.observableHistoryOfIncreasedX().map(v => v*2).toBlocking.toList shouldEqual List(0,20,60)
+  }
+
+  "The axis class" should "show an history observable of ins for y" in {
+    val axis = new Axis()
+    axis.increaseY(10)
+    axis.increaseY(20)
+    axis.increaseY(30)
+    axis.observableHistoryOfIncreasedY().map(v => v*2).toBlocking.toList shouldEqual List(0,20,60)
+  }
+
   "The axis class" should "show an history of ins for y" in {
     val axis = new Axis()
     axis.increaseY(10)

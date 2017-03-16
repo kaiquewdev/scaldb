@@ -12,13 +12,13 @@ class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, v
 
   // History of increased and decreased values for x
   var historyOfIncreasedX = List(x)
-  var observableHistoryOfIncreasedX = Observable.from(historyOfIncreasedX)
+  def observableHistoryOfIncreasedX() = Observable.from(historyOfIncreasedX)
   var historyOfDecreasedX = List(x)
   var observableHistoryOfDecreasedX = Observable.from(historyOfDecreasedX)
 
   // History of increased and decreased values for y
   var historyOfIncreasedY = List(y)
-  var observableHistoryOfIncreasedY = Observable.from(historyOfIncreasedY)
+  def observableHistoryOfIncreasedY() = Observable.from(historyOfIncreasedY)
   var historyOfDecreasedY = List(y)
   var observableHistoryOfDecreasedY = Observable.from(historyOfDecreasedY)
 
