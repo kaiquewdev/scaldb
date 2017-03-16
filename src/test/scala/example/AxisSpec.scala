@@ -261,6 +261,14 @@ class AxisSpec extends FlatSpec with Matchers {
     rotation.decreasedStates shouldEqual List(0,30)
   }
 
+  "The rotation class" should "have an observable increased states" in {
+    val rotation = new Rotation()
+    rotation.increase(10)
+    rotation.increase(15)
+    rotation.increase(5)
+    rotation.observableIncreasedStates().map(v => v*2).toBlocking.toList shouldEqual List(0,20,50)
+  }
+
   "The clock class" should "have default points" in {
     val clock = new Clock()
     clock.x shouldEqual 0

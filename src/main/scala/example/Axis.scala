@@ -96,9 +96,9 @@ class Draw() extends Object {
 
 class Rotation(var degree: Int = 0) extends Object {
   var increasedStates = List(degree)
-  var observableIncreasedStates = Observable.from(increasedStates)
+  def observableIncreasedStates() = Observable.from(increasedStates)
   var decreasedStates = List(degree)
-  var observableDecreasedStates = Observable.from(decreasedStates)
+  def observableDecreasedStates() = Observable.from(decreasedStates)
   def increase(v: Int) = {
     if (degree != 0) {
       increasedStates = increasedStates :+ degree
