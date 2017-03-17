@@ -1,4 +1,3 @@
-
 package example
 
 import rx.lang.scala.Observable
@@ -14,7 +13,7 @@ class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, v
   var historyOfIncreasedX = List(x)
   def observableHistoryOfIncreasedX() = Observable.from(historyOfIncreasedX)
   var historyOfDecreasedX = List(x)
-  var observableHistoryOfDecreasedX = Observable.from(historyOfDecreasedX)
+  def observableHistoryOfDecreasedX() = Observable.from(historyOfDecreasedX)
 
   // History of increased and decreased values for y
   var historyOfIncreasedY = List(y)

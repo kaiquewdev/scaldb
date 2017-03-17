@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/kaique/war/shaft_alignment_algorithm/}root...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/silva/war/shaft_alignment_algorithm_repo/}root...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -23,7 +23,7 @@
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.reactivex#rxscala_2.12;0.26.5 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving io.reactivex#rxscala_2.12;0.26.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: io.reactivex#rxscala_2.12;0.26.5 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/kaique/.ivy2/local/io.reactivex/rxscala_2.12/0.26.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried /Users/silva/.ivy2/local/io.reactivex/rxscala_2.12/0.26.5/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for io.reactivex#rxscala_2.12;0.26.5[0m
 [0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/reactivex/rxscala_2.12/0.26.5/rxscala_2.12-0.26.5.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for io.reactivex#rxscala_2.12;0.26.5[0m
@@ -32,8 +32,8 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/reactivex/rxscala_2.12/0.26.5/rxscala_2.12-0.26.5.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/reactivex/rxscala_2.12/0.26.5/rxscala_2.12-0.26.5.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/io/reactivex/rxscala_2.12/0.26.5/rxscala_2.12-0.26.5.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.reactivex#rxscala_2.12;0.26.5!rxscala_2.12.pom(pom.original) (30753ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/kaique/.ivy2/local/io.reactivex/rxscala_2.12/0.26.5/jars/rxscala_2.12.jar[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.reactivex#rxscala_2.12;0.26.5!rxscala_2.12.pom(pom.original) (6027ms)[0m
+[0m[[0mdebug[0m] [0m		tried /Users/silva/.ivy2/local/io.reactivex/rxscala_2.12/0.26.5/jars/rxscala_2.12.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/reactivex/rxscala_2.12/0.26.5/rxscala_2.12-0.26.5.jar[0m
 [0m[[0mdebug[0m] [0m	found io.reactivex#rxscala_2.12;0.26.5 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT->io.reactivex#rxscala_2.12;0.26.5 [compile->runtime][0m
@@ -58,8 +58,21 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving io.reactivex#rxjava;1.2.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.reactivex#rxjava;1.2.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.reactivex#rxjava;1.2.4[0m
-[0m[[0mdebug[0m] [0m	found io.reactivex#rxjava;1.2.4 in sbt-chain[0m
+[0m[[0minfo[0m] [0mResolving io.reactivex#rxjava;1.2.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: io.reactivex#rxjava;1.2.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /Users/silva/.ivy2/local/io.reactivex/rxjava/1.2.4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for io.reactivex#rxjava;1.2.4[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for io.reactivex#rxjava;1.2.4[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.pom (1.2.4)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.reactivex#rxjava;1.2.4!rxjava.pom(pom.original) (4847ms)[0m
+[0m[[0mdebug[0m] [0m		tried /Users/silva/.ivy2/local/io.reactivex/rxjava/1.2.4/jars/rxjava.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	found io.reactivex#rxjava;1.2.4 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.reactivex#rxscala_2.12;0.26.5->io.reactivex#rxjava;1.2.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.reactivex#rxscala_2.12;0.26.5->io.reactivex#rxjava;1.2.4 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.reactivex#rxscala_2.12;0.26.5->io.reactivex#rxjava;1.2.4 [compile->compile][0m
@@ -1042,8 +1055,13 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/reactivex/rxscala_2.12/0.26.5/rxscala_2.12-0.26.5.jar[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/reactivex/rxscala_2.12/0.26.5/rxscala_2.12-0.26.5.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/io/reactivex/rxscala_2.12/0.26.5/rxscala_2.12-0.26.5.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.reactivex#rxscala_2.12;0.26.5!rxscala_2.12.jar (182743ms)[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.reactivex#rxjava;1.2.4!rxjava.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.reactivex#rxscala_2.12;0.26.5!rxscala_2.12.jar (4303ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/io/reactivex/rxjava/1.2.4/rxjava-1.2.4.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.reactivex#rxjava;1.2.4!rxjava.jar (10390ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.1!scalatest_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.1!scalactic_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.1!scala-reflect.jar[0m
@@ -1052,19 +1070,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.1!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 71375ms :: artifacts dl 182755ms[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT compile produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT runtime produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT test produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT provided produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT optional produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT compile-internal produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT runtime-internal produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT test-internal produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT plugin produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT sources produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT docs produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT pom produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT scala-tool produced in /home/kaique/war/shaft_alignment_algorithm/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (71375ms resolve - 182755ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 19885ms :: artifacts dl 14716ms[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT compile produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT runtime produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT test produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT provided produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT optional produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT compile-internal produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT runtime-internal produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT test-internal produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT plugin produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT sources produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT docs produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT pom produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#shaft-alignment-algorithm_2.12;0.1.0-SNAPSHOT scala-tool produced in /Users/silva/war/shaft_alignment_algorithm_repo/target/resolution-cache/reports/br.com.kaiquesilva-shaft-alignment-algorithm_2.12-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (19885ms resolve - 14716ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
