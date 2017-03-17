@@ -139,7 +139,7 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.decreaseHistoryX() shouldEqual List(0,5,15)
   }
 
-  "The axis class" should "show and history of observable outs for x" in {
+  "The axis class" should "show a history of observable outs for x" in {
     val axis = new Axis()
     axis.increaseX(10)
     axis.decreaseX(5)
@@ -159,6 +159,16 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.decreaseHistoryY() shouldEqual List(0,5,15)
   }
 
+  "The axis class" should "show a history of observable outs for y" in {
+    val axis = new Axis()
+    axis.increaseY(10)
+    axis.decreaseY(5)
+    axis.observableHistoryOfDecreasedY().map(v => v*2).toBlocking.toList shouldEqual List(0,10)
+    axis.increaseY(20)
+    axis.decreaseY(10)
+    axis.observableHistoryOfDecreasedY().map(v => v*2).toBlocking.toList shouldEqual List(0,10,30)
+  }
+
   "The axis class" should "show an history of outs for z" in {
     val axis = new Axis()
     axis.increaseZ(10)
@@ -167,6 +177,16 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.increaseZ(20)
     axis.decreaseZ(10)
     axis.decreaseHistoryZ() shouldEqual List(0,5,15)
+  }
+
+  "The axis class" should "show a history of observable outs for z" in {
+    val axis = new Axis()
+    axis.increaseZ(10)
+    axis.decreaseZ(5)
+    axis.observableHistoryOfDecreasedZ().map(v => v*2).toBlocking.toList shouldEqual List(0,10)
+    axis.increaseZ(20)
+    axis.decreaseZ(10)
+    axis.observableHistoryOfDecreasedZ().map(v => v*2).toBlocking.toList shouldEqual List(0,10,30)
   }
 
   "The edge class" should "have their own axis positions" in {

@@ -36,11 +36,15 @@
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should show an history of outs for x[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should show and history of observable outs for x[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show a history of observable outs for x[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should show an history of outs for y[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show a history of observable outs for y[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should show an history of outs for z[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show a history of observable outs for z[0m[0m
 [0m[[0minfo[0m] [0m[32mThe edge class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have their own axis positions[0m[0m
 [0m[[0minfo[0m] [0m[32mThe edge class[0m[0m
