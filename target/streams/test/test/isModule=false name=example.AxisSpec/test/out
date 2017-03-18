@@ -88,7 +88,11 @@
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should be flexible for clocks[0m[0m
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have a distance between both[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a distance between both x axis point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a distance between both y axis point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a distance between both z axis point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe clock feet measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should be flexible for clock and feet[0m[0m
 [0m[[0minfo[0m] [0m[32mThe feet measurement class[0m[0m
