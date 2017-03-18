@@ -415,6 +415,30 @@ class AxisSpec extends FlatSpec with Matchers {
     clockFeetMeasurement.second.z shouldEqual 0
   }
 
+  "The clock feet measurement class" should "have a distance between both x axis point" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.first.increaseX(10)
+    clockFeetMeasurement.first.x shouldEqual 10
+
+    clockFeetMeasurement.second.increaseX(30)
+    clockFeetMeasurement.second.x shouldEqual 30
+
+    clockFeetMeasurement.distanceX() shouldEqual 20
+  }
+
+  "The clock feet measurement class" should "have a distance between both y axis point" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.first.increaseY(10)
+    clockFeetMeasurement.first.y shouldEqual 10
+
+    clockFeetMeasurement.second.increaseY(30)
+    clockFeetMeasurement.second.y shouldEqual 30
+
+    clockFeetMeasurement.distanceY() shouldEqual 20
+  }
+
   "The feet measurement class" should "be flexible for feets" in {
     val feetMeasurement = new FeetMeasurement()
 

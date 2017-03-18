@@ -120,5 +120,8 @@ class ClockMeasurement(val first: Clock = (new Clock()), val second: Clock = (ne
   def distanceY() = Math.max(first.y,second.y) - Math.min(first.y,second.y)
   def distanceZ() = Math.max(first.z,second.z) - Math.min(first.z,second.z)
 }
-class ClockFeetMeasurement(val first: Clock = (new Clock()), val second: Feet = (new Feet())) extends Object {}
+class ClockFeetMeasurement(val first: Clock = (new Clock()), val second: Feet = (new Feet())) extends Object {
+  def distanceX() = Math.max(first.x,second.x) - Math.min(first.x,second.x)
+  def distanceY() = Math.max(first.y,second.y) - Math.min(first.y,second.y)
+}
 class FeetMeasurement(val first: Feet = (new Feet()), val second: Feet = (new Feet())) extends Object {}
