@@ -184,3 +184,4 @@ compile
 test
 compile
 inspect tree compile
+import dispatch._, Defaults._
