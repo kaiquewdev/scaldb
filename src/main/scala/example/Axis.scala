@@ -4,10 +4,14 @@ import rx.lang.scala.Observable
 
 class Point(var value: Int = 0) extends Object {}
 
-class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, var z: Int = (new Point()).value) extends Object {
-  var dX: Int = (new Point()).value
-  var dY: Int = (new Point()).value
-  var dZ: Int = (new Point()).value
+object InitialPoint {
+  def value(): Int = (new Point()).value
+}
+
+class Axis(var x: Int = InitialPoint.value(), var y: Int = InitialPoint.value(), var z: Int = InitialPoint.value()) extends Object {
+  var dX: Int = InitialPoint.value()
+  var dY: Int = InitialPoint.value()
+  var dZ: Int = InitialPoint.value()
 
   // History of increased and decreased values for x
   var historyOfIncreasedX = List(x)
@@ -29,9 +33,8 @@ class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, v
 
   // Group of methods to increase and decrease the x point with co-ligation with history
   def increaseX(v: Int) = {
-    if (x > 0) {
+    if (x > 0) 
       historyOfIncreasedX = historyOfIncreasedX :+ x
-    }
     x += v
   }
   def decreaseX(v: Int) = {
@@ -41,9 +44,8 @@ class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, v
   }
   // Group of methods to increase and decrease the y point with co-ligation with history
   def increaseY(v: Int) = {
-    if (y != 0) {
+    if (y != 0)
       historyOfIncreasedY = historyOfIncreasedY :+ y
-    }
     y += v
   }
   def decreaseY(v: Int) = {
@@ -53,9 +55,8 @@ class Axis(var x: Int = (new Point()).value, var y: Int = (new Point()).value, v
   }
   // Group of methods to increase and decrease the z point with co-ligation with history
   def increaseZ(v: Int) = {
-    if (z != 0) {
+    if (z != 0)
       historyOfIncreasedZ = historyOfIncreasedZ :+ z
-    }
     z += v
   }
   def decreaseZ(v: Int) = {
@@ -99,15 +100,13 @@ class Rotation(var degree: Int = 0) extends Object {
   var decreasedStates = List(degree)
   def observableDecreasedStates() = Observable.from(decreasedStates)
   def increase(v: Int) = {
-    if (degree != 0) {
+    if (degree != 0)
       increasedStates = increasedStates :+ degree
-    }
     degree += v
   }
   def decrease(v: Int) = {
-    if (degree != 0) {
+    if (degree != 0)
       decreasedStates = decreasedStates :+ degree
-    }
     degree -= v
   }
 }

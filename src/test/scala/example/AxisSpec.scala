@@ -9,6 +9,10 @@ class AxisSpec extends FlatSpec with Matchers {
     point.value shouldEqual 0
   }
 
+  "The initial point object" should "has a default value" in {
+    InitialPoint.value() shouldEqual (new Point()).value
+  }
+
   "The axis class" should "has points" in {
     val axis = new Axis()
     axis.x shouldEqual 0
@@ -499,19 +503,19 @@ class AxisSpec extends FlatSpec with Matchers {
     feetMeasurement.distanceZ() shouldEqual 20
   }
 
-  //"The axis class" should "show decreased values without increased ones" in {
-  //  val neseq: Observable[Int] = Observable.from(1 to 15000)
+  "The axis class" should "show decreased values without increased ones" in {
+    val neseq: Observable[Int] = Observable.from(1 to 100)
 
-  //  neseq.map(v => v * 1) subscribe { v =>
-  //    if (v % 2 == 0 && v % 3 == 0) {
-  //      println(s"$v is multiple of two and three")
-  //    } else if (v % 2 == 0) {
-  //      println(s"$v is multiple of two")
-  //    } else if (v % 3 == 0) {
-  //      println(s"$v in multiple of three")
-  //    } else {
-  //      println(s"$v")
-  //   }
-  //  }
-  //}
+    neseq.map(v => v * 1) subscribe { v =>
+      if (v % 2 == 0 && v % 3 == 0) {
+        println(s"$v is multiple of two and three")
+      } else if (v % 2 == 0) {
+        println(s"$v is multiple of two")
+      } else if (v % 3 == 0) {
+        println(s"$v in multiple of three")
+      } else {
+        println(s"$v")
+     }
+    }
+  }
 }

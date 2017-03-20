@@ -1,6 +1,8 @@
 [0m[[0minfo[0m] [0m[32mAxisSpec:[0m[0m
 [0m[[0minfo[0m] [0m[32mThe point class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has value[0m[0m
+[0m[[0minfo[0m] [0m[32mThe initial point object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should has a default value[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has points[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
@@ -109,3 +111,5 @@
 [0m[[0minfo[0m] [0m[32m- should have a distance between both y axis point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe feet measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a distance between both z axis point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show decreased values without increased ones[0m[0m
