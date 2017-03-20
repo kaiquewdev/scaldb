@@ -357,6 +357,11 @@ class AxisSpec extends FlatSpec with Matchers {
     feet.z shouldEqual 0
   }
 
+  "The Hands class" should "have a distribution method" in {
+    val hands = new Hands(10, 40)
+    hands.disPosSub() shouldEqual 30
+  }
+
   "The clock measurement class" should "be flexible for clocks" in {
     val clockMeasurement = new ClockMeasurement()
 
