@@ -64,10 +64,11 @@ class Axis(var x: Int = InitialPoint.value(), var y: Int = InitialPoint.value(),
     z -= v
     historyOfDecreasedZ = historyOfDecreasedZ :+ z
   }
+  def div(l: Int = 0, v: Int = 2) = l/v
   // Divisions by the three ones
-  def divX(v: Int = 2) = x/v
-  def divY(v: Int = 2) = y/v
-  def divZ(v: Int = 2) = z/v
+  def divX(v: Int = 2) = div(x)
+  def divY(v: Int = 2) = div(y)
+  def divZ(v: Int = 2) = div(z)
   // Retrieve the increase and decrease history of x
   def increaseHistoryX() = historyOfIncreasedX
   def decreaseHistoryX() = historyOfDecreasedX
