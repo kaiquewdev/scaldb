@@ -33,7 +33,7 @@ class Axis(var x: Int = InitialPoint.value(), var y: Int = InitialPoint.value(),
 
   // Group of methods to increase and decrease the x point with co-ligation with history
   def increaseX(v: Int) = {
-    if (x > 0) 
+    if (x != 0) 
       historyOfIncreasedX = historyOfIncreasedX :+ x
     x += v
   }
