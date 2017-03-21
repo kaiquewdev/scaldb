@@ -1,4 +1,10 @@
 #Successful Tests
-#Mon Mar 20 11:18:12 BRT 2017
+#Tue Mar 21 12:56:15 BRT 2017
+example.PointSpec=1490111775733
 example.HelloSpec=1488757438764
-example.AxisSpec=1490019492477
+example.EdgeSpec=1490111775701
+example.DrawSpec=1490111775696
+example.InitialPointSpec=1490111775741
+example.FaceSpec=1490111775696
+example.RotationSpec=1490111775894
+example.AxisSpec=1490111775964

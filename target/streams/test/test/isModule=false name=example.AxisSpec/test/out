@@ -1,8 +1,4 @@
 [0m[[0minfo[0m] [0m[32mAxisSpec:[0m[0m
-[0m[[0minfo[0m] [0m[32mThe point class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should has value[0m[0m
-[0m[[0minfo[0m] [0m[32mThe initial point object[0m[0m
-[0m[[0minfo[0m] [0m[32m- should has a default value[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has points[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
@@ -47,26 +43,8 @@
 [0m[[0minfo[0m] [0m[32m- should show an history of outs for z[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should show a history of observable outs for z[0m[0m
-[0m[[0minfo[0m] [0m[32mThe edge class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have their own axis positions[0m[0m
-[0m[[0minfo[0m] [0m[32mThe edge class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have a first axis[0m[0m
-[0m[[0minfo[0m] [0m[32mThe edge class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have a last axis[0m[0m
-[0m[[0minfo[0m] [0m[32mThe face class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have their own axis positions[0m[0m
-[0m[[0minfo[0m] [0m[32mThe face class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have their top with axis instantiated[0m[0m
-[0m[[0minfo[0m] [0m[32mThe face class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have their left with axis instantiated[0m[0m
-[0m[[0minfo[0m] [0m[32mThe face class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have their bottom with axis instantiated[0m[0m
-[0m[[0minfo[0m] [0m[32mThe face class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have their right with axis instantiated[0m[0m
 [0m[[0minfo[0m] [0m[32mThe draw class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have choices[0m[0m
-[0m[[0minfo[0m] [0m[32mThe face class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have a default draw[0m[0m
 [0m[[0minfo[0m] [0m[32mThe rotation class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a degree[0m[0m
 [0m[[0minfo[0m] [0m[32mThe rotation class[0m[0m

@@ -2,8 +2,6 @@ package example
 
 import rx.lang.scala.Observable
 
-class Point(var value: Int = 0) extends Object {}
-
 object InitialPoint {
   def value(): Int = (new Point()).value
 }
@@ -78,13 +76,6 @@ class Axis(var x: Int = InitialPoint.value(), var y: Int = InitialPoint.value(),
   // Retrieve the increase and decrease history of z
   def increaseHistoryZ() = historyOfIncreasedZ
   def decreaseHistoryZ() = historyOfDecreasedZ
-}
-
-class Edge(var first: Axis = new Axis(), var last: Axis = new Axis()) extends Axis {}
-class Face(var top: Edge = new Edge(), var left: Edge = new Edge(), var bottom: Edge = new Edge(), var right: Edge = new Edge()) extends Axis {
-  val draw = new Draw()
-  val drawFormatIndex = 0
-  val drawFormatName = draw.choice(drawFormatIndex)
 }
 
 class Draw() extends Object {
