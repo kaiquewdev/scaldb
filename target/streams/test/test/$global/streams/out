@@ -1,15 +1,17 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(example.InitialPointSpec, org.scalatest.tools.Framework$$anon$1@74b6507b, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(example.AxisSpec, org.scalatest.tools.Framework$$anon$1@74b6507b, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(example.EdgeSpec, org.scalatest.tools.Framework$$anon$1@74b6507b, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(example.DrawSpec, org.scalatest.tools.Framework$$anon$1@74b6507b, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(example.PointSpec, org.scalatest.tools.Framework$$anon$1@74b6507b, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(example.FaceSpec, org.scalatest.tools.Framework$$anon$1@74b6507b, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(example.ClockSpec, org.scalatest.tools.Framework$$anon$1@74b6507b, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(example.RotationSpec, org.scalatest.tools.Framework$$anon$1@74b6507b, false, [SuiteSelector])[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 1 second, 519 milliseconds.[0m[0m
-[0m[[0minfo[0m] [0m[36mTotal number of tests run: 68[0m[0m
-[0m[[0minfo[0m] [0m[36mSuites: completed 8, aborted 0[0m[0m
-[0m[[0minfo[0m] [0m[36mTests: succeeded 68, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(example.AxisSpec, org.scalatest.tools.Framework$$anon$1@56edb751, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(example.FaceSpec, org.scalatest.tools.Framework$$anon$1@56edb751, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(example.FeetSpec, org.scalatest.tools.Framework$$anon$1@56edb751, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(example.DrawSpec, org.scalatest.tools.Framework$$anon$1@56edb751, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(example.ClockSpec, org.scalatest.tools.Framework$$anon$1@56edb751, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(example.PointSpec, org.scalatest.tools.Framework$$anon$1@56edb751, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(example.HandsSpec, org.scalatest.tools.Framework$$anon$1@56edb751, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(example.EdgeSpec, org.scalatest.tools.Framework$$anon$1@56edb751, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(example.InitialPointSpec, org.scalatest.tools.Framework$$anon$1@56edb751, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(example.RotationSpec, org.scalatest.tools.Framework$$anon$1@56edb751, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 1 second, 274 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 70[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 10, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 70, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
 [0m[[0mdebug[0m] [0mPassed tests:[0m
 [0m[[0mdebug[0m] [0m	example.PointSpec[0m
@@ -18,5 +20,7 @@
 [0m[[0mdebug[0m] [0m	example.InitialPointSpec[0m
 [0m[[0mdebug[0m] [0m	example.EdgeSpec[0m
 [0m[[0mdebug[0m] [0m	example.RotationSpec[0m
+[0m[[0mdebug[0m] [0m	example.FeetSpec[0m
 [0m[[0mdebug[0m] [0m	example.DrawSpec[0m
+[0m[[0mdebug[0m] [0m	example.HandsSpec[0m
 [0m[[0mdebug[0m] [0m	example.FaceSpec[0m

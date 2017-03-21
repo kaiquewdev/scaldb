@@ -1,11 +1,13 @@
 #Successful Tests
-#Tue Mar 21 12:59:51 BRT 2017
-example.AxisSpec=1490111991576
-example.EdgeSpec=1490111990893
-example.FaceSpec=1490111991321
-example.RotationSpec=1490111991431
-example.ClockSpec=1490111991329
-example.DrawSpec=1490111990894
+#Tue Mar 21 13:03:43 BRT 2017
+example.AxisSpec=1490112223664
+example.EdgeSpec=1490112223364
+example.FaceSpec=1490112223059
+example.RotationSpec=1490112223502
+example.ClockSpec=1490112223111
+example.FeetSpec=1490112223046
+example.HandsSpec=1490112223358
+example.DrawSpec=1490112223046
 example.HelloSpec=1488757438764
-example.InitialPointSpec=1490111990900
-example.PointSpec=1490111991298
+example.InitialPointSpec=1490112223358
+example.PointSpec=1490112223109
