@@ -2,10 +2,6 @@ package example
 
 import rx.lang.scala.Observable
 
-object InitialPoint {
-  def value(): Int = (new Point()).value
-}
-
 class Axis(var x: Int = InitialPoint.value(), var y: Int = InitialPoint.value(), var z: Int = InitialPoint.value()) extends Object {
   var dX: Int = InitialPoint.value()
   var dY: Int = InitialPoint.value()
