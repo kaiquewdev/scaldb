@@ -2,6 +2,8 @@
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has points[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have getters and setters point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should increase the x points[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should decrease the x points[0m[0m

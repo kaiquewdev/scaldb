@@ -2,7 +2,33 @@ package example
 
 import rx.lang.scala.Observable
 
-class Axis(var x: Int = InitialPoint.value(), var y: Int = InitialPoint.value(), var z: Int = InitialPoint.value()) extends Object {
+class PointAxis(
+  var x: Int = InitialPoint.value(),
+  var y: Int = InitialPoint.value(),
+  var z: Int = InitialPoint.value()
+) extends Object {}
+
+class LogicAxis() extends PointAxis {
+  def setX(v: Int) = x = v
+  def setY(v: Int) = y = v
+  def setZ(v: Int) = z = v
+  def getX() = x
+  def getY() = y
+  def getZ() = z
+  def sum(l: Int, r: Int) = r + l
+  def sub(l: Int, r: Int) = l - r 
+}
+
+class TransitionalAxis() extends LogicAxis {
+  def incX(v: Int) = setX(sum(getX(),v))
+  def incY(v: Int) = setY(sum(getY(),v))
+  def incZ(v: Int) = setZ(sum(getZ(),v))
+  def decX(v: Int) = setX(sub(getX(),v))
+  def decY(v: Int) = setY(sub(getY(),v))
+  def decZ(v: Int) = setZ(sub(getZ(),v))
+}
+
+class Axis() extends TransitionalAxis {
   var dX: Int = InitialPoint.value()
   var dY: Int = InitialPoint.value()
   var dZ: Int = InitialPoint.value()
@@ -29,33 +55,33 @@ class Axis(var x: Int = InitialPoint.value(), var y: Int = InitialPoint.value(),
   def increaseX(v: Int) = {
     if (x != 0) 
       historyOfIncreasedX = historyOfIncreasedX :+ x
-    x += v
+    incX(v)
   }
   def decreaseX(v: Int) = {
     dX = x
-    x -= v
+    decX(v)
     historyOfDecreasedX = historyOfDecreasedX :+ x
   }
   // Group of methods to increase and decrease the y point with co-ligation with history
   def increaseY(v: Int) = {
     if (y != 0)
       historyOfIncreasedY = historyOfIncreasedY :+ y
-    y += v
+    incY(v)
   }
   def decreaseY(v: Int) = {
     dY = y
-    y -= v
+    decY(v)
     historyOfDecreasedY = historyOfDecreasedY :+ y
   }
   // Group of methods to increase and decrease the z point with co-ligation with history
   def increaseZ(v: Int) = {
     if (z != 0)
       historyOfIncreasedZ = historyOfIncreasedZ :+ z
-    z += v
+    incZ(v)
   }
   def decreaseZ(v: Int) = {
     dZ = z
-    z -= v
+    decZ(v)
     historyOfDecreasedZ = historyOfDecreasedZ :+ z
   }
   def div(l: Int = 0, v: Int = 2) = l/v
