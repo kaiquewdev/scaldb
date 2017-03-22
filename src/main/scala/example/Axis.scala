@@ -103,18 +103,12 @@ class Rotation(var degree: Int = 0) extends Object {
   }
 }
 
-class Clock(var rotation: Rotation = new Rotation()) extends Axis {}
-class Feet() extends Axis {}
-
-class Hands(var left: Int = 0, var right: Int = 0) {
-  def blcPosSub() = Math.max(left, right) - Math.min(left,right)
-}
-
 class ClockMeasurement(val first: Clock = (new Clock()), val second: Clock = (new Clock())) extends Object {
   def distanceX() = (new Hands(first.x,second.x)).blcPosSub()
   def distanceY() = (new Hands(first.y,second.y)).blcPosSub()
   def distanceZ() = (new Hands(first.z,second.z)).blcPosSub()
 }
+
 class ClockFeetMeasurement(val first: Clock = (new Clock()), val second: Feet = (new Feet())) extends Object {
   def distanceX() = (new Hands(first.x,second.x)).blcPosSub()
   def distanceY() = (new Hands(first.y,second.y)).blcPosSub()
