@@ -1,17 +1,16 @@
 #Successful Tests
-#Wed Mar 22 13:43:18 BRT 2017
-example.ClockMeasurementSpec=1490200998247
-example.AxisSpec=1490200998520
-example.EdgeSpec=1490200998346
-example.FaceSpec=1490200998308
-example.RotationSpec=1490200998469
-example.ClockFeetMeasurementSpec=1490200998223
-example.ObservableSpec=1490200998410
-example.ClockSpec=1490200998156
-example.FeetSpec=1490200998211
-example.HandsSpec=1490200998155
-example.DrawSpec=1490200998319
-example.FeetMeasurementSpec=1490200998156
-example.HelloSpec=1488757438764
-example.InitialPointSpec=1490200998241
-example.PointSpec=1490200998231
+#Wed Mar 22 13:58:48 BRT 2017
+example.ClockMeasurementSpec=1490201928139
+example.AxisSpec=1490201928328
+example.EdgeSpec=1490201928212
+example.FaceSpec=1490201928182
+example.RotationSpec=1490201928267
+example.ClockFeetMeasurementSpec=1490201928132
+example.ObservableSpec=1490201928235
+example.ClockSpec=1490201928066
+example.FeetSpec=1490201928116
+example.HandsSpec=1490201928066
+example.DrawSpec=1490201928189
+example.FeetMeasurementSpec=1490201928080
+example.InitialPointSpec=1490201928150
+example.PointSpec=1490201928124
