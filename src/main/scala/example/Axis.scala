@@ -2,32 +2,6 @@ package example
 
 import rx.lang.scala.Observable
 
-class PointAxis(
-  var x: Int = InitialPoint.value(),
-  var y: Int = InitialPoint.value(),
-  var z: Int = InitialPoint.value()
-) extends Object {}
-
-class LogicAxis() extends PointAxis {
-  def setX(v: Int) = x = v
-  def setY(v: Int) = y = v
-  def setZ(v: Int) = z = v
-  def getX() = x
-  def getY() = y
-  def getZ() = z
-  def sum(l: Int, r: Int) = r + l
-  def sub(l: Int, r: Int) = l - r 
-}
-
-class TransitionalAxis() extends LogicAxis {
-  def incX(v: Int) = setX(sum(getX(),v))
-  def incY(v: Int) = setY(sum(getY(),v))
-  def incZ(v: Int) = setZ(sum(getZ(),v))
-  def decX(v: Int) = setX(sub(getX(),v))
-  def decY(v: Int) = setY(sub(getY(),v))
-  def decZ(v: Int) = setZ(sub(getZ(),v))
-}
-
 class Axis() extends TransitionalAxis {
   var dX: Int = InitialPoint.value()
   var dY: Int = InitialPoint.value()
