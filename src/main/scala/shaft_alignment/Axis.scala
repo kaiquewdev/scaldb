@@ -25,36 +25,46 @@ class Axis() extends TransitionalAxis {
   var historyOfDecreasedZ = List(z)
   def observableHistoryOfDecreasedZ() = Observable.from(historyOfDecreasedZ)
 
+  def setDx(v: Int) = dX = x
+  def setDy(v: Int) = dY = y
+  def setDz(v: Int) = dZ = z
+
+  def getDx(v: Int) = dX
+  def getDy(v: Int) = dY
+  def getDz(v: Int) = dZ
+
+  def vNotEqZero(v: Int) = v != 0
+
   // Group of methods to increase and decrease the x point with co-ligation with history
   def increaseX(v: Int) = {
-    if (x != 0) 
+    if (vNotEqZero(x)) 
       historyOfIncreasedX = historyOfIncreasedX :+ x
     incX(v)
   }
   def decreaseX(v: Int) = {
-    dX = x
+    setDx(x)
     decX(v)
     historyOfDecreasedX = historyOfDecreasedX :+ x
   }
   // Group of methods to increase and decrease the y point with co-ligation with history
   def increaseY(v: Int) = {
-    if (y != 0)
+    if (vNotEqZero(y))
       historyOfIncreasedY = historyOfIncreasedY :+ y
     incY(v)
   }
   def decreaseY(v: Int) = {
-    dY = y
+    setDy(y)
     decY(v)
     historyOfDecreasedY = historyOfDecreasedY :+ y
   }
   // Group of methods to increase and decrease the z point with co-ligation with history
   def increaseZ(v: Int) = {
-    if (z != 0)
+    if (vNotEqZero(z))
       historyOfIncreasedZ = historyOfIncreasedZ :+ z
     incZ(v)
   }
   def decreaseZ(v: Int) = {
-    dZ = z
+    setDz(z)
     decZ(v)
     historyOfDecreasedZ = historyOfDecreasedZ :+ z
   }
