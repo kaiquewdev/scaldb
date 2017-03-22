@@ -2,6 +2,48 @@ package example
 
 import org.scalatest._
 
+class PointAxisSpec extends FlatSpec with Matchers {
+  "The point axis class" should "has points" in {
+    val pointAxis = new PointAxis()
+    pointAxis.x shouldEqual 0
+    pointAxis.y shouldEqual 0
+    pointAxis.z shouldEqual 0
+  }
+}
+
+class LogicAxisSpec extends FlatSpec with Matchers {
+  "The logic axis class" should "has getters and setters" in {
+    val logicAxis = new LogicAxis()
+    logicAxis.setX(10)
+    logicAxis.getX() shouldEqual 10
+    logicAxis.setY(15)
+    logicAxis.getY() shouldEqual 15
+    logicAxis.setZ(20)
+    logicAxis.getZ() shouldEqual 20
+  }
+}
+
+class TransitionalAxisSpec extends FlatSpec with Matchers {
+  "The transitional axis class" should "has incs and decs" in {
+    val transitionalAxis = new TransitionalAxis()
+
+    transitionalAxis.incX(10)
+    transitionalAxis.getX() shouldEqual 10
+    transitionalAxis.decX(5)
+    transitionalAxis.getX() shouldEqual 5
+
+    transitionalAxis.incY(15)
+    transitionalAxis.getY() shouldEqual 15
+    transitionalAxis.decY(5)
+    transitionalAxis.getY() shouldEqual 10
+
+    transitionalAxis.incZ(20)
+    transitionalAxis.getZ() shouldEqual 20
+    transitionalAxis.decZ(5)
+    transitionalAxis.getZ() shouldEqual 15
+  }
+}
+
 class AxisSpec extends FlatSpec with Matchers {
   "The axis class" should "has points" in {
     val axis = new Axis()
