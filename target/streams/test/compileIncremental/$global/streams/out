@@ -1,10 +1,3 @@
-[0m[[0mdebug[0m] [0m[naha] The shaft_alignment.ClockFeetMeasurement source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	notify, wait, $asInstanceOf, HandsBlcPosSub, equals, asInstanceOf, synchronized, $isInstanceOf, notifyAll, isInstanceOf, ==, clone, toString, dis, !=, getClass, ne, eq, ##, finalize, hashCode.[0m
-[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) shaft_alignment.ClockFeetMeasurement: Set(); now invalidating by inheritance (internally).[0m
-[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
-[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) shaft_alignment.ClockFeetMeasurement.[0m
-[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/ClockFeetMeasurementSpec.scala. This dependency is not being considered for invalidation.[0m
 [0m[[0mdebug[0m] [0m[naha] The shaft_alignment.Face source file has the following regular definitions changed:[0m
 [0m[[0mdebug[0m] [0m[naha] 	setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz.[0m
 [0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
@@ -26,6 +19,13 @@
 [0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
 [0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) shaft_alignment.Clock$.[0m
 [0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/ClockSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The shaft_alignment.ClockFeetMeasurement source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	notify, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, InitClock, instance, notifyAll, isInstanceOf, ==, clone, toString, !=, getClass, InitFeet, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) shaft_alignment.ClockFeetMeasurement: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) shaft_alignment.ClockFeetMeasurement.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/ClockFeetMeasurementSpec.scala. This dependency is not being considered for invalidation.[0m
 [0m[[0mdebug[0m] [0m[naha] The shaft_alignment.Edge source file has the following regular definitions changed:[0m
 [0m[[0mdebug[0m] [0m[naha] 	setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz.[0m
 [0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
@@ -35,7 +35,7 @@
 [0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/EdgeSpec.scala. This dependency is not being considered for invalidation.[0m
 [0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/FaceSpec.scala. This dependency is not being considered for invalidation.[0m
 [0m[[0mdebug[0m] [0m[naha] The shaft_alignment.ComponentsClockFeetMeasurement source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	notify, wait, $asInstanceOf, HandsBlcPosSub, equals, asInstanceOf, synchronized, $isInstanceOf, notifyAll, isInstanceOf, ==, clone, toString, dis, !=, getClass, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] 	notify, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, InitClock, instance, notifyAll, isInstanceOf, ==, clone, toString, !=, getClass, InitFeet, ne, eq, ##, finalize, hashCode.[0m
 [0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
 [0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) shaft_alignment.ComponentsClockFeetMeasurement: Set(); now invalidating by inheritance (internally).[0m
 [0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
@@ -54,7 +54,7 @@
 [0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(shaft_alignment.ClockFeetMeasurement,ModifiedNames(regularNames = notify, wait, $asInstanceOf, HandsBlcPosSub, equals, asInstanceOf, synchronized, $isInstanceOf, notifyAll, isInstanceOf, ==, clone, toString, dis, !=, getClass, ne, eq, ##, finalize, hashCode, implicitNames = )), NamesChange(shaft_alignment.Face,ModifiedNames(regularNames = setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz, implicitNames = )), NamesChange(shaft_alignment.Edge$,ModifiedNames(regularNames = setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz, implicitNames = )), NamesChange(shaft_alignment.Clock$,ModifiedNames(regularNames = setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz, implicitNames = )), NamesChange(shaft_alignment.Edge,ModifiedNames(regularNames = setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz, implicitNames = )), NamesChange(shaft_alignment.ComponentsClockFeetMeasurement,ModifiedNames(regularNames = notify, wait, $asInstanceOf, HandsBlcPosSub, equals, asInstanceOf, synchronized, $isInstanceOf, notifyAll, isInstanceOf, ==, clone, toString, dis, !=, getClass, ne, eq, ##, finalize, hashCode, implicitNames = )), NamesChange(shaft_alignment.Face$,ModifiedNames(regularNames = setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz, implicitNames = )))[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(shaft_alignment.Face,ModifiedNames(regularNames = setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz, implicitNames = )), NamesChange(shaft_alignment.Edge$,ModifiedNames(regularNames = setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz, implicitNames = )), NamesChange(shaft_alignment.Clock$,ModifiedNames(regularNames = setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz, implicitNames = )), NamesChange(shaft_alignment.ClockFeetMeasurement,ModifiedNames(regularNames = notify, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, InitClock, instance, notifyAll, isInstanceOf, ==, clone, toString, !=, getClass, InitFeet, ne, eq, ##, finalize, hashCode, implicitNames = )), NamesChange(shaft_alignment.Edge,ModifiedNames(regularNames = setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz, implicitNames = )), NamesChange(shaft_alignment.ComponentsClockFeetMeasurement,ModifiedNames(regularNames = notify, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, InitClock, instance, notifyAll, isInstanceOf, ==, clone, toString, !=, getClass, InitFeet, ne, eq, ##, finalize, hashCode, implicitNames = )), NamesChange(shaft_alignment.Face$,ModifiedNames(regularNames = setDy, getDy, vNotEqZero, setDx, getDx, setDz, getDz, implicitNames = )))[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] [0m

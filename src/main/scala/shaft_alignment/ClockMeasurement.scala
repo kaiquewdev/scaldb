@@ -1,7 +1,12 @@
 package shaft_alignment
 
-class ClockMeasurement(val first: Clock = (new Clock()), val second: Clock = (new Clock())) extends Object {
-  def distanceX() = (new Hands(first.x,second.x)).blcPosSub()
-  def distanceY() = (new Hands(first.y,second.y)).blcPosSub()
-  def distanceZ() = (new Hands(first.z,second.z)).blcPosSub()
+class ComponentsClockMeasurement(
+  val first: Clock = InitClock.instance,
+  val second: Clock = InitClock.instance
+) extends Object {}
+
+class ClockMeasurement() extends ComponentsClockMeasurement {
+  def distanceX() = HandsBlcPosSub.dis(first.x,second.x)
+  def distanceY() = HandsBlcPosSub.dis(first.y,second.y)
+  def distanceZ() = HandsBlcPosSub.dis(first.z,second.z)
 }

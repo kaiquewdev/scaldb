@@ -1,17 +1,5 @@
 package shaft_alignment
 
-object InitClock {
-  def instance() = (new Clock())
-}
-
-object InitFeet {
-  def instance() = (new Feet())
-}
-
-object HandsBlcPosSub {
-  def dis(firstAxis: Int, secondAxis: Int) = (new Hands(firstAxis,secondAxis)).blcPosSub()
-}
-
 class ComponentsClockFeetMeasurement(
   val first: Clock = InitClock.instance,
   val second: Feet = InitFeet.instance
