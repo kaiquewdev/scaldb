@@ -5,8 +5,8 @@ import org.scalatest._
 class DrawSpec extends FlatSpec with Matchers {
   "The draw class" should "have choices" in {
     val draw = new Draw()
-    draw.choice(0) shouldEqual "square"
-    draw.choice(1) shouldEqual "circle"
-    draw.choice(2) shouldEqual "triangle"
+    draw.choice(Square.index) shouldEqual Square.repr 
+    draw.choice(Circle.index) shouldEqual Circle.repr
+    draw.choice(Triangle.index) shouldEqual Triangle.repr 
   }
 }
