@@ -9,10 +9,12 @@ object Square extends Drawing {
   val index = 0
   val repr = "square"
 }
+
 object Circle extends Drawing { 
   val index = 1
   val repr = "circle"
 }
+
 object Triangle extends Drawing {
   val index = 2
   val repr = "triangle"
