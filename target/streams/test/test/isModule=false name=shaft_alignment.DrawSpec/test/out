@@ -1,3 +1,11 @@
 [0m[[0minfo[0m] [0m[32mDrawSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe Square object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have an index[0m[0m
+[0m[[0minfo[0m] [0m[32mThe Square object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have an repr[0m[0m
+[0m[[0minfo[0m] [0m[32mThe Circle object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have an index[0m[0m
+[0m[[0minfo[0m] [0m[32mThe Circle object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have an repr[0m[0m
 [0m[[0minfo[0m] [0m[32mThe draw class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have choices[0m[0m
