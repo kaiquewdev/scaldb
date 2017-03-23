@@ -2,11 +2,7 @@ package shaft_alignment
 
 import rx.lang.scala.Observable
 
-class Axis() extends TransitionalAxis {
-  var dX: Int = InitialPoint.value()
-  var dY: Int = InitialPoint.value()
-  var dZ: Int = InitialPoint.value()
-
+class HistoryAxis extends TransitionalAxis {
   // History of increased and decreased values for x
   var historyOfIncreasedX = List(x)
   def observableHistoryOfIncreasedX() = Observable.from(historyOfIncreasedX)
@@ -24,6 +20,12 @@ class Axis() extends TransitionalAxis {
   def observableHistoryOfIncreasedZ() = Observable.from(historyOfIncreasedZ)
   var historyOfDecreasedZ = List(z)
   def observableHistoryOfDecreasedZ() = Observable.from(historyOfDecreasedZ)
+}
+
+class Axis() extends HistoryAxis {
+  var dX: Int = InitialPoint.value()
+  var dY: Int = InitialPoint.value()
+  var dZ: Int = InitialPoint.value()
 
   def setDx(v: Int) = dX = x
   def setDy(v: Int) = dY = y
