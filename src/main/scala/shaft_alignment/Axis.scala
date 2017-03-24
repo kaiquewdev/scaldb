@@ -88,9 +88,9 @@ class ComposableHighLogicAxis() extends HighLogicAxis {
 class Axis() extends ComposableHighLogicAxis {
   def div(l: Int = 0, v: Int = 2) = l/v
   // Divisions by the three ones
-  def divX(v: Int = 2) = div(x)
-  def divY(v: Int = 2) = div(y)
-  def divZ(v: Int = 2) = div(z)
+  def divX() = div(x)
+  def divY() = div(y)
+  def divZ() = div(z)
   // Retrieve the increase and decrease history of x
   def increaseHistoryX() = historyOfIncreasedX
   def decreaseHistoryX() = historyOfDecreasedX
