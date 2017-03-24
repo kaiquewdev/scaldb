@@ -1,10 +1,29 @@
+[0m[[0mdebug[0m] [0m[naha] The shaft_alignment.Axis source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	appendHistoryOfDecreasedY, appendHistoryOfIncreasedY, appendHistoryOfDecreasedZ, appendHistoryOfIncreasedX, appendHistoryOfIncreasedZ, appendHistoryOfDecreasedX.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) shaft_alignment.Axis: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) shaft_alignment.Axis.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/EdgeSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/ClockMeasurementSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/FeetMeasurementSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/ClockFeetMeasurementSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/FaceSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/AxisSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The shaft_alignment.HistoryAxis source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	appendHistoryOfDecreasedY, appendHistoryOfIncreasedY, appendHistoryOfDecreasedZ, appendHistoryOfIncreasedX, appendHistoryOfIncreasedZ, appendHistoryOfDecreasedX.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) shaft_alignment.HistoryAxis: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) shaft_alignment.HistoryAxis.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/AxisSpec.scala. This dependency is not being considered for invalidation.[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(shaft_alignment.Axis,ModifiedNames(regularNames = appendHistoryOfDecreasedY, appendHistoryOfIncreasedY, appendHistoryOfDecreasedZ, appendHistoryOfIncreasedX, appendHistoryOfIncreasedZ, appendHistoryOfDecreasedX, implicitNames = )), NamesChange(shaft_alignment.HistoryAxis,ModifiedNames(regularNames = appendHistoryOfDecreasedY, appendHistoryOfIncreasedY, appendHistoryOfDecreasedZ, appendHistoryOfIncreasedX, appendHistoryOfIncreasedZ, appendHistoryOfDecreasedX, implicitNames = )))[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] [0m

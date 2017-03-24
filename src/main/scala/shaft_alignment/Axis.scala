@@ -20,13 +20,24 @@ class HistoryAxis extends TransitionalAxis {
   def observableHistoryOfIncreasedZ() = Observable.from(historyOfIncreasedZ)
   var historyOfDecreasedZ = List(z)
   def observableHistoryOfDecreasedZ() = Observable.from(historyOfDecreasedZ)
+
+  def appendHistoryOfIncreasedX() = historyOfIncreasedX = historyOfIncreasedX :+ x
+  def appendHistoryOfDecreasedX() = historyOfDecreasedX = historyOfDecreasedX :+ x
+
+  def appendHistoryOfIncreasedY() = historyOfIncreasedY = historyOfIncreasedY :+ y
+  def appendHistoryOfDecreasedY() = historyOfDecreasedY = historyOfDecreasedY :+ y 
+
+  def appendHistoryOfIncreasedZ() = historyOfIncreasedZ = historyOfIncreasedZ :+ z
+  def appendHistoryOfDecreasedZ() = historyOfDecreasedZ = historyOfDecreasedZ :+ z
 }
 
-class Axis() extends HistoryAxis {
+class DimensionAxis() extends HistoryAxis {
   var dX: Int = InitialPoint.value()
   var dY: Int = InitialPoint.value()
   var dZ: Int = InitialPoint.value()
+}
 
+class HighLogicAxis() extends DimensionAxis {
   def setDx(v: Int) = dX = x
   def setDy(v: Int) = dY = y
   def setDz(v: Int) = dZ = z
@@ -34,41 +45,43 @@ class Axis() extends HistoryAxis {
   def getDx(v: Int) = dX
   def getDy(v: Int) = dY
   def getDz(v: Int) = dZ
+}
 
+class Axis() extends HighLogicAxis {
   def vNotEqZero(v: Int) = v != 0
 
   // Group of methods to increase and decrease the x point with co-ligation with history
   def increaseX(v: Int) = {
     if (vNotEqZero(x)) 
-      historyOfIncreasedX = historyOfIncreasedX :+ x
+      appendHistoryOfIncreasedX()
     incX(v)
   }
   def decreaseX(v: Int) = {
     setDx(x)
     decX(v)
-    historyOfDecreasedX = historyOfDecreasedX :+ x
+    appendHistoryOfDecreasedX()
   }
   // Group of methods to increase and decrease the y point with co-ligation with history
   def increaseY(v: Int) = {
     if (vNotEqZero(y))
-      historyOfIncreasedY = historyOfIncreasedY :+ y
+      appendHistoryOfIncreasedY()
     incY(v)
   }
   def decreaseY(v: Int) = {
     setDy(y)
     decY(v)
-    historyOfDecreasedY = historyOfDecreasedY :+ y
+    appendHistoryOfDecreasedY()
   }
   // Group of methods to increase and decrease the z point with co-ligation with history
   def increaseZ(v: Int) = {
     if (vNotEqZero(z))
-      historyOfIncreasedZ = historyOfIncreasedZ :+ z
+      appendHistoryOfIncreasedZ()
     incZ(v)
   }
   def decreaseZ(v: Int) = {
     setDz(z)
     decZ(v)
-    historyOfDecreasedZ = historyOfDecreasedZ :+ z
+    appendHistoryOfDecreasedZ()
   }
   def div(l: Int = 0, v: Int = 2) = l/v
   // Divisions by the three ones
