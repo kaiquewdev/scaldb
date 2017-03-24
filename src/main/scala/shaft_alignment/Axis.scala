@@ -47,7 +47,7 @@ class HighLogicAxis() extends DimensionAxis {
   def getDz(v: Int) = dZ
 }
 
-class Axis() extends HighLogicAxis {
+class ComposableHighLogicAxis() extends HighLogicAxis {
   def vNotEqZero(v: Int) = v != 0
 
   // Group of methods to increase and decrease the x point with co-ligation with history
@@ -83,6 +83,9 @@ class Axis() extends HighLogicAxis {
     decZ(v)
     appendHistoryOfDecreasedZ()
   }
+}
+
+class Axis() extends ComposableHighLogicAxis {
   def div(l: Int = 0, v: Int = 2) = l/v
   // Divisions by the three ones
   def divX(v: Int = 2) = div(x)
