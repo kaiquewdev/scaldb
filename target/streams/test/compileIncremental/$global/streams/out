@@ -18,13 +18,13 @@
 [0m[[0minfo[0m] [0mCompiling 17 Scala sources to /Users/silva/war/shaft_alignment_algorithm_repo/target/scala-2.12/test-classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 35ded65a, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 11a0bd39, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes:/Users/silva/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/Users/silva/war/shaft_alignment_algorithm_repo/target/scala-2.12/test-classes:/Users/silva/war/shaft_alignment_algorithm_repo/target/scala-2.12/classes:/Users/silva/.ivy2/cache/io.reactivex/rxscala_2.12/jars/rxscala_2.12-0.26.5.jar:/Users/silva/.ivy2/cache/io.reactivex/rxjava/jars/rxjava-1.2.4.jar:/Users/silva/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.1.jar:/Users/silva/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.1.jar:/Users/silva/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.1.jar:/Users/silva/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.5.jar:/Users/silva/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 34.594278912 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 348.476079086 s[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidating /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/RotationSpec.scala...[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/RotationSpec.scala...[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/silva/war/shaft_alignment_algorithm_repo/src/test/scala/shaft_alignment/RotationSpec.scala)[0m

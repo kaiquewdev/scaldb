@@ -1,6 +1,6 @@
 package shaft_alignment
 
-trait BothComponents {
+trait Components {
   val first: Clock
   val second: Feet
 }
@@ -14,7 +14,7 @@ trait Measurements {
 class ComponentsClockFeetMeasurement(
   val first: Clock = InitClock.instance,
   val second: Feet = InitFeet.instance
-) extends Object with BothComponents {}
+) extends Object with Components {}
 
 class ClockFeetMeasurement() extends ComponentsClockFeetMeasurement with Measurements {
   def distanceX() = HandsBlcPosSub.dis(first.x,second.x)
