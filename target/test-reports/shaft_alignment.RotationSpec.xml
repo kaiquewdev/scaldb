@@ -8,9 +8,9 @@
                                                  
                                                </testcase><testcase classname="shaft_alignment.RotationSpec" name="The rotation class should have getter and setter" time="0.0">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.RotationSpec" name="The rotation class should have an degree comparison to not equal zero" time="0.0">
+                                               </testcase><testcase classname="shaft_alignment.RotationSpec" name="The rotation class should have an degree comparison to not equal zero" time="0.001">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.RotationSpec" name="The rotation class should be increase" time="0.001">
+                                               </testcase><testcase classname="shaft_alignment.RotationSpec" name="The rotation class should be increase" time="0.0">
                                                  
                                                </testcase><testcase classname="shaft_alignment.RotationSpec" name="The rotation class should be decrease" time="0.0">
                                                  
