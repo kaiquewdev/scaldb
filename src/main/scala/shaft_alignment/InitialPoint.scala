@@ -1,5 +1,9 @@
 package shaft_alignment
 
-object InitialPoint {
+trait PointInitialization {
+  def value(): Int
+}
+
+object InitialPoint extends PointInitialization {
   def value(): Int = (new Point()).value
 }
