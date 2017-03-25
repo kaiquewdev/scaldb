@@ -25,7 +25,7 @@ class HistoryAxis extends TransitionalAxis {
   def appendHistoryOfDecreasedX() = historyOfDecreasedX = historyOfDecreasedX :+ x
 
   def appendHistoryOfIncreasedY() = historyOfIncreasedY = historyOfIncreasedY :+ y
-  def appendHistoryOfDecreasedY() = historyOfDecreasedY = historyOfDecreasedY :+ y 
+  def appendHistoryOfDecreasedY() = historyOfDecreasedY = historyOfDecreasedY :+ y
 
   def appendHistoryOfIncreasedZ() = historyOfIncreasedZ = historyOfIncreasedZ :+ z
   def appendHistoryOfDecreasedZ() = historyOfDecreasedZ = historyOfDecreasedZ :+ z
@@ -52,7 +52,7 @@ class ComposableHighLogicAxis() extends HighLogicAxis {
 
   // Group of methods to increase and decrease the x point with co-ligation with history
   def increaseX(v: Int) = {
-    if (vNotEqZero(x)) 
+    if (vNotEqZero(x))
       appendHistoryOfIncreasedX()
     incX(v)
   }

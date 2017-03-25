@@ -24,7 +24,7 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.z shouldEqual 0
     axis.setZ(10)
     axis.getZ() shouldEqual 10
-  } 
+  }
 
   "The axis class" should "increase the x points" in {
     val axis = new Axis()
