@@ -2,19 +2,37 @@ package shaft_alignment
 
 import rx.lang.scala.Observable
 
-class DegreeRotation(var degree: Int = 0) extends Object {}
+trait DegreeRotationAttr {
+  var degree: Int
+}
 
-class LogicRotation() extends DegreeRotation {
+trait LogicRotationMethods {
+  def setDeg(v: Int)
+  def getDeg(): Int
+}
+
+trait TransitionalRotationMethods {
+  def incDeg(v: Int)
+  def decDeg(v: Int)
+}
+
+trait CompositionalRotationMethod {
+  def degNotEqZero(): Boolean
+}
+
+class DegreeRotation(var degree: Int = 0) extends Object with DegreeRotationAttr {}
+
+class LogicRotation() extends DegreeRotation with LogicRotationMethods {
   def setDeg(v: Int) = degree = v
   def getDeg() = degree
 }
 
-class TransationalRotation() extends LogicRotation {
+class TransitionalRotation() extends LogicRotation with TransitionalRotationMethods {
   def incDeg(v: Int) = setDeg(getDeg() + v)
   def decDeg(v: Int) = setDeg(getDeg() - v)
 }
 
-class CompositionalRotation() extends TransationalRotation {
+class CompositionalRotation() extends TransitionalRotation with CompositionalRotationMethod {
   def degNotEqZero() = degree != 0
 }
 
