@@ -5,18 +5,51 @@ import org.scalatest._
 class FaceSpec extends FlatSpec with Matchers {
   "The face class" should "have their own axis positions" in {
     val face = new Face()
+
     face.x shouldEqual 0
+    face.getX() shouldEqual 0
+    face.setX(1000)
+    face.getX() shouldEqual 1000
+
     face.y shouldEqual 0
+    face.getY() shouldEqual 0
+    face.setY(2000)
+    face.getY() shouldEqual 2000
+
     face.z shouldEqual 0
+    face.getZ() shouldEqual 0
+    face.setZ(3000)
+    face.getZ() shouldEqual 3000
   }
 
   "The face class" should "have their top with axis instantiated" in {
     val face = new Face()
+
     face.top.first.x shouldEqual 0
+    face.top.first.getX() shouldEqual 0
+    face.top.first.setX(1000)
+    face.top.first.getX() shouldEqual 1000
+
     face.top.first.y shouldEqual 0
+    face.top.first.getY() shouldEqual 0
+    face.top.first.setY(2000)
+    face.top.first.getY() shouldEqual 2000
+
     face.top.first.z shouldEqual 0
+    face.top.first.getZ() shouldEqual 0
+    face.top.first.setZ(3000)
+    face.top.first.getZ() shouldEqual 3000
+
     face.top.last.x shouldEqual 0
+    face.top.last.getX() shouldEqual 0
+    face.top.last.setX(1000)
+    face.top.last.getX() shouldEqual 1000
+
     face.top.last.y shouldEqual 0
+    face.top.last.getY() shouldEqual 0
+    face.top.last.setY(2000)
+    face.top.last.getY() shouldEqual 2000
+
     face.top.last.z shouldEqual 0
   }
 
