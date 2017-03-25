@@ -7,11 +7,18 @@ class FeetMeasurementSpec extends FlatSpec with Matchers {
     val feetMeasurement = new FeetMeasurement()
 
     feetMeasurement.first.x shouldEqual 0
+    feetMeasurement.first.getX() shouldEqual 0
+    feetMeasurement.first.setX(1000)
+    feetMeasurement.first.getX() shouldEqual 1000
+
     feetMeasurement.first.y shouldEqual 0
+
     feetMeasurement.first.z shouldEqual 0
 
     feetMeasurement.second.x shouldEqual 0
+
     feetMeasurement.second.y shouldEqual 0
+
     feetMeasurement.second.z shouldEqual 0
   }
 
