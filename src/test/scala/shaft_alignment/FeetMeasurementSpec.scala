@@ -12,6 +12,9 @@ class FeetMeasurementSpec extends FlatSpec with Matchers {
     feetMeasurement.first.getX() shouldEqual 1000
 
     feetMeasurement.first.y shouldEqual 0
+    feetMeasurement.first.getY() shouldEqual 0
+    feetMeasurement.first.setY(2000)
+    feetMeasurement.first.getY() shouldEqual 2000
 
     feetMeasurement.first.z shouldEqual 0
 
