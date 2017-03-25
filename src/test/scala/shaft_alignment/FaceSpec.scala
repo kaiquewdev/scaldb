@@ -51,6 +51,9 @@ class FaceSpec extends FlatSpec with Matchers {
     face.top.last.getY() shouldEqual 2000
 
     face.top.last.z shouldEqual 0
+    face.top.last.getZ() shouldEqual 0
+    face.top.last.setZ(3000)
+    face.top.last.getZ() shouldEqual 3000
   }
 
   "The face class" should "have their left with axis instantiated" in {

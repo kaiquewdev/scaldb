@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170324225046"/>
+		date="20170324230028"/>
 	<dependencies>
 		<module organisation="io.reactivex" name="rxscala_2.12">
 			<revision name="0.26.5" status="release" pubdate="20161228172258" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/ReactiveX/RxScala" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
