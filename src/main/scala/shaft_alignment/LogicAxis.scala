@@ -1,6 +1,17 @@
 package shaft_alignment
 
-class LogicAxis() extends PointAxis {
+trait PointAxisMethods {
+  def setX(v: Int)
+  def setY(v: Int)
+  def setZ(v: Int)
+  def getX(): Int
+  def getY(): Int
+  def getZ(): Int
+  def sum(l: Int, r: Int): Int
+  def sub(l: Int, r: Int): Int
+}
+
+class LogicAxis() extends PointAxis with PointAxisMethods {
   def setX(v: Int) = x = v
   def setY(v: Int) = y = v
   def setZ(v: Int) = z = v
@@ -8,5 +19,5 @@ class LogicAxis() extends PointAxis {
   def getY() = y
   def getZ() = z
   def sum(l: Int, r: Int) = r + l
-  def sub(l: Int, r: Int) = l - r 
+  def sub(l: Int, r: Int) = l - r
 }
