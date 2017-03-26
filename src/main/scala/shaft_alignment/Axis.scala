@@ -6,9 +6,20 @@ trait LinearityMethod {
   def sequence(v: Int = 0): List[Int]
 }
 
+trait HistoryAxisProperties {
+  var historyOfIncreasedX: List[Int]
+  var historyOfDecreasedX: List[Int]
+
+  var historyOfIncreasedY: List[Int]
+  var historyOfDecreasedY: List[Int]
+
+  var historyOfIncreasedZ: List[Int]
+  var historyOfDecreasedZ: List[Int]
+}
+
 object Linearity { def sequence(v: Int = 0): List[Int] = List(v) }
 
-class HistoryAxis extends TransitionalAxis {
+class HistoryAxis extends TransitionalAxis with HistoryAxisProperties {
   // History of increased and decreased values for x
   var historyOfIncreasedX = Linearity.sequence()
   def observableHistoryOfIncreasedX() = Observable.from(historyOfIncreasedX)
