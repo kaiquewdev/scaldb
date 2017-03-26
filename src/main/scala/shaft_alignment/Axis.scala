@@ -2,23 +2,29 @@ package shaft_alignment
 
 import rx.lang.scala.Observable
 
+trait LinearityMethod {
+  def sequence(v: Int = 0): List[Int]
+}
+
+object Linearity { def sequence(v: Int = 0): List[Int] = List(v) }
+
 class HistoryAxis extends TransitionalAxis {
   // History of increased and decreased values for x
-  var historyOfIncreasedX = List(x)
+  var historyOfIncreasedX = Linearity.sequence()
   def observableHistoryOfIncreasedX() = Observable.from(historyOfIncreasedX)
-  var historyOfDecreasedX = List(x)
+  var historyOfDecreasedX = Linearity.sequence()
   def observableHistoryOfDecreasedX() = Observable.from(historyOfDecreasedX)
 
   // History of increased and decreased values for y
-  var historyOfIncreasedY = List(y)
+  var historyOfIncreasedY = Linearity.sequence()
   def observableHistoryOfIncreasedY() = Observable.from(historyOfIncreasedY)
-  var historyOfDecreasedY = List(y)
+  var historyOfDecreasedY = Linearity.sequence()
   def observableHistoryOfDecreasedY() = Observable.from(historyOfDecreasedY)
 
   // History of increased and decreased values for z
-  var historyOfIncreasedZ = List(z)
+  var historyOfIncreasedZ = Linearity.sequence()
   def observableHistoryOfIncreasedZ() = Observable.from(historyOfIncreasedZ)
-  var historyOfDecreasedZ = List(z)
+  var historyOfDecreasedZ = Linearity.sequence()
   def observableHistoryOfDecreasedZ() = Observable.from(historyOfDecreasedZ)
 
   def appendHistoryOfIncreasedX() = historyOfIncreasedX = historyOfIncreasedX :+ x
