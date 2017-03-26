@@ -43,6 +43,19 @@ trait ComposableHighLogicAxisMethods {
   def decreaseZ(v: Int)
 }
 
+trait AxisMethods {
+  def div(l: Int = 0, v: Int = 2): Int
+  def divX(): Int
+  def divY(): Int
+  def divZ(): Int
+  def increaseHistoryX(): List[Int]
+  def decreaseHistoryX(): List[Int]
+  def increaseHistoryY(): List[Int]
+  def decreaseHistoryY(): List[Int]
+  def increaseHistoryZ(): List[Int]
+  def decreaseHistoryZ(): List[Int]
+}
+
 object Linearity { def sequence(v: Int = 0): List[Int] = List(v) }
 
 class HistoryAxis extends TransitionalAxis with HistoryAxisProperties {
@@ -99,28 +112,33 @@ class ComposableHighLogicAxis() extends HighLogicAxis with ComposableHighLogicAx
       appendHistoryOfIncreasedX()
     incX(v)
   }
+
   def decreaseX(v: Int) = {
     setDx(x)
     decX(v)
     appendHistoryOfDecreasedX()
   }
+
   // Group of methods to increase and decrease the y point with co-ligation with history
   def increaseY(v: Int) = {
     if (vNotEqZero(y))
       appendHistoryOfIncreasedY()
     incY(v)
   }
+
   def decreaseY(v: Int) = {
     setDy(y)
     decY(v)
     appendHistoryOfDecreasedY()
   }
+
   // Group of methods to increase and decrease the z point with co-ligation with history
   def increaseZ(v: Int) = {
     if (vNotEqZero(z))
       appendHistoryOfIncreasedZ()
     incZ(v)
   }
+
   def decreaseZ(v: Int) = {
     setDz(z)
     decZ(v)
@@ -128,7 +146,7 @@ class ComposableHighLogicAxis() extends HighLogicAxis with ComposableHighLogicAx
   }
 }
 
-class Axis() extends ComposableHighLogicAxis {
+class Axis() extends ComposableHighLogicAxis with AxisMethods {
   def div(l: Int = 0, v: Int = 2) = l/v
   // Divisions by the three ones
   def divX() = div(x)

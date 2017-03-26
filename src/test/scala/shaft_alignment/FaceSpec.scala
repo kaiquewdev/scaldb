@@ -78,32 +78,32 @@ class FaceSpec extends FlatSpec with Matchers {
 
   "The face class" should "have their right with axis instantiated" in {
     val face = new Face()
-    
+
     face.right.first.x shouldEqual 0
     face.right.first.getX() shouldEqual 0
     face.right.first.setX(1000)
     face.right.first.getX() shouldEqual 1000
-    
+
     face.right.first.y shouldEqual 0
     face.right.first.getY() shouldEqual 0
     face.right.first.setY(2000)
     face.right.first.getY() shouldEqual 2000
-    
+
     face.right.first.z shouldEqual 0
-    face.right.first.getZ() shouldEqual 3000
+    face.right.first.getZ() shouldEqual 0
     face.right.first.setZ(3000)
     face.right.first.getZ() shouldEqual 3000
-    
+
     face.right.last.x shouldEqual 0
-    face.right.last.getX() shoulEqual 0
+    face.right.last.getX() shouldEqual 0
     face.right.last.setX(1000)
     face.right.last.getX() shouldEqual 1000
-    
+
     face.right.last.y shouldEqual 0
     face.right.last.getY() shouldEqual 0
     face.right.last.setY(2000)
     face.right.last.getY() shouldEqual 2000
-    
+
     face.right.last.z shouldEqual 0
     face.right.last.getZ() shouldEqual 0
     face.right.last.setZ(3000)
