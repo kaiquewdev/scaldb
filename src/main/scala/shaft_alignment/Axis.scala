@@ -33,6 +33,16 @@ trait HighLogicAxisMethods {
   def getDz(v: Int): Int
 }
 
+trait ComposableHighLogicAxisMethods {
+  def vNotEqZero(v: Int): Boolean
+  def increaseX(v: Int)
+  def decreaseX(v: Int)
+  def increaseY(v: Int)
+  def decreaseY(v: Int)
+  def increaseZ(v: Int)
+  def decreaseZ(v: Int)
+}
+
 object Linearity { def sequence(v: Int = 0): List[Int] = List(v) }
 
 class HistoryAxis extends TransitionalAxis with HistoryAxisProperties {
@@ -80,7 +90,7 @@ class HighLogicAxis() extends DimensionAxis with HighLogicAxisMethods {
   def getDz(v: Int) = dZ
 }
 
-class ComposableHighLogicAxis() extends HighLogicAxis {
+class ComposableHighLogicAxis() extends HighLogicAxis with ComposableHighLogicAxisMethods {
   def vNotEqZero(v: Int) = v != 0
 
   // Group of methods to increase and decrease the x point with co-ligation with history
