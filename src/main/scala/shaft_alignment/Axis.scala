@@ -17,6 +17,22 @@ trait HistoryAxisProperties {
   var historyOfDecreasedZ: List[Int]
 }
 
+trait DimensionAxisProperties {
+  var dX: Int
+  var dY: Int
+  var dZ: Int
+}
+
+trait HighLogicAxisMethods {
+  def setDx(v: Int)
+  def setDy(v: Int)
+  def setDz(v: Int)
+
+  def getDx(v: Int): Int
+  def getDy(v: Int): Int
+  def getDz(v: Int): Int
+}
+
 object Linearity { def sequence(v: Int = 0): List[Int] = List(v) }
 
 class HistoryAxis extends TransitionalAxis with HistoryAxisProperties {
@@ -48,13 +64,13 @@ class HistoryAxis extends TransitionalAxis with HistoryAxisProperties {
   def appendHistoryOfDecreasedZ() = historyOfDecreasedZ = historyOfDecreasedZ :+ z
 }
 
-class DimensionAxis() extends HistoryAxis {
+class DimensionAxis() extends HistoryAxis with DimensionAxisProperties {
   var dX: Int = InitialPoint.value()
   var dY: Int = InitialPoint.value()
   var dZ: Int = InitialPoint.value()
 }
 
-class HighLogicAxis() extends DimensionAxis {
+class HighLogicAxis() extends DimensionAxis with HighLogicAxisMethods {
   def setDx(v: Int) = dX = x
   def setDy(v: Int) = dY = y
   def setDz(v: Int) = dZ = z
