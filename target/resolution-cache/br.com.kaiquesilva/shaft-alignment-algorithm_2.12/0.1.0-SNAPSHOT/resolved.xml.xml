@@ -4,7 +4,7 @@
 		module="shaft-alignment-algorithm_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20170327003739"
+		publication="20170327150914"
 	>
 		<description>
 		Shaft alignment algorithm
