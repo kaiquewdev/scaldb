@@ -25,5 +25,8 @@ class ClockSpec extends FlatSpec with Matchers {
   "The clock class" should "have a degree for a rotation" in {
     val clock = new Clock()
     clock.rotation.degree shouldEqual 0
+    clock.rotation.getDeg() shouldEqual 0
+    clock.rotation.setDeg(75)
+    clock.rotation.getDeg() shouldEqual 75
   }
 }
