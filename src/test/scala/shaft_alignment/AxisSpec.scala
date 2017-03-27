@@ -74,6 +74,8 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.increaseY(10)
     axis.y shouldEqual 10
+    axis.getY() shouldEqual 10
+    axis.getY().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "decrease the y points" in {
@@ -84,6 +86,7 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.increaseY(10)
     axis.decreaseY(5)
     axis.y shouldEqual 5
+    axis.getY().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "increase the z points" in {
@@ -93,6 +96,8 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.increaseZ(10)
     axis.z shouldEqual 10
+    axis.getZ() shouldEqual 10
+    axis.getZ().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "decrease the z points" in {
@@ -103,6 +108,8 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.increaseZ(10)
     axis.decreaseZ(5)
     axis.z shouldEqual 5
+    axis.getZ() shouldEqual 5
+    axis.getZ().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "divide x by a default value" in {
@@ -112,6 +119,7 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.increaseX(10)
     axis.divX() shouldEqual 5
+    axis.divX().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "divide y by a default value" in {
@@ -121,6 +129,7 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.increaseY(10)
     axis.divY() shouldEqual 5
+    axis.divY().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "divide z by a default value" in {
@@ -130,6 +139,7 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.increaseZ(10)
     axis.divZ() shouldEqual 5
+    axis.divZ().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "show an history of ins for x" in {
