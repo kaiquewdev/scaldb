@@ -10,7 +10,7 @@ object Square extends Drawing {
   val repr = "square"
 }
 
-object Circle extends Drawing { 
+object Circle extends Drawing {
   val index = 1
   val repr = "circle"
 }
@@ -22,8 +22,8 @@ object Triangle extends Drawing {
 
 class Draw() extends Object {
   def choice(index: Int): String = index match {
-    case Square.index => Square.repr  
+    case Square.index => Square.repr
     case Circle.index => Circle.repr
-    case Triangle.index => Triangle.repr 
+    case Triangle.index => Triangle.repr
   }
 }
