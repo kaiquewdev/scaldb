@@ -6,9 +6,9 @@
     </properties>
                      <testcase classname="shaft_alignment.ClockMeasurementSpec" name="The clock measurement class should be flexible for clocks" time="0.002">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.ClockMeasurementSpec" name="The clock measurement class should have a distance between both x axis point" time="0.0">
+                                               </testcase><testcase classname="shaft_alignment.ClockMeasurementSpec" name="The clock measurement class should have a distance between both x axis point" time="0.001">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.ClockMeasurementSpec" name="The clock measurement class should have a distance between both y axis point" time="0.001">
+                                               </testcase><testcase classname="shaft_alignment.ClockMeasurementSpec" name="The clock measurement class should have a distance between both y axis point" time="0.0">
                                                  
                                                </testcase><testcase classname="shaft_alignment.ClockMeasurementSpec" name="The clock measurement class should have a distance between both z axis point" time="0.0">
                                                  
