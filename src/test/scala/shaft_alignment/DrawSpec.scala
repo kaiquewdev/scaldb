@@ -37,5 +37,6 @@ class DrawSpec extends FlatSpec with Matchers {
     draw.choice(Circle.index) shouldEqual Circle.repr
     draw.choice(Circle.index).isInstanceOf[String] shouldEqual true
     draw.choice(Triangle.index) shouldEqual Triangle.repr
+    draw.choice(Triangle.index).isInstanceOf[String] shouldEqual true
   }
 }
