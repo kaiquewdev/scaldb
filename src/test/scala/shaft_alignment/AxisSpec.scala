@@ -149,10 +149,18 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.increaseX(10)
     axis.increaseHistoryX() shouldEqual List(0)
+    axis.increaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryX().length shouldEqual 1
+
     axis.increaseX(20)
     axis.increaseHistoryX() shouldEqual List(0,10)
+    axis.increaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryX().length shouldEqual 2
+
     axis.increaseX(30)
     axis.increaseHistoryX() shouldEqual List(0,10,30)
+    axis.increaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryX().length shouldEqual 3
   }
 
   "The axis class" should "show an history observable of ins for x" in {
@@ -161,9 +169,21 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.isInstanceOf[Axis] shouldEqual true
 
     axis.increaseX(10)
+    axis.getX() shouldEqual 10
+    axis.getX().isInstanceOf[Int] shouldEqual true
+
     axis.increaseX(20)
+    axis.getX() shouldEqual 30
+    axis.getX().isInstanceOf[Int] shouldEqual true
+
     axis.increaseX(30)
-    axis.observableHistoryOfIncreasedX().map(v => v*2).toBlocking.toList shouldEqual List(0,20,60)
+    axis.getX() shouldEqual 60
+    axis.getX().isInstanceOf[Int] shouldEqual true
+
+    val increasedHistoryX = axis.observableHistoryOfIncreasedX().map(v => v*2).toBlocking.toList
+    increasedHistoryX shouldEqual List(0,20,60)
+    increasedHistoryX.isInstanceOf[List[Int]] shouldEqual true
+    increasedHistoryX.length shouldEqual 3
   }
 
   "The axis class" should "show an history observable of ins for y" in {
@@ -172,9 +192,21 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.isInstanceOf[Axis] shouldEqual true
 
     axis.increaseY(10)
+    axis.getY() shouldEqual 10
+    axis.getY().isInstanceOf[Int] shouldEqual true
+
     axis.increaseY(20)
+    axis.getY() shouldEqual 30
+    axis.getY().isInstanceOf[Int] shouldEqual true
+
     axis.increaseY(30)
-    axis.observableHistoryOfIncreasedY().map(v => v*2).toBlocking.toList shouldEqual List(0,20,60)
+    axis.getY() shouldEqual 60
+    axis.getY().isInstanceOf[Int] shouldEqual true
+
+    var increasedHistoryY = axis.observableHistoryOfIncreasedY().map(v => v*2).toBlocking.toList
+    increasedHistoryY shouldEqual List(0,20,60)
+    increasedHistoryY.isInstanceOf[List[Int]] shouldEqual true
+    increasedHistoryY.length shouldEqual 3
   }
 
   "The axis class" should "show an history observable of ins for z" in {
@@ -183,9 +215,21 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.isInstanceOf[Axis] shouldEqual true
 
     axis.increaseZ(10)
+    axis.getZ() shouldEqual 10
+    axis.getZ().isInstanceOf[Int] shouldEqual true
+
     axis.increaseZ(20)
+    axis.getZ() shouldEqual 30
+    axis.getZ().isInstanceOf[Int] shouldEqual true
+
     axis.increaseZ(30)
-    axis.observableHistoryOfIncreasedZ().map(v => v*2).toBlocking.toList shouldEqual List(0,20,60)
+    axis.getZ() shouldEqual 60
+    axis.getZ().isInstanceOf[Int] shouldEqual true
+
+    var increasedHistoryY = axis.observableHistoryOfIncreasedZ().map(v => v*2).toBlocking.toList
+    increasedHistoryY shouldEqual List(0,20,60)
+    increasedHistoryY.isInstanceOf[List[Int]] shouldEqual true
+    increasedHistoryY.length shouldEqual 3
   }
 
   "The axis class" should "show an history of ins for y" in {
@@ -195,10 +239,18 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.increaseY(10)
     axis.increaseHistoryY() shouldEqual List(0)
+    axis.increaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryY().length shouldEqual 1
+
     axis.increaseY(20)
     axis.increaseHistoryY() shouldEqual List(0,10)
+    axis.increaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryY().length shouldEqual 2
+
     axis.increaseY(30)
     axis.increaseHistoryY() shouldEqual List(0,10,30)
+    axis.increaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryY().length shouldEqual 3
   }
 
   "The axis class" should "show an history of ins outs for z" in {
