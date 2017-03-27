@@ -6,7 +6,10 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
   "The clock feet measurement class" should "be flexible for clock and feet" in {
     val clockFeetMeasurement = new ClockFeetMeasurement()
 
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
     clockFeetMeasurement.first.x shouldEqual 0
+    clockFeetMeasurement.first.x.isInstanceOf[Int] shouldEqual true
     clockFeetMeasurement.first.getX() shouldEqual 0
     clockFeetMeasurement.first.setX(1000)
     clockFeetMeasurement.first.getX() shouldEqual 1000

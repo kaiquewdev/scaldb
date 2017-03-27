@@ -10,7 +10,7 @@ class DrawSpec extends FlatSpec with Matchers {
 
   "The Square object" should "have an repr" in {
     Square.repr shouldEqual "square"
-    Square.repr.isInstanceOf[Int] shouldEqual true
+    Square.repr.isInstanceOf[String] shouldEqual true
   }
 
   "The Circle object" should "have an index" in {
@@ -20,7 +20,7 @@ class DrawSpec extends FlatSpec with Matchers {
 
   "The Circle object" should "have an repr" in {
     Circle.repr shouldEqual "circle"
-    Circle.repr.isInstanceOf[Int] shouldEqual true
+    Circle.repr.isInstanceOf[String] shouldEqual true
   }
 
   "The Triangle object" should "have an index" in {
