@@ -42,9 +42,11 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
 
     clockFeetMeasurement.first.increaseX(10)
     clockFeetMeasurement.first.x shouldEqual 10
+    clockFeetMeasurement.first.getX() shouldEqual 10
 
     clockFeetMeasurement.second.increaseX(30)
     clockFeetMeasurement.second.x shouldEqual 30
+    clockFeetMeasurement.second.getX() shouldEqual 30
 
     clockFeetMeasurement.distanceX() shouldEqual 20
   }
@@ -54,9 +56,11 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
 
     clockFeetMeasurement.first.increaseY(10)
     clockFeetMeasurement.first.y shouldEqual 10
+    clockFeetMeasurement.first.getY() shouldEqual 10
 
     clockFeetMeasurement.second.increaseY(30)
     clockFeetMeasurement.second.y shouldEqual 30
+    clockFeetMeasurement.second.getY() shouldEqual 30
 
     clockFeetMeasurement.distanceY() shouldEqual 20
   }
@@ -66,9 +70,11 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
 
     clockFeetMeasurement.first.increaseZ(10)
     clockFeetMeasurement.first.z shouldEqual 10
+    clockFeetMeasurement.first.getZ() shouldEqual 10
 
     clockFeetMeasurement.second.increaseZ(30)
     clockFeetMeasurement.second.z shouldEqual 30
+    clockFeetMeasurement.second.getZ() shouldEqual 30
 
     clockFeetMeasurement.distanceZ() shouldEqual 20
   }
