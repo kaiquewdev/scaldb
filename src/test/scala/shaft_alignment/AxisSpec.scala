@@ -8,8 +8,13 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.isInstanceOf[Axis] shouldEqual true
 
+    axis.x.isInstanceOf[Int] shouldEqual true
     axis.x shouldEqual 0
+
+    axis.y.isInstanceOf[Int] shouldEqual true
     axis.y shouldEqual 0
+
+    axis.z.isInstanceOf[Int] shouldEqual true
     axis.z shouldEqual 0
   }
 
@@ -21,14 +26,17 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.x shouldEqual 0
     axis.setX(10)
     axis.getX() shouldEqual 10
+    axis.getX().isInstanceOf[Int] shouldEqual true
 
     axis.y shouldEqual 0
     axis.setY(10)
     axis.getY() shouldEqual 10
+    axis.getY().isInstanceOf[Int] shouldEqual true
 
     axis.z shouldEqual 0
     axis.setZ(10)
     axis.getZ() shouldEqual 10
+    axis.getZ().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "increase the x points" in {
@@ -38,6 +46,8 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.increaseX(10)
     axis.x shouldEqual 10
+    axis.getX() shouldEqual 10
+    axis.getX().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "decrease the x points" in {
@@ -47,9 +57,14 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.decreaseX(5)
     axis.x shouldEqual -5
+    axis.getX() shouldEqual -5
+    axis.getX().isInstanceOf[Int] shouldEqual true
+
     axis.increaseX(15)
     axis.decreaseX(5)
     axis.x shouldEqual 5
+    axis.getX() shouldEqual 5
+    axis.getX().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "increase the y points" in {

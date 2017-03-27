@@ -147,7 +147,7 @@ class ComposableHighLogicAxis() extends HighLogicAxis with ComposableHighLogicAx
 }
 
 class Axis() extends ComposableHighLogicAxis with AxisMethods {
-  def div(l: Int = 0, v: Int = 2) = l/v
+  def div(l: Int = 0, v: Int = 2): Int = l/v
   // Divisions by the three ones
   def divX() = div(x)
   def divY() = div(y)
