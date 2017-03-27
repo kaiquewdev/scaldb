@@ -5,26 +5,32 @@ import org.scalatest._
 class DrawSpec extends FlatSpec with Matchers {
   "The Square object" should "have an index" in {
     Square.index shouldEqual 0
+    Square.index.isInstanceOf[Int] shouldEqual true
   }
 
   "The Square object" should "have an repr" in {
     Square.repr shouldEqual "square"
+    Square.repr.isInstanceOf[Int] shouldEqual true
   }
 
   "The Circle object" should "have an index" in {
     Circle.index shouldEqual 1
+    Circle.index.isInstanceOf[Int] shouldEqual true
   }
 
   "The Circle object" should "have an repr" in {
     Circle.repr shouldEqual "circle"
+    Circle.repr.isInstanceOf[Int] shouldEqual true
   }
 
   "The Triangle object" should "have an index" in {
     Triangle.index shouldEqual 2
+    Triangle.index.isInstanceOf[Int] shouldEqual true
   }
 
   "The Triangle object" should "have an repr" in {
     Triangle.repr shouldEqual "triangle"
+    Triangle.repr.isInstanceOf[String] shouldEqual true
   }
 
   "The draw class" should "have choices" in {
