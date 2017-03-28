@@ -68,42 +68,63 @@ class ClockMeasurementSpec extends FlatSpec with Matchers {
   "The clock measurement class" should "have a distance between both x axis point" in {
     val clockMeasurement = new ClockMeasurement()
 
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
     clockMeasurement.first.increaseX(10)
     clockMeasurement.first.x shouldEqual 10
+    clockMeasurement.first.x.isInstanceOf[Int] shouldEqual true
     clockMeasurement.first.getX() shouldEqual 10
+    clockMeasurement.first.getX().isInstanceOf[Int] shouldEqual true
 
     clockMeasurement.second.increaseX(30)
     clockMeasurement.second.x shouldEqual 30
+    clockMeasurement.second.x.isInstanceOf[Int] shouldEqual true
     clockMeasurement.second.getX() shouldEqual 30
+    clockMeasurement.second.getX().isInstanceOf[Int] shouldEqual true
 
     clockMeasurement.distanceX() shouldEqual 20
+    clockMeasurement.distanceX().isInstanceOf[Int] shouldEqual true
   }
 
   "The clock measurement class" should "have a distance between both y axis point" in {
     val clockMeasurement = new ClockMeasurement()
 
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
     clockMeasurement.first.increaseY(10)
     clockMeasurement.first.y shouldEqual 10
+    clockMeasurement.first.y.isInstanceOf[Int] shouldEqual true
     clockMeasurement.first.getY() shouldEqual 10
+    clockMeasurement.first.getY().isInstanceOf[Int] shouldEqual true
 
     clockMeasurement.second.increaseY(30)
     clockMeasurement.second.y shouldEqual 30
+    clockMeasurement.second.y.isInstanceOf[Int] shouldEqual true
     clockMeasurement.second.getY() shouldEqual 30
+    clockMeasurement.second.getY().isInstanceOf[Int] shouldEqual true
 
     clockMeasurement.distanceY() shouldEqual 20
+    clockMeasurement.distanceY().isInstanceOf[Int] shouldEqual true
   }
 
   "The clock measurement class" should "have a distance between both z axis point" in {
     val clockMeasurement = new ClockMeasurement()
 
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
     clockMeasurement.first.increaseZ(10)
     clockMeasurement.first.z shouldEqual 10
+    clockMeasurement.first.z.isInstanceOf[Int] shouldEqual true
     clockMeasurement.first.getZ() shouldEqual 10
+    clockMeasurement.first.getZ().isInstanceOf[Int] shouldEqual true
 
     clockMeasurement.second.increaseZ(30)
     clockMeasurement.second.z shouldEqual 30
+    clockMeasurement.second.z.isInstanceOf[Int] shouldEqual true
     clockMeasurement.second.getZ() shouldEqual 30
+    clockMeasurement.second.getZ().isInstanceOf[Int] shouldEqual true
 
     clockMeasurement.distanceZ() shouldEqual 20
+    clockMeasurement.distanceZ().isInstanceOf[Int] shouldEqual true
   }
 }
