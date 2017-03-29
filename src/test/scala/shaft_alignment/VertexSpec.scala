@@ -90,6 +90,20 @@ class VertexSpec extends FlatSpec with Matchers {
     vertex.point.setValue(30).isInstanceOf[Int] shouldEqual true
    }
 
-    //vertex.point.getValue() shouldEqual 30
-    //vertex.point.getValue().isInstanceOf[Int] shouldEqual true
+   "The vertex class" should "have a nested method to get the value on point" in {
+    val vertex = new Vertex()
+
+    vertex.isInstanceOf[Vertex] shouldEqual true
+
+    vertex.point.setValue(30) shouldEqual 30
+    vertex.point.getValue() shouldEqual 30
+   }
+
+   "The vertex class" should "have a nested method to test the method" in {
+     val vertex = new Vertex()
+
+     vertex.isInstanceOf[Vertex] shouldEqual true
+
+     vertex.point.getValue().isInstanceOf[Int] shouldEqual true
+   }
 }
