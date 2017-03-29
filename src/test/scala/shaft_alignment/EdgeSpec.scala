@@ -3,6 +3,28 @@ package shaft_alignment
 import org.scalatest._
 
 class EdgeSpec extends FlatSpec with Matchers {
+  "The edge class" should "have a type support" in {
+    val edge = new Edge()
+
+    edge.isInstanceOf[Edge] shouldEqual true
+  }
+
+  "The edge class" should "have an attribute value for x axis" in {
+    val edge = new Edge()
+
+    edge.isInstanceOf[Edge] shouldEqual true
+
+    edge.x shouldEqual 0
+  }
+
+  "The edge class" should "have an attribute value for x with integer type" in {
+    val edge = new Edge()
+
+    edge.isInstanceOf[Edge] shouldEqual true
+
+    edge.x.isInstanceOf[Int] shouldEqual true
+  }
+
   "The edge class" should "have their own axis positions" in {
     val edge = new Edge()
 
