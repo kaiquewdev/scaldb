@@ -112,7 +112,7 @@ class VertexSpec extends FlatSpec with Matchers {
 
     vertex.isInstanceOf[Vertex] shouldEqual true
 
-    vertex.points().isInstanceOf[List[Point]] shouldEqual true
+    vertex.getPoints().isInstanceOf[List[Point]] shouldEqual true
   }
 
   "The vertex class" should "have a length of the points" in {
@@ -120,6 +120,6 @@ class VertexSpec extends FlatSpec with Matchers {
 
     vertex.isInstanceOf[Vertex] shouldEqual true
 
-    vertex.points().length shouldEqual 2
+    vertex.getPoints().length shouldEqual 2
   }
 }
