@@ -47,63 +47,79 @@ class VertexSpec extends FlatSpec with Matchers {
     vertex.isInstanceOf[Vertex] shouldEqual true
 
     vertex.setPointValue(20) shouldEqual 20
-   }
+  }
 
-   "The vertex class" should "have a raw method to get a value of the point" in {
+  "The vertex class" should "have a raw method to get a value of the point" in {
     val vertex = new Vertex()
 
     vertex.isInstanceOf[Vertex] shouldEqual true
 
     vertex.setPointValue(20) shouldEqual 20
     vertex.getPointValue() shouldEqual 20
-   }
+  }
 
-   "The vertex class" should "have a raw method to verify the type of getter" in {
+  "The vertex class" should "have a raw method to verify the type of getter" in {
     val vertex = new Vertex()
 
     vertex.isInstanceOf[Vertex] shouldEqual true
 
     vertex.getPointValue().isInstanceOf[Int] shouldEqual true
-   }
+  }
 
-   "The vertex class" should "have a raw method to verify the type of setter" in {
+  "The vertex class" should "have a raw method to verify the type of setter" in {
      val vertex = new Vertex()
 
      vertex.isInstanceOf[Vertex] shouldEqual true
 
      vertex.setPointValue(10).isInstanceOf[Int] shouldEqual true
-   }
+  }
 
-   "The vertex class" should "have a nested method to set a value" in {
+  "The vertex class" should "have a nested method to set a value" in {
     val vertex = new Vertex()
 
     vertex.isInstanceOf[Vertex] shouldEqual true
 
     vertex.point.setValue(30) shouldEqual 30
-   }
+  }
 
-   "The vertex class" should "have a nested method type boolean comparison" in {
+  "The vertex class" should "have a nested method type boolean comparison" in {
     val vertex = new Vertex()
 
     vertex.isInstanceOf[Vertex] shouldEqual true
 
     vertex.point.setValue(30).isInstanceOf[Int] shouldEqual true
-   }
+  }
 
-   "The vertex class" should "have a nested method to get the value on point" in {
+  "The vertex class" should "have a nested method to get the value on point" in {
+   val vertex = new Vertex()
+
+   vertex.isInstanceOf[Vertex] shouldEqual true
+
+   vertex.point.setValue(30) shouldEqual 30
+   vertex.point.getValue() shouldEqual 30
+  }
+
+  "The vertex class" should "have a nested method to test the method" in {
     val vertex = new Vertex()
 
     vertex.isInstanceOf[Vertex] shouldEqual true
 
-    vertex.point.setValue(30) shouldEqual 30
-    vertex.point.getValue() shouldEqual 30
-   }
+    vertex.point.getValue().isInstanceOf[Int] shouldEqual true
+  }
 
-   "The vertex class" should "have a nested method to test the method" in {
-     val vertex = new Vertex()
+  "The vertex class" should "have a points definition" in {
+    val vertex = new Vertex()
 
-     vertex.isInstanceOf[Vertex] shouldEqual true
+    vertex.isInstanceOf[Vertex] shouldEqual true
 
-     vertex.point.getValue().isInstanceOf[Int] shouldEqual true
-   }
+    vertex.points().isInstanceOf[List[Point]] shouldEqual true
+  }
+
+  "The vertex class" should "have a length of the points" in {
+    val vertex = new Vertex()
+
+    vertex.isInstanceOf[Vertex] shouldEqual true
+
+    vertex.points().length shouldEqual 2
+  }
 }
