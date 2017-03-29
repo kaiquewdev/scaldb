@@ -1,29 +1,31 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.LogicAxisSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.FaceSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.ObservableSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.FeetMeasurementSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.TransitionalAxisSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.RotationSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.HandsSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.EdgeSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.PointAxisSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.FeetSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.PointSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.ClockSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.InitialPointSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.AxisSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.ClockMeasurementSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.DrawSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.ClockFeetMeasurementSpec, org.scalatest.tools.Framework$$anon$1@3144f779, false, [SuiteSelector])[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 763 milliseconds.[0m[0m
-[0m[[0minfo[0m] [0m[36mTotal number of tests run: 70[0m[0m
-[0m[[0minfo[0m] [0m[36mSuites: completed 17, aborted 0[0m[0m
-[0m[[0minfo[0m] [0m[36mTests: succeeded 70, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.ClockSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.HandsSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.FeetSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.LogicAxisSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.EdgeSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.FaceSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.ObservableSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.AxisSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.RotationSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.VertexSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.PointAxisSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.TransitionalAxisSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.FeetMeasurementSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.ClockFeetMeasurementSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.InitialPointSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.DrawSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.PointSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(shaft_alignment.ClockMeasurementSpec, org.scalatest.tools.Framework$$anon$1@30995279, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 821 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 71[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 18, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 71, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
 [0m[[0mdebug[0m] [0mPassed tests:[0m
 [0m[[0mdebug[0m] [0m	shaft_alignment.AxisSpec[0m
 [0m[[0mdebug[0m] [0m	shaft_alignment.RotationSpec[0m
 [0m[[0mdebug[0m] [0m	shaft_alignment.InitialPointSpec[0m
+[0m[[0mdebug[0m] [0m	shaft_alignment.VertexSpec[0m
 [0m[[0mdebug[0m] [0m	shaft_alignment.DrawSpec[0m
 [0m[[0mdebug[0m] [0m	shaft_alignment.ClockFeetMeasurementSpec[0m
 [0m[[0mdebug[0m] [0m	shaft_alignment.FeetSpec[0m
