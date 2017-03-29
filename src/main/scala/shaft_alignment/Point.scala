@@ -5,4 +5,3 @@ trait PointAttr {
 }
 
 class Point(var value: Int = 0) extends Object with PointAttr {}
-
