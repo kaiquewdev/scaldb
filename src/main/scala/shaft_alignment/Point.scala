@@ -9,4 +9,5 @@ class Point(var value: Int = 0) extends Object with PointAttr {
     value = n
     value
   }
+  def getValue() = value
 }

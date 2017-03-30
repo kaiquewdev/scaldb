@@ -27,7 +27,11 @@ class Vertex(var pointsLen: Int = 2) extends Object {
     point.value
   }
   def getPointValue(): Int = point.value
-  def getPoints(): List[Point] = {
-    Observable.from(1 to pointsLen).map(v => (new Point())).toBlocking.toList
+  def getPoints(pointValues: Int*): List[Point] = {
+    if (pointValues.length >= 2) {
+      Observable.from(pointValues).map(v => (new Point(v))).toBlocking.toList
+    } else {
+      Observable.from(1 to pointsLen).map(v => (new Point())).toBlocking.toList
+    }
   }
 }

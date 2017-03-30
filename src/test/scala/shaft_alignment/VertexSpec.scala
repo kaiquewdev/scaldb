@@ -122,4 +122,20 @@ class VertexSpec extends FlatSpec with Matchers {
 
     vertex.getPoints().length shouldEqual 2
   }
+
+  "The vertex class" should "have a multiple setter for values on the points" in {
+    val vertex = new Vertex()
+
+    vertex.isInstanceOf[Vertex] shouldEqual true
+
+    val vertexPoints = vertex.getPoints(1, 2, 3)
+
+    vertexPoints.isInstanceOf[List[Point]] shouldEqual true
+
+    vertexPoints.length shouldEqual 3
+
+    vertexPoints(0).getValue() shouldEqual 1
+    vertexPoints(1).getValue() shouldEqual 2
+    vertexPoints(2).getValue() shouldEqual 3
+  }
 }
