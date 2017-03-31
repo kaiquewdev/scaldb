@@ -8,15 +8,15 @@
                                                  
                                                </testcase><testcase classname="shaft_alignment.DrawSpec" name="The Square object should have an repr" time="0.0">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.DrawSpec" name="The Circle object should have an index" time="0.0">
+                                               </testcase><testcase classname="shaft_alignment.DrawSpec" name="The Circle object should have an index" time="0.001">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.DrawSpec" name="The Circle object should have an repr" time="0.001">
+                                               </testcase><testcase classname="shaft_alignment.DrawSpec" name="The Circle object should have an repr" time="0.0">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.DrawSpec" name="The Triangle object should have an index" time="0.0">
+                                               </testcase><testcase classname="shaft_alignment.DrawSpec" name="The Triangle object should have an index" time="0.001">
                                                  
                                                </testcase><testcase classname="shaft_alignment.DrawSpec" name="The Triangle object should have an repr" time="0.0">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.DrawSpec" name="The draw class should have choices" time="0.002">
+                                               </testcase><testcase classname="shaft_alignment.DrawSpec" name="The draw class should have choices" time="0.001">
                                                  
                                                </testcase>
                      <system-out></system-out>

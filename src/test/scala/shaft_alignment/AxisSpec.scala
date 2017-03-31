@@ -87,34 +87,46 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.getZ().isInstanceOf[Int] shouldEqual true
   }
 
-  "The axis class" should "have getters and setters point" in {
+  "The axis class" should "increase the x point" in {
     val axis = new Axis()
 
     axis.isInstanceOf[Axis] shouldEqual true
 
-    //axis.x shouldEqual 0
-    //axis.setX(10)
-    //axis.getX() shouldEqual 10
-    //axis.getX().isInstanceOf[Int] shouldEqual true
-
-    axis.y shouldEqual 0
-    axis.setY(10)
-    axis.getY() shouldEqual 10
-    axis.getY().isInstanceOf[Int] shouldEqual true
-
-    axis.z shouldEqual 0
-    axis.setZ(10)
-    axis.getZ() shouldEqual 10
-    axis.getZ().isInstanceOf[Int] shouldEqual true
+    axis.setX(100) shouldEqual 100
+    axis.increaseX(50) shouldEqual 50
+    axis.increaseX(5).isInstanceOf[Int] shouldEqual true
+    axis.getX() shouldEqual 155
   }
 
-  "The axis class" should "increase the x points" in {
+  "The axis class" should "decrease the x point" in {
     val axis = new Axis()
 
     axis.isInstanceOf[Axis] shouldEqual true
 
+    axis.setX(100) shouldEqual 100
+    axis.decreaseX(60) shouldEqual 60
+    axis.decreaseX(5).isInstanceOf[Int] shouldEqual true
+    axis.getX() shouldEqual 35
+  }
+
+  "The axis class" should "increase the y point" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setY(150) shouldEqual 150
+    axis.increaseY(50) shouldEqual 50
+    axis.increaseY(5).isInstanceOf[Int] shouldEqual true
+    axis.getY() shouldEqual 205
+  }
+
+  "The axis class" should "increase the x point refactor" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.x shouldEqual 0
     axis.increaseX(10)
-    axis.x shouldEqual 10
     axis.getX() shouldEqual 10
     axis.getX().isInstanceOf[Int] shouldEqual true
   }

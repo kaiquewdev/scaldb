@@ -35,9 +35,9 @@ trait HighLogicAxisMethods {
 
 trait ComposableHighLogicAxisMethods {
   def vNotEqZero(v: Int): Boolean
-  def increaseX(v: Int)
-  def decreaseX(v: Int)
-  def increaseY(v: Int)
+  def increaseX(v: Int): Int
+  def decreaseX(v: Int): Int
+  def increaseY(v: Int): Int
   def decreaseY(v: Int)
   def increaseZ(v: Int)
   def decreaseZ(v: Int)
@@ -110,23 +110,26 @@ class ComposableHighLogicAxis() extends HighLogicAxis with ComposableHighLogicAx
   def vNotEqZero(v: Int) = v != 0
 
   // Group of methods to increase and decrease the x point with co-ligation with history
-  def increaseX(v: Int) = {
+  def increaseX(v: Int): Int = {
     if (vNotEqZero(x))
       appendHistoryOfIncreasedX()
     incX(v)
+    v
   }
 
-  def decreaseX(v: Int) = {
+  def decreaseX(v: Int): Int = {
     setDx(x)
     decX(v)
     appendHistoryOfDecreasedX()
+    v
   }
 
   // Group of methods to increase and decrease the y point with co-ligation with history
-  def increaseY(v: Int) = {
+  def increaseY(v: Int): Int = {
     if (vNotEqZero(y))
       appendHistoryOfIncreasedY()
     incY(v)
+    v
   }
 
   def decreaseY(v: Int) = {
