@@ -142,16 +142,15 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.getZ() shouldEqual 300
   }
 
-  "The axis class" should "decrease the z points" in {
+  "The axis class" should "decrease the z point" in {
     val axis = new Axis()
 
     axis.isInstanceOf[Axis] shouldEqual true
 
-    axis.increaseZ(10)
-    axis.decreaseZ(5)
-    axis.z shouldEqual 5
-    axis.getZ() shouldEqual 5
-    axis.getZ().isInstanceOf[Int] shouldEqual true
+    axis.setZ(300) shouldEqual 300
+    axis.decreaseZ(150) shouldEqual 150
+    axis.decreaseZ(50).isInstanceOf[Int] shouldEqual true
+    axis.getZ() shouldEqual 100
   }
 
   "The axis class" should "decrease the x points" in {
