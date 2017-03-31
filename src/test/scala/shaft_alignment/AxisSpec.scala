@@ -64,7 +64,7 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.divX().isInstanceOf[Int] shouldEqual true
   }
 
-  "The axis class" should "divide x point with a different division of three" in {
+  "The axis class" should "divide x point with a custom value division" in {
     val axis = new Axis()
 
     axis.isInstanceOf[Axis] shouldEqual true
@@ -73,6 +73,13 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.divX(3) shouldEqual 10
     axis.divX(3).isInstanceOf[Int] shouldEqual true
+
+    axis.setX(90) shouldEqual 90
+
+    axis.divX(3) shouldEqual 30
+    axis.divX(3).isInstanceOf[Int] shouldEqual true
+    axis.divX(5) shouldEqual 18
+    axis.divX(5).isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "has the y point" in {
