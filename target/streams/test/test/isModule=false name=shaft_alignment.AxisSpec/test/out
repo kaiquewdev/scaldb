@@ -10,6 +10,10 @@
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should decrease the x point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should divide x point with a default divisor two[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should divide x point with a different division of three[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has the y point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has a setter for y point[0m[0m
@@ -29,14 +33,6 @@
 [0m[[0minfo[0m] [0m[32m- should increase the z point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should decrease the z point[0m[0m
-[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should decrease the x points[0m[0m
-[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should increase the y points[0m[0m
-[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should decrease the y points[0m[0m
-[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should divide x by a default value[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should divide y by a default value[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m

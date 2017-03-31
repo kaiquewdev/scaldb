@@ -53,6 +53,28 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.getX() shouldEqual 35
   }
 
+  "The axis class" should "divide x point with a default divisor two" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setX(10) shouldEqual 10
+
+    axis.divX() shouldEqual 5
+    axis.divX().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The axis class" should "divide x point with a different division of three" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setX(30) shouldEqual 30
+
+    axis.divX(3) shouldEqual 10
+    axis.divX(3).isInstanceOf[Int] shouldEqual true
+  }
+
   "The axis class" should "has the y point" in {
     val axis = new Axis()
 
@@ -151,55 +173,6 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.decreaseZ(150) shouldEqual 150
     axis.decreaseZ(50).isInstanceOf[Int] shouldEqual true
     axis.getZ() shouldEqual 100
-  }
-
-  "The axis class" should "decrease the x points" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.decreaseX(5)
-    axis.x shouldEqual -5
-    axis.getX() shouldEqual -5
-    axis.getX().isInstanceOf[Int] shouldEqual true
-
-    axis.increaseX(15)
-    axis.decreaseX(5)
-    axis.x shouldEqual 5
-    axis.getX() shouldEqual 5
-    axis.getX().isInstanceOf[Int] shouldEqual true
-  }
-
-  "The axis class" should "increase the y points" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseY(10)
-    axis.y shouldEqual 10
-    axis.getY() shouldEqual 10
-    axis.getY().isInstanceOf[Int] shouldEqual true
-  }
-
-  "The axis class" should "decrease the y points" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseY(10)
-    axis.decreaseY(5)
-    axis.y shouldEqual 5
-    axis.getY().isInstanceOf[Int] shouldEqual true
-  }
-
-  "The axis class" should "divide x by a default value" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseX(10)
-    axis.divX() shouldEqual 5
-    axis.divX().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "divide y by a default value" in {
