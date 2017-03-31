@@ -1,7 +1,7 @@
 package shaft_alignment
 
 trait PointAxisMethods {
-  def setX(v: Int)
+  def setX(v: Int): Int
   def setY(v: Int)
   def setZ(v: Int)
   def getX(): Int
@@ -12,7 +12,10 @@ trait PointAxisMethods {
 }
 
 class LogicAxis() extends PointAxis with PointAxisMethods {
-  def setX(v: Int) = x = v
+  def setX(v: Int): Int = {
+    x = v
+    x
+  }
   def setY(v: Int) = y = v
   def setZ(v: Int) = z = v
   def getX() = x

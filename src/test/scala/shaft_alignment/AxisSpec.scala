@@ -3,16 +3,48 @@ package shaft_alignment
 import org.scalatest._
 
 class AxisSpec extends FlatSpec with Matchers {
-  "The axis class" should "has points" in {
+  "The axis class" should "has the x point" in {
     val axis = new Axis()
 
     axis.isInstanceOf[Axis] shouldEqual true
 
     axis.x.isInstanceOf[Int] shouldEqual true
     axis.x shouldEqual 0
+  }
+
+  "The axis class" should "has a setter for x point" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setX(10) shouldEqual 10
+    axis.setX(10).isInstanceOf[Int] shouldEqual true
+  }
+
+  "The axis class" should "has a getter for x point" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setX(500) shouldEqual 500
+    axis.setX(670) shouldEqual 670
+    axis.getX() shouldEqual 670
+    axis.getX().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The axis class" should "has the y point" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
 
     axis.y.isInstanceOf[Int] shouldEqual true
     axis.y shouldEqual 0
+  }
+
+  "The axis class" should "has the z point" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
 
     axis.z.isInstanceOf[Int] shouldEqual true
     axis.z shouldEqual 0
@@ -23,10 +55,10 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.isInstanceOf[Axis] shouldEqual true
 
-    axis.x shouldEqual 0
-    axis.setX(10)
-    axis.getX() shouldEqual 10
-    axis.getX().isInstanceOf[Int] shouldEqual true
+    //axis.x shouldEqual 0
+    //axis.setX(10)
+    //axis.getX() shouldEqual 10
+    //axis.getX().isInstanceOf[Int] shouldEqual true
 
     axis.y shouldEqual 0
     axis.setY(10)

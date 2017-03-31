@@ -1,6 +1,14 @@
 [0m[[0minfo[0m] [0m[32mAxisSpec:[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should has points[0m[0m
+[0m[[0minfo[0m] [0m[32m- should has the x point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should has a setter for x point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should has a getter for x point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should has the y point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should has the z point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have getters and setters point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
