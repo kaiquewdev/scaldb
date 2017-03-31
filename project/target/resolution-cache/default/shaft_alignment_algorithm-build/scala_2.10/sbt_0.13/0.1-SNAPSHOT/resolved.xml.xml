@@ -4,7 +4,7 @@
 		module="shaft_alignment_algorithm-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170305204251"
+		publication="20170331074054"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

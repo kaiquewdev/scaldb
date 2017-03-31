@@ -43,11 +43,14 @@ trait ComposableHighLogicAxisMethods {
   def decreaseZ(v: Int)
 }
 
-trait AxisMethods {
+trait OperationsAxisMethods {
   def div(l: Int = 0, v: Int = 2): Int
   def divX(): Int
   def divY(): Int
   def divZ(): Int
+}
+
+trait AxisMethods {
   def increaseHistoryX(): List[Int]
   def decreaseHistoryX(): List[Int]
   def increaseHistoryY(): List[Int]
@@ -146,12 +149,15 @@ class ComposableHighLogicAxis() extends HighLogicAxis with ComposableHighLogicAx
   }
 }
 
-class Axis() extends ComposableHighLogicAxis with AxisMethods {
+class OperationsAxis extends ComposableHighLogicAxis with OperationsAxisMethods {
   def div(l: Int = 0, v: Int = 2): Int = l/v
   // Divisions by the three ones
   def divX() = div(x)
   def divY() = div(y)
   def divZ() = div(z)
+}
+
+class Axis() extends OperationsAxis with AxisMethods {
   // Retrieve the increase and decrease history of x
   def increaseHistoryX() = historyOfIncreasedX
   def decreaseHistoryX() = historyOfDecreasedX
