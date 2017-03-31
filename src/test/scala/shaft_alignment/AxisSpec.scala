@@ -149,9 +149,18 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.isInstanceOf[Axis] shouldEqual true
 
+    axis.setY(30) shouldEqual 30
+
+    axis.divY(3) shouldEqual 10
+    axis.divY(3).isInstanceOf[Int] shouldEqual true
+
     axis.setY(90) shouldEqual 90
+
     axis.divY(3) shouldEqual 30
     axis.divY(3).isInstanceOf[Int] shouldEqual true
+
+    axis.divY(5) shouldEqual 18
+    axis.divY(5).isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "has the z point" in {
