@@ -120,6 +120,17 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.getY() shouldEqual 205
   }
 
+  "The axis class" should "decrease the y point" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setY(300) shouldEqual 300
+    axis.decreaseY(100) shouldEqual 100
+    axis.decreaseY(50).isInstanceOf[Int] shouldEqual true
+    axis.getY() shouldEqual 150
+  }
+
   "The axis class" should "increase the x point refactor" in {
     val axis = new Axis()
 

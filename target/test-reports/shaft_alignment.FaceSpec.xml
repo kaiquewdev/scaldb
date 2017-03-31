@@ -6,7 +6,7 @@
     </properties>
                      <testcase classname="shaft_alignment.FaceSpec" name="The face class should have their own axis positions" time="0.008">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.FaceSpec" name="The face class should have their top with axis instantiated" time="0.001">
+                                               </testcase><testcase classname="shaft_alignment.FaceSpec" name="The face class should have their top with axis instantiated" time="0.0">
                                                  
                                                </testcase><testcase classname="shaft_alignment.FaceSpec" name="The face class should have their left with axis instantiated" time="0.0">
                                                  
@@ -14,7 +14,7 @@
                                                  
                                                </testcase><testcase classname="shaft_alignment.FaceSpec" name="The face class should have their right with axis instantiated" time="0.0">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.FaceSpec" name="The face class should have a default draw" time="0.001">
+                                               </testcase><testcase classname="shaft_alignment.FaceSpec" name="The face class should have a default draw" time="0.002">
                                                  
                                                </testcase>
                      <system-out></system-out>
