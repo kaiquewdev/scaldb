@@ -27,8 +27,7 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.isInstanceOf[Axis] shouldEqual true
 
     axis.setX(500) shouldEqual 500
-    axis.setX(670) shouldEqual 670
-    axis.getX() shouldEqual 670
+    axis.getX() shouldEqual 500
     axis.getX().isInstanceOf[Int] shouldEqual true
   }
 
@@ -41,6 +40,25 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.y shouldEqual 0
   }
 
+  "The axis class" should "has a setter for y point" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setY(700) shouldEqual 700
+    axis.setY(700).isInstanceOf[Int] shouldEqual true
+  }
+
+  "The axis class" should "has a getter for y point" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setY(700) shouldEqual 700
+    axis.getY() shouldEqual 700
+    axis.getY().isInstanceOf[Int] shouldEqual true
+  }
+
   "The axis class" should "has the z point" in {
     val axis = new Axis()
 
@@ -48,6 +66,25 @@ class AxisSpec extends FlatSpec with Matchers {
 
     axis.z.isInstanceOf[Int] shouldEqual true
     axis.z shouldEqual 0
+  }
+
+  "The axis class" should "has a setter for z point" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setZ(800) shouldEqual 800
+    axis.setZ(900).isInstanceOf[Int] shouldEqual true
+  }
+
+  "The axis class" should "has a getter for z point" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setZ(800) shouldEqual 800
+    axis.getZ() shouldEqual 800
+    axis.getZ().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "have getters and setters point" in {
