@@ -39,7 +39,7 @@ trait ComposableHighLogicAxisMethods {
   def decreaseX(v: Int): Int
   def increaseY(v: Int): Int
   def decreaseY(v: Int): Int
-  def increaseZ(v: Int)
+  def increaseZ(v: Int): Int
   def decreaseZ(v: Int)
 }
 
@@ -144,6 +144,7 @@ class ComposableHighLogicAxis() extends HighLogicAxis with ComposableHighLogicAx
     if (vNotEqZero(z))
       appendHistoryOfIncreasedZ()
     incZ(v)
+    v
   }
 
   def decreaseZ(v: Int) = {

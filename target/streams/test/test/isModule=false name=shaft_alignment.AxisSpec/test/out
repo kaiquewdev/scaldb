@@ -6,11 +6,19 @@
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has a getter for x point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should increase the x point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should decrease the x point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has the y point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has a setter for y point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has a getter for y point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should increase the y point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should decrease the y point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has the z point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
@@ -18,25 +26,15 @@
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should has a getter for z point[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should increase the x point[0m[0m
+[0m[[0minfo[0m] [0m[32m- should increase the z points[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should decrease the x point[0m[0m
-[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should increase the y point[0m[0m
-[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should decrease the y point[0m[0m
-[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should increase the x point refactor[0m[0m
+[0m[[0minfo[0m] [0m[32m- should decrease the z points[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should decrease the x points[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should increase the y points[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should decrease the y points[0m[0m
-[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should increase the z points[0m[0m
-[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should decrease the z points[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should divide x by a default value[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m

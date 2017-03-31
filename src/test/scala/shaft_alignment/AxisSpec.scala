@@ -131,6 +131,29 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.getZ().isInstanceOf[Int] shouldEqual true
   }
 
+  "The axis class" should "increase the z points" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setZ(150) shouldEqual 150
+    axis.increaseZ(100) shouldEqual 100
+    axis.increaseZ(50).isInstanceOf[Int] shouldEqual true
+    axis.getZ() shouldEqual 300
+  }
+
+  "The axis class" should "decrease the z points" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.increaseZ(10)
+    axis.decreaseZ(5)
+    axis.z shouldEqual 5
+    axis.getZ() shouldEqual 5
+    axis.getZ().isInstanceOf[Int] shouldEqual true
+  }
+
   "The axis class" should "decrease the x points" in {
     val axis = new Axis()
 
@@ -168,29 +191,6 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.decreaseY(5)
     axis.y shouldEqual 5
     axis.getY().isInstanceOf[Int] shouldEqual true
-  }
-
-  "The axis class" should "increase the z points" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseZ(10)
-    axis.z shouldEqual 10
-    axis.getZ() shouldEqual 10
-    axis.getZ().isInstanceOf[Int] shouldEqual true
-  }
-
-  "The axis class" should "decrease the z points" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseZ(10)
-    axis.decreaseZ(5)
-    axis.z shouldEqual 5
-    axis.getZ() shouldEqual 5
-    axis.getZ().isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "divide x by a default value" in {
