@@ -1,0 +1,33 @@
+[0m[[0minfo[0m] [0m[32mVertexSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a point value[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a integer type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a raw setter for point value[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a integer type the point value[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a raw method to set a value of the point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a raw method to get a value of the point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a raw method to verify the type of getter[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a raw method to verify the type of setter[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a nested method to set a value[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a nested method type boolean comparison[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a nested method to get the value on point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a nested method to test the method[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a points definition[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a length of the points[0m[0m
+[0m[[0minfo[0m] [0m[32mThe vertex class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a multiple setter for values on the points[0m[0m

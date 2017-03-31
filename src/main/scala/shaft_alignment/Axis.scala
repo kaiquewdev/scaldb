@@ -46,7 +46,7 @@ trait ComposableHighLogicAxisMethods {
 trait OperationsAxisMethods {
   def div(l: Int = 0, v: Int = 2): Int
   def divX(v: Int = 2): Int
-  def divY(): Int
+  def divY(v: Int = 2): Int
   def divZ(): Int
 }
 
@@ -159,7 +159,7 @@ class OperationsAxis extends ComposableHighLogicAxis with OperationsAxisMethods 
   def div(l: Int = 0, v: Int = 2): Int = l/v
   // Divisions by the three ones
   def divX(v: Int = 2) = div(x,v)
-  def divY() = div(y)
+  def divY(v: Int = 2) = div(y,v)
   def divZ() = div(z)
 }
 
