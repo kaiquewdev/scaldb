@@ -16,7 +16,7 @@ class LogicAxis() extends PointAxis with PointAxisMethods {
     x = v
     x
   }
-  def setY(v: Int) = {
+  def setY(v: Int): Int = {
     y = v
     y
   }
