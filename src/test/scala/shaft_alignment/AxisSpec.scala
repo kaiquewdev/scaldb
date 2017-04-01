@@ -213,6 +213,16 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.getZ() shouldEqual 100
   }
 
+  "The axis class" should "divide the z point with a default value" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.setZ(300) shouldEqual 300
+    axis.divZ() shouldEqual 150
+    axis.divZ().isInstanceOf[Int] shouldEqual true
+  }
+
   "The axis class" should "divide y by a default value" in {
     val axis = new Axis()
 
