@@ -24,9 +24,9 @@ class LogicAxis() extends PointAxis with PointAxisMethods {
     z = v
     z
   }
-  def getX() = x
-  def getY() = y
-  def getZ() = z
+  def getX(): Int = x
+  def getY(): Int = y
+  def getZ(): Int = z
   def sum(l: Int, r: Int) = r + l
   def sub(l: Int, r: Int) = l - r
 }
