@@ -83,6 +83,88 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.divX(5).isInstanceOf[Int] shouldEqual true
   }
 
+  "The axis class" should "show an history of ins for x" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.increaseX(10)
+    axis.increaseHistoryX() shouldEqual List(0)
+    axis.increaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryX().length shouldEqual 1
+
+    axis.increaseX(20)
+    axis.increaseHistoryX() shouldEqual List(0,10)
+    axis.increaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryX().length shouldEqual 2
+
+    axis.increaseX(30)
+    axis.increaseHistoryX() shouldEqual List(0,10,30)
+    axis.increaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryX().length shouldEqual 3
+  }
+
+  "The axis class" should "show an history observable of ins for x" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.increaseX(10)
+    axis.getX() shouldEqual 10
+    axis.getX().isInstanceOf[Int] shouldEqual true
+
+    axis.increaseX(20)
+    axis.getX() shouldEqual 30
+    axis.getX().isInstanceOf[Int] shouldEqual true
+
+    axis.increaseX(30)
+    axis.getX() shouldEqual 60
+    axis.getX().isInstanceOf[Int] shouldEqual true
+
+    val increasedHistoryX = axis.observableHistoryOfIncreasedX().map(v => v*2).toBlocking.toList
+    increasedHistoryX shouldEqual List(0,20,60)
+    increasedHistoryX.isInstanceOf[List[Int]] shouldEqual true
+    increasedHistoryX.length shouldEqual 3
+  }
+
+  "The axis class" should "show an history of outs for x" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.increaseX(10)
+    axis.decreaseX(5)
+    axis.decreaseHistoryX() shouldEqual List(0,5)
+    axis.decreaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
+    axis.decreaseHistoryX().length shouldEqual 2
+
+    axis.increaseX(20)
+    axis.decreaseX(10)
+    axis.decreaseHistoryX() shouldEqual List(0,5,15)
+    axis.decreaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
+    axis.decreaseHistoryX().length shouldEqual 3
+  }
+
+  "The axis class" should "show a history of observable outs for x" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.increaseX(10)
+    axis.decreaseX(5)
+    val decreasedHistoryX1 = axis.observableHistoryOfDecreasedX().map(v => v*2).toBlocking.toList
+    decreasedHistoryX1 shouldEqual List(0,10)
+    decreasedHistoryX1.isInstanceOf[List[Int]] shouldEqual true
+    decreasedHistoryX1.length shouldEqual 2
+
+    axis.increaseX(20)
+    axis.decreaseX(10)
+    val decreasedHistoryX2 = axis.observableHistoryOfDecreasedX().map(v => v*2).toBlocking.toList
+    decreasedHistoryX2 shouldEqual List(0,10,30)
+    decreasedHistoryX2.isInstanceOf[List[Int]] shouldEqual true
+    decreasedHistoryX2.length shouldEqual 3
+  }
+
   "The axis class" should "has the y point" in {
     val axis = new Axis()
 
@@ -163,6 +245,88 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.divY(5).isInstanceOf[Int] shouldEqual true
   }
 
+  "The axis class" should "show an history observable of ins for y" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.increaseY(10)
+    axis.getY() shouldEqual 10
+    axis.getY().isInstanceOf[Int] shouldEqual true
+
+    axis.increaseY(20)
+    axis.getY() shouldEqual 30
+    axis.getY().isInstanceOf[Int] shouldEqual true
+
+    axis.increaseY(30)
+    axis.getY() shouldEqual 60
+    axis.getY().isInstanceOf[Int] shouldEqual true
+
+    var increasedHistoryY = axis.observableHistoryOfIncreasedY().map(v => v*2).toBlocking.toList
+    increasedHistoryY shouldEqual List(0,20,60)
+    increasedHistoryY.isInstanceOf[List[Int]] shouldEqual true
+    increasedHistoryY.length shouldEqual 3
+  }
+
+  "The axis class" should "show an history of ins for y" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.increaseY(10)
+    axis.increaseHistoryY() shouldEqual List(0)
+    axis.increaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryY().length shouldEqual 1
+
+    axis.increaseY(20)
+    axis.increaseHistoryY() shouldEqual List(0,10)
+    axis.increaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryY().length shouldEqual 2
+
+    axis.increaseY(30)
+    axis.increaseHistoryY() shouldEqual List(0,10,30)
+    axis.increaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
+    axis.increaseHistoryY().length shouldEqual 3
+  }
+
+  "The axis class" should "show an history of outs for y" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.increaseY(10)
+    axis.decreaseY(5)
+    axis.decreaseHistoryY() shouldEqual List(0,5)
+    axis.decreaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
+    axis.decreaseHistoryY().length shouldEqual 2
+
+    axis.increaseY(20)
+    axis.decreaseY(10)
+    axis.decreaseHistoryY() shouldEqual List(0,5,15)
+    axis.decreaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
+    axis.decreaseHistoryY().length shouldEqual 3
+  }
+
+  "The axis class" should "show a history of observable outs for y" in {
+    val axis = new Axis()
+
+    axis.isInstanceOf[Axis] shouldEqual true
+
+    axis.increaseY(10)
+    axis.decreaseY(5)
+    val historyDecreasedY1 = axis.observableHistoryOfDecreasedY().map(v => v*2).toBlocking.toList
+    historyDecreasedY1 shouldEqual List(0,10)
+    historyDecreasedY1.isInstanceOf[List[Int]]
+    historyDecreasedY1.length shouldEqual 2
+
+    axis.increaseY(20)
+    axis.decreaseY(10)
+    val historyDecreasedY2 = axis.observableHistoryOfDecreasedY().map(v => v*2).toBlocking.toList
+    historyDecreasedY2 shouldEqual List(0,10,30)
+    historyDecreasedY2.isInstanceOf[List[Int]]
+    historyDecreasedY2.length shouldEqual 3
+  }
+
   "The axis class" should "has the z point" in {
     val axis = new Axis()
 
@@ -223,91 +387,22 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.divZ().isInstanceOf[Int] shouldEqual true
   }
 
-  "The axis class" should "divide y by a default value" in {
+  "The axis class" should "divide the z point with a custom value" in {
     val axis = new Axis()
 
     axis.isInstanceOf[Axis] shouldEqual true
 
-    axis.increaseY(10)
-    axis.divY() shouldEqual 5
-    axis.divY().isInstanceOf[Int] shouldEqual true
-  }
+    axis.setZ(90) shouldEqual 90
+    axis.divZ(3) shouldEqual 30
+    axis.divZ(3).isInstanceOf[Int] shouldEqual true
 
-  "The axis class" should "divide z by a default value" in {
-    val axis = new Axis()
+    axis.setZ(90) shouldEqual 90
 
-    axis.isInstanceOf[Axis] shouldEqual true
+    axis.divZ(3) shouldEqual 30
+    axis.divZ(3).isInstanceOf[Int] shouldEqual true
 
-    axis.increaseZ(10)
-    axis.divZ() shouldEqual 5
-    axis.divZ().isInstanceOf[Int] shouldEqual true
-  }
-
-  "The axis class" should "show an history of ins for x" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseX(10)
-    axis.increaseHistoryX() shouldEqual List(0)
-    axis.increaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
-    axis.increaseHistoryX().length shouldEqual 1
-
-    axis.increaseX(20)
-    axis.increaseHistoryX() shouldEqual List(0,10)
-    axis.increaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
-    axis.increaseHistoryX().length shouldEqual 2
-
-    axis.increaseX(30)
-    axis.increaseHistoryX() shouldEqual List(0,10,30)
-    axis.increaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
-    axis.increaseHistoryX().length shouldEqual 3
-  }
-
-  "The axis class" should "show an history observable of ins for x" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseX(10)
-    axis.getX() shouldEqual 10
-    axis.getX().isInstanceOf[Int] shouldEqual true
-
-    axis.increaseX(20)
-    axis.getX() shouldEqual 30
-    axis.getX().isInstanceOf[Int] shouldEqual true
-
-    axis.increaseX(30)
-    axis.getX() shouldEqual 60
-    axis.getX().isInstanceOf[Int] shouldEqual true
-
-    val increasedHistoryX = axis.observableHistoryOfIncreasedX().map(v => v*2).toBlocking.toList
-    increasedHistoryX shouldEqual List(0,20,60)
-    increasedHistoryX.isInstanceOf[List[Int]] shouldEqual true
-    increasedHistoryX.length shouldEqual 3
-  }
-
-  "The axis class" should "show an history observable of ins for y" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseY(10)
-    axis.getY() shouldEqual 10
-    axis.getY().isInstanceOf[Int] shouldEqual true
-
-    axis.increaseY(20)
-    axis.getY() shouldEqual 30
-    axis.getY().isInstanceOf[Int] shouldEqual true
-
-    axis.increaseY(30)
-    axis.getY() shouldEqual 60
-    axis.getY().isInstanceOf[Int] shouldEqual true
-
-    var increasedHistoryY = axis.observableHistoryOfIncreasedY().map(v => v*2).toBlocking.toList
-    increasedHistoryY shouldEqual List(0,20,60)
-    increasedHistoryY.isInstanceOf[List[Int]] shouldEqual true
-    increasedHistoryY.length shouldEqual 3
+    axis.divZ(5) shouldEqual 18
+    axis.divZ(5).isInstanceOf[Int] shouldEqual true
   }
 
   "The axis class" should "show an history observable of ins for z" in {
@@ -333,27 +428,6 @@ class AxisSpec extends FlatSpec with Matchers {
     increasedHistoryY.length shouldEqual 3
   }
 
-  "The axis class" should "show an history of ins for y" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseY(10)
-    axis.increaseHistoryY() shouldEqual List(0)
-    axis.increaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
-    axis.increaseHistoryY().length shouldEqual 1
-
-    axis.increaseY(20)
-    axis.increaseHistoryY() shouldEqual List(0,10)
-    axis.increaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
-    axis.increaseHistoryY().length shouldEqual 2
-
-    axis.increaseY(30)
-    axis.increaseHistoryY() shouldEqual List(0,10,30)
-    axis.increaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
-    axis.increaseHistoryY().length shouldEqual 3
-  }
-
   "The axis class" should "show an history of ins outs for z" in {
     val axis = new Axis()
 
@@ -373,82 +447,6 @@ class AxisSpec extends FlatSpec with Matchers {
     axis.increaseHistoryZ() shouldEqual List(0,10,30)
     axis.increaseHistoryZ().isInstanceOf[List[Int]] shouldEqual true
     axis.increaseHistoryZ().length shouldEqual 3
-  }
-
-  "The axis class" should "show an history of outs for x" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseX(10)
-    axis.decreaseX(5)
-    axis.decreaseHistoryX() shouldEqual List(0,5)
-    axis.decreaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
-    axis.decreaseHistoryX().length shouldEqual 2
-
-    axis.increaseX(20)
-    axis.decreaseX(10)
-    axis.decreaseHistoryX() shouldEqual List(0,5,15)
-    axis.decreaseHistoryX().isInstanceOf[List[Int]] shouldEqual true
-    axis.decreaseHistoryX().length shouldEqual 3
-  }
-
-  "The axis class" should "show a history of observable outs for x" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseX(10)
-    axis.decreaseX(5)
-    val decreasedHistoryX1 = axis.observableHistoryOfDecreasedX().map(v => v*2).toBlocking.toList
-    decreasedHistoryX1 shouldEqual List(0,10)
-    decreasedHistoryX1.isInstanceOf[List[Int]] shouldEqual true
-    decreasedHistoryX1.length shouldEqual 2
-
-    axis.increaseX(20)
-    axis.decreaseX(10)
-    val decreasedHistoryX2 = axis.observableHistoryOfDecreasedX().map(v => v*2).toBlocking.toList
-    decreasedHistoryX2 shouldEqual List(0,10,30)
-    decreasedHistoryX2.isInstanceOf[List[Int]] shouldEqual true
-    decreasedHistoryX2.length shouldEqual 3
-  }
-
-  "The axis class" should "show an history of outs for y" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseY(10)
-    axis.decreaseY(5)
-    axis.decreaseHistoryY() shouldEqual List(0,5)
-    axis.decreaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
-    axis.decreaseHistoryY().length shouldEqual 2
-
-    axis.increaseY(20)
-    axis.decreaseY(10)
-    axis.decreaseHistoryY() shouldEqual List(0,5,15)
-    axis.decreaseHistoryY().isInstanceOf[List[Int]] shouldEqual true
-    axis.decreaseHistoryY().length shouldEqual 3
-  }
-
-  "The axis class" should "show a history of observable outs for y" in {
-    val axis = new Axis()
-
-    axis.isInstanceOf[Axis] shouldEqual true
-
-    axis.increaseY(10)
-    axis.decreaseY(5)
-    val historyDecreasedY1 = axis.observableHistoryOfDecreasedY().map(v => v*2).toBlocking.toList
-    historyDecreasedY1 shouldEqual List(0,10)
-    historyDecreasedY1.isInstanceOf[List[Int]]
-    historyDecreasedY1.length shouldEqual 2
-
-    axis.increaseY(20)
-    axis.decreaseY(10)
-    val historyDecreasedY2 = axis.observableHistoryOfDecreasedY().map(v => v*2).toBlocking.toList
-    historyDecreasedY2 shouldEqual List(0,10,30)
-    historyDecreasedY2.isInstanceOf[List[Int]]
-    historyDecreasedY2.length shouldEqual 3
   }
 
   "The axis class" should "show an history of outs for z" in {

@@ -40,9 +40,7 @@
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should divide the z point with a default value[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should divide y by a default value[0m[0m
-[0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should divide z by a default value[0m[0m
+[0m[[0minfo[0m] [0m[32m- should divide the z point with a custom value[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should show an history of ins for x[0m[0m
 [0m[[0minfo[0m] [0m[32mThe axis class[0m[0m
