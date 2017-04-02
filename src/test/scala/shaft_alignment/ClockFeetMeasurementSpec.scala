@@ -3,6 +3,61 @@ package shaft_alignment
 import org.scalatest._
 
 class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
+  "The clock feet measurement class" should "have x axis point for clock" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.first.x shouldEqual 0
+    clockFeetMeasurement.first.x.isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock feet measurement class" should "have a getter for x axis point for clock" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.first.getX() shouldEqual 0
+    clockFeetMeasurement.first.getX().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock feet measurement class" should "have a setter for x axis point for clock" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.first.setX(10) shouldEqual 10
+    clockFeetMeasurement.first.setX(15).isInstanceOf[Int] shouldEqual true
+    clockFeetMeasurement.first.getX() shouldEqual 15
+  }
+
+  "The clock feet measurement class" should "have y axis point for clock" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.first.y shouldEqual 0
+    clockFeetMeasurement.first.y.isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock feet measurement class" should "have a getter for y axis point for clock" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.first.getY() shouldEqual 0
+    clockFeetMeasurement.first.getY().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock feet measurement class" should "have a z axis point for clock" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.first.z shouldEqual 0
+    clockFeetMeasurement.first.z.isInstanceOf[Int] shouldEqual true
+  }
+
   "The clock feet measurement class" should "be flexible for clock and feet" in {
     val clockFeetMeasurement = new ClockFeetMeasurement()
 
