@@ -21,6 +21,44 @@ class ClockMeasurementSpec extends FlatSpec with Matchers {
     clockMeasurement.first.getX().isInstanceOf[Int] shouldEqual true
   }
 
+  "The clock measurement class" should "have a setter for x axis point for first clock" in {
+    val clockMeasurement = new ClockMeasurement()
+
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
+    clockMeasurement.first.setX(10) shouldEqual 10
+    clockMeasurement.first.getX() shouldEqual 10
+    clockMeasurement.first.getX().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock measurement" should "have a y axis point for first clock" in {
+    val clockMeasurement = new ClockMeasurement()
+
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
+    clockMeasurement.first.y shouldEqual 0
+    clockMeasurement.first.y.isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock measurement" should "have a getter for y axis point for first clock" in {
+    val clockMeasurement = new ClockMeasurement()
+
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
+    clockMeasurement.first.getY() shouldEqual 0
+    clockMeasurement.first.getY().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock measurement" should "have a setter for y axis point for first clock" in {
+    val clockMeasurement = new ClockMeasurement()
+
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
+    clockMeasurement.first.setY(15) shouldEqual 15
+    clockMeasurement.first.setY(30).isInstanceOf[Int] shouldEqual true
+    clockMeasurement.first.getY() shouldEqual 30
+  }
+
   "The clock measurement class" should "be flexible for clocks" in {
     val clockMeasurement = new ClockMeasurement()
 
