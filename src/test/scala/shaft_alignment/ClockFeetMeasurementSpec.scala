@@ -110,11 +110,11 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
   "The clock feet measurement class" should "have a distance between both z axis point" in {
     val clockFeetMeasurement = new ClockFeetMeasurement()
 
-    clockFeetMeasurement.first.increaseZ(10)
+    clockFeetMeasurement.first.increaseZ(10) shouldEqual 10
     clockFeetMeasurement.first.z shouldEqual 10
     clockFeetMeasurement.first.getZ() shouldEqual 10
 
-    clockFeetMeasurement.second.increaseZ(30)
+    clockFeetMeasurement.second.increaseZ(30) shouldEqual 30
     clockFeetMeasurement.second.z shouldEqual 30
     clockFeetMeasurement.second.getZ() shouldEqual 30
 
