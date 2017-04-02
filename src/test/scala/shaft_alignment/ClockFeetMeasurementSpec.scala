@@ -12,6 +12,15 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
     clockFeetMeasurement.first.x.isInstanceOf[Int] shouldEqual true
   }
 
+  "The clock feet measurement class" should "have x axis point for feet" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.second.x shouldEqual 0
+    clockFeetMeasurement.second.x.isInstanceOf[Int] shouldEqual true
+  }
+
   "The clock feet measurement class" should "have a getter for x axis point for clock" in {
     val clockFeetMeasurement = new ClockFeetMeasurement()
 
@@ -19,6 +28,15 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
 
     clockFeetMeasurement.first.getX() shouldEqual 0
     clockFeetMeasurement.first.getX().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock feet measurement class" should "have a getter for x axis point for feet" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.second.getX() shouldEqual 0
+    clockFeetMeasurement.second.getX().isInstanceOf[Int] shouldEqual true
   }
 
   "The clock feet measurement class" should "have a setter for x axis point for clock" in {
@@ -29,6 +47,16 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
     clockFeetMeasurement.first.setX(10) shouldEqual 10
     clockFeetMeasurement.first.setX(15).isInstanceOf[Int] shouldEqual true
     clockFeetMeasurement.first.getX() shouldEqual 15
+  }
+
+  "The clock feet measurement class" should "have a setter for x axis point for feet" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.second.setX(10) shouldEqual 10
+    clockFeetMeasurement.second.getX() shouldEqual 10
+    clockFeetMeasurement.second.getX().isInstanceOf[Int] shouldEqual true
   }
 
   "The clock feet measurement class" should "have a distance between both x axis point" in {
