@@ -7,8 +7,8 @@ trait PointAxisMethods {
   def getX(): Int
   def getY(): Int
   def getZ(): Int
-  def sum(l: Int, r: Int): Int
-  def sub(l: Int, r: Int): Int
+  def sum(args: Int*): Int
+  def sub(args: Int*): Int
 }
 
 class LogicAxis() extends PointAxis with PointAxisMethods {
@@ -27,6 +27,6 @@ class LogicAxis() extends PointAxis with PointAxisMethods {
   def getX(): Int = x
   def getY(): Int = y
   def getZ(): Int = z
-  def sum(l: Int, r: Int) = r + l
-  def sub(l: Int, r: Int) = l - r
+  def sum(args: Int*) = args.reduce((l,r) => l + r)
+  def sub(args: Int*) = args.reduce((l,r) => l - r)
 }

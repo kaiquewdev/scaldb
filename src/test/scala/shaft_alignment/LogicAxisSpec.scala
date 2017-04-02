@@ -58,4 +58,22 @@ class LogicAxisSpec extends FlatSpec with Matchers {
     logicAxis.getZ() shouldEqual 10
     logicAxis.getZ().isInstanceOf[Int] shouldEqual true
   }
+
+  "The logic axis class" should "has sum method" in {
+    val logicAxis = new LogicAxis()
+
+    logicAxis.isInstanceOf[LogicAxis] shouldEqual true
+
+    logicAxis.sum(10,10,10) shouldEqual 30
+    logicAxis.sum(10,10,10).isInstanceOf[Int] shouldEqual true
+  }
+
+  "The logic axis class" should "has sub method" in {
+    val logicAxis = new LogicAxis()
+
+    logicAxis.isInstanceOf[LogicAxis] shouldEqual true
+
+    logicAxis.sub(30,10,5) shouldEqual 15
+    logicAxis.sub(30,10,5).isInstanceOf[Int] shouldEqual true
+  }
 }
