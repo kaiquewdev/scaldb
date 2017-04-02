@@ -83,6 +83,15 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
     clockFeetMeasurement.first.y.isInstanceOf[Int] shouldEqual true
   }
 
+  "The clock feet measurement class" should "have y axis point for feet" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.second.y shouldEqual 0
+    clockFeetMeasurement.second.y.isInstanceOf[Int] shouldEqual true
+  }
+
   "The clock feet measurement class" should "have a getter for y axis point for clock" in {
     val clockFeetMeasurement = new ClockFeetMeasurement()
 
@@ -90,6 +99,15 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
 
     clockFeetMeasurement.first.getY() shouldEqual 0
     clockFeetMeasurement.first.getY().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock feet measurement class" should "have a getter for y axis point for feet" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.second.getY() shouldEqual 0
+    clockFeetMeasurement.second.getY().isInstanceOf[Int] shouldEqual true
   }
 
   "The clock feet measurement class" should "have a distance between both y axis point" in {
@@ -116,6 +134,15 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
     clockFeetMeasurement.first.z.isInstanceOf[Int] shouldEqual true
   }
 
+  "The clock feet measurement class" should "have a z axis point for feet" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.second.z shouldEqual 0
+    clockFeetMeasurement.second.z.isInstanceOf[Int] shouldEqual true
+  }
+
   "The clock feet measurement class" should "have a getter for z axis point for clock" in {
     val clockFeetMeasurement = new ClockFeetMeasurement()
 
@@ -123,6 +150,15 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
 
     clockFeetMeasurement.first.getX() shouldEqual 0
     clockFeetMeasurement.first.getX().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock feet measurement class" should "have a getter for z axis point for feet" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.second.getX() shouldEqual 0
+    clockFeetMeasurement.second.getX().isInstanceOf[Int] shouldEqual true
   }
 
   "The clock feet measurement class" should "have a setter for z axis point for clock" in {
