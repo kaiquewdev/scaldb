@@ -3,6 +3,24 @@ package shaft_alignment
 import org.scalatest._
 
 class ClockMeasurementSpec extends FlatSpec with Matchers {
+  "The clock measurement class" should "have a x axis point for first clock" in {
+    val clockMeasurement = new ClockMeasurement()
+
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
+    clockMeasurement.first.x shouldEqual 0
+    clockMeasurement.first.x.isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock measurement class" should "have a getter for x axis point for first clock" in {
+    val clockMeasurement = new ClockMeasurement()
+
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
+    clockMeasurement.first.getX() shouldEqual 0
+    clockMeasurement.first.getX().isInstanceOf[Int] shouldEqual true
+  }
+
   "The clock measurement class" should "be flexible for clocks" in {
     val clockMeasurement = new ClockMeasurement()
 
