@@ -171,6 +171,16 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
     clockFeetMeasurement.first.getX() shouldEqual 15
   }
 
+  "The clock feet measurement class" should "have a setter for z axis point for feet" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.isInstanceOf[ClockFeetMeasurement] shouldEqual true
+
+    clockFeetMeasurement.second.setX(10) shouldEqual 10
+    clockFeetMeasurement.second.setX(15).isInstanceOf[Int] shouldEqual true
+    clockFeetMeasurement.second.getX() shouldEqual 15
+  }
+
   "The clock feet measurement class" should "have a distance between both z axis point" in {
     val clockFeetMeasurement = new ClockFeetMeasurement()
 
