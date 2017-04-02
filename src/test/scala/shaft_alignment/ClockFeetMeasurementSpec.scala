@@ -64,6 +64,21 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
     clockFeetMeasurement.first.getY().isInstanceOf[Int] shouldEqual true
   }
 
+  "The clock feet measurement class" should "have a distance between both y axis point" in {
+    val clockFeetMeasurement = new ClockFeetMeasurement()
+
+    clockFeetMeasurement.first.increaseY(10) shouldEqual 10
+    clockFeetMeasurement.first.y shouldEqual 10
+    clockFeetMeasurement.first.getY() shouldEqual 10
+
+    clockFeetMeasurement.second.increaseY(30) shouldEqual 30
+    clockFeetMeasurement.second.y shouldEqual 30
+    clockFeetMeasurement.second.getY() shouldEqual 30
+
+    clockFeetMeasurement.distanceY() shouldEqual 20
+    clockFeetMeasurement.distanceY().isInstanceOf[Int] shouldEqual true
+  }
+
   "The clock feet measurement class" should "have a z axis point for clock" in {
     val clockFeetMeasurement = new ClockFeetMeasurement()
 
@@ -92,20 +107,6 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
     clockFeetMeasurement.first.getX() shouldEqual 15
   }
 
-  "The clock feet measurement class" should "have a distance between both y axis point" in {
-    val clockFeetMeasurement = new ClockFeetMeasurement()
-
-    clockFeetMeasurement.first.increaseY(10)
-    clockFeetMeasurement.first.y shouldEqual 10
-    clockFeetMeasurement.first.getY() shouldEqual 10
-
-    clockFeetMeasurement.second.increaseY(30)
-    clockFeetMeasurement.second.y shouldEqual 30
-    clockFeetMeasurement.second.getY() shouldEqual 30
-
-    clockFeetMeasurement.distanceY() shouldEqual 20
-  }
-
   "The clock feet measurement class" should "have a distance between both z axis point" in {
     val clockFeetMeasurement = new ClockFeetMeasurement()
 
@@ -118,5 +119,6 @@ class ClockFeetMeasurementSpec extends FlatSpec with Matchers {
     clockFeetMeasurement.second.getZ() shouldEqual 30
 
     clockFeetMeasurement.distanceZ() shouldEqual 20
+    clockFeetMeasurement.distanceZ().isInstanceOf[Int] shouldEqual true
   }
 }
