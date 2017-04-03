@@ -1,0 +1,33 @@
+[0m[[0minfo[0m] [0m[32mClockMeasurementSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a x axis point for first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a x axis point for second clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for x axis point for first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for x axis point for second clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for x axis point for first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for x axis point for second clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a y axis point for first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for y axis point for first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for y axis point for first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a z axis point for first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter z axis point for first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter z axis point for first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be flexible for clocks[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a distance between both x axis point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a distance between both y axis point[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a distance between both z axis point[0m[0m
