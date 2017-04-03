@@ -7,7 +7,7 @@ trait DegreeRotationAttr {
 }
 
 trait LogicRotationMethods {
-  def setDeg(v: Int)
+  def setDeg(v: Int): Int
   def getDeg(): Int
 }
 
@@ -23,7 +23,10 @@ trait CompositionalRotationMethod {
 class DegreeRotation(var degree: Int = 0) extends Object with DegreeRotationAttr {}
 
 class LogicRotation() extends DegreeRotation with LogicRotationMethods {
-  def setDeg(v: Int) = degree = v
+  def setDeg(v: Int): Int = {
+    degree = v
+    v
+  }
   def getDeg() = degree
 }
 
