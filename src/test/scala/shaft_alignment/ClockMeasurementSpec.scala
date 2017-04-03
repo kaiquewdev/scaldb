@@ -9,6 +9,7 @@ class ClockMeasurementSpec extends FlatSpec with Matchers {
     clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
 
     clockMeasurement.first.rotation.degree shouldEqual 0
+    clockMeasurement.first.rotation.degree.isInstanceOf[Int] shouldEqual true
   }
 
   "The clock measurement class" should "have a rotation with getter for degree onto the first clock" in {
@@ -17,6 +18,7 @@ class ClockMeasurementSpec extends FlatSpec with Matchers {
     clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
 
     clockMeasurement.first.rotation.getDeg() shouldEqual 0
+    clockMeasurement.first.rotation.getDeg().isInstanceOf[Int] shouldEqual true
   }
 
   "The clock measurement class" should "have a rotation with setter for degree onto the first clock" in {
@@ -26,6 +28,7 @@ class ClockMeasurementSpec extends FlatSpec with Matchers {
 
     clockMeasurement.first.rotation.setDeg(10) shouldEqual 10
     clockMeasurement.first.rotation.setDeg(10).isInstanceOf[Int] shouldEqual true
+    clockMeasurement.first.rotation.getDeg() shouldEqual 10
   }
 
   "The clock measurement class" should "have a x axis point for first clock" in {

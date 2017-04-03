@@ -27,7 +27,7 @@ class LogicRotation() extends DegreeRotation with LogicRotationMethods {
     degree = v
     v
   }
-  def getDeg() = degree
+  def getDeg(): Int = degree
 }
 
 class TransitionalRotation() extends LogicRotation with TransitionalRotationMethods {
