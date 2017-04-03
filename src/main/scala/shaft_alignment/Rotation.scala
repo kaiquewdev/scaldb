@@ -51,6 +51,7 @@ class Rotation() extends CompositionalRotation {
     v
   }
   def getIncSts(): List[Int] = increasedStates
+  def getDecSts(): List[Int] = decreasedStates
   def decrease(v: Int): Int = {
     if (degNotEqZero())
       decreasedStates = decreasedStates :+ degree

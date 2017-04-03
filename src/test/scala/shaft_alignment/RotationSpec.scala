@@ -76,68 +76,72 @@ class RotationSpec extends FlatSpec with Matchers {
 
     rotation.increase(10) shouldEqual 10
     rotation.increasedStates shouldEqual List(0)
+    rotation.getIncSts() shouldEqual List(0)
     rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
+    rotation.getIncSts().isInstanceOf[List[Int]] shouldEqual true
     rotation.increasedStates.length shouldEqual 1
+    rotation.getIncSts().length shouldEqual 1
 
     rotation.increase(20) shouldEqual 20
     rotation.increasedStates shouldEqual List(0,10)
+    rotation.getIncSts() shouldEqual List(0,10)
     rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
+    rotation.getIncSts().isInstanceOf[List[Int]] shouldEqual true
     rotation.increasedStates.length shouldEqual 2
+    rotation.getIncSts().length shouldEqual 2
 
     rotation.increase(30) shouldEqual 30
     rotation.increasedStates shouldEqual List(0,10,30)
-    rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
-    rotation.increasedStates.length shouldEqual 3
-
     rotation.getIncSts() shouldEqual List(0,10,30)
+    rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
     rotation.getIncSts().isInstanceOf[List[Int]] shouldEqual true
+    rotation.increasedStates.length shouldEqual 3
     rotation.getIncSts().length shouldEqual 3
   }
 
-  "The rotation class" should "have increased states" in {
+  "The rotation class" should "have decreased states stored like an list" in {
     val rotation = new Rotation()
 
     rotation.isInstanceOf[Rotation] shouldEqual true
 
-    rotation.increase(10)
+    rotation.increase(10) shouldEqual 10
     rotation.increasedStates shouldEqual List(0)
     rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
+    rotation.getIncSts() shouldEqual List(0)
+    rotation.getIncSts().isInstanceOf[List[Int]] shouldEqual true
     rotation.increasedStates.length shouldEqual 1
+    rotation.getIncSts().isInstanceOf[List[Int]] shouldEqual true
 
-    rotation.increase(20)
+    rotation.increase(20) shouldEqual 20
     rotation.increasedStates shouldEqual List(0,10)
+    rotation.getIncSts() shouldEqual List(0,10)
     rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
+    rotation.getIncSts().isInstanceOf[List[Int]] shouldEqual true
     rotation.increasedStates.length shouldEqual 2
+    rotation.getIncSts().length shouldEqual 2
 
-    rotation.increase(30)
+    rotation.increase(30) shouldEqual 30
     rotation.increasedStates shouldEqual List(0,10,30)
-    rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
+    rotation.getIncSts() shouldEqual List(0,10,30)
+    rotation.getIncSts().isInstanceOf[List[Int]] shouldEqual true
     rotation.increasedStates.length shouldEqual 3
-  }
-
-  "The rotation class" should "have decreased states" in {
-    val rotation = new Rotation()
-
-    rotation.isInstanceOf[Rotation] shouldEqual true
-
-    rotation.increase(10)
-    rotation.increasedStates shouldEqual List(0)
-    rotation.increasedStates.length shouldEqual 1
-
-    rotation.increase(20)
-    rotation.increasedStates shouldEqual List(0,10)
-    rotation.increasedStates.length shouldEqual 2
-
-    rotation.decreasedStates shouldEqual List(0)
-    rotation.decreasedStates.length shouldEqual 1
+    rotation.getIncSts().length shouldEqual 3
 
     rotation.decrease(5)
-    rotation.decreasedStates shouldEqual List(0,30)
+    rotation.decreasedStates shouldEqual List(0,60)
+    rotation.decreasedStates.isInstanceOf[List[Int]] shouldEqual true
+    rotation.getDecSts() shouldEqual List(0,60)
+    rotation.getDecSts().isInstanceOf[List[Int]] shouldEqual true
     rotation.decreasedStates.length shouldEqual 2
+    rotation.getDecSts().length shouldEqual 2
 
     rotation.decrease(10)
-    rotation.decreasedStates shouldEqual List(0,30,25)
+    rotation.decreasedStates shouldEqual List(0,60,55)
+    rotation.decreasedStates.isInstanceOf[List[Int]] shouldEqual true
+    rotation.getDecSts() shouldEqual List(0,60,55)
+    rotation.getDecSts().isInstanceOf[List[Int]] shouldEqual true
     rotation.decreasedStates.length shouldEqual 3
+    rotation.getDecSts().length shouldEqual 3
   }
 
   "The rotation class" should "have an observable increased states" in {
