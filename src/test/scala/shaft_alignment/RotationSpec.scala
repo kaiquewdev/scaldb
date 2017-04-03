@@ -3,6 +3,15 @@ package shaft_alignment
 import org.scalatest._
 
 class RotationSpec extends FlatSpec with Matchers {
+  "The rotation class" should "have a value degree" in {
+    val rotation = new Rotation()
+
+    rotation.isInstanceOf[Rotation] shouldEqual true
+
+    rotation.degree shouldEqual 0
+    rotation.degree.isInstanceOf[Int] shouldEqual true
+  }
+
   "The rotation class" should "have a degree" in {
     val rotation = new Rotation()
 
