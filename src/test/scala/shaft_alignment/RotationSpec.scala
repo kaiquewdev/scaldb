@@ -149,10 +149,12 @@ class RotationSpec extends FlatSpec with Matchers {
 
     rotation.isInstanceOf[Rotation] shouldEqual true
 
-    rotation.increase(10)
-    rotation.increase(15)
-    rotation.increase(5)
+    rotation.increase(10) shouldEqual 10
+    rotation.increase(15) shouldEqual 15
+    rotation.increase(5) shouldEqual 5
+
     val increasedStates = rotation.observableIncreasedStates().map(v => v*2).toBlocking.toList
+
     increasedStates shouldEqual List(0,20,50)
     increasedStates.length shouldEqual 3
   }
@@ -162,14 +164,15 @@ class RotationSpec extends FlatSpec with Matchers {
 
     rotation.isInstanceOf[Rotation] shouldEqual true
 
-    rotation.increase(10)
-    rotation.decrease(5)
-    rotation.increase(20)
-    rotation.decrease(5)
-    rotation.increase(10)
-    rotation.decrease(5)
+    rotation.increase(10) shouldEqual 10
+    rotation.decrease(5) shouldEqual 5
+    rotation.increase(20) shouldEqual 20
+    rotation.decrease(5) shouldEqual 5
+    rotation.increase(10) shouldEqual 10
+    rotation.decrease(5) shouldEqual 5
 
     val decreasedStates = rotation.observableDecreasedStates().map(v => v*2).toBlocking.toList
+
     decreasedStates shouldEqual List(0,20,50,60)
     decreasedStates.length shouldEqual 4
   }
