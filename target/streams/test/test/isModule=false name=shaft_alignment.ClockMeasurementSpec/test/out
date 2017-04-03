@@ -2,11 +2,19 @@
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a rotation with a degree for first clock[0m[0m
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a rotation with a degree for second clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a rotation with getter for degree onto the first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a rotation with getter for degree onto the second clock[0m[0m
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a rotation with setter for degree onto the first clock[0m[0m
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a rotation with setter for degree onto the second clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a rotation with setter and getter for degree onto the first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a rotation with setter and getter for degree onto the second clock[0m[0m
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a x axis point for first clock[0m[0m
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
