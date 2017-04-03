@@ -12,6 +12,25 @@ class RotationSpec extends FlatSpec with Matchers {
     rotation.degree.isInstanceOf[Int] shouldEqual true
   }
 
+  "The rotation class" should "have a getter degree" in {
+    val rotation = new Rotation()
+
+    rotation.isInstanceOf[Rotation] shouldEqual true
+
+    rotation.getDeg() shouldEqual 0
+    rotation.getDeg().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The rotation class" should "have a setter degree" in {
+    val rotation = new Rotation()
+
+    rotation.isInstanceOf[Rotation] shouldEqual true
+
+    rotation.setDeg(10) shouldEqual 10
+    rotation.setDeg(15).isInstanceOf[Int] shouldEqual true
+    rotation.getDeg() shouldEqual 15
+  }
+
   "The rotation class" should "have a degree" in {
     val rotation = new Rotation()
 
