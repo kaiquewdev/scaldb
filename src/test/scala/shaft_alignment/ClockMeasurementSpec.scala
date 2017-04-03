@@ -142,6 +142,15 @@ class ClockMeasurementSpec extends FlatSpec with Matchers {
     clockMeasurement.first.getZ().isInstanceOf[Int] shouldEqual true
   }
 
+  "The clock measurement class" should "have a getter z axis point for second clock" in {
+    val clockMeasurement = new ClockMeasurement()
+
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
+    clockMeasurement.first.getZ() shouldEqual 0
+    clockMeasurement.first.getZ().isInstanceOf[Int] shouldEqual true
+  }
+
   "The clock measurement class" should "have a setter z axis point for first clock" in {
     val clockMeasurement = new ClockMeasurement()
 

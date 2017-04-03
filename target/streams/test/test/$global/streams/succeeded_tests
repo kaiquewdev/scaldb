@@ -1,20 +1,20 @@
 #Successful Tests
-#Sun Apr 02 21:34:28 BRT 2017
-shaft_alignment.FeetSpec=1491179668250
-shaft_alignment.HandsSpec=1491179668208
-shaft_alignment.FeetMeasurementSpec=1491179668208
-shaft_alignment.ObservableSpec=1491179668255
-shaft_alignment.ClockMeasurementSpec=1491179668227
-shaft_alignment.InitialPointSpec=1491179668237
-shaft_alignment.DrawSpec=1491179668326
-shaft_alignment.PointSpec=1491179668317
-shaft_alignment.EdgeSpec=1491179668252
-shaft_alignment.VertexSpec=1491179668359
-shaft_alignment.LogicAxisSpec=1491179668279
-shaft_alignment.AxisSpec=1491179668512
-shaft_alignment.RotationSpec=1491179668308
-shaft_alignment.TransitionalAxisSpec=1491179668240
-shaft_alignment.FaceSpec=1491179668307
-shaft_alignment.ClockFeetMeasurementSpec=1491179668321
-shaft_alignment.ClockSpec=1491179668264
-shaft_alignment.PointAxisSpec=1491179668327
+#Sun Apr 02 21:37:31 BRT 2017
+shaft_alignment.FeetSpec=1491179850833
+shaft_alignment.HandsSpec=1491179850800
+shaft_alignment.FeetMeasurementSpec=1491179850801
+shaft_alignment.ObservableSpec=1491179850842
+shaft_alignment.ClockMeasurementSpec=1491179850800
+shaft_alignment.InitialPointSpec=1491179850826
+shaft_alignment.DrawSpec=1491179850952
+shaft_alignment.PointSpec=1491179850923
+shaft_alignment.EdgeSpec=1491179850853
+shaft_alignment.VertexSpec=1491179850968
+shaft_alignment.LogicAxisSpec=1491179850881
+shaft_alignment.AxisSpec=1491179851084
+shaft_alignment.RotationSpec=1491179850930
+shaft_alignment.TransitionalAxisSpec=1491179850828
+shaft_alignment.FaceSpec=1491179850898
+shaft_alignment.ClockFeetMeasurementSpec=1491179850963
+shaft_alignment.ClockSpec=1491179850855
+shaft_alignment.PointAxisSpec=1491179850957
