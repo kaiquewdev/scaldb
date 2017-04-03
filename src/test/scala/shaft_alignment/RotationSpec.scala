@@ -88,6 +88,10 @@ class RotationSpec extends FlatSpec with Matchers {
     rotation.increasedStates shouldEqual List(0,10,30)
     rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
     rotation.increasedStates.length shouldEqual 3
+
+    rotation.getIncSts() shouldEqual List(0,10,30)
+    rotation.getIncSts().isInstanceOf[List[Int]] shouldEqual true
+    rotation.getIncSts().length shouldEqual 3
   }
 
   "The rotation class" should "have increased states" in {

@@ -6,15 +6,15 @@
     </properties>
                      <testcase classname="shaft_alignment.LogicAxisSpec" name="The logic axis class should has a setter for x point" time="0.0">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.LogicAxisSpec" name="The logic axis class should has a getter for x point" time="0.002">
+                                               </testcase><testcase classname="shaft_alignment.LogicAxisSpec" name="The logic axis class should has a getter for x point" time="0.0">
                                                  
                                                </testcase><testcase classname="shaft_alignment.LogicAxisSpec" name="The logic axis class should has a setter for y point" time="0.0">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.LogicAxisSpec" name="The logic axis class should has a getter for y point" time="0.0">
+                                               </testcase><testcase classname="shaft_alignment.LogicAxisSpec" name="The logic axis class should has a getter for y point" time="0.001">
                                                  
                                                </testcase><testcase classname="shaft_alignment.LogicAxisSpec" name="The logic axis class should has a setter for z point" time="0.0">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.LogicAxisSpec" name="The logic axis class should has a getter for z point" time="0.0">
+                                               </testcase><testcase classname="shaft_alignment.LogicAxisSpec" name="The logic axis class should has a getter for z point" time="0.001">
                                                  
                                                </testcase><testcase classname="shaft_alignment.LogicAxisSpec" name="The logic axis class should has sum method" time="0.0">
                                                  
