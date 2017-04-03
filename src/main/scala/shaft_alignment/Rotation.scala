@@ -44,14 +44,16 @@ class Rotation() extends CompositionalRotation {
   def observableIncreasedStates() = Observable.from(increasedStates)
   var decreasedStates = List(degree)
   def observableDecreasedStates() = Observable.from(decreasedStates)
-  def increase(v: Int) = {
+  def increase(v: Int): Int = {
     if (degNotEqZero())
       increasedStates = increasedStates :+ degree
     incDeg(v)
+    v
   }
-  def decrease(v: Int) = {
+  def decrease(v: Int): Int = {
     if (degNotEqZero())
       decreasedStates = decreasedStates :+ degree
     decDeg(v)
+    v
   }
 }

@@ -31,92 +31,63 @@ class RotationSpec extends FlatSpec with Matchers {
     rotation.getDeg() shouldEqual 15
   }
 
-  "The rotation class" should "have a degree" in {
+  "The rotation class" should "have a degree not equal zero" in {
     val rotation = new Rotation()
 
     rotation.isInstanceOf[Rotation] shouldEqual true
-
-    rotation.degree shouldEqual 0
-    rotation.degree.isInstanceOf[Int] shouldEqual true
 
     rotation.getDeg() shouldEqual 0
-    rotation.setDeg(75)
-    rotation.getDeg() shouldEqual 75
-    rotation.getDeg().isInstanceOf[Int] shouldEqual true
-  }
+    rotation.degNotEqZero() shouldEqual false
+    rotation.degNotEqZero().isInstanceOf[Boolean] shouldEqual true
 
-  "The rotation class" should "have getter and setter" in {
-    val rotation = new Rotation()
-
-    rotation.isInstanceOf[Rotation] shouldEqual true
-
-    rotation.degree shouldEqual 0
-    rotation.degree.isInstanceOf[Int] shouldEqual true
-
-    rotation.setDeg(110)
-    rotation.getDeg() shouldEqual 110
-    rotation.getDeg().isInstanceOf[Int] shouldEqual true
-
-    rotation.setDeg(720)
-    rotation.getDeg() shouldEqual 720
-    rotation.getDeg().isInstanceOf[Int] shouldEqual true
-  }
-
-  "The rotation class" should "have an degree comparison to not equal zero" in {
-    val rotation = new Rotation()
-
-    rotation.isInstanceOf[Rotation] shouldEqual true
-
-    rotation.degree shouldEqual 0
-    rotation.degree.isInstanceOf[Int] shouldEqual true
-
-    rotation.setDeg(10)
-    rotation.getDeg() shouldEqual 10
-    rotation.getDeg().isInstanceOf[Int] shouldEqual true
-
+    rotation.setDeg(10) shouldEqual 10
     rotation.degNotEqZero() shouldEqual true
     rotation.degNotEqZero().isInstanceOf[Boolean] shouldEqual true
   }
 
-  "The rotation class" should "be increase" in {
+  "The rotation class" should "increase degree with accumulation" in {
     val rotation = new Rotation()
 
     rotation.isInstanceOf[Rotation] shouldEqual true
 
-    rotation.degree shouldEqual 0
-    rotation.degree.isInstanceOf[Int] shouldEqual true
-    rotation.getDeg() shouldEqual 0
-    rotation.getDeg().isInstanceOf[Int] shouldEqual true
+    rotation.increase(10) shouldEqual 10
+    rotation.increase(15).isInstanceOf[Int] shouldEqual true
 
-    rotation.increase(10)
-    rotation.degree shouldEqual 10
-    rotation.degree.isInstanceOf[Int] shouldEqual true
-    rotation.getDeg() shouldEqual 10
+    rotation.getDeg() shouldEqual 25
     rotation.getDeg().isInstanceOf[Int] shouldEqual true
-
-    rotation.increase(20)
-    rotation.degree shouldEqual 30
-    rotation.degree.isInstanceOf[Int]
-    rotation.getDeg() shouldEqual 30
-    rotation.getDeg().isInstanceOf[Int]
   }
 
-  "The rotation class" should "be decrease" in {
+  "The rotation class" should "decrease degree with accumulation" in {
     val rotation = new Rotation()
 
     rotation.isInstanceOf[Rotation] shouldEqual true
 
-    rotation.increase(50)
-    rotation.degree shouldEqual 50
-    rotation.degree.isInstanceOf[Int] shouldEqual true
+    rotation.increase(100) shouldEqual 100
+    rotation.getDeg() shouldEqual 100
+    rotation.decrease(20) shouldEqual 20
+    rotation.decrease(30).isInstanceOf[Int] shouldEqual true
+    rotation.getDeg() shouldEqual 50
+  }
 
-    rotation.decrease(25)
-    rotation.degree shouldEqual 25
-    rotation.degree.isInstanceOf[Int] shouldEqual true
+  "The rotation class" should "have increased states stored like an list" in {
+    val rotation = new Rotation()
 
-    rotation.decrease(5)
-    rotation.degree shouldEqual 20
-    rotation.degree.isInstanceOf[Int] shouldEqual true
+    rotation.isInstanceOf[Rotation] shouldEqual true
+
+    rotation.increase(10) shouldEqual 10
+    rotation.increasedStates shouldEqual List(0)
+    rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
+    rotation.increasedStates.length shouldEqual 1
+
+    rotation.increase(20) shouldEqual 20
+    rotation.increasedStates shouldEqual List(0,10)
+    rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
+    rotation.increasedStates.length shouldEqual 2
+
+    rotation.increase(30) shouldEqual 30
+    rotation.increasedStates shouldEqual List(0,10,30)
+    rotation.increasedStates.isInstanceOf[List[Int]] shouldEqual true
+    rotation.increasedStates.length shouldEqual 3
   }
 
   "The rotation class" should "have increased states" in {
