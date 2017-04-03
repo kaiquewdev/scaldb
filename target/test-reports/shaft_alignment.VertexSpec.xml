@@ -16,11 +16,11 @@
                                                  
                                                </testcase><testcase classname="shaft_alignment.VertexSpec" name="The vertex class should have a raw method to set a value of the point" time="0.0">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.VertexSpec" name="The vertex class should have a raw method to get a value of the point" time="0.0">
+                                               </testcase><testcase classname="shaft_alignment.VertexSpec" name="The vertex class should have a raw method to get a value of the point" time="0.001">
                                                  
                                                </testcase><testcase classname="shaft_alignment.VertexSpec" name="The vertex class should have a raw method to verify the type of getter" time="0.0">
                                                  
-                                               </testcase><testcase classname="shaft_alignment.VertexSpec" name="The vertex class should have a raw method to verify the type of setter" time="0.001">
+                                               </testcase><testcase classname="shaft_alignment.VertexSpec" name="The vertex class should have a raw method to verify the type of setter" time="0.0">
                                                  
                                                </testcase><testcase classname="shaft_alignment.VertexSpec" name="The vertex class should have a nested method to set a value" time="0.0">
                                                  

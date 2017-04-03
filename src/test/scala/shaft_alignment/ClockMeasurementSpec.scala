@@ -68,6 +68,15 @@ class ClockMeasurementSpec extends FlatSpec with Matchers {
     clockMeasurement.first.y.isInstanceOf[Int] shouldEqual true
   }
 
+  "The clock measurement class" should "have a y axis point for second clock" in {
+    val clockMeasurement = new ClockMeasurement()
+
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
+    clockMeasurement.second.y shouldEqual 0
+    clockMeasurement.second.y.isInstanceOf[Int] shouldEqual true
+  }
+
   "The clock measurement class" should "have a getter for y axis point for first clock" in {
     val clockMeasurement = new ClockMeasurement()
 
@@ -75,6 +84,15 @@ class ClockMeasurementSpec extends FlatSpec with Matchers {
 
     clockMeasurement.first.getY() shouldEqual 0
     clockMeasurement.first.getY().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The clock measurement class" should "have a setter for y axis point for second clock" in {
+    val clockMeasurement = new ClockMeasurement()
+
+    clockMeasurement.isInstanceOf[ClockMeasurement] shouldEqual true
+
+    clockMeasurement.second.getY() shouldEqual 0
+    clockMeasurement.second.getY().isInstanceOf[Int] shouldEqual true
   }
 
   "The clock measurement class" should "have a setter for y axis point for first clock" in {

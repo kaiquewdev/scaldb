@@ -14,7 +14,11 @@
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a y axis point for first clock[0m[0m
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a y axis point for second clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a getter for y axis point for first clock[0m[0m
+[0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for y axis point for second clock[0m[0m
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a setter for y axis point for first clock[0m[0m
 [0m[[0minfo[0m] [0m[32mThe clock measurement class[0m[0m
