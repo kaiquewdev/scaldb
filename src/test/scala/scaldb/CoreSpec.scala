@@ -21,7 +21,7 @@ class coreStringSpec extends FlatSpec with Matchers {
     coreString.getString("scaldb_key_value") shouldEqual "scaldb_raw_value"
   }
 
-  "The coreString class" should "have a getter for string key with those type" in {
+  "The coreString class" should "have a getter for a string the same type as itself" in {
     coreString.getString("scaldb_key_value").isInstanceOf[String] shouldEqual true
   }
 
@@ -52,5 +52,9 @@ class coreIntSpec extends FlatSpec with Matchers {
 
   "The coreInt class" should "have a getter for a int key" in {
     coreInt.getInt("scaldb_key_value") shouldEqual 0
+  }
+
+  "The coreInt class" should "have a getter for int the same type as itself" in {
+    coreInt.getInt("scaldb_key_value").isInstanceOf[Int] shouldEqual true
   }
 }

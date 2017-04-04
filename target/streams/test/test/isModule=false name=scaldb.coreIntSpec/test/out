@@ -7,3 +7,5 @@
 [0m[[0minfo[0m] [0m[32m- should have a setter for a int key returning a int type[0m[0m
 [0m[[0minfo[0m] [0m[32mThe coreInt class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a getter for a int key[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for int the same type as itself[0m[0m
