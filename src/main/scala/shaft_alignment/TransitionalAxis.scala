@@ -3,10 +3,10 @@ package shaft_alignment
 trait TransitionalAxisMethods {
   def incX(v: Int): Int
   def incY(v: Int): Int
-  def incZ(v: Int)
-  def decX(v: Int)
-  def decY(v: Int)
-  def decZ(v: Int)
+  def incZ(v: Int): Int
+  def decX(v: Int): Int
+  def decY(v: Int): Int
+  def decZ(v: Int): Int
 }
 
 class TransitionalAxis() extends LogicAxis with TransitionalAxisMethods {
@@ -18,8 +18,20 @@ class TransitionalAxis() extends LogicAxis with TransitionalAxisMethods {
     setY(sum(getY(),v))
     v
   }
-  def incZ(v: Int) = setZ(sum(getZ(),v))
-  def decX(v: Int) = setX(sub(getX(),v))
-  def decY(v: Int) = setY(sub(getY(),v))
-  def decZ(v: Int) = setZ(sub(getZ(),v))
+  def incZ(v: Int): Int = {
+    setZ(sum(getZ(),v))
+    v
+  }
+  def decX(v: Int): Int = {
+    setX(sub(getX(),v))
+    v
+  }
+  def decY(v: Int): Int = {
+    setY(sub(getY(),v))
+    v
+  }
+  def decZ(v: Int): Int = {
+    setZ(sub(getZ(),v))
+    v
+  }
 }

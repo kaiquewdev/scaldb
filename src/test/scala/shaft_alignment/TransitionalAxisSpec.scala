@@ -10,11 +10,24 @@ class TransitionalAxisSpec extends FlatSpec with Matchers {
 
     transitionalAxis.incX(10) shouldEqual 10
     transitionalAxis.incX(5) shouldEqual 5
-    transitionalAxis.getX() shouldEqual 15
+    transitionalAxis.incX(20).isInstanceOf[Int] shouldEqual true
+    transitionalAxis.getX() shouldEqual 35
     transitionalAxis.getX().isInstanceOf[Int] shouldEqual true
   }
 
-  "The transitional axis class" should "increa the y axis point" in {
+  "The transitional axis class" should "decrease the x axis point" in {
+    val transitionalAxis = new TransitionalAxis()
+
+    transitionalAxis.isInstanceOf[TransitionalAxis] shouldEqual true
+
+    transitionalAxis.incX(100) shouldEqual 100
+    transitionalAxis.decX(50) shouldEqual 50
+    transitionalAxis.decX(10).isInstanceOf[Int] shouldEqual true
+    transitionalAxis.getX() shouldEqual 40
+    transitionalAxis.getX().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The transitional axis class" should "increase the y axis point" in {
     val transitionalAxis = new TransitionalAxis()
 
     transitionalAxis.isInstanceOf[TransitionalAxis] shouldEqual true
@@ -25,40 +38,38 @@ class TransitionalAxisSpec extends FlatSpec with Matchers {
     transitionalAxis.getY().isInstanceOf[Int] shouldEqual true
   }
 
-  "The transitional axis class" should "has incs and decs" in {
+  "The transitional axis class" should "decrease the y axis point" in {
     val transitionalAxis = new TransitionalAxis()
 
     transitionalAxis.isInstanceOf[TransitionalAxis] shouldEqual true
 
-    transitionalAxis.incX(10)
-    transitionalAxis.getX() shouldEqual 10
-    transitionalAxis.getX().isInstanceOf[Int] shouldEqual true
-    transitionalAxis.setX(20)
-    transitionalAxis.getX() shouldEqual 20
-    transitionalAxis.getX().isInstanceOf[Int] shouldEqual true
-
-    transitionalAxis.decX(5)
-    transitionalAxis.getX() shouldEqual 15
-    transitionalAxis.getX().isInstanceOf[Int] shouldEqual true
-
-    transitionalAxis.incY(15)
-    transitionalAxis.getY() shouldEqual 15
+    transitionalAxis.incY(100) shouldEqual 100
+    transitionalAxis.decY(20) shouldEqual 20
+    transitionalAxis.decY(10).isInstanceOf[Int] shouldEqual true
+    transitionalAxis.getY() shouldEqual 70
     transitionalAxis.getY().isInstanceOf[Int] shouldEqual true
-    transitionalAxis.setY(30)
-    transitionalAxis.getY().isInstanceOf[Int] shouldEqual true
+  }
 
-    transitionalAxis.decY(5)
-    transitionalAxis.getY() shouldEqual 25
-    transitionalAxis.getY().isInstanceOf[Int] shouldEqual true
+  "The transitional axis class" should "increase the z axis point" in {
+    val transitionalAxis = new TransitionalAxis()
 
-    transitionalAxis.incZ(20)
-    transitionalAxis.getZ() shouldEqual 20
+    transitionalAxis.isInstanceOf[TransitionalAxis] shouldEqual true
+
+    transitionalAxis.incZ(15) shouldEqual 15
+    transitionalAxis.incZ(30) shouldEqual 30
+    transitionalAxis.getZ() shouldEqual 45
     transitionalAxis.getZ().isInstanceOf[Int] shouldEqual true
-    transitionalAxis.setZ(70)
-    transitionalAxis.getZ().isInstanceOf[Int] shouldEqual true
+  }
 
-    transitionalAxis.decZ(5)
-    transitionalAxis.getZ() shouldEqual 65
+  "The transitional axis class" should "decrease the z axis point" in {
+    val transitionalAxis = new TransitionalAxis()
+
+    transitionalAxis.isInstanceOf[TransitionalAxis] shouldEqual true
+
+    transitionalAxis.incZ(100) shouldEqual 100
+    transitionalAxis.decZ(20) shouldEqual 20
+    transitionalAxis.decZ(10).isInstanceOf[Int] shouldEqual true
+    transitionalAxis.getZ() shouldEqual 70
     transitionalAxis.getZ().isInstanceOf[Int] shouldEqual true
   }
 }
