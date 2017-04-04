@@ -7,7 +7,11 @@ trait CoreStringGetterSetter {
   def getString(key: String, value: String = ""): String
 }
 
-class Core extends Object with CoreStringGetterSetter {
+trait CoreIntGetterSetter {
+  def setInt(key: String, value: Int): Int
+}
+
+class CoreString extends Object with CoreStringGetterSetter {
   var StringKeys: Array[String] = Array.empty
   var StringValues: Array[String] = Array.empty
 
@@ -27,4 +31,8 @@ class Core extends Object with CoreStringGetterSetter {
       value
     }
   }
+}
+
+class CoreInt extends Object with CoreIntGetterSetter {
+  def setInt(key: String, value: Int): Int = value
 }
