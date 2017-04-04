@@ -49,4 +49,8 @@ class coreIntSpec extends FlatSpec with Matchers {
   "The coreInt class" should "have a setter for a int key returning a int type" in {
     coreInt.setInt("scaldb_key_value",0).isInstanceOf[Int] shouldEqual true
   }
+
+  "The coreInt class" should "have a getter for a int key" in {
+    coreInt.getInt("scaldb_key_value") shouldEqual 0
+  }
 }
