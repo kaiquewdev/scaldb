@@ -50,27 +50,34 @@ class coreIntSpec extends FlatSpec with Matchers {
   }
 
   "The coreInt class" should "have a setter for int" in {
-    coreInt.setInt("scaldb_key_value",0) shouldEqual 0
+    coreInt.setInt("scaldb_first_key_value",0) shouldEqual 0
+    coreInt.setInt("scaldb_second_key_value",2) shouldEqual 2
   }
 
   "The coreInt class" should "have a setter for a int key returning a int type" in {
-    coreInt.setInt("scaldb_key_value",0).isInstanceOf[Int] shouldEqual true
+    coreInt.setInt("scaldb_first_key_value",0).isInstanceOf[Int] shouldEqual true
+    coreInt.setInt("scaldb_second_key_value",2).isInstanceOf[Int] shouldEqual true
   }
 
   "The coreInt class" should "have a getter for a int key" in {
-    coreInt.getInt("scaldb_key_value") shouldEqual 0
+    coreInt.getInt("scaldb_first_key_value") shouldEqual 0
+    coreInt.getInt("scaldb_second_key_value") shouldEqual 2
   }
 
   "The coreInt class" should "have a getter for int the same type as itself" in {
-    coreInt.getInt("scaldb_key_value").isInstanceOf[Int] shouldEqual true
+    coreInt.getInt("scaldb_first_key_value").isInstanceOf[Int] shouldEqual true
+    coreInt.getInt("scaldb_second_key_value").isInstanceOf[Int] shouldEqual true
   }
 
   "The coreInt class" should "have a getter with a default value if the key does not exists" in {
-    coreInt.getInt("scaldb_key_value_non_presence",1) shouldEqual 1
+    coreInt.getInt("scaldb_first_key_value_non_presence",1) shouldEqual 1
+    coreInt.getInt("scaldb_second_key_value_non_presence",4) shouldEqual 4
   }
 
   "The coreInt class" should "have a setter overwrite key" in {
-    coreInt.setInt("scaldb_key_value",3) shouldEqual 3
-    coreInt.getInt("scaldb_key_value") shouldEqual 3
+    coreInt.setInt("scaldb_first_key_value",3) shouldEqual 3
+    coreInt.setInt("scaldb_second_key_value",4) shouldEqual 4
+    coreInt.getInt("scaldb_first_key_value") shouldEqual 3
+    coreInt.getInt("scaldb_second_key_value") shouldEqual 4
   }
 }

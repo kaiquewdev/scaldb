@@ -4,7 +4,7 @@
 		module="scal-db_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20170404183524"
+		publication="20170404184251"
 	>
 		<description>
 		Scal DB
