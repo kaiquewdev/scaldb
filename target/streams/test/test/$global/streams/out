@@ -1,12 +1,12 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreIntSpec, org.scalatest.tools.Framework$$anon$1@4859278, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreAdapterSpec, org.scalatest.tools.Framework$$anon$1@4859278, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreStringSpec, org.scalatest.tools.Framework$$anon$1@4859278, false, [SuiteSelector])[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 334 milliseconds.[0m[0m
-[0m[[0minfo[0m] [0m[36mTotal number of tests run: 15[0m[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreArraySpec, org.scalatest.tools.Framework$$anon$1@77dee39, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreIntSpec, org.scalatest.tools.Framework$$anon$1@77dee39, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreStringSpec, org.scalatest.tools.Framework$$anon$1@77dee39, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 366 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 17[0m[0m
 [0m[[0minfo[0m] [0m[36mSuites: completed 3, aborted 0[0m[0m
-[0m[[0minfo[0m] [0m[36mTests: succeeded 15, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 17, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
 [0m[[0mdebug[0m] [0mPassed tests:[0m
-[0m[[0mdebug[0m] [0m	scaldb.CoreAdapterSpec[0m
 [0m[[0mdebug[0m] [0m	scaldb.CoreStringSpec[0m
 [0m[[0mdebug[0m] [0m	scaldb.CoreIntSpec[0m
+[0m[[0mdebug[0m] [0m	scaldb.CoreArraySpec[0m

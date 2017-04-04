@@ -82,10 +82,18 @@ class CoreIntSpec extends FlatSpec with Matchers {
   }
 }
 
-class CoreAdapterSpec extends FlatSpec with Matchers {
-  val coreAdapter = new CoreAdapter()
+class CoreArraySpec extends FlatSpec with Matchers {
+  val coreArray = new CoreArray()
 
-  "The core adapter class" should "have an type" in {
-    coreAdapter.isInstanceOf[CoreAdapter] shouldEqual true
+  "The coreArray class" should "have an type" in {
+    coreArray.isInstanceOf[CoreArray] shouldEqual true
+  }
+
+  "The coreArray class" should "have a setter for array" in {
+    coreArray.setArray("scaldb_first_key",Array("scaldb_first_value")) shouldEqual Array("scaldb_first_value")
+  }
+
+  "The coreArray class" should "have a setter for an array key returning a array type" in {
+    coreArray.setArray("scaldb_first_key",Array("scaldb_first_value")).isInstanceOf[Array[Any]] shouldEqual true
   }
 }
