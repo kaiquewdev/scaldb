@@ -2,7 +2,7 @@ package scaldb
 
 import org.scalatest._
 
-class coreStringSpec extends FlatSpec with Matchers {
+class CoreStringSpec extends FlatSpec with Matchers {
   val coreString = new CoreString()
 
   "The coreString class" should "have an type" in {
@@ -42,7 +42,7 @@ class coreStringSpec extends FlatSpec with Matchers {
   }
 }
 
-class coreIntSpec extends FlatSpec with Matchers {
+class CoreIntSpec extends FlatSpec with Matchers {
   val coreInt = new CoreInt()
 
   "The coreInt class" should "have an type" in {
@@ -79,5 +79,13 @@ class coreIntSpec extends FlatSpec with Matchers {
     coreInt.setInt("scaldb_second_key_value",4) shouldEqual 4
     coreInt.getInt("scaldb_first_key_value") shouldEqual 3
     coreInt.getInt("scaldb_second_key_value") shouldEqual 4
+  }
+}
+
+class CoreAdapterSpec extends FlatSpec with Matchers {
+  val coreAdapter = new CoreAdapter()
+
+  "The core adapter class" should "have an type" in {
+    coreAdapter.isInstanceOf[CoreAdapter] shouldEqual true
   }
 }

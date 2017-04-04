@@ -1,4 +1,5 @@
 #Successful Tests
-#Tue Apr 04 18:42:59 BRT 2017
-scaldb.coreStringSpec=1491342178977
-scaldb.coreIntSpec=1491342178977
+#Tue Apr 04 19:01:27 BRT 2017
+scaldb.CoreIntSpec=1491343287830
+scaldb.CoreStringSpec=1491343287839
+scaldb.CoreAdapterSpec=1491343287830

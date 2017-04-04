@@ -55,3 +55,5 @@ class CoreInt extends Object with CoreIntGetterSetter {
     }
   }
 }
+
+class CoreAdapter extends Object {}
