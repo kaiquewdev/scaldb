@@ -57,4 +57,13 @@ class coreIntSpec extends FlatSpec with Matchers {
   "The coreInt class" should "have a getter for int the same type as itself" in {
     coreInt.getInt("scaldb_key_value").isInstanceOf[Int] shouldEqual true
   }
+
+  "The coreInt class" should "have a getter with a default value if the key does not exists" in {
+    coreInt.getInt("scaldb_key_value_non_presence",1) shouldEqual 1
+  }
+
+  "The coreInt class" should "have a setter overwrite key" in {
+    coreInt.setInt("scaldb_key_value",3) shouldEqual 3
+    coreInt.getInt("scaldb_key_value") shouldEqual 3
+  }
 }

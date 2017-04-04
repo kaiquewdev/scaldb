@@ -9,7 +9,7 @@ trait CoreStringGetterSetter {
 
 trait CoreIntGetterSetter {
   def setInt(key: String, value: Int): Int
-  def getInt(key: String): Int
+  def getInt(key: String, value: Int = 0): Int
 }
 
 class CoreString extends Object with CoreStringGetterSetter {
@@ -47,5 +47,11 @@ class CoreInt extends Object with CoreIntGetterSetter {
     }
     value
   }
-  def getInt(key: String): Int = IntValues(IntKeys.indexOf(key))
+  def getInt(key: String, value: Int = 0): Int = {
+    if (IntKeys.indexOf(key) > -1) {
+      IntValues(IntKeys.indexOf(key))
+    } else {
+      value
+    }
+  }
 }
