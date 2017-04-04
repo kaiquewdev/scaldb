@@ -4,7 +4,7 @@ import rx.lang.scala.Observable
 
 trait CoreStringGetterSetter {
   def setString(key: String, value: String): String
-  def getString(key: String): String
+  def getString(key: String, value: String = ""): String
 }
 
 class Core extends Object with CoreStringGetterSetter {
@@ -20,5 +20,11 @@ class Core extends Object with CoreStringGetterSetter {
     }
     value
   }
-  def getString(key: String): String = StringValues(StringKeys.indexOf(key))
+  def getString(key: String, value: String = ""): String = {
+    if (StringKeys.indexOf(key) > -1) {
+      StringValues(StringKeys.indexOf(key))
+    } else {
+      value
+    }
+  }
 }

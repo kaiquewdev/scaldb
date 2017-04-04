@@ -25,6 +25,10 @@ class CoreSpec extends FlatSpec with Matchers {
     core.getString("scaldb_key_value").isInstanceOf[String] shouldEqual true
   }
 
+  "The core class" should "have a getter with a default value if the key does not exists" in {
+    core.getString("scaldb_key_value_non_presence","default_value") shouldEqual "default_value"
+  }
+
   "The core class" should "have a setter overwrite key" in {
     core.setString("scaldb_key_value","scaldb_raw_value_overwritted") shouldEqual "scaldb_raw_value_overwritted"
     core.getString("scaldb_key_value") shouldEqual "scaldb_raw_value_overwritted"
