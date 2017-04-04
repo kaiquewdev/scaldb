@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0m[32mCoreSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have an type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for a string key[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for a string key with returns a string type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for a string key[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for string key with those type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter overwrite key[0m[0m

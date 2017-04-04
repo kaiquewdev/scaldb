@@ -1,7 +1,7 @@
-# Shaft alignment algorithm
+# Scal DB
 
-[![Build Status](https://travis-ci.org/kaiquewdev/shaft_alignment_algorithm.svg?branch=master)](https://travis-ci.org/kaiquewdev/shaft_alignment_algorithm)
+[![Build Status](https://travis-ci.org/kaiquewdev/scaldb.svg?branch=master)](https://travis-ci.org/kaiquewdev/scaldb)
 
 # Description
 
-Rules to axis alignment in a standarized machine
+In memory database

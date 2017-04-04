@@ -8,7 +8,7 @@ lazy val root = (project in file(".")).
       scalaVersion := "2.12.1",
       version      := "0.1.0-SNAPSHOT"
     )),
-    name := "Shaft alignment algorithm",
+    name := "Scal DB",
     libraryDependencies += scalaTest % Test,
     libraryDependencies += "io.reactivex" %% "rxscala" % "0.26.5"
   )
