@@ -3,6 +3,28 @@ package shaft_alignment
 import org.scalatest._
 
 class TransitionalAxisSpec extends FlatSpec with Matchers {
+  "The transitional axis class" should "increase the x axis point" in {
+    val transitionalAxis = new TransitionalAxis()
+
+    transitionalAxis.isInstanceOf[TransitionalAxis] shouldEqual true
+
+    transitionalAxis.incX(10) shouldEqual 10
+    transitionalAxis.incX(5) shouldEqual 5
+    transitionalAxis.getX() shouldEqual 15
+    transitionalAxis.getX().isInstanceOf[Int] shouldEqual true
+  }
+
+  "The transitional axis class" should "increa the y axis point" in {
+    val transitionalAxis = new TransitionalAxis()
+
+    transitionalAxis.isInstanceOf[TransitionalAxis] shouldEqual true
+
+    transitionalAxis.incY(10) shouldEqual 10
+    transitionalAxis.incY(8) shouldEqual 8
+    transitionalAxis.getY() shouldEqual 18
+    transitionalAxis.getY().isInstanceOf[Int] shouldEqual true
+  }
+
   "The transitional axis class" should "has incs and decs" in {
     val transitionalAxis = new TransitionalAxis()
 
