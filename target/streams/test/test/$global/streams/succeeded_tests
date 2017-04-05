@@ -1,6 +1,7 @@
 #Successful Tests
-#Wed Apr 05 13:28:56 BRT 2017
-scaldb.CoreVectorSpec=1491409736298
-scaldb.CoreArraySpec=1491409736309
-scaldb.CoreIntSpec=1491409736364
-scaldb.CoreStringSpec=1491409736358
+#Wed Apr 05 13:34:36 BRT 2017
+scaldb.CoreVectorSpec=1491410076256
+scaldb.CoreArraySpec=1491410076256
+scaldb.CoreIntSpec=1491410076478
+scaldb.CoreListSpec=1491410076306
+scaldb.CoreStringSpec=1491410076255

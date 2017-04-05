@@ -24,6 +24,7 @@ trait CoreListGetterSetter {
 
 trait CoreVectorGetterSetter {
   def setVector(key: String, value: Vector[Any]): Vector[Any]
+  def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any]
 }
 
 class CoreString extends Object with CoreStringGetterSetter {
@@ -126,5 +127,12 @@ class CoreVector extends Object with CoreVectorGetterSetter {
       VectorValues = VectorValues :+ value
     }
     value
+  }
+  def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any] = {
+    if (VectorKeys.indexOf(key) > -1) {
+      VectorValues(VectorKeys.indexOf(key))
+    } else {
+      value
+    }
   }
 }
