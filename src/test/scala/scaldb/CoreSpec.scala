@@ -114,3 +114,19 @@ class CoreArraySpec extends FlatSpec with Matchers {
     coreArray.getArray("scaldb_first_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
   }
 }
+
+class CoreListSpec extends FlatSpec with Matchers {
+  val coreList = new CoreList()
+
+  "The coreList class" should "have an type" in {
+    coreList.isInstanceOf[CoreList] shouldEqual true
+  }
+
+  "The coreList class" should "have a setter for list" in {
+    coreList.setList("scaldb_first_key",List("scaldb_first_value")) shouldEqual List("scaldb_first_value")
+  }
+
+  "The coreList class" should "have a setter for an list key returning a list type" in {
+    coreList.setList("scaldb_first_key",List("scaldb_first_value")).isInstanceOf[List[Any]] shouldEqual true
+  }
+}

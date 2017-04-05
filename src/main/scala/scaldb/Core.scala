@@ -12,9 +12,13 @@ trait CoreIntGetterSetter {
   def getInt(key: String, value: Int = 0): Int
 }
 
-trait CoreArraySetter {
+trait CoreArrayGetterSetter {
   def setArray(key: String, value: Array[Any]): Array[Any]
   def getArray(key: String, value: Array[Any] = Array.empty): Array[Any]
+}
+
+trait CoreListGetterSetter {
+  def setList(key: String, value: List[Any]): List[Any]
 }
 
 class CoreString extends Object with CoreStringGetterSetter {
@@ -61,7 +65,7 @@ class CoreInt extends Object with CoreIntGetterSetter {
   }
 }
 
-class CoreArray extends Object with CoreArraySetter {
+class CoreArray extends Object with CoreArrayGetterSetter {
   var ArrayKeys: Array[String] = Array.empty
   var ArrayValues: Array[Array[Any]] = Array.empty
 
@@ -77,6 +81,19 @@ class CoreArray extends Object with CoreArraySetter {
   def getArray(key: String, value: Array[Any] = Array.empty): Array[Any] = {
     if (ArrayKeys.indexOf(key) > -1) {
       ArrayValues(ArrayKeys.indexOf(key))
+    } else {
+      value
+    }
+  }
+}
+
+class CoreList extends Object with CoreListGetterSetter {
+  var ListKeys: Array[String] = Array.empty
+  var ListValues: Array[List[Any]] = Array.empty
+
+  def setList(key: String, value: List[Any]): List[Any] = {
+    if (ListKeys.indexOf(key) > -1) {
+      ListValues(ListKeys.indexOf(key))
     } else {
       value
     }
