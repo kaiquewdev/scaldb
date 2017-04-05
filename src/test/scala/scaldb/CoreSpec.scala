@@ -3,13 +3,16 @@ package scaldb
 import org.scalatest._
 
 class CoreLogicSpec extends FlatSpec with Matchers {
-  "The coreLogic object" should "have a binary search" in {
+  "The coreLogic object" should "have a string binary search" in {
     CoreLogic.stringBinarySearch(Array("uncommon_value"),"first_value") shouldEqual -1
+    CoreLogic.stringBinarySearch(Array("uncommon_value"),"first_value").isInstanceOf[Int] shouldEqual true
     CoreLogic.stringBinarySearch(Array("first_value"),"first_value") shouldEqual 0
+    CoreLogic.stringBinarySearch(Array("first_value"),"first_value").isInstanceOf[Int] shouldEqual true
     CoreLogic.stringBinarySearch(Array("first_value","second_value","third_value"),"second_value") shouldEqual 1
+    CoreLogic.stringBinarySearch(Array("first_value","second_value","third_value"),"second_value").isInstanceOf[Int] shouldEqual true
   }
 
-  "The coreLogic object" should "have a verifier of value on an array" in {
+  "The coreLogic object" should "have a verifier of value on an array for string" in {
     CoreLogic.hasKeyString("fourth_value",Array("first_value","second_value","third_value")) shouldEqual false
     CoreLogic.hasKeyString("second_value",Array("first_value","second_value","third_value")) shouldEqual true
     CoreLogic.hasKeyString("third_value",Array("first_value","second_value","third_value")) shouldEqual true
