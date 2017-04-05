@@ -14,8 +14,11 @@ class CoreLogicSpec extends FlatSpec with Matchers {
 
   "The coreLogic object" should "have a verifier of value on an array for string" in {
     CoreLogic.hasKeyString("fourth_value",Array("first_value","second_value","third_value")) shouldEqual false
+    CoreLogic.hasKeyString("fourth_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
     CoreLogic.hasKeyString("second_value",Array("first_value","second_value","third_value")) shouldEqual true
+    CoreLogic.hasKeyString("second_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
     CoreLogic.hasKeyString("third_value",Array("first_value","second_value","third_value")) shouldEqual true
+    CoreLogic.hasKeyString("third_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
   }
 }
 
