@@ -1034,7 +1034,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.1!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 463ms :: artifacts dl 17ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 441ms :: artifacts dl 13ms[0m
 [0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#scal-db_2.12;0.1.0-SNAPSHOT compile produced in /home/kaique/war/scaldb/target/resolution-cache/reports/br.com.kaiquesilva-scal-db_2.12-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#scal-db_2.12;0.1.0-SNAPSHOT runtime produced in /home/kaique/war/scaldb/target/resolution-cache/reports/br.com.kaiquesilva-scal-db_2.12-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#scal-db_2.12;0.1.0-SNAPSHOT test produced in /home/kaique/war/scaldb/target/resolution-cache/reports/br.com.kaiquesilva-scal-db_2.12-test.xml[0m
@@ -1048,5 +1048,5 @@
 [0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#scal-db_2.12;0.1.0-SNAPSHOT docs produced in /home/kaique/war/scaldb/target/resolution-cache/reports/br.com.kaiquesilva-scal-db_2.12-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#scal-db_2.12;0.1.0-SNAPSHOT pom produced in /home/kaique/war/scaldb/target/resolution-cache/reports/br.com.kaiquesilva-scal-db_2.12-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for br.com.kaiquesilva#scal-db_2.12;0.1.0-SNAPSHOT scala-tool produced in /home/kaique/war/scaldb/target/resolution-cache/reports/br.com.kaiquesilva-scal-db_2.12-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (463ms resolve - 17ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (441ms resolve - 13ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
