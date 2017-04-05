@@ -156,4 +156,12 @@ class CoreVectorSpec extends FlatSpec with Matchers {
   "The coreVector class" should "have an type" in {
     coreVector.isInstanceOf[CoreVector] shouldEqual true
   }
+
+  "The coreVector class" should "have a setter for vector" in {
+    coreVector.setVector("scaldb_first_key",Vector("scaldb_first_value")) shouldEqual Vector("scaldb_first_value")
+  }
+
+  "The coreVector class" should "have a setter for an vector key returning a vector type" in {
+    coreVector.setVector("scaldb_first_key",Vector("scaldb_first_value")).isInstanceOf[Vector[Any]] shouldEqual true
+  }
 }

@@ -22,7 +22,9 @@ trait CoreListGetterSetter {
   def getList(key: String, value: List[Any] = List.empty): List[Any]
 }
 
-trait CoreVectorGetterSetter {}
+trait CoreVectorGetterSetter {
+  def setVector(key: String, value: Vector[Any]): Vector[Any]
+}
 
 class CoreString extends Object with CoreStringGetterSetter {
   var StringKeys: Array[String] = Array.empty
@@ -112,4 +114,17 @@ class CoreList extends Object with CoreListGetterSetter {
   }
 }
 
-class CoreVector extends Object with CoreVectorGetterSetter {}
+class CoreVector extends Object with CoreVectorGetterSetter {
+  var VectorKeys: Array[String] = Array.empty
+  var VectorValues: Array[Vector[Any]] = Array.empty
+
+  def setVector(key: String, value: Vector[Any]): Vector[Any] = {
+    if (VectorKeys.indexOf(key) > -1) {
+      VectorValues(VectorKeys.indexOf(key)) = value
+    } else {
+      VectorKeys = VectorKeys :+ key
+      VectorValues = VectorValues :+ value
+    }
+    value
+  }
+}
