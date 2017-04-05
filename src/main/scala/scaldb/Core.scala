@@ -2,6 +2,11 @@ package scaldb
 
 import rx.lang.scala.Observable
 
+trait CoreLogicOperations {
+  def stringBinarySearch(keys: Array[String], value: String): Int
+  def hasKeyString(value: String, keys: Array[String]): Boolean
+}
+
 trait CoreStringGetterSetter {
   def setString(key: String, value: String): String
   def getString(key: String, value: String = ""): String
@@ -27,13 +32,18 @@ trait CoreVectorGetterSetter {
   def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any]
 }
 
+object CoreLogic extends CoreLogicOperations {
+  def stringBinarySearch(keys: Array[String], value: String): Int = keys.indexOf(value)
+  def hasKeyString(value: String, keys: Array[String]): Boolean = stringBinarySearch(keys,value) > -1
+}
+
 class CoreString extends Object with CoreStringGetterSetter {
   var StringKeys: Array[String] = Array.empty
   var StringValues: Array[String] = Array.empty
 
   def setString(key: String, value: String): String = {
-    if (StringKeys.indexOf(key) > -1) {
-      StringValues(StringKeys.indexOf(key)) = value
+    if (CoreLogic.hasKeyString(key,StringKeys)) {
+      StringValues(CoreLogic.stringBinarySearch(StringKeys,key)) = value
     } else {
       StringKeys = StringKeys :+ key
       StringValues = StringValues :+ value
@@ -41,8 +51,8 @@ class CoreString extends Object with CoreStringGetterSetter {
     value
   }
   def getString(key: String, value: String = ""): String = {
-    if (StringKeys.indexOf(key) > -1) {
-      StringValues(StringKeys.indexOf(key))
+    if (CoreLogic.hasKeyString(key,StringKeys)) {
+      StringValues(CoreLogic.stringBinarySearch(StringKeys,key))
     } else {
       value
     }
