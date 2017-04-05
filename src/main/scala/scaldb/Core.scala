@@ -5,6 +5,7 @@ import rx.lang.scala.Observable
 trait CoreLogicOperations {
   def stringBinarySearch(keys: Array[String], value: String): Int
   def hasKeyString(value: String, keys: Array[String]): Boolean
+  def intBinarySearch(keys: Array[Int], value: Int): Int
 }
 
 trait CoreStringGetterSetter {
@@ -35,6 +36,7 @@ trait CoreVectorGetterSetter {
 object CoreLogic extends CoreLogicOperations {
   def stringBinarySearch(keys: Array[String], value: String): Int = keys.indexOf(value)
   def hasKeyString(value: String, keys: Array[String]): Boolean = stringBinarySearch(keys,value) > -1
+  def intBinarySearch(keys: Array[Int], value: Int): Int = keys.indexOf(value)
 }
 
 class CoreString extends Object with CoreStringGetterSetter {

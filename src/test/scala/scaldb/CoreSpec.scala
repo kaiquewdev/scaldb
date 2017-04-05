@@ -20,6 +20,10 @@ class CoreLogicSpec extends FlatSpec with Matchers {
     CoreLogic.hasKeyString("third_value",Array("first_value","second_value","third_value")) shouldEqual true
     CoreLogic.hasKeyString("third_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
   }
+
+  "The coreLogic object" should "have a int binary search" in {
+    CoreLogic.intBinarySearch(Array(1,2,3),4) shouldEqual -1
+  }
 }
 
 class CoreStringSpec extends FlatSpec with Matchers {
