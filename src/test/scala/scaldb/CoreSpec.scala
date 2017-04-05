@@ -172,4 +172,8 @@ class CoreVectorSpec extends FlatSpec with Matchers {
   "The coreVector class" should "have a getter for vector the same type as itself" in {
     coreVector.getVector("scaldb_first_key_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
   }
+
+  "The coreVector class" should "have a setter overwrite key" in {
+    coreVector.setVector("scaldb_first_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
+  }
 }
