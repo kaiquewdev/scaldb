@@ -22,6 +22,8 @@ trait CoreListGetterSetter {
   def getList(key: String, value: List[Any] = List.empty): List[Any]
 }
 
+trait CoreVectorGetterSetter {}
+
 class CoreString extends Object with CoreStringGetterSetter {
   var StringKeys: Array[String] = Array.empty
   var StringValues: Array[String] = Array.empty
@@ -109,3 +111,5 @@ class CoreList extends Object with CoreListGetterSetter {
     }
   }
 }
+
+class CoreVector extends Object with CoreVectorGetterSetter {}

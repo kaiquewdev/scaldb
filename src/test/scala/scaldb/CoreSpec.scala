@@ -149,3 +149,11 @@ class CoreListSpec extends FlatSpec with Matchers {
     coreList.getList("scaldb_second_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
   }
 }
+
+class CoreVectorSpec extends FlatSpec with Matchers {
+  val coreVector = new CoreVector()
+
+  "The coreVector class" should "have an type" in {
+    coreVector.isInstanceOf[CoreVector] shouldEqual true
+  }
+}
