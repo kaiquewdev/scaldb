@@ -19,6 +19,7 @@ trait CoreArrayGetterSetter {
 
 trait CoreListGetterSetter {
   def setList(key: String, value: List[Any]): List[Any]
+  def getList(key: String, value: List[Any] = List.empty): List[Any]
 }
 
 class CoreString extends Object with CoreStringGetterSetter {
@@ -92,6 +93,15 @@ class CoreList extends Object with CoreListGetterSetter {
   var ListValues: Array[List[Any]] = Array.empty
 
   def setList(key: String, value: List[Any]): List[Any] = {
+    if (ListKeys.indexOf(key) > -1) {
+      ListValues(ListKeys.indexOf(key)) = value
+    } else {
+      ListKeys = ListKeys :+ key
+      ListValues = ListValues :+ value
+    }
+    value
+  }
+  def getList(key: String, value: List[Any] = List.empty): List[Any] = {
     if (ListKeys.indexOf(key) > -1) {
       ListValues(ListKeys.indexOf(key))
     } else {
