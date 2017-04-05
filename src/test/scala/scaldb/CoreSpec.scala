@@ -134,14 +134,18 @@ class CoreListSpec extends FlatSpec with Matchers {
 
   "The coreList class" should "have a getter for a list key" in {
     coreList.getList("scaldb_first_key") shouldEqual Array("scaldb_first_value")
+    coreList.getList("scaldb_second_key") shouldEqual Array("scaldb_second_value")
   }
 
   "The coreList class" should "have a getter for list the same type as itself" in {
     coreList.getList("scaldb_first_key_non_presence",List("default_value")) shouldEqual List("default_value")
+    coreList.getList("scaldb_second_key_non_presence",List("default_value")) shouldEqual List("default_value")
   }
 
   "The coreList class" should "have a setter overwrite key" in {
     coreList.setList("scaldb_first_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreList.setList("scaldb_second_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
     coreList.getList("scaldb_first_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreList.getList("scaldb_second_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
   }
 }
