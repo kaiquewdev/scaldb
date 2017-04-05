@@ -96,4 +96,12 @@ class CoreArraySpec extends FlatSpec with Matchers {
   "The coreArray class" should "have a setter for an array key returning a array type" in {
     coreArray.setArray("scaldb_first_key",Array("scaldb_first_value")).isInstanceOf[Array[Any]] shouldEqual true
   }
+
+  "The coreArray class" should "have a getter for a int key" in {
+    coreArray.getArray("scaldb_first_key") shouldEqual Array("scaldb_first_value")
+  }
+
+  "The coreArray class" should "have a getter for int the same type as itself" in {
+    coreArray.getArray("scaldb_first_key").isInstanceOf[Array[Any]] shouldEqual true
+  }
 }

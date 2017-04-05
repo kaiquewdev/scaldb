@@ -14,6 +14,7 @@ trait CoreIntGetterSetter {
 
 trait CoreArraySetter {
   def setArray(key: String, value: Array[Any]): Array[Any]
+  def getArray(key: String): Array[Any]
 }
 
 class CoreString extends Object with CoreStringGetterSetter {
@@ -73,4 +74,5 @@ class CoreArray extends Object with CoreArraySetter {
     }
     value
   }
+  def getArray(key: String): Array[Any] = ArrayValues(ArrayKeys.indexOf(key))
 }
