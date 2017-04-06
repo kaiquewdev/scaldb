@@ -27,6 +27,7 @@ class CoreLogicSpec extends FlatSpec with Matchers {
     CoreLogic.intBinarySearch(Array(7,5,3,9,4,2),5) shouldEqual 1
     CoreLogic.intBinarySearch(Array(8,3,2,10,9),2) shouldEqual 2
     CoreLogic.intBinarySearch(Array(15,30,45,70,100),70) shouldEqual 3
+    CoreLogic.intBinarySearch(Array(35,450,720,60,180,137),720) shouldEqual 2
   }
 
   "The coreLogic object" should "have a verifier of value an araay of int" in {
@@ -35,6 +36,7 @@ class CoreLogicSpec extends FlatSpec with Matchers {
     CoreLogic.hasKeyInt(5,Array(60,70,5,30)) shouldEqual true
     CoreLogic.hasKeyInt(100,Array(60,80,15,100,20)) shouldEqual true
     CoreLogic.hasKeyInt(150,Array(155,300,716,150,627)) shouldEqual true
+    CoreLogic.hasKeyInt(12000,Array(600,700,990,475,1200,630,12000,790)) shouldEqual true
   }
 }
 
@@ -127,27 +129,34 @@ class CoreArraySpec extends FlatSpec with Matchers {
 
   "The coreArray class" should "have a setter for array" in {
     coreArray.setArray("scaldb_first_key",Array("scaldb_first_value")) shouldEqual Array("scaldb_first_value")
+    coreArray.setArray("scaldb_second_key",Array("scaldb_second_value")) shouldEqual Array("scaldb_second_value")
   }
 
   "The coreArray class" should "have a setter for an array key returning a array type" in {
     coreArray.setArray("scaldb_first_key",Array("scaldb_first_value")).isInstanceOf[Array[Any]] shouldEqual true
+    coreArray.setArray("scaldb_second_key",Array("scaldb_second_value")).isInstanceOf[Array[Any]] shouldEqual true
   }
 
   "The coreArray class" should "have a getter for a int key" in {
     coreArray.getArray("scaldb_first_key") shouldEqual Array("scaldb_first_value")
+    coreArray.getArray("scaldb_second_key") shouldEqual Array("scaldb_second_value")
   }
 
   "The coreArray class" should "have a getter for int the same type as itself" in {
     coreArray.getArray("scaldb_first_key").isInstanceOf[Array[Any]] shouldEqual true
+    coreArray.getArray("scaldb_second_key").isInstanceOf[Array[Any]] shouldEqual true
   }
 
   "The coreArray class" should "have a getter with a default value if the key does not exsits" in {
     coreArray.getArray("scaldb_first_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
+    coreArray.getArray("scaldb_second_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
   }
 
   "The coreArray class" should "have a setter overwrite key" in {
     coreArray.setArray("scaldb_first_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
     coreArray.getArray("scaldb_first_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArray.setArray("scaldb_second_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArray.getArray("scaldb_second_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
   }
 }
 
