@@ -12,7 +12,7 @@ class CoreLogicSpec extends FlatSpec with Matchers {
     CoreLogic.stringBinarySearch(Array("first_value","second_value","third_value"),"second_value").isInstanceOf[Int] shouldEqual true
   }
 
-  "The coreLogic object" should "have a verifier of value on an array for string" in {
+  "The coreLogic object" should "have a verifier of value on an array of string" in {
     CoreLogic.hasKeyString("fourth_value",Array("first_value","second_value","third_value")) shouldEqual false
     CoreLogic.hasKeyString("fourth_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
     CoreLogic.hasKeyString("second_value",Array("first_value","second_value","third_value")) shouldEqual true
@@ -23,6 +23,12 @@ class CoreLogicSpec extends FlatSpec with Matchers {
 
   "The coreLogic object" should "have a int binary search" in {
     CoreLogic.intBinarySearch(Array(1,2,3),4) shouldEqual -1
+    CoreLogic.intBinarySearch(Array(1,3,4,8,7),8) shouldEqual 3
+  }
+
+  "The coreLogic object" should "have a verifier of value an araay of int" in {
+    CoreLogic.hasKeyInt(10,Array(9,7,3,4,100)) shouldEqual false
+    CoreLogic.hasKeyInt(3,Array(10,3,12,27)) shouldEqual true
   }
 }
 

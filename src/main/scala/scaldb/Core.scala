@@ -6,6 +6,7 @@ trait CoreLogicOperations {
   def stringBinarySearch(keys: Array[String], value: String): Int
   def hasKeyString(value: String, keys: Array[String]): Boolean
   def intBinarySearch(keys: Array[Int], value: Int): Int
+  def hasKeyInt(value: Int, keys: Array[Int]): Boolean
 }
 
 trait CoreStringGetterSetter {
@@ -37,6 +38,7 @@ object CoreLogic extends CoreLogicOperations {
   def stringBinarySearch(keys: Array[String], value: String): Int = keys.indexOf(value)
   def hasKeyString(value: String, keys: Array[String]): Boolean = stringBinarySearch(keys,value) > -1
   def intBinarySearch(keys: Array[Int], value: Int): Int = keys.indexOf(value)
+  def hasKeyInt(value: Int, keys: Array[Int]): Boolean = intBinarySearch(keys,value) > -1
 }
 
 class CoreString extends Object with CoreStringGetterSetter {
