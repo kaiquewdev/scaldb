@@ -24,11 +24,17 @@ class CoreLogicSpec extends FlatSpec with Matchers {
   "The coreLogic object" should "have a int binary search" in {
     CoreLogic.intBinarySearch(Array(1,2,3),4) shouldEqual -1
     CoreLogic.intBinarySearch(Array(1,3,4,8,7),8) shouldEqual 3
+    CoreLogic.intBinarySearch(Array(7,5,3,9,4,2),5) shouldEqual 1
+    CoreLogic.intBinarySearch(Array(8,3,2,10,9),2) shouldEqual 2
+    CoreLogic.intBinarySearch(Array(15,30,45,70,100),70) shouldEqual 3
   }
 
   "The coreLogic object" should "have a verifier of value an araay of int" in {
     CoreLogic.hasKeyInt(10,Array(9,7,3,4,100)) shouldEqual false
     CoreLogic.hasKeyInt(3,Array(10,3,12,27)) shouldEqual true
+    CoreLogic.hasKeyInt(5,Array(60,70,5,30)) shouldEqual true
+    CoreLogic.hasKeyInt(100,Array(60,80,15,100,20)) shouldEqual true
+    CoreLogic.hasKeyInt(150,Array(155,300,716,150,627)) shouldEqual true
   }
 }
 
