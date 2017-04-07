@@ -271,4 +271,8 @@ class CoreSpec extends FlatSpec with Matchers {
   "The core class" should "have a int setter" in {
     core.setInt("scaldb_first_key_int",10) shouldEqual 10
   }
+
+  "The core class" should "have a int getter" in {
+    core.getInt("scaldb_first_key_int") shouldEqual 10
+  }
 }
