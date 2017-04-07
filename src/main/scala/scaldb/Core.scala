@@ -90,8 +90,8 @@ class CoreArray extends Object with CoreArrayGetterSetter {
   var ArrayValues: Array[Array[Any]] = Array.empty
 
   def setArray(key: String, value: Array[Any]): Array[Any] = {
-    if (ArrayKeys.indexOf(key) > -1) {
-      ArrayValues(ArrayKeys.indexOf(key)) = value
+    if (CoreLogic.hasKeyStringArray(key,ArrayKeys)) {
+      ArrayValues(CoreLogic.stringBinarySearchArray(ArrayKeys,key)) = value
     } else {
       ArrayKeys = ArrayKeys :+ key
       ArrayValues = ArrayValues :+ value
