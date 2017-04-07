@@ -36,7 +36,7 @@ trait CoreGetterSetter {
   def setString(key: String, value: String): String
   def getString(key: String, value: String = ""): String
   def setInt(key: String, value: Int): Int
-  def getInt(key: String): Int
+  def getInt(key: String, value: Int = 0): Int
 }
 
 object CoreLogic extends CoreLogicOperations {
@@ -161,5 +161,5 @@ class Core extends Object with CoreGetterSetter {
   def setString(key: String, value: String): String = coreString.setString(key,value)
   def getString(key: String, value: String = ""): String = coreString.getString(key,value)
   def setInt(key: String, value: Int): Int = coreInt.setInt(key,value)
-  def getInt(key: String): Int = coreInt.getInt(key)
+  def getInt(key: String, value: Int = 0): Int = coreInt.getInt(key,value)
 }

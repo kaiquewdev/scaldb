@@ -273,6 +273,6 @@ class CoreSpec extends FlatSpec with Matchers {
   }
 
   "The core class" should "have a int getter" in {
-    core.getInt("scaldb_first_key_int") shouldEqual 10
+    core.getInt("scaldb_first_key_int_non_presence", -1) shouldEqual -1
   }
 }
