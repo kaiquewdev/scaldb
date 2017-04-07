@@ -237,8 +237,8 @@ class CoreVectorSpec extends FlatSpec with Matchers {
 
   "The coreVector class" should "have a setter for an vector key returning a vector type" in {
     assume(coreVector.setVector("scaldb_first_key",Vector("scaldb_first_value")).isInstanceOf[Vector[Any]])
-    coreVector.setVector("scaldb_second_key",Vector("scaldb_second_value")).isInstanceOf[Vector[Any]] shouldEqual true
-    coreVector.setVector("scaldb_third_key",Vector("scaldb_third_value")).isInstanceOf[Vector[Any]] shouldEqual true
+    assume(coreVector.setVector("scaldb_second_key",Vector("scaldb_second_value")).isInstanceOf[Vector[Any]])
+    assume(coreVector.setVector("scaldb_third_key",Vector("scaldb_third_value")).isInstanceOf[Vector[Any]])
   }
 
   "The coreVector class" should "have a getter for a vector key" in {
