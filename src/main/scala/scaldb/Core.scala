@@ -34,7 +34,7 @@ trait CoreVectorGetterSetter {
 
 trait CoreGetterSetter {
   def setString(key: String, value: String): String
-  def getString(key: String): String
+  def getString(key: String, value: String = ""): String
 }
 
 object CoreLogic extends CoreLogicOperations {
@@ -156,5 +156,5 @@ class Core extends Object with CoreGetterSetter {
   private val coreString: CoreString = new CoreString()
 
   def setString(key: String, value: String): String = coreString.setString(key,value)
-  def getString(key: String): String = coreString.getString(key)
+  def getString(key: String, value: String = ""): String = coreString.getString(key,value)
 }

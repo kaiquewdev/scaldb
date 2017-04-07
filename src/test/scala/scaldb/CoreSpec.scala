@@ -259,4 +259,8 @@ class CoreSpec extends FlatSpec with Matchers {
   "The core class" should "have a string getter" in {
     core.getString("scaldb_first_key_string") shouldEqual "scaldb_first_value"
   }
+
+  "The core class" should "getter have a default value to return when the key is not present" in {
+    core.getString("scaldb_first_key_string_non_presence","default_value") shouldEqual "default_value"
+  }
 }
