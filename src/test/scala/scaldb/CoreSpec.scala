@@ -144,33 +144,40 @@ class CoreArraySpec extends FlatSpec with Matchers {
   "The coreArray class" should "have a setter for array" in {
     coreArray.setArray("scaldb_first_key",Array("scaldb_first_value")) shouldEqual Array("scaldb_first_value")
     coreArray.setArray("scaldb_second_key",Array("scaldb_second_value")) shouldEqual Array("scaldb_second_value")
+    coreArray.setArray("scaldb_third_key",Array("scaldb_third_value")) shouldEqual Array("scaldb_third_value")
   }
 
   "The coreArray class" should "have a setter for an array key returning a array type" in {
     coreArray.setArray("scaldb_first_key",Array("scaldb_first_value")).isInstanceOf[Array[Any]] shouldEqual true
     coreArray.setArray("scaldb_second_key",Array("scaldb_second_value")).isInstanceOf[Array[Any]] shouldEqual true
+    coreArray.setArray("scaldb_third_key",Array("scaldb_third_value")).isInstanceOf[Array[Any]] shouldEqual true
   }
 
   "The coreArray class" should "have a getter for a int key" in {
     coreArray.getArray("scaldb_first_key") shouldEqual Array("scaldb_first_value")
     coreArray.getArray("scaldb_second_key") shouldEqual Array("scaldb_second_value")
+    coreArray.getArray("scaldb_third_key") shouldEqual Array("scaldb_third_value")
   }
 
   "The coreArray class" should "have a getter for int the same type as itself" in {
     coreArray.getArray("scaldb_first_key").isInstanceOf[Array[Any]] shouldEqual true
     coreArray.getArray("scaldb_second_key").isInstanceOf[Array[Any]] shouldEqual true
+    coreArray.getArray("scaldb_third_key").isInstanceOf[Array[Any]] shouldEqual true
   }
 
   "The coreArray class" should "have a getter with a default value if the key does not exsits" in {
     coreArray.getArray("scaldb_first_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
     coreArray.getArray("scaldb_second_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
+    coreArray.getArray("scaldb_third_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
   }
 
   "The coreArray class" should "have a setter overwrite key" in {
     coreArray.setArray("scaldb_first_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArray.getArray("scaldb_first_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
     coreArray.setArray("scaldb_second_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArray.setArray("scaldb_third_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArray.getArray("scaldb_first_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
     coreArray.getArray("scaldb_second_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArray.getArray("scaldb_third_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
   }
 }
 
@@ -208,9 +215,10 @@ class CoreListSpec extends FlatSpec with Matchers {
   "The coreList class" should "have a setter overwrite key" in {
     coreList.setList("scaldb_first_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
     coreList.setList("scaldb_second_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
-    coreList.setList("scaldb_second_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreList.setList("scaldb_third_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
     coreList.getList("scaldb_first_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
     coreList.getList("scaldb_second_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreList.getList("scaldb_third_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
   }
 }
 
