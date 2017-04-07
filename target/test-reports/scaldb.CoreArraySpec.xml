@@ -12,9 +12,9 @@
                                                  
                                                </testcase><testcase classname="scaldb.CoreArraySpec" name="The coreArray class should have a getter for a int key" time="0.0">
                                                  
-                                               </testcase><testcase classname="scaldb.CoreArraySpec" name="The coreArray class should have a getter for int the same type as itself" time="0.001">
+                                               </testcase><testcase classname="scaldb.CoreArraySpec" name="The coreArray class should have a getter for int the same type as itself" time="0.0">
                                                  
-                                               </testcase><testcase classname="scaldb.CoreArraySpec" name="The coreArray class should have a getter with a default value if the key does not exists" time="0.0">
+                                               </testcase><testcase classname="scaldb.CoreArraySpec" name="The coreArray class should have a getter with a default value if the key does not exists" time="0.001">
                                                  
                                                </testcase><testcase classname="scaldb.CoreArraySpec" name="The coreArray class should have a setter overwrite key" time="0.0">
                                                  

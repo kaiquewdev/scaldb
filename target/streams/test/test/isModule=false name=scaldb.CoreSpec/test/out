@@ -7,3 +7,5 @@
 [0m[[0minfo[0m] [0m[32m- should have a string getter[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should getter have a default value to return when the key is not present[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter overwrite key[0m[0m
