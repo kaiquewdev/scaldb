@@ -237,6 +237,6 @@ class CoreVectorSpec extends FlatSpec with Matchers {
     coreVector.setVector("scaldb_third_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
     coreVector.getVector("scaldb_first_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
     coreVector.getVector("scaldb_second_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
-    coreVector.getVector("scaldb_second_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
+    coreVector.getVector("scaldb_third_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
   }
 }
