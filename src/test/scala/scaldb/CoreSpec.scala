@@ -251,4 +251,12 @@ class CoreSpec extends FlatSpec with Matchers {
   "The core class" should "have an type" in {
     assume(core.isInstanceOf[Core])
   }
+
+  "The core class" should "have a string setter" in {
+    core.setString("scaldb_first_key_string","scaldb_first_value") shouldEqual "scaldb_first_value"
+  }
+
+  "The core class" should "have a string getter" in {
+    core.getString("scaldb_first_key_string") shouldEqual "scaldb_first_value"
+  }
 }

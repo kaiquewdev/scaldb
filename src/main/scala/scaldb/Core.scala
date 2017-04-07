@@ -32,7 +32,10 @@ trait CoreVectorGetterSetter {
   def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any]
 }
 
-trait CoreGetterSetter {}
+trait CoreGetterSetter {
+  def setString(key: String, value: String): String
+  def getString(key: String): String
+}
 
 object CoreLogic extends CoreLogicOperations {
   def stringBinarySearchArray(keys: Array[String], value: String): Int = keys.indexOf(value)
@@ -149,4 +152,9 @@ class CoreVector extends Object with CoreVectorGetterSetter {
   }
 }
 
-class Core extends Object with CoreGetterSetter {}
+class Core extends Object with CoreGetterSetter {
+  private val coreString: CoreString = new CoreString()
+
+  def setString(key: String, value: String): String = coreString.setString(key,value)
+  def getString(key: String): String = coreString.getString(key)
+}
