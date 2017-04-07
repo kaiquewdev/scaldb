@@ -99,8 +99,8 @@ class CoreArray extends Object with CoreArrayGetterSetter {
     value
   }
   def getArray(key: String, value: Array[Any] = Array.empty): Array[Any] = {
-    if (ArrayKeys.indexOf(key) > -1) {
-      ArrayValues(ArrayKeys.indexOf(key))
+    if (CoreLogic.hasKeyStringArray(key,ArrayKeys)) {
+      ArrayValues(CoreLogic.stringBinarySearchArray(ArrayKeys,key))
     } else {
       value
     }
@@ -112,8 +112,8 @@ class CoreList extends Object with CoreListGetterSetter {
   var ListValues: Array[List[Any]] = Array.empty
 
   def setList(key: String, value: List[Any]): List[Any] = {
-    if (ListKeys.indexOf(key) > -1) {
-      ListValues(ListKeys.indexOf(key)) = value
+    if (CoreLogic.hasKeyStringArray(key,ListKeys)) {
+      ListValues(CoreLogic.stringBinarySearchArray(ListKeys,key)) = value
     } else {
       ListKeys = ListKeys :+ key
       ListValues = ListValues :+ value
@@ -121,8 +121,8 @@ class CoreList extends Object with CoreListGetterSetter {
     value
   }
   def getList(key: String, value: List[Any] = List.empty): List[Any] = {
-    if (ListKeys.indexOf(key) > -1) {
-      ListValues(ListKeys.indexOf(key))
+    if (CoreLogic.hasKeyStringArray(key,ListKeys)) {
+      ListValues(CoreLogic.stringBinarySearchArray(ListKeys,key))
     } else {
       value
     }
@@ -134,8 +134,8 @@ class CoreVector extends Object with CoreVectorGetterSetter {
   var VectorValues: Array[Vector[Any]] = Array.empty
 
   def setVector(key: String, value: Vector[Any]): Vector[Any] = {
-    if (VectorKeys.indexOf(key) > -1) {
-      VectorValues(VectorKeys.indexOf(key)) = value
+    if (CoreLogic.hasKeyStringArray(key,VectorKeys)) {
+      VectorValues(CoreLogic.stringBinarySearchArray(VectorKeys,key)) = value
     } else {
       VectorKeys = VectorKeys :+ key
       VectorValues = VectorValues :+ value
@@ -143,8 +143,8 @@ class CoreVector extends Object with CoreVectorGetterSetter {
     value
   }
   def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any] = {
-    if (VectorKeys.indexOf(key) > -1) {
-      VectorValues(VectorKeys.indexOf(key))
+    if (CoreLogic.hasKeyStringArray(key,VectorKeys)) {
+      VectorValues(CoreLogic.stringBinarySearchArray(VectorKeys,key))
     } else {
       value
     }
