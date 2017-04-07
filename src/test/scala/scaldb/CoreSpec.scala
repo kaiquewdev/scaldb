@@ -50,33 +50,40 @@ class CoreStringSpec extends FlatSpec with Matchers {
   "The coreString class" should "have a setter for a string" in {
     coreString.setString("scaldb_first_key_value","scaldb_first_raw_value") shouldEqual "scaldb_first_raw_value"
     coreString.setString("scaldb_second_key_value","scaldb_second_raw_value") shouldEqual "scaldb_second_raw_value"
+    coreString.setString("scaldb_third_key_value","scaldb_third_raw_value") shouldEqual "scaldb_third_raw_value"
   }
 
   "The coreString class" should "have a setter for a string key returning a string type" in {
     coreString.setString("scaldb_first_key_type","scaldb_first_type_value").isInstanceOf[String] shouldEqual true
     coreString.setString("scaldb_second_key_type","scaldb_second_type_value").isInstanceOf[String] shouldEqual true
+    coreString.setString("scaldb_third_key_type","scaldb_third_type_value").isInstanceOf[String] shouldEqual true
   }
 
   "The coreString class" should "have a getter for a string key" in {
     coreString.getString("scaldb_first_key_value") shouldEqual "scaldb_first_raw_value"
     coreString.getString("scaldb_second_key_value") shouldEqual "scaldb_second_raw_value"
+    coreString.getString("scaldb_third_key_value") shouldEqual "scaldb_third_raw_value"
   }
 
   "The coreString class" should "have a getter for a string the same type as itself" in {
     coreString.getString("scaldb_first_key_value").isInstanceOf[String] shouldEqual true
     coreString.getString("scaldb_second_key_value").isInstanceOf[String] shouldEqual true
+    coreString.getString("scaldb_third_key_value").isInstanceOf[String] shouldEqual true
   }
 
   "The coreString class" should "have a getter with a default value if the key does not exists" in {
     coreString.getString("scaldb_first_key_value_non_presence","default_value") shouldEqual "default_value"
     coreString.getString("scaldb_second_key_value_non_presence","default_value") shouldEqual "default_value"
+    coreString.getString("scaldb_third_key_value_non_presence","default_value") shouldEqual "default_value"
   }
 
   "The coreString class" should "have a setter overwrite key" in {
     coreString.setString("scaldb_first_key_value","scaldb_first_raw_value_overwritted") shouldEqual "scaldb_first_raw_value_overwritted"
     coreString.setString("scaldb_second_key_value","scaldb_second_raw_value_overwritted") shouldEqual "scaldb_second_raw_value_overwritted"
+    coreString.setString("scaldb_third_key_value","scaldb_third_raw_value_overwritted") shouldEqual "scaldb_third_raw_value_overwritted"
     coreString.getString("scaldb_first_key_value") shouldEqual "scaldb_first_raw_value_overwritted"
     coreString.getString("scaldb_second_key_value") shouldEqual "scaldb_second_raw_value_overwritted"
+    coreString.getString("scaldb_third_key_value") shouldEqual "scaldb_third_raw_value_overwritted"
   }
 }
 

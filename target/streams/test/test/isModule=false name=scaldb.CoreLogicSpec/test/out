@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0m[32mCoreLogicSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreLogic object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a string binary search[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreLogic object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a verifier of value on an array of string[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreLogic object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a int binary search[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreLogic object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a verifier of value an array of int[0m[0m
