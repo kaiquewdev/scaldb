@@ -3,10 +3,10 @@ package scaldb
 import rx.lang.scala.Observable
 
 trait CoreLogicOperations {
-  def stringBinarySearch(keys: Array[String], value: String): Int
-  def hasKeyString(value: String, keys: Array[String]): Boolean
-  def intBinarySearch(keys: Array[Int], value: Int): Int
-  def hasKeyInt(value: Int, keys: Array[Int]): Boolean
+  def stringBinarySearchArray(keys: Array[String], value: String): Int
+  def hasKeyStringArray(value: String, keys: Array[String]): Boolean
+  def intBinarySearchArray(keys: Array[Int], value: Int): Int
+  def hasKeyIntArray(value: Int, keys: Array[Int]): Boolean
 }
 
 trait CoreStringGetterSetter {
@@ -35,10 +35,10 @@ trait CoreVectorGetterSetter {
 }
 
 object CoreLogic extends CoreLogicOperations {
-  def stringBinarySearch(keys: Array[String], value: String): Int = keys.indexOf(value)
-  def hasKeyString(value: String, keys: Array[String]): Boolean = stringBinarySearch(keys,value) > -1
-  def intBinarySearch(keys: Array[Int], value: Int): Int = keys.indexOf(value)
-  def hasKeyInt(value: Int, keys: Array[Int]): Boolean = intBinarySearch(keys,value) > -1
+  def stringBinarySearchArray(keys: Array[String], value: String): Int = keys.indexOf(value)
+  def hasKeyStringArray(value: String, keys: Array[String]): Boolean = stringBinarySearchArray(keys,value) > -1
+  def intBinarySearchArray(keys: Array[Int], value: Int): Int = keys.indexOf(value)
+  def hasKeyIntArray(value: Int, keys: Array[Int]): Boolean = intBinarySearchArray(keys,value) > -1
 }
 
 class CoreString extends Object with CoreStringGetterSetter {
@@ -46,8 +46,8 @@ class CoreString extends Object with CoreStringGetterSetter {
   var StringValues: Array[String] = Array.empty
 
   def setString(key: String, value: String): String = {
-    if (CoreLogic.hasKeyString(key,StringKeys)) {
-      StringValues(CoreLogic.stringBinarySearch(StringKeys,key)) = value
+    if (CoreLogic.hasKeyStringArray(key,StringKeys)) {
+      StringValues(CoreLogic.stringBinarySearchArray(StringKeys,key)) = value
     } else {
       StringKeys = StringKeys :+ key
       StringValues = StringValues :+ value
@@ -55,8 +55,8 @@ class CoreString extends Object with CoreStringGetterSetter {
     value
   }
   def getString(key: String, value: String = ""): String = {
-    if (CoreLogic.hasKeyString(key,StringKeys)) {
-      StringValues(CoreLogic.stringBinarySearch(StringKeys,key))
+    if (CoreLogic.hasKeyStringArray(key,StringKeys)) {
+      StringValues(CoreLogic.stringBinarySearchArray(StringKeys,key))
     } else {
       value
     }

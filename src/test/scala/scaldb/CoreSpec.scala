@@ -4,39 +4,39 @@ import org.scalatest._
 
 class CoreLogicSpec extends FlatSpec with Matchers {
   "The coreLogic object" should "have a string binary search" in {
-    CoreLogic.stringBinarySearch(Array("uncommon_value"),"first_value") shouldEqual -1
-    CoreLogic.stringBinarySearch(Array("uncommon_value"),"first_value").isInstanceOf[Int] shouldEqual true
-    CoreLogic.stringBinarySearch(Array("first_value"),"first_value") shouldEqual 0
-    CoreLogic.stringBinarySearch(Array("first_value"),"first_value").isInstanceOf[Int] shouldEqual true
-    CoreLogic.stringBinarySearch(Array("first_value","second_value","third_value"),"second_value") shouldEqual 1
-    CoreLogic.stringBinarySearch(Array("first_value","second_value","third_value"),"second_value").isInstanceOf[Int] shouldEqual true
+    CoreLogic.stringBinarySearchArray(Array("uncommon_value"),"first_value") shouldEqual -1
+    CoreLogic.stringBinarySearchArray(Array("uncommon_value"),"first_value").isInstanceOf[Int] shouldEqual true
+    CoreLogic.stringBinarySearchArray(Array("first_value"),"first_value") shouldEqual 0
+    CoreLogic.stringBinarySearchArray(Array("first_value"),"first_value").isInstanceOf[Int] shouldEqual true
+    CoreLogic.stringBinarySearchArray(Array("first_value","second_value","third_value"),"second_value") shouldEqual 1
+    CoreLogic.stringBinarySearchArray(Array("first_value","second_value","third_value"),"second_value").isInstanceOf[Int] shouldEqual true
   }
 
   "The coreLogic object" should "have a verifier of value on an array of string" in {
-    CoreLogic.hasKeyString("fourth_value",Array("first_value","second_value","third_value")) shouldEqual false
-    CoreLogic.hasKeyString("fourth_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
-    CoreLogic.hasKeyString("second_value",Array("first_value","second_value","third_value")) shouldEqual true
-    CoreLogic.hasKeyString("second_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
-    CoreLogic.hasKeyString("third_value",Array("first_value","second_value","third_value")) shouldEqual true
-    CoreLogic.hasKeyString("third_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
+    CoreLogic.hasKeyStringArray("fourth_value",Array("first_value","second_value","third_value")) shouldEqual false
+    CoreLogic.hasKeyStringArray("fourth_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
+    CoreLogic.hasKeyStringArray("second_value",Array("first_value","second_value","third_value")) shouldEqual true
+    CoreLogic.hasKeyStringArray("second_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
+    CoreLogic.hasKeyStringArray("third_value",Array("first_value","second_value","third_value")) shouldEqual true
+    CoreLogic.hasKeyStringArray("third_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean] shouldEqual true
   }
 
   "The coreLogic object" should "have a int binary search" in {
-    CoreLogic.intBinarySearch(Array(1,2,3),4) shouldEqual -1
-    CoreLogic.intBinarySearch(Array(1,3,4,8,7),8) shouldEqual 3
-    CoreLogic.intBinarySearch(Array(7,5,3,9,4,2),5) shouldEqual 1
-    CoreLogic.intBinarySearch(Array(8,3,2,10,9),2) shouldEqual 2
-    CoreLogic.intBinarySearch(Array(15,30,45,70,100),70) shouldEqual 3
-    CoreLogic.intBinarySearch(Array(35,450,720,60,180,137),720) shouldEqual 2
+    CoreLogic.intBinarySearchArray(Array(1,2,3),4) shouldEqual -1
+    CoreLogic.intBinarySearchArray(Array(1,3,4,8,7),8) shouldEqual 3
+    CoreLogic.intBinarySearchArray(Array(7,5,3,9,4,2),5) shouldEqual 1
+    CoreLogic.intBinarySearchArray(Array(8,3,2,10,9),2) shouldEqual 2
+    CoreLogic.intBinarySearchArray(Array(15,30,45,70,100),70) shouldEqual 3
+    CoreLogic.intBinarySearchArray(Array(35,450,720,60,180,137),720) shouldEqual 2
   }
 
-  "The coreLogic object" should "have a verifier of value an araay of int" in {
-    CoreLogic.hasKeyInt(10,Array(9,7,3,4,100)) shouldEqual false
-    CoreLogic.hasKeyInt(3,Array(10,3,12,27)) shouldEqual true
-    CoreLogic.hasKeyInt(5,Array(60,70,5,30)) shouldEqual true
-    CoreLogic.hasKeyInt(100,Array(60,80,15,100,20)) shouldEqual true
-    CoreLogic.hasKeyInt(150,Array(155,300,716,150,627)) shouldEqual true
-    CoreLogic.hasKeyInt(12000,Array(600,700,990,475,1200,630,12000,790)) shouldEqual true
+  "The coreLogic object" should "have a verifier of value an array of int" in {
+    CoreLogic.hasKeyIntArray(10,Array(9,7,3,4,100)) shouldEqual false
+    CoreLogic.hasKeyIntArray(3,Array(10,3,12,27)) shouldEqual true
+    CoreLogic.hasKeyIntArray(5,Array(60,70,5,30)) shouldEqual true
+    CoreLogic.hasKeyIntArray(100,Array(60,80,15,100,20)) shouldEqual true
+    CoreLogic.hasKeyIntArray(150,Array(155,300,716,150,627)) shouldEqual true
+    CoreLogic.hasKeyIntArray(12000,Array(600,700,990,475,1200,630,12000,790)) shouldEqual true
   }
 }
 
