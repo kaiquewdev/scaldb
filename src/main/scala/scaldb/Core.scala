@@ -5,8 +5,6 @@ import rx.lang.scala.Observable
 trait CoreLogicOperations {
   def stringBinarySearchArray(keys: Array[String], value: String): Int
   def hasKeyStringArray(value: String, keys: Array[String]): Boolean
-  def intBinarySearchArray(keys: Array[Int], value: Int): Int
-  def hasKeyIntArray(value: Int, keys: Array[Int]): Boolean
 }
 
 trait CoreStringGetterSetter {
@@ -34,11 +32,11 @@ trait CoreVectorGetterSetter {
   def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any]
 }
 
+trait CoreGetterSetter {}
+
 object CoreLogic extends CoreLogicOperations {
   def stringBinarySearchArray(keys: Array[String], value: String): Int = keys.indexOf(value)
   def hasKeyStringArray(value: String, keys: Array[String]): Boolean = stringBinarySearchArray(keys,value) > -1
-  def intBinarySearchArray(keys: Array[Int], value: Int): Int = keys.indexOf(value)
-  def hasKeyIntArray(value: Int, keys: Array[Int]): Boolean = intBinarySearchArray(keys,value) > -1
 }
 
 class CoreString extends Object with CoreStringGetterSetter {
@@ -150,3 +148,5 @@ class CoreVector extends Object with CoreVectorGetterSetter {
     }
   }
 }
+
+class Core extends Object with CoreGetterSetter {}

@@ -20,24 +20,6 @@ class CoreLogicSpec extends FlatSpec with Matchers {
     assume(CoreLogic.hasKeyStringArray("third_value",Array("first_value","second_value","third_value")))
     assume(CoreLogic.hasKeyStringArray("third_value",Array("first_value","second_value","third_value")).isInstanceOf[Boolean])
   }
-
-  "The coreLogic object" should "have a int binary search" in {
-    CoreLogic.intBinarySearchArray(Array(1,2,3),4) shouldEqual -1
-    CoreLogic.intBinarySearchArray(Array(1,3,4,8,7),8) shouldEqual 3
-    CoreLogic.intBinarySearchArray(Array(7,5,3,9,4,2),5) shouldEqual 1
-    CoreLogic.intBinarySearchArray(Array(8,3,2,10,9),2) shouldEqual 2
-    CoreLogic.intBinarySearchArray(Array(15,30,45,70,100),70) shouldEqual 3
-    CoreLogic.intBinarySearchArray(Array(35,450,720,60,180,137),720) shouldEqual 2
-  }
-
-  "The coreLogic object" should "have a verifier of value an array of int" in {
-    assume(!CoreLogic.hasKeyIntArray(10,Array(9,7,3,4,100)))
-    assume(CoreLogic.hasKeyIntArray(3,Array(10,3,12,27)))
-    assume(CoreLogic.hasKeyIntArray(5,Array(60,70,5,30)))
-    assume(CoreLogic.hasKeyIntArray(100,Array(60,80,15,100,20)))
-    assume(CoreLogic.hasKeyIntArray(150,Array(155,300,716,150,627)))
-    assume(CoreLogic.hasKeyIntArray(12000,Array(600,700,990,475,1200,630,12000,790)))
-  }
 }
 
 class CoreStringSpec extends FlatSpec with Matchers {
@@ -260,5 +242,13 @@ class CoreVectorSpec extends FlatSpec with Matchers {
     coreVector.getVector("scaldb_first_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
     coreVector.getVector("scaldb_second_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
     coreVector.getVector("scaldb_third_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
+  }
+}
+
+class CoreSpec extends FlatSpec with Matchers {
+  val core = new Core()
+
+  "The core class" should "have an type" in {
+    assume(core.isInstanceOf[Core])
   }
 }
