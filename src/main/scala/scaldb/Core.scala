@@ -68,8 +68,8 @@ class CoreInt extends Object with CoreIntGetterSetter {
   var IntValues: Array[Int] = Array.empty
 
   def setInt(key: String, value: Int): Int = {
-    if (IntKeys.indexOf(key) > -1) {
-      IntValues(IntKeys.indexOf(key)) = value
+    if (CoreLogic.hasKeyStringArray(key,IntKeys)) {
+      IntValues(CoreLogic.stringBinarySearchArray(IntKeys,key)) = value
     } else {
       IntKeys = IntKeys :+ key
       IntValues = IntValues :+ value
@@ -77,8 +77,8 @@ class CoreInt extends Object with CoreIntGetterSetter {
     value
   }
   def getInt(key: String, value: Int = 0): Int = {
-    if (IntKeys.indexOf(key) > -1) {
-      IntValues(IntKeys.indexOf(key))
+    if (CoreLogic.hasKeyStringArray(key,IntKeys)) {
+      IntValues(CoreLogic.stringBinarySearchArray(IntKeys,key))
     } else {
       value
     }
