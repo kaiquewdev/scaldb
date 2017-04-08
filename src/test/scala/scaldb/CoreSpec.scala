@@ -324,14 +324,17 @@ class CoreSpec extends FlatSpec with Matchers {
 
   "The core class" should "have a vector setter" in {
     core.setVector("scaldb_first_key_vector",Vector("scaldb_first_key_value")) shouldEqual Vector("scaldb_first_key_value")
+    core.setVector("scaldb_second_key_vector",Vector("scaldb_second_key_value")) shouldEqual Vector("scaldb_second_key_value")
   }
 
   "The core class" should "have a vector getter" in {
     core.getVector("scaldb_first_key_vector") shouldEqual Vector("scaldb_first_key_value")
+    core.getVector("scaldb_second_key_vector") shouldEqual Vector("scaldb_second_key_value")
   }
 
   "The core class" should "have a default getter value to return when the key is not present for vector" in {
-    core.getVector("scaldb_first_key_vector_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
+    core.getVector("scaldb_first_key_vector_non_presence",Vector("first_default_value")) shouldEqual Vector("first_default_value")
+    core.getVector("scaldb_second_key_vector_non_presence",Vector("second_default_value")) shouldEqual Vector("second_default_value")
   }
 
   "The core class" should "have a vector setter overwrite key" in {
