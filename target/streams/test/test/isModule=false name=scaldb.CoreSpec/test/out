@@ -6,11 +6,24 @@
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a string getter[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should getter have a default value to return when the key is not present[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter default value to return when the key is not present[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a setter overwrite key[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a int setter[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
-[0m[[0minfo[0m] [0m[31m- should have a int getter *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  10 did not equal -1 (CoreSpec.scala:276)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a int getter[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a array setter[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a array getter[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a default getter value to return when the key is not present[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a array setter overwrite key[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a list setter[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a list getter[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter default value to return when the key is not present for a list[0m[0m

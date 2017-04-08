@@ -37,6 +37,10 @@ trait CoreGetterSetter {
   def getString(key: String, value: String = ""): String
   def setInt(key: String, value: Int): Int
   def getInt(key: String, value: Int = 0): Int
+  def setArray(key: String, value: Array[Any]): Array[Any]
+  def getArray(key: String, value: Array[Any] = Array.empty): Array[Any]
+  def setList(key: String, value: List[Any] = List.empty): List[Any]
+  def getList(key: String, value: List[Any] = List.empty): List[Any]
 }
 
 object CoreLogic extends CoreLogicOperations {
@@ -157,9 +161,15 @@ class CoreVector extends Object with CoreVectorGetterSetter {
 class Core extends Object with CoreGetterSetter {
   private val coreString: CoreString = new CoreString()
   private val coreInt: CoreInt = new CoreInt()
+  private val coreArray: CoreArray = new CoreArray()
+  private val coreList: CoreList = new CoreList()
 
   def setString(key: String, value: String): String = coreString.setString(key,value)
   def getString(key: String, value: String = ""): String = coreString.getString(key,value)
   def setInt(key: String, value: Int): Int = coreInt.setInt(key,value)
   def getInt(key: String, value: Int = 0): Int = coreInt.getInt(key,value)
+  def setArray(key: String, value: Array[Any]): Array[Any] = coreArray.setArray(key,value)
+  def getArray(key: String, value: Array[Any] = Array.empty): Array[Any] = coreArray.getArray(key,value)
+  def setList(key: String, value: List[Any] = List.empty): List[Any] = coreList.setList(key,value)
+  def getList(key: String, value: List[Any] = List.empty): List[Any] = coreList.getList(key,value)
 }

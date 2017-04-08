@@ -260,7 +260,7 @@ class CoreSpec extends FlatSpec with Matchers {
     core.getString("scaldb_first_key_string") shouldEqual "scaldb_first_value"
   }
 
-  "The core class" should "getter have a default value to return when the key is not present" in {
+  "The core class" should "have a getter default value to return when the key is not present" in {
     core.getString("scaldb_first_key_string_non_presence","default_value") shouldEqual "default_value"
   }
 
@@ -274,5 +274,33 @@ class CoreSpec extends FlatSpec with Matchers {
 
   "The core class" should "have a int getter" in {
     core.getInt("scaldb_first_key_int_non_presence", -1) shouldEqual -1
+  }
+
+  "The core class" should "have a array setter" in {
+    core.setArray("scaldb_first_key_array",Array("scaldb_first_key_value")) shouldEqual Array("scaldb_first_key_value")
+  }
+
+  "The core class" should "have a array getter" in {
+    core.getArray("scaldb_first_key_array") shouldEqual Array("scaldb_first_key_value")
+  }
+
+  "The core class" should "have a default getter value to return when the key is not present" in {
+    core.getArray("scaldb_first_key_array_non_presence",Array("default_value")) shouldEqual Array("default_value")
+  }
+
+  "The core class" should "have a array setter overwrite key" in {
+    core.setArray("scaldb_first_key_array",Array("scaldb_first_key_value")) shouldEqual Array("scaldb_first_key_value")
+  }
+
+  "The core class" should "have a list setter" in {
+    core.setList("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
+  }
+
+  "The core class" should "have a list getter" in {
+    core.setList("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
+  }
+
+  "The core class" should "have a getter default value to return when the key is not present for a list" in {
+    core.getList("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
   }
 }
