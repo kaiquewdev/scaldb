@@ -307,4 +307,20 @@ class CoreSpec extends FlatSpec with Matchers {
   "The core class" should "have a list setter overwrite key" in {
     core.setList("scaldb_first_key_list",List("scaldb_first_key_value_overwritted")) shouldEqual List("scaldb_first_key_value_overwritted")
   }
+
+  "The core class" should "have a vector setter" in {
+    core.setVector("scaldb_first_key_vector",Vector("scaldb_first_key_value")) shouldEqual Vector("scaldb_first_key_value")
+  }
+
+  "The core class" should "have a vector getter" in {
+    core.getVector("scaldb_first_key_vector") shouldEqual Vector("scaldb_first_key_value")
+  }
+
+  "The core class" should "have a default getter value to return when the key is not present for vector" in {
+    core.getVector("scaldb_first_key_vector_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
+  }
+
+  "The core class" should "have a vector setter overwrite key" in {
+    core.setVector("scaldb_first_key_vector",Vector("scaldb_first_key_value_overwritted")) shouldEqual Vector("scaldb_first_key_value_overwritted")
+  }
 }

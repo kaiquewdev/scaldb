@@ -41,6 +41,8 @@ trait CoreGetterSetter {
   def getArray(key: String, value: Array[Any] = Array.empty): Array[Any]
   def setList(key: String, value: List[Any] = List.empty): List[Any]
   def getList(key: String, value: List[Any] = List.empty): List[Any]
+  def setVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any]
+  def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any]
 }
 
 object CoreLogic extends CoreLogicOperations {
@@ -163,6 +165,7 @@ class Core extends Object with CoreGetterSetter {
   private val coreInt: CoreInt = new CoreInt()
   private val coreArray: CoreArray = new CoreArray()
   private val coreList: CoreList = new CoreList()
+  private val coreVector: CoreVector = new CoreVector()
 
   def setString(key: String, value: String): String = coreString.setString(key,value)
   def getString(key: String, value: String = ""): String = coreString.getString(key,value)
@@ -172,4 +175,6 @@ class Core extends Object with CoreGetterSetter {
   def getArray(key: String, value: Array[Any] = Array.empty): Array[Any] = coreArray.getArray(key,value)
   def setList(key: String, value: List[Any] = List.empty): List[Any] = coreList.setList(key,value)
   def getList(key: String, value: List[Any] = List.empty): List[Any] = coreList.getList(key,value)
+  def setVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any] = coreVector.setVector(key,value)
+  def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any] = coreVector.getVector(key,value)
 }

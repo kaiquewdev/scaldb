@@ -29,3 +29,11 @@
 [0m[[0minfo[0m] [0m[32m- should have a getter default value to return when the key is not present for a list[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a list setter overwrite key[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a vector setter[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a vector getter[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a default getter value to return when the key is not present for vector[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a vector setter overwrite key[0m[0m
