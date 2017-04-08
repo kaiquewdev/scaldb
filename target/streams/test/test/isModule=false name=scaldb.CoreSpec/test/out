@@ -27,3 +27,5 @@
 [0m[[0minfo[0m] [0m[32m- should have a list getter[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a getter default value to return when the key is not present for a list[0m[0m
+[0m[[0minfo[0m] [0m[32mThe core class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a list setter overwrite key[0m[0m
