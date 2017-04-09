@@ -30,12 +30,10 @@
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a list setter overwrite key[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
-[0m[[0minfo[0m] [0m[31m- should have a vector setter *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  Vector("scaldb_third_key_value") did not equal Vector("scaldb_third_value") (CoreSpec.scala:342)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a vector setter[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a vector getter[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a default getter value to return when the key is not present for vector[0m[0m
 [0m[[0minfo[0m] [0m[32mThe core class[0m[0m
-[0m[[0minfo[0m] [0m[31m- should have a vector setter overwrite key *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  Vector("scaldb_second_key_value_overwritted") did not equal Vector("scladb_second_key_value_overwritted") (CoreSpec.scala:359)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a vector setter overwrite key[0m[0m

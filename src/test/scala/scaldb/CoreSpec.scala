@@ -116,50 +116,50 @@ class CoreIntSpec extends FlatSpec with Matchers {
   }
 }
 
-class CoreArraySpec extends FlatSpec with Matchers {
-  val coreArray = new CoreArray()
+class CoreArrayStringSpec extends FlatSpec with Matchers {
+  val coreArrayString = new CoreArrayString()
 
-  "The coreArray class" should "have an type" in {
-    assume(coreArray.isInstanceOf[CoreArray])
+  "The coreArrayString class" should "have an type" in {
+    assume(coreArrayString.isInstanceOf[CoreArrayString])
   }
 
-  "The coreArray class" should "have a setter for array" in {
-    coreArray.setArray("scaldb_first_key",Array("scaldb_first_value")) shouldEqual Array("scaldb_first_value")
-    coreArray.setArray("scaldb_second_key",Array("scaldb_second_value")) shouldEqual Array("scaldb_second_value")
-    coreArray.setArray("scaldb_third_key",Array("scaldb_third_value")) shouldEqual Array("scaldb_third_value")
+  "The coreArrayString class" should "have a setter for array" in {
+    coreArrayString.setArrayString("scaldb_first_key",Array("scaldb_first_value")) shouldEqual Array("scaldb_first_value")
+    coreArrayString.setArrayString("scaldb_second_key",Array("scaldb_second_value")) shouldEqual Array("scaldb_second_value")
+    coreArrayString.setArrayString("scaldb_third_key",Array("scaldb_third_value")) shouldEqual Array("scaldb_third_value")
   }
 
-  "The coreArray class" should "have a setter for an array key returning a array type" in {
-    assume(coreArray.setArray("scaldb_first_key",Array("scaldb_first_value")).isInstanceOf[Array[Any]])
-    assume(coreArray.setArray("scaldb_second_key",Array("scaldb_second_value")).isInstanceOf[Array[Any]])
-    assume(coreArray.setArray("scaldb_third_key",Array("scaldb_third_value")).isInstanceOf[Array[Any]])
+  "The coreArrayString class" should "have a setter for an array key returning a array type" in {
+    assume(coreArrayString.setArrayString("scaldb_first_key",Array("scaldb_first_value")).isInstanceOf[Array[String]])
+    assume(coreArrayString.setArrayString("scaldb_second_key",Array("scaldb_second_value")).isInstanceOf[Array[String]])
+    assume(coreArrayString.setArrayString("scaldb_third_key",Array("scaldb_third_value")).isInstanceOf[Array[String]])
   }
 
-  "The coreArray class" should "have a getter for a int key" in {
-    coreArray.getArray("scaldb_first_key") shouldEqual Array("scaldb_first_value")
-    coreArray.getArray("scaldb_second_key") shouldEqual Array("scaldb_second_value")
-    coreArray.getArray("scaldb_third_key") shouldEqual Array("scaldb_third_value")
+  "The coreArrayString class" should "have a getter for a int key" in {
+    coreArrayString.getArrayString("scaldb_first_key") shouldEqual Array("scaldb_first_value")
+    coreArrayString.getArrayString("scaldb_second_key") shouldEqual Array("scaldb_second_value")
+    coreArrayString.getArrayString("scaldb_third_key") shouldEqual Array("scaldb_third_value")
   }
 
-  "The coreArray class" should "have a getter for int the same type as itself" in {
-    assume(coreArray.getArray("scaldb_first_key").isInstanceOf[Array[Any]])
-    assume(coreArray.getArray("scaldb_second_key").isInstanceOf[Array[Any]])
-    assume(coreArray.getArray("scaldb_third_key").isInstanceOf[Array[Any]])
+  "The coreArrayString class" should "have a getter for int the same type as itself" in {
+    assume(coreArrayString.getArrayString("scaldb_first_key").isInstanceOf[Array[String]])
+    assume(coreArrayString.getArrayString("scaldb_second_key").isInstanceOf[Array[String]])
+    assume(coreArrayString.getArrayString("scaldb_third_key").isInstanceOf[Array[String]])
   }
 
-  "The coreArray class" should "have a getter with a default value if the key does not exists" in {
-    coreArray.getArray("scaldb_first_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
-    coreArray.getArray("scaldb_second_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
-    coreArray.getArray("scaldb_third_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
+  "The coreArrayString class" should "have a getter with a default value if the key does not exists" in {
+    coreArrayString.getArrayString("scaldb_first_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
+    coreArrayString.getArrayString("scaldb_second_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
+    coreArrayString.getArrayString("scaldb_third_key_non_presence",Array("default_value")) shouldEqual Array("default_value")
   }
 
-  "The coreArray class" should "have a setter overwrite key" in {
-    coreArray.setArray("scaldb_first_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArray.setArray("scaldb_second_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArray.setArray("scaldb_third_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArray.getArray("scaldb_first_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArray.getArray("scaldb_second_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArray.getArray("scaldb_third_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
+  "The coreArrayString class" should "have a setter overwrite key" in {
+    coreArrayString.setArrayString("scaldb_first_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArrayString.setArrayString("scaldb_second_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArrayString.setArrayString("scaldb_third_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArrayString.getArrayString("scaldb_first_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArrayString.getArrayString("scaldb_second_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArrayString.getArrayString("scaldb_third_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
   }
 }
 
@@ -255,108 +255,140 @@ class CoreSpec extends FlatSpec with Matchers {
   "The core class" should "have a string setter" in {
     core.setString("scaldb_first_key_string","scaldb_first_value") shouldEqual "scaldb_first_value"
     core.setString("scaldb_second_key_string","scaldb_second_value") shouldEqual "scaldb_second_value"
-    core.setString("scaldb_third_key_string","scaldb_third_value") shouldEqual "scaldb_third_value"
+    core.setString("scaldb_three_key_string","scaldb_three_value") shouldEqual "scaldb_three_value"
+    core.setString("scaldb_four_key_string","scaldb_four_key_value") shouldEqual "scaldb_four_key_value"
+    core.setString("scaldb_five_key_string","scaldb_five_key_value") shouldEqual "scaldb_five_key_value"
   }
 
   "The core class" should "have a string getter" in {
     core.getString("scaldb_first_key_string") shouldEqual "scaldb_first_value"
     core.getString("scaldb_second_key_string") shouldEqual "scaldb_second_value"
-    core.getString("scaldb_third_key_string") shouldEqual "scaldb_third_value"
+    core.getString("scaldb_three_key_string") shouldEqual "scaldb_three_value"
+    core.getString("scaldb_four_key_string") shouldEqual "scaldb_four_key_value"
+    core.getString("scaldb_five_key_string") shouldEqual "scaldb_five_key_value"
   }
 
   "The core class" should "have a getter default value to return when the key is not present" in {
     core.getString("scaldb_first_key_string_non_presence","first_default_value") shouldEqual "first_default_value"
     core.getString("scaldb_second_key_string_non_presence","second_default_value") shouldEqual "second_default_value"
-    core.getString("scaldb_third_key_string_non_presence","third_default_value") shouldEqual "third_default_value"
+    core.getString("scaldb_three_key_string_non_presence","three_default_value") shouldEqual "three_default_value"
+    core.getString("scaldb_four_key_string_non_presence","four_default_value") shouldEqual "four_default_value"
+    core.getString("scaldb_five_key_string_non_presence","five_default_value") shouldEqual "five_default_value"
   }
 
   "The core class" should "have a setter overwrite key" in {
     core.setString("scaldb_first_key","scaldb_first_value_overwrite") shouldEqual "scaldb_first_value_overwrite"
     core.setString("scaldb_second_key","scaldb_second_value_overwrite") shouldEqual "scaldb_second_value_overwrite"
-    core.setString("scaldb_third_key","scaldb_third_value_overwrite") shouldEqual "scaldb_third_value_overwrite"
+    core.setString("scaldb_three_key","scaldb_three_value_overwrite") shouldEqual "scaldb_three_value_overwrite"
+    core.setString("scaldb_four_key","scaldb_four_value_overwrite") shouldEqual "scaldb_four_value_overwrite"
+    core.setString("scaldb_five_key","scaldb_five_value_overwrite") shouldEqual "scaldb_five_value_overwrite"
   }
 
   "The core class" should "have a int setter" in {
     core.setInt("scaldb_first_key_int",10) shouldEqual 10
     core.setInt("scaldb_second_key_int",20) shouldEqual 20
-    core.setInt("scaldb_third_key_int",30) shouldEqual 30
+    core.setInt("scaldb_three_key_int",30) shouldEqual 30
+    core.setInt("scaldb_four_key_int",40) shouldEqual 40
+    core.setInt("scaldb_five_key_int",50) shouldEqual 50
   }
 
   "The core class" should "have a int getter" in {
     core.getInt("scaldb_first_key_int_non_presence", -1) shouldEqual -1
     core.getInt("scaldb_second_key_int_non_presence", -10) shouldEqual -10
-    core.getInt("scaldb_third_key_int_non_presence", -50) shouldEqual -50
+    core.getInt("scaldb_three_key_int_non_presence", -50) shouldEqual -50
+    core.getInt("scaldb_four_key_int_non_presence", -40) shouldEqual -40
+    core.getInt("scaldb_five_key_int_non_presence", -70) shouldEqual -70
   }
 
   "The core class" should "have a array setter" in {
-    core.setArray("scaldb_first_key_array",Array("scaldb_first_key_value")) shouldEqual Array("scaldb_first_key_value")
-    core.setArray("scaldb_second_key_array",Array("scaldb_second_key_value")) shouldEqual Array("scaldb_second_key_value")
-    core.setArray("scaldb_third_key_array",Array("scaldb_third_key_value")) shouldEqual Array("scaldb_third_key_value")
+    core.setArrayString("scaldb_first_key_array",Array("scaldb_first_key_value")) shouldEqual Array("scaldb_first_key_value")
+    core.setArrayString("scaldb_second_key_array",Array("scaldb_second_key_value")) shouldEqual Array("scaldb_second_key_value")
+    core.setArrayString("scaldb_three_key_array",Array("scaldb_three_key_value")) shouldEqual Array("scaldb_three_key_value")
+    core.setArrayString("scaldb_four_key_array",Array("scaldb_four_key_value")) shouldEqual Array("scaldb_four_key_value")
   }
 
   "The core class" should "have a array getter" in {
-    core.getArray("scaldb_first_key_array") shouldEqual Array("scaldb_first_key_value")
-    core.getArray("scaldb_second_key_array") shouldEqual Array("scaldb_second_key_value")
-    core.getArray("scaldb_third_key_array") shouldEqual Array("scaldb_third_key_value")
+    core.getArrayString("scaldb_first_key_array") shouldEqual Array("scaldb_first_key_value")
+    core.getArrayString("scaldb_second_key_array") shouldEqual Array("scaldb_second_key_value")
+    core.getArrayString("scaldb_three_key_array") shouldEqual Array("scaldb_three_key_value")
+    core.getArrayString("scaldb_four_key_array") shouldEqual Array("scaldb_four_key_value")
   }
 
   "The core class" should "have a default getter value to return when the key is not present" in {
-    core.getArray("scaldb_first_key_array_non_presence",Array("first_default_value")) shouldEqual Array("first_default_value")
-    core.getArray("scaldb_second_key_array_non_presence",Array("second_default_value")) shouldEqual Array("second_default_value")
-    core.getArray("scaldb_third_key_array_non_presence",Array("third_default_value")) shouldEqual Array("third_default_value")
+    core.getArrayString("scaldb_first_key_array_non_presence",Array("first_default_value")) shouldEqual Array("first_default_value")
+    core.getArrayString("scaldb_second_key_array_non_presence",Array("second_default_value")) shouldEqual Array("second_default_value")
+    core.getArrayString("scaldb_three_key_array_non_presence",Array("three_default_value")) shouldEqual Array("three_default_value")
+    core.getArrayString("scaldb_four_key_array_non_presence",Array("four_default_value")) shouldEqual Array("four_default_value")
+    core.getArrayString("scaldb_five_key_array_non_presence",Array("five_default_value")) shouldEqual Array("five_default_value")
   }
 
   "The core class" should "have a array setter overwrite key" in {
-    core.setArray("scaldb_first_key_array",Array("scaldb_first_key_value")) shouldEqual Array("scaldb_first_key_value")
-    core.setArray("scaldb_second_key_array",Array("scaldb_second_key_value")) shouldEqual Array("scaldb_second_key_value")
-    core.setArray("scaldb_third_key_array",Array("scaldb_third_key_value")) shouldEqual Array("scaldb_third_key_value")
+    core.setArrayString("scaldb_first_key_array",Array("scaldb_first_key_value")) shouldEqual Array("scaldb_first_key_value")
+    core.setArrayString("scaldb_second_key_array",Array("scaldb_second_key_value")) shouldEqual Array("scaldb_second_key_value")
+    core.setArrayString("scaldb_third_key_array",Array("scaldb_third_key_value")) shouldEqual Array("scaldb_third_key_value")
+    core.setArrayString("scaldb_four_key_array",Array("scaldb_four_key_value")) shouldEqual Array("scaldb_four_key_value")
   }
 
   "The core class" should "have a list setter" in {
     core.setList("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
     core.setList("scaldb_second_key_list",List("scaldb_second_key_value")) shouldEqual List("scaldb_second_key_value")
-    core.setList("scaldb_third_key_list",List("scaldb_third_key_value")) shouldEqual List("scaldb_third_key_value")
+    core.setList("scaldb_three_key_list",List("scaldb_three_key_value")) shouldEqual List("scaldb_three_key_value")
+    core.setList("scaldb_four_key_list",List("scaldb_four_key_value")) shouldEqual List("scaldb_four_key_value")
+    core.setList("scaldb_five_key_list",List("scaldb_five_key_value")) shouldEqual List("scaldb_five_key_value")
   }
 
   "The core class" should "have a list getter" in {
     core.setList("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
     core.setList("scaldb_second_key_list",List("scaldb_second_key_value")) shouldEqual List("scaldb_second_key_value")
-    core.setList("scaldb_third_key_list",List("scaldb_third_key_value")) shouldEqual List("scaldb_third_key_value")
+    core.setList("scaldb_three_key_list",List("scaldb_three_key_value")) shouldEqual List("scaldb_three_key_value")
+    core.setList("scaldb_four_key_list",List("scaldb_four_key_value")) shouldEqual List("scaldb_four_key_value")
+    core.setList("scaldb_five_key_list",List("scaldb_five_key_value")) shouldEqual List("scaldb_five_key_value")
   }
 
   "The core class" should "have a getter default value to return when the key is not present for a list" in {
     core.getList("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
     core.getList("scaldb_second_key_list",List("scaldb_second_key_value")) shouldEqual List("scaldb_second_key_value")
-    core.getList("scaldb_third_key_list",List("scaldb_third_key_value")) shouldEqual List("scaldb_third_key_value")
+    core.getList("scaldb_three_key_list",List("scaldb_three_key_value")) shouldEqual List("scaldb_three_key_value")
+    core.getList("scaldb_four_key_list",List("scaldb_four_key_value")) shouldEqual List("scaldb_four_key_value")
+    core.getList("scaldb_five_key_list",List("scaldb_five_key_value")) shouldEqual List("scaldb_five_key_value")
   }
 
   "The core class" should "have a list setter overwrite key" in {
     core.setList("scaldb_first_key_list",List("scaldb_first_key_value_overwritted")) shouldEqual List("scaldb_first_key_value_overwritted")
     core.setList("scaldb_second_key_list",List("scaldb_second_key_value_overwritted")) shouldEqual List("scaldb_second_key_value_overwritted")
-    core.setList("scaldb_third_key_list",List("scaldb_third_key_value_overwritted")) shouldEqual List("scaldb_third_key_value_overwritted")
+    core.setList("scaldb_three_key_list",List("scaldb_three_key_value_overwritted")) shouldEqual List("scaldb_three_key_value_overwritted")
+    core.setList("scaldb_four_key_list",List("scaldb_four_key_value_overwritted")) shouldEqual List("scaldb_four_key_value_overwritted")
   }
 
   "The core class" should "have a vector setter" in {
     core.setVector("scaldb_first_key_vector",Vector("scaldb_first_key_value")) shouldEqual Vector("scaldb_first_key_value")
     core.setVector("scaldb_second_key_vector",Vector("scaldb_second_key_value")) shouldEqual Vector("scaldb_second_key_value")
-    core.setVector("scaldb_third_key_vector",Vector("scaldb_third_key_value")) shouldEqual Vector("scaldb_third_key_value")
+    core.setVector("scaldb_three_key_vector",Vector("scaldb_three_key_value")) shouldEqual Vector("scaldb_three_key_value")
+    core.setVector("scaldb_four_key_vector",Vector("scaldb_four_key_value")) shouldEqual Vector("scaldb_four_key_value")
+    core.setVector("scaldb_five_key_vector",Vector("scaldb_five_key_value")) shouldEqual Vector("scaldb_five_key_value")
   }
 
   "The core class" should "have a vector getter" in {
     core.getVector("scaldb_first_key_vector") shouldEqual Vector("scaldb_first_key_value")
     core.getVector("scaldb_second_key_vector") shouldEqual Vector("scaldb_second_key_value")
-    core.getVector("scaldb_third_key_vector") shouldEqual Vector("scaldb_third_key_value")
+    core.getVector("scaldb_three_key_vector") shouldEqual Vector("scaldb_three_key_value")
+    core.getVector("scaldb_four_key_vector") shouldEqual Vector("scaldb_four_key_value")
+    core.getVector("scaldb_five_key_vector") shouldEqual Vector("scaldb_five_key_value")
   }
 
   "The core class" should "have a default getter value to return when the key is not present for vector" in {
     core.getVector("scaldb_first_key_vector_non_presence",Vector("first_default_value")) shouldEqual Vector("first_default_value")
     core.getVector("scaldb_second_key_vector_non_presence",Vector("second_default_value")) shouldEqual Vector("second_default_value")
-    core.getVector("scaldb_third_key_vector_non_presence",Vector("third_default_value")) shouldEqual Vector("third_default_value")
+    core.getVector("scaldb_three_key_vector_non_presence",Vector("three_default_value")) shouldEqual Vector("three_default_value")
+    core.getVector("scaldb_four_key_vector_non_presence",Vector("four_default_value")) shouldEqual Vector("four_default_value")
+    core.getVector("scaldb_five_key_vector_non_presence",Vector("five_default_value")) shouldEqual Vector("five_default_value")
   }
 
   "The core class" should "have a vector setter overwrite key" in {
     core.setVector("scaldb_first_key_vector",Vector("scaldb_first_key_value_overwritted")) shouldEqual Vector("scaldb_first_key_value_overwritted")
     core.setVector("scaldb_second_key_vector",Vector("scaldb_second_key_value_overwritted")) shouldEqual Vector("scaldb_second_key_value_overwritted")
-    core.setVector("scladb_third_key_vector",Vector("scaldb_third_key_value_overwritted")) shouldEqual Vector("scaldb_third_key_value_overwritted")
+    core.setVector("scaldb_three_key_vector",Vector("scaldb_three_key_value_overwritted")) shouldEqual Vector("scaldb_three_key_value_overwritted")
+    core.setVector("scaldb_four_key_vector",Vector("scaldb_four_key_value_overwritted")) shouldEqual Vector("scaldb_four_key_value_overwritted")
+    core.setVector("scaldb_five_key_vector",Vector("scaldb_five_key_value_overwritted")) shouldEqual Vector("scaldb_five_key_value_overwritted")
   }
 }
