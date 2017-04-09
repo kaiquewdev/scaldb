@@ -116,6 +116,14 @@ class CoreIntSpec extends FlatSpec with Matchers {
   }
 }
 
+class CoreFloatSpec extends FlatSpec with Matchers {
+  val coreFloat = new CoreFloat()
+
+  "The coreFloat class" should "have an type" in {
+    assume(coreFloat.isInstanceOf[CoreFloat])
+  }
+}
+
 class CoreArrayStringSpec extends FlatSpec with Matchers {
   val coreArrayString = new CoreArrayString()
 

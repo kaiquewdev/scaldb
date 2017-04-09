@@ -17,6 +17,8 @@ trait CoreIntGetterSetter {
   def getInt(key: String, value: Int = 0): Int
 }
 
+trait CoreFloatGetterSetter {}
+
 trait CoreArrayStringGetterSetter {
   def setArrayString(key: String, value: Array[String]): Array[String]
   def getArrayString(key: String, value: Array[String] = Array.empty): Array[String]
@@ -93,6 +95,8 @@ class CoreInt extends Object with CoreIntGetterSetter {
     }
   }
 }
+
+class CoreFloat extends Object with CoreFloatGetterSetter {}
 
 class CoreArrayString extends Object with CoreArrayStringGetterSetter {
   var ArrayKeys: Array[String] = Array.empty
