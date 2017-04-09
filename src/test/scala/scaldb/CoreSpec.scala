@@ -125,6 +125,27 @@ class CoreDoubleSpec extends FlatSpec with Matchers {
 
   "The coreDouble class" should "have a setter for double" in {
     coreDouble.setDouble("scaldb_first_key",1.5) shouldEqual 1.5
+    coreDouble.setDouble("scaldb_second_key",3.7) shouldEqual 3.7
+  }
+
+  "The coreDouble class" should "have a getter for double" in {
+    coreDouble.getDouble("scaldb_first_key") shouldEqual 1.5
+    coreDouble.getDouble("scaldb_second_key") shouldEqual 3.7
+  }
+
+  "The coreDouble class" should "have a setter for a double key returning a double type" in {
+    assume(coreDouble.getDouble("scaldb_first_key").isInstanceOf[Double])
+    assume(coreDouble.getDouble("scaldb_second_key").isInstanceOf[Double])
+  }
+
+  "The coreDouble class" should "have a getter for a double key with a default value if the key does not exists" in {
+    coreDouble.setDouble("scaldb_first_key_non_presence",407.15) shouldEqual 407.15
+    coreDouble.setDouble("scaldb_second_key_non_presence",745.30) shouldEqual 745.30
+  }
+
+  "The coreDouble class" should "have a setter overwrite key" in {
+    coreDouble.setDouble("scaldb_first_key_value",3.7) shouldEqual 3.7
+    coreDouble.setDouble("scaldb_second_key_value",8.87) shouldEqual 8.87
   }
 }
 

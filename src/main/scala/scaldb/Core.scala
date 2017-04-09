@@ -19,6 +19,7 @@ trait CoreIntGetterSetter {
 
 trait CoreDoubleGetterSetter {
   def setDouble(key: String, value: Double): Double
+  def getDouble(key: String, value: Double = 0): Double
 }
 
 trait CoreArrayStringGetterSetter {
@@ -110,6 +111,13 @@ class CoreDouble extends Object with CoreDoubleGetterSetter {
       DoubleValues = DoubleValues :+ value
     }
     value
+  }
+  def getDouble(key: String, value: Double = 0): Double = {
+    if (CoreLogic.hasKeyStringArray(key,DoubleKeys)) {
+      DoubleValues(CoreLogic.stringBinarySearchArray(DoubleKeys,key))
+    } else {
+      value
+    }
   }
 }
 
