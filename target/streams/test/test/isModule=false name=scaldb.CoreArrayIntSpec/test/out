@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0m[32mCoreArrayIntSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreArrayInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have an type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreArrayInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for int array[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreArrayInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for an array key returning a array type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreArrayInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for a int array key[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreArrayInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for int the same type as itfself[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreArrayInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter with a default value if the key does not exists[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreArrayInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter overwrite key[0m[0m

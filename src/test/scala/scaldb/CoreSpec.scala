@@ -161,7 +161,7 @@ class CoreArrayStringSpec extends FlatSpec with Matchers {
     assume(coreArrayString.isInstanceOf[CoreArrayString])
   }
 
-  "The coreArrayString class" should "have a setter for array" in {
+  "The coreArrayString class" should "have a setter for string array" in {
     coreArrayString.setArrayString("scaldb_first_key",Array("scaldb_first_value")) shouldEqual Array("scaldb_first_value")
     coreArrayString.setArrayString("scaldb_second_key",Array("scaldb_second_value")) shouldEqual Array("scaldb_second_value")
     coreArrayString.setArrayString("scaldb_third_key",Array("scaldb_third_value")) shouldEqual Array("scaldb_third_value")
@@ -198,6 +198,50 @@ class CoreArrayStringSpec extends FlatSpec with Matchers {
     coreArrayString.getArrayString("scaldb_first_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
     coreArrayString.getArrayString("scaldb_second_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
     coreArrayString.getArrayString("scaldb_third_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
+  }
+}
+
+class CoreArrayIntSpec extends FlatSpec with Matchers {
+  val coreArrayInt = new CoreArrayInt()
+
+  "The coreArrayInt class" should "have an type" in {
+    assume(coreArrayInt.isInstanceOf[CoreArrayInt])
+  }
+
+  "The coreArrayInt class" should "have a setter for int array" in {
+    coreArrayInt.setArrayInt("scaldb_first_key",Array(10,15,35)) shouldEqual Array(10,15,35)
+    coreArrayInt.setArrayInt("scaldb_second_Key",Array(17,38,85)) shouldEqual Array(17,38,85)
+    coreArrayInt.setArrayInt("scaldb_three_key",Array(30,70,80)) shouldEqual Array(30,70,80)
+  }
+
+  "The coreArrayInt class" should "have a setter for an array key returning a array type" in {
+    assume(coreArrayInt.setArrayInt("scaldb_first_key",Array(10,15,35)).isInstanceOf[Array[Int]])
+    assume(coreArrayInt.setArrayInt("scaldb_second_key",Array(35,75,59,400)).isInstanceOf[Array[Int]])
+    assume(coreArrayInt.setArrayInt("scaldb_three_key",Array(800,755,870,355)).isInstanceOf[Array[Int]])
+  }
+
+  "The coreArrayInt class" should "have a getter for a int array key" in {
+    coreArrayInt.getArrayInt("scaldb_first_key") shouldEqual Array(10,15,35)
+    coreArrayInt.getArrayInt("scaldb_second_key") shouldEqual Array(35,75,59,400)
+    coreArrayInt.getArrayInt("scaldb_three_key") shouldEqual Array(800,755,870,355)
+  }
+
+  "The coreArrayInt class" should "have a getter for int the same type as itfself" in {
+    assume(coreArrayInt.getArrayInt("scaldb_first_key").isInstanceOf[Array[Int]])
+    assume(coreArrayInt.getArrayInt("scaldb_second_key").isInstanceOf[Array[Int]])
+    assume(coreArrayInt.getArrayInt("scaldb_three_key").isInstanceOf[Array[Int]])
+  }
+
+  "The coreArrayInt class" should "have a getter with a default value if the key does not exists" in {
+    coreArrayInt.getArrayInt("scaldb_first_key_non_presence",Array(10, 100, 570)) shouldEqual Array(10,100,570)
+    coreArrayInt.getArrayInt("scaldb_second_key_non_presence",Array(12,70,520,485)) shouldEqual Array(12,70,520,485)
+    coreArrayInt.getArrayInt("scaldb_three_key_non_presence",Array(50,150,135,179)) shouldEqual Array(50,150,135,179)
+  }
+
+  "The coreArrayInt class" should "have a setter overwrite key" in {
+    coreArrayInt.setArrayInt("scaldb_first_key",Array(100,738,983)) shouldEqual Array(100,738,983)
+    coreArrayInt.setArrayInt("scaldb_second_key",Array(300,475,389)) shouldEqual Array(300,475,389)
+    coreArrayInt.setArrayInt("scaldb_three_key",Array(385,749,387)) shouldEqual Array(385,749,387)
   }
 }
 

@@ -2,7 +2,7 @@
 [0m[[0minfo[0m] [0m[32mThe coreArrayString class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have an type[0m[0m
 [0m[[0minfo[0m] [0m[32mThe coreArrayString class[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have a setter for array[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for string array[0m[0m
 [0m[[0minfo[0m] [0m[32mThe coreArrayString class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a setter for an array key returning a array type[0m[0m
 [0m[[0minfo[0m] [0m[32mThe coreArrayString class[0m[0m
