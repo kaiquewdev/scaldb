@@ -17,7 +17,9 @@ trait CoreIntGetterSetter {
   def getInt(key: String, value: Int = 0): Int
 }
 
-trait CoreFloatGetterSetter {}
+trait CoreDoubleGetterSetter {
+  def setDouble(key: String, value: Double): Double
+}
 
 trait CoreArrayStringGetterSetter {
   def setArrayString(key: String, value: Array[String]): Array[String]
@@ -96,7 +98,20 @@ class CoreInt extends Object with CoreIntGetterSetter {
   }
 }
 
-class CoreFloat extends Object with CoreFloatGetterSetter {}
+class CoreDouble extends Object with CoreDoubleGetterSetter {
+  var DoubleKeys: Array[String] = Array.empty
+  var DoubleValues: Array[Double] = Array.empty
+
+  def setDouble(key: String, value: Double): Double = {
+    if (CoreLogic.hasKeyStringArray(key,DoubleKeys)) {
+      DoubleValues(CoreLogic.stringBinarySearchArray(DoubleKeys,key)) = value
+    } else {
+      DoubleKeys = DoubleKeys :+ key
+      DoubleValues = DoubleValues :+ value
+    }
+    value
+  }
+}
 
 class CoreArrayString extends Object with CoreArrayStringGetterSetter {
   var ArrayKeys: Array[String] = Array.empty

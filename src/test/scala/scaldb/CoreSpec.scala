@@ -116,11 +116,15 @@ class CoreIntSpec extends FlatSpec with Matchers {
   }
 }
 
-class CoreFloatSpec extends FlatSpec with Matchers {
-  val coreFloat = new CoreFloat()
+class CoreDoubleSpec extends FlatSpec with Matchers {
+  val coreDouble = new CoreDouble()
 
-  "The coreFloat class" should "have an type" in {
-    assume(coreFloat.isInstanceOf[CoreFloat])
+  "The coreDouble class" should "have an type" in {
+    assume(coreDouble.isInstanceOf[CoreDouble])
+  }
+
+  "The coreDouble class" should "have a setter for double" in {
+    coreDouble.setDouble("scaldb_first_key",1.5) shouldEqual 1.5
   }
 }
 
