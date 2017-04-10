@@ -245,6 +245,22 @@ class CoreArrayIntSpec extends FlatSpec with Matchers {
   }
 }
 
+class CoreArrayDoubleSpec extends FlatSpec with Matchers {
+  val coreArrayDouble = new CoreArrayDouble()
+
+  "The coreArrayDouble class" should "have an type" in {
+    assume(coreArrayDouble.isInstanceOf[CoreArrayDouble])
+  }
+
+  "The coreArrayDouble class" should "have a setter for double in array" in {
+    coreArrayDouble.setArrayDouble("scaldb_first_key",Array(47.80,87.3)) shouldEqual Array(47.80,87.3)
+  }
+
+  "The coreArrayDouble class" should "have a setter for an array key returning a double array type" in {
+    assume(coreArrayDouble.setArrayDouble("scaldb_first_key",Array(187.10,275.25,472.30)).isInstanceOf[Array[Double]])
+  }
+}
+
 class CoreListSpec extends FlatSpec with Matchers {
   val coreList = new CoreList()
 

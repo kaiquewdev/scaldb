@@ -27,6 +27,11 @@ trait CoreArrayStringGetterSetter {
   def getArrayString(key: String, value: Array[String] = Array.empty): Array[String]
 }
 
+trait CoreArrayDoubleGetterSetter {
+  def setArrayDouble(key: String, value: Array[Double]): Array[Double]
+  def getArrayDouble(key: String, value: Array[Double] = Array.empty): Array[Double]
+}
+
 trait CoreArrayIntGetterSetter {
   def setArrayInt(key: String, value: Array[Int]): Array[Int]
   def getArrayInt(key: String, value: Array[Int] = Array.empty): Array[Int]
@@ -162,6 +167,28 @@ class CoreArrayInt extends Object with CoreArrayIntGetterSetter {
     value
   }
   def getArrayInt(key: String, value: Array[Int] = Array.empty): Array[Int] = {
+    if (CoreLogic.hasKeyStringArray(key,ArrayKeys)) {
+      ArrayValues(CoreLogic.stringBinarySearchArray(ArrayKeys,key))
+    } else {
+      value
+    }
+  }
+}
+
+class CoreArrayDouble extends Object with CoreArrayDoubleGetterSetter {
+  var ArrayKeys: Array[String] = Array.empty
+  var ArrayValues: Array[Array[Double]] = Array.empty
+
+  def setArrayDouble(key: String, value: Array[Double]): Array[Double] = {
+    if (CoreLogic.hasKeyStringArray(key,ArrayKeys)) {
+      ArrayValues(CoreLogic.stringBinarySearchArray(ArrayKeys,key)) = value
+    } else {
+      ArrayKeys = ArrayKeys :+ key
+      ArrayValues = ArrayValues :+ value
+    }
+    value
+  }
+  def getArrayDouble(key: String, value: Array[Double] = Array.empty): Array[Double] = {
     if (CoreLogic.hasKeyStringArray(key,ArrayKeys)) {
       ArrayValues(CoreLogic.stringBinarySearchArray(ArrayKeys,key))
     } else {
