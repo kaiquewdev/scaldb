@@ -149,6 +149,8 @@ class CoreDoubleSpec extends FlatSpec with Matchers {
 
   "The coreDouble class" should "have a setter overwrite key" in {
     coreDouble.setDouble("scaldb_first_key_value",3.7) shouldEqual 3.7
+    coreDouble.getDouble("scaldb_first_key_value") should not equal 1.5
+    coreDouble.getDouble("scaldb_first_key_value") shouldEqual 3.7
     coreDouble.setDouble("scaldb_second_key_value",8.87) shouldEqual 8.87
     coreDouble.setDouble("scaldb_three_key_value",9.37) shouldEqual 9.37
   }
@@ -164,25 +166,25 @@ class CoreArrayStringSpec extends FlatSpec with Matchers {
   "The coreArrayString class" should "have a setter for string array" in {
     coreArrayString.setArrayString("scaldb_first_key",Array("scaldb_first_value")) shouldEqual Array("scaldb_first_value")
     coreArrayString.setArrayString("scaldb_second_key",Array("scaldb_second_value")) shouldEqual Array("scaldb_second_value")
-    coreArrayString.setArrayString("scaldb_third_key",Array("scaldb_third_value")) shouldEqual Array("scaldb_third_value")
+    coreArrayString.setArrayString("scaldb_three_key",Array("scaldb_three_value")) shouldEqual Array("scaldb_three_value")
   }
 
   "The coreArrayString class" should "have a setter for an array key returning a array type" in {
-    assume(coreArrayString.setArrayString("scaldb_first_key",Array("scaldb_first_value")).isInstanceOf[Array[String]])
-    assume(coreArrayString.setArrayString("scaldb_second_key",Array("scaldb_second_value")).isInstanceOf[Array[String]])
-    assume(coreArrayString.setArrayString("scaldb_third_key",Array("scaldb_third_value")).isInstanceOf[Array[String]])
+    assume(coreArrayString.setArrayString("scaldb_first_key",Array("scaldb_first_overwritted_value")).isInstanceOf[Array[String]])
+    assume(coreArrayString.setArrayString("scaldb_second_key",Array("scaldb_second_overwritted_value")).isInstanceOf[Array[String]])
+    assume(coreArrayString.setArrayString("scaldb_three_key",Array("scaldb_three_overwritted_value")).isInstanceOf[Array[String]])
   }
 
   "The coreArrayString class" should "have a getter for a int key" in {
-    coreArrayString.getArrayString("scaldb_first_key") shouldEqual Array("scaldb_first_value")
-    coreArrayString.getArrayString("scaldb_second_key") shouldEqual Array("scaldb_second_value")
-    coreArrayString.getArrayString("scaldb_third_key") shouldEqual Array("scaldb_third_value")
+    coreArrayString.getArrayString("scaldb_first_key") shouldEqual Array("scaldb_first_overwritted_value")
+    coreArrayString.getArrayString("scaldb_second_key") shouldEqual Array("scaldb_second_overwritted_value")
+    coreArrayString.getArrayString("scaldb_three_key") shouldEqual Array("scaldb_three_overwritted_value")
   }
 
   "The coreArrayString class" should "have a getter for int the same type as itself" in {
     assume(coreArrayString.getArrayString("scaldb_first_key").isInstanceOf[Array[String]])
     assume(coreArrayString.getArrayString("scaldb_second_key").isInstanceOf[Array[String]])
-    assume(coreArrayString.getArrayString("scaldb_third_key").isInstanceOf[Array[String]])
+    assume(coreArrayString.getArrayString("scaldb_three_key").isInstanceOf[Array[String]])
   }
 
   "The coreArrayString class" should "have a getter with a default value if the key does not exists" in {
@@ -192,12 +194,12 @@ class CoreArrayStringSpec extends FlatSpec with Matchers {
   }
 
   "The coreArrayString class" should "have a setter overwrite key" in {
-    coreArrayString.setArrayString("scaldb_first_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArrayString.setArrayString("scaldb_second_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArrayString.setArrayString("scaldb_third_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArrayString.getArrayString("scaldb_first_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArrayString.getArrayString("scaldb_second_key") shouldEqual Array("scaldb_first_value","scaldb_second_value")
-    coreArrayString.getArrayString("scaldb_third_key",Array("scaldb_first_value","scaldb_second_value")) shouldEqual Array("scaldb_first_value","scaldb_second_value")
+    coreArrayString.getArrayString("scaldb_first_key") should not equal Array("scaldb_first_value")
+    coreArrayString.getArrayString("scaldb_first_key") shouldEqual Array("scaldb_first_overwritted_value")
+    coreArrayString.getArrayString("scaldb_second_key") should not equal Array("scaldb_second_value")
+    coreArrayString.getArrayString("scaldb_second_key") shouldEqual Array("scaldb_second_overwritted_value")
+    coreArrayString.getArrayString("scaldb_three_key") should not equal Array("scaldb_three_value")
+    coreArrayString.getArrayString("scaldb_three_key") shouldEqual Array("scaldb_three_overwritted_value")
   }
 }
 
@@ -215,13 +217,13 @@ class CoreArrayIntSpec extends FlatSpec with Matchers {
   }
 
   "The coreArrayInt class" should "have a setter for an array key returning a array type" in {
-    assume(coreArrayInt.setArrayInt("scaldb_first_key",Array(10,15,35)).isInstanceOf[Array[Int]])
+    assume(coreArrayInt.setArrayInt("scaldb_first_key",Array(17,39,2004,3009)).isInstanceOf[Array[Int]])
     assume(coreArrayInt.setArrayInt("scaldb_second_key",Array(35,75,59,400)).isInstanceOf[Array[Int]])
     assume(coreArrayInt.setArrayInt("scaldb_three_key",Array(800,755,870,355)).isInstanceOf[Array[Int]])
   }
 
   "The coreArrayInt class" should "have a getter for a int array key" in {
-    coreArrayInt.getArrayInt("scaldb_first_key") shouldEqual Array(10,15,35)
+    coreArrayInt.getArrayInt("scaldb_first_key") shouldEqual Array(17,39,2004,3009)
     coreArrayInt.getArrayInt("scaldb_second_key") shouldEqual Array(35,75,59,400)
     coreArrayInt.getArrayInt("scaldb_three_key") shouldEqual Array(800,755,870,355)
   }
@@ -239,9 +241,12 @@ class CoreArrayIntSpec extends FlatSpec with Matchers {
   }
 
   "The coreArrayInt class" should "have a setter overwrite key" in {
-    coreArrayInt.setArrayInt("scaldb_first_key",Array(100,738,983)) shouldEqual Array(100,738,983)
-    coreArrayInt.setArrayInt("scaldb_second_key",Array(300,475,389)) shouldEqual Array(300,475,389)
-    coreArrayInt.setArrayInt("scaldb_three_key",Array(385,749,387)) shouldEqual Array(385,749,387)
+    coreArrayInt.getArrayInt("scaldb_first_key") should not equal Array(10,15,35)
+    coreArrayInt.getArrayInt("scaldb_first_key") shouldEqual Array(17,39,2004,3009)
+    coreArrayInt.getArrayInt("scaldb_second_key") should not equal Array(17,38,85)
+    coreArrayInt.getArrayInt("scaldb_second_key") shouldEqual Array(35,75,59,400)
+    coreArrayInt.getArrayInt("scaldb_three_key") should not equal Array(30,70,80)
+    coreArrayInt.getArrayInt("scaldb_three_key") shouldEqual Array(800,755,870,355)
   }
 }
 
@@ -258,6 +263,23 @@ class CoreArrayDoubleSpec extends FlatSpec with Matchers {
 
   "The coreArrayDouble class" should "have a setter for an array key returning a double array type" in {
     assume(coreArrayDouble.setArrayDouble("scaldb_first_key",Array(187.10,275.25,472.30)).isInstanceOf[Array[Double]])
+  }
+
+  "The coreArrayDouble class" should "have a getter for a double array key" in {
+    coreArrayDouble.getArrayDouble("scaldb_first_key") shouldEqual Array(187.10,275.25,472.30)
+  }
+
+  "The coreArrayDouble class" should "have a getter for a double array with these type" in {
+    assume(coreArrayDouble.getArrayDouble("scaldb_first_key").isInstanceOf[Array[Double]])
+  }
+
+  "The coreArrayDouble class" should "have a getter with a default value if the key does not exists" in {
+    coreArrayDouble.getArrayDouble("scaldb_first_key_non_presence",Array(35,41,26)) shouldEqual Array(35,41,26)
+  }
+
+  "The coreArrayDouble class" should "have a setter overwrite key for double array" in {
+    coreArrayDouble.getArrayDouble("scaldb_first_key") should not equal Array(47.80,87.3)
+    coreArrayDouble.getArrayDouble("scaldb_first_key") shouldEqual Array(187.10,275.25,472.30)
   }
 }
 
