@@ -151,8 +151,12 @@ class CoreDoubleSpec extends FlatSpec with Matchers {
     coreDouble.setDouble("scaldb_first_key_value",3.7) shouldEqual 3.7
     coreDouble.getDouble("scaldb_first_key_value") should not equal 1.5
     coreDouble.getDouble("scaldb_first_key_value") shouldEqual 3.7
-    coreDouble.setDouble("scaldb_second_key_value",8.87) shouldEqual 8.87
-    coreDouble.setDouble("scaldb_three_key_value",9.37) shouldEqual 9.37
+    coreDouble.setDouble("scaldb_second_key_value",4.8) shouldEqual 4.8
+    coreDouble.getDouble("scaldb_second_key_value") should not equal 3.7
+    coreDouble.getDouble("scaldb_second_key_value") shouldEqual 4.8
+    coreDouble.setDouble("scaldb_three_key_value",15.7) shouldEqual 15.7
+    coreDouble.getDouble("scaldb_three_key_value") should not equal 7.3
+    coreDouble.getDouble("scaldb_three_key_value") shouldEqual 15.7
   }
 }
 
