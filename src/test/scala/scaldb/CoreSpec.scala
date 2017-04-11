@@ -79,40 +79,43 @@ class CoreIntSpec extends FlatSpec with Matchers {
   "The coreInt class" should "have a setter for int" in {
     coreInt.setInt("scaldb_first_key_value",0) shouldEqual 0
     coreInt.setInt("scaldb_second_key_value",2) shouldEqual 2
-    coreInt.setInt("scladb_third_key_value",3) shouldEqual 3
+    coreInt.setInt("scladb_three_key_value",3) shouldEqual 3
   }
 
   "The coreInt class" should "have a setter for a int key returning a int type" in {
     assume(coreInt.setInt("scaldb_first_key_value",0).isInstanceOf[Int])
     assume(coreInt.setInt("scaldb_second_key_value",2).isInstanceOf[Int])
-    assume(coreInt.setInt("scaldb_third_key_value",3).isInstanceOf[Int])
+    assume(coreInt.setInt("scaldb_three_key_value",3).isInstanceOf[Int])
   }
 
   "The coreInt class" should "have a getter for a int key" in {
     coreInt.getInt("scaldb_first_key_value") shouldEqual 0
     coreInt.getInt("scaldb_second_key_value") shouldEqual 2
-    coreInt.getInt("scaldb_third_key_value") shouldEqual 3
+    coreInt.getInt("scaldb_three_key_value") shouldEqual 3
   }
 
   "The coreInt class" should "have a getter for int the same type as itself" in {
     assume(coreInt.getInt("scaldb_first_key_value").isInstanceOf[Int])
     assume(coreInt.getInt("scaldb_second_key_value").isInstanceOf[Int])
-    assume(coreInt.getInt("scaldb_third_key_value").isInstanceOf[Int])
+    assume(coreInt.getInt("scaldb_three_key_value").isInstanceOf[Int])
   }
 
   "The coreInt class" should "have a getter with a default value if the key does not exists" in {
     coreInt.getInt("scaldb_first_key_value_non_presence",1) shouldEqual 1
     coreInt.getInt("scaldb_second_key_value_non_presence",4) shouldEqual 4
-    coreInt.getInt("scaldb_third_key_value_non_presence",5) shouldEqual 5
+    coreInt.getInt("scaldb_three_key_value_non_presence",5) shouldEqual 5
   }
 
   "The coreInt class" should "have a setter overwrite key" in {
-    coreInt.setInt("scaldb_first_key_value",3) shouldEqual 3
-    coreInt.setInt("scaldb_second_key_value",4) shouldEqual 4
-    coreInt.setInt("scaldb_third_key_value",5) shouldEqual 5
-    coreInt.getInt("scaldb_first_key_value") shouldEqual 3
-    coreInt.getInt("scaldb_second_key_value") shouldEqual 4
-    coreInt.getInt("scaldb_third_key_value") shouldEqual 5
+    coreInt.setInt("scaldb_first_key_value",10) shouldEqual 10
+    coreInt.getInt("scaldb_first_key_value") should not equal 0
+    coreInt.getInt("scaldb_first_key_value") shouldEqual 10
+    coreInt.setInt("scaldb_second_key_value",180) shouldEqual 180
+    coreInt.getInt("scaldb_second_key_value") should not equal 2
+    coreInt.getInt("scaldb_second_key_value") shouldEqual 180
+    coreInt.setInt("scaldb_three_key_value",10) shouldEqual 10
+    coreInt.getInt("scaldb_three_key_value") should not equal 2
+    coreInt.getInt("scaldb_three_key_value") shouldEqual 10
   }
 }
 
@@ -297,34 +300,35 @@ class CoreListSpec extends FlatSpec with Matchers {
   "The coreList class" should "have a setter for list" in {
     coreList.setList("scaldb_first_key",List("scaldb_first_value")) shouldEqual List("scaldb_first_value")
     coreList.setList("scaldb_second_key",List("scaldb_second_value")) shouldEqual List("scaldb_second_value")
-    coreList.setList("scaldb_third_key",List("scaldb_third_value")) shouldEqual List("scaldb_third_value")
+    coreList.setList("scaldb_three_key",List("scaldb_three_value")) shouldEqual List("scaldb_three_value")
   }
 
   "The coreList class" should "have a setter for an list key returning a list type" in {
     assume(coreList.setList("scaldb_first_key",List("scaldb_first_value")).isInstanceOf[List[Any]])
     assume(coreList.setList("scaldb_second_key",List("scaldb_second_value")).isInstanceOf[List[Any]])
-    assume(coreList.setList("scaldb_third_key",List("scaldb_third_value")).isInstanceOf[List[Any]])
+    assume(coreList.setList("scaldb_three_key",List("scaldb_three_value")).isInstanceOf[List[Any]])
   }
 
   "The coreList class" should "have a getter for a list key" in {
     coreList.getList("scaldb_first_key") shouldEqual Array("scaldb_first_value")
     coreList.getList("scaldb_second_key") shouldEqual Array("scaldb_second_value")
-    coreList.getList("scaldb_third_key") shouldEqual Array("scaldb_third_value")
+    coreList.getList("scaldb_three_key") shouldEqual Array("scaldb_three_value")
   }
 
   "The coreList class" should "have a getter for list the same type as itself" in {
     coreList.getList("scaldb_first_key_non_presence",List("default_value")) shouldEqual List("default_value")
     coreList.getList("scaldb_second_key_non_presence",List("default_value")) shouldEqual List("default_value")
-    coreList.getList("scaldb_third_key_non_presence",List("default_value")) shouldEqual List("default_value")
+    coreList.getList("scaldb_three_key_non_presence",List("default_value")) shouldEqual List("default_value")
   }
 
   "The coreList class" should "have a setter overwrite key" in {
     coreList.setList("scaldb_first_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
-    coreList.setList("scaldb_second_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
-    coreList.setList("scaldb_third_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreList.getList("scaldb_first_key") should not equal List("scaldb_first_value")
     coreList.getList("scaldb_first_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreList.setList("scaldb_second_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreList.getList("scaldb_second_key") should not equal List("scaldb_second_value")
     coreList.getList("scaldb_second_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
-    coreList.getList("scaldb_third_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreList.setList("scaldb_three_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
   }
 }
 
