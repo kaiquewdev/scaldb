@@ -290,47 +290,47 @@ class CoreArrayDoubleSpec extends FlatSpec with Matchers {
   }
 }
 
-class CoreListSpec extends FlatSpec with Matchers {
-  val coreList = new CoreList()
+class CoreListStringSpec extends FlatSpec with Matchers {
+  val coreListString = new CoreListString()
 
-  "The coreList class" should "have an type" in {
-    assume(coreList.isInstanceOf[CoreList])
+  "The coreListString class" should "have an type" in {
+    assume(coreListString.isInstanceOf[CoreListString])
   }
 
-  "The coreList class" should "have a setter for list" in {
-    coreList.setList("scaldb_first_key",List("scaldb_first_value")) shouldEqual List("scaldb_first_value")
-    coreList.setList("scaldb_second_key",List("scaldb_second_value")) shouldEqual List("scaldb_second_value")
-    coreList.setList("scaldb_three_key",List("scaldb_three_value")) shouldEqual List("scaldb_three_value")
+  "The coreListString class" should "have a setter for list" in {
+    coreListString.setListString("scaldb_first_key",List("scaldb_first_value")) shouldEqual List("scaldb_first_value")
+    coreListString.setListString("scaldb_second_key",List("scaldb_second_value")) shouldEqual List("scaldb_second_value")
+    coreListString.setListString("scaldb_three_key",List("scaldb_three_value")) shouldEqual List("scaldb_three_value")
   }
 
   "The coreList class" should "have a setter for an list key returning a list type" in {
-    assume(coreList.setList("scaldb_first_key",List("scaldb_first_value")).isInstanceOf[List[Any]])
-    assume(coreList.setList("scaldb_second_key",List("scaldb_second_value")).isInstanceOf[List[Any]])
-    assume(coreList.setList("scaldb_three_key",List("scaldb_three_value")).isInstanceOf[List[Any]])
+    assume(coreListString.setListString("scaldb_first_key",List("scaldb_first_value")).isInstanceOf[List[Any]])
+    assume(coreListString.setListString("scaldb_second_key",List("scaldb_second_value")).isInstanceOf[List[Any]])
+    assume(coreListString.setListString("scaldb_three_key",List("scaldb_three_value")).isInstanceOf[List[Any]])
   }
 
   "The coreList class" should "have a getter for a list key" in {
-    coreList.getList("scaldb_first_key") shouldEqual Array("scaldb_first_value")
-    coreList.getList("scaldb_second_key") shouldEqual Array("scaldb_second_value")
-    coreList.getList("scaldb_three_key") shouldEqual Array("scaldb_three_value")
+    coreListString.getListString("scaldb_first_key") shouldEqual List("scaldb_first_value")
+    coreListString.getListString("scaldb_second_key") shouldEqual List("scaldb_second_value")
+    coreListString.getListString("scaldb_three_key") shouldEqual List("scaldb_three_value")
   }
 
   "The coreList class" should "have a getter for list the same type as itself" in {
-    coreList.getList("scaldb_first_key_non_presence",List("default_value")) shouldEqual List("default_value")
-    coreList.getList("scaldb_second_key_non_presence",List("default_value")) shouldEqual List("default_value")
-    coreList.getList("scaldb_three_key_non_presence",List("default_value")) shouldEqual List("default_value")
+    coreListString.getListString("scaldb_first_key_non_presence",List("default_value")) shouldEqual List("default_value")
+    coreListString.getListString("scaldb_second_key_non_presence",List("default_value")) shouldEqual List("default_value")
+    coreListString.getListString("scaldb_three_key_non_presence",List("default_value")) shouldEqual List("default_value")
   }
 
   "The coreList class" should "have a setter overwrite key" in {
-    coreList.setList("scaldb_first_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
-    coreList.getList("scaldb_first_key") should not equal List("scaldb_first_value")
-    coreList.getList("scaldb_first_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
-    coreList.setList("scaldb_second_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
-    coreList.getList("scaldb_second_key") should not equal List("scaldb_second_value")
-    coreList.getList("scaldb_second_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
-    coreList.setList("scaldb_three_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
-    coreList.getList("scaldb_three_key") should not equal List("scaldb_second_value")
-    coreList.getList("scaldb_three_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreListString.setListString("scaldb_first_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreListString.getListString("scaldb_first_key") should not equal List("scaldb_first_value")
+    coreListString.getListString("scaldb_first_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreListString.setListString("scaldb_second_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreListString.getListString("scaldb_second_key") should not equal List("scaldb_second_value")
+    coreListString.getListString("scaldb_second_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreListString.setListString("scaldb_three_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreListString.getListString("scaldb_three_key") should not equal List("scaldb_second_value")
+    coreListString.getListString("scaldb_three_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
   }
 }
 
@@ -460,34 +460,34 @@ class CoreSpec extends FlatSpec with Matchers {
   }
 
   "The core class" should "have a list setter" in {
-    core.setList("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
-    core.setList("scaldb_second_key_list",List("scaldb_second_key_value")) shouldEqual List("scaldb_second_key_value")
-    core.setList("scaldb_three_key_list",List("scaldb_three_key_value")) shouldEqual List("scaldb_three_key_value")
-    core.setList("scaldb_four_key_list",List("scaldb_four_key_value")) shouldEqual List("scaldb_four_key_value")
-    core.setList("scaldb_five_key_list",List("scaldb_five_key_value")) shouldEqual List("scaldb_five_key_value")
+    core.setListString("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
+    core.setListString("scaldb_second_key_list",List("scaldb_second_key_value")) shouldEqual List("scaldb_second_key_value")
+    core.setListString("scaldb_three_key_list",List("scaldb_three_key_value")) shouldEqual List("scaldb_three_key_value")
+    core.setListString("scaldb_four_key_list",List("scaldb_four_key_value")) shouldEqual List("scaldb_four_key_value")
+    core.setListString("scaldb_five_key_list",List("scaldb_five_key_value")) shouldEqual List("scaldb_five_key_value")
   }
 
   "The core class" should "have a list getter" in {
-    core.setList("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
-    core.setList("scaldb_second_key_list",List("scaldb_second_key_value")) shouldEqual List("scaldb_second_key_value")
-    core.setList("scaldb_three_key_list",List("scaldb_three_key_value")) shouldEqual List("scaldb_three_key_value")
-    core.setList("scaldb_four_key_list",List("scaldb_four_key_value")) shouldEqual List("scaldb_four_key_value")
-    core.setList("scaldb_five_key_list",List("scaldb_five_key_value")) shouldEqual List("scaldb_five_key_value")
+    core.setListString("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
+    core.setListString("scaldb_second_key_list",List("scaldb_second_key_value")) shouldEqual List("scaldb_second_key_value")
+    core.setListString("scaldb_three_key_list",List("scaldb_three_key_value")) shouldEqual List("scaldb_three_key_value")
+    core.setListString("scaldb_four_key_list",List("scaldb_four_key_value")) shouldEqual List("scaldb_four_key_value")
+    core.setListString("scaldb_five_key_list",List("scaldb_five_key_value")) shouldEqual List("scaldb_five_key_value")
   }
 
   "The core class" should "have a getter default value to return when the key is not present for a list" in {
-    core.getList("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
-    core.getList("scaldb_second_key_list",List("scaldb_second_key_value")) shouldEqual List("scaldb_second_key_value")
-    core.getList("scaldb_three_key_list",List("scaldb_three_key_value")) shouldEqual List("scaldb_three_key_value")
-    core.getList("scaldb_four_key_list",List("scaldb_four_key_value")) shouldEqual List("scaldb_four_key_value")
-    core.getList("scaldb_five_key_list",List("scaldb_five_key_value")) shouldEqual List("scaldb_five_key_value")
+    core.getListString("scaldb_first_key_list",List("scaldb_first_key_value")) shouldEqual List("scaldb_first_key_value")
+    core.getListString("scaldb_second_key_list",List("scaldb_second_key_value")) shouldEqual List("scaldb_second_key_value")
+    core.getListString("scaldb_three_key_list",List("scaldb_three_key_value")) shouldEqual List("scaldb_three_key_value")
+    core.getListString("scaldb_four_key_list",List("scaldb_four_key_value")) shouldEqual List("scaldb_four_key_value")
+    core.getListString("scaldb_five_key_list",List("scaldb_five_key_value")) shouldEqual List("scaldb_five_key_value")
   }
 
   "The core class" should "have a list setter overwrite key" in {
-    core.setList("scaldb_first_key_list",List("scaldb_first_key_value_overwritted")) shouldEqual List("scaldb_first_key_value_overwritted")
-    core.setList("scaldb_second_key_list",List("scaldb_second_key_value_overwritted")) shouldEqual List("scaldb_second_key_value_overwritted")
-    core.setList("scaldb_three_key_list",List("scaldb_three_key_value_overwritted")) shouldEqual List("scaldb_three_key_value_overwritted")
-    core.setList("scaldb_four_key_list",List("scaldb_four_key_value_overwritted")) shouldEqual List("scaldb_four_key_value_overwritted")
+    core.setListString("scaldb_first_key_list",List("scaldb_first_key_value_overwritted")) shouldEqual List("scaldb_first_key_value_overwritted")
+    core.setListString("scaldb_second_key_list",List("scaldb_second_key_value_overwritted")) shouldEqual List("scaldb_second_key_value_overwritted")
+    core.setListString("scaldb_three_key_list",List("scaldb_three_key_value_overwritted")) shouldEqual List("scaldb_three_key_value_overwritted")
+    core.setListString("scaldb_four_key_list",List("scaldb_four_key_value_overwritted")) shouldEqual List("scaldb_four_key_value_overwritted")
   }
 
   "The core class" should "have a vector setter" in {
