@@ -329,6 +329,8 @@ class CoreListSpec extends FlatSpec with Matchers {
     coreList.getList("scaldb_second_key") should not equal List("scaldb_second_value")
     coreList.getList("scaldb_second_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
     coreList.setList("scaldb_three_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
+    coreList.getList("scaldb_three_key") should not equal List("scaldb_second_value")
+    coreList.getList("scaldb_three_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
   }
 }
 
