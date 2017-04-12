@@ -54,6 +54,7 @@ trait CoreVectorStringGetterSetter {
 
 trait CoreVectorIntGetterSetter {
   def setVectorInt(key: String, value: Vector[Int]): Vector[Int]
+  def getVectorInt(key: String, value: Vector[Int]): Vector[Int]
 }
 
 trait CoreGetterSetter {
@@ -285,14 +286,13 @@ class CoreVectorInt extends Object with CoreVectorIntGetterSetter {
     }
     value
   }
-  /*def getVectorInt(key: String, value: Vector[Int] = Vector.empty): Vector[Int] = {
+  def getVectorInt(key: String, value: Vector[Int] = Vector.empty): Vector[Int] = {
     if (CoreLogic.hasKeyStringArray(key,VectorKeys)) {
-      VectorValues(CoreLogic.stringBinarySearchArray(VectorKeys,key)) = value
+      VectorValues(CoreLogic.stringBinarySearchArray(VectorKeys,key))
     } else {
-      VectorKeys = VectorKeys :+ key
-      VectorValues = VectorValues :+ value
+      value
     }
-  }*/
+  }
 }
 
 class Core extends Object with CoreGetterSetter {

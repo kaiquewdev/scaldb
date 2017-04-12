@@ -1,10 +1,94 @@
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreListString source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreListString: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreListString.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreArrayDouble source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreArrayDouble: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreArrayDouble.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreArrayInt source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreArrayInt: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreArrayInt.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreVectorInt source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreVectorInt: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreString source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreString: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreString.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreListInt source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreListInt: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreListInt.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreDouble source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreDouble: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreDouble.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreVectorString source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreVectorString: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreVectorString.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.Core source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.Core: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.Core.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreInt source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreInt: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreInt.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreLogic$ source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreLogic$: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreLogic$.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The scaldb.CoreArrayString source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	getVectorInt$default$2, getVectorInt.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) scaldb.CoreArrayString: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) scaldb.CoreArrayString.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala. This dependency is not being considered for invalidation.[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	modified: Set(/home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(scaldb.CoreListString,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.CoreArrayDouble,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.CoreArrayInt,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.CoreVectorInt,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.CoreString,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.CoreListInt,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.CoreDouble,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.CoreVectorString,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.Core,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.CoreInt,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.CoreLogic$,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )), NamesChange(scaldb.CoreArrayString,ModifiedNames(regularNames = getVectorInt$default$2, getVectorInt, implicitNames = )))[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/kaique/war/scaldb/src/test/scala/scaldb/CoreSpec.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
@@ -18,13 +102,13 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/kaique/war/scaldb/target/scala-2.12/test-classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 5c65aa91, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 47d8caf2, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/kaique/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/kaique/war/scaldb/target/scala-2.12/test-classes:/home/kaique/war/scaldb/target/scala-2.12/classes:/home/kaique/.ivy2/cache/io.reactivex/rxscala_2.12/jars/rxscala_2.12-0.26.5.jar:/home/kaique/.ivy2/cache/io.reactivex/rxjava/jars/rxjava-1.2.4.jar:/home/kaique/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.1.jar:/home/kaique/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.1.jar:/home/kaique/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.1.jar:/home/kaique/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.5.jar:/home/kaique/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 24.553397866 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 6.381672018 s[0m
 [0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
 [0m[[0mdebug[0m] [0m[naha] 	Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m

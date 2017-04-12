@@ -430,6 +430,10 @@ class CoreVectorIntSpec extends FlatSpec with Matchers {
   "The coreVectorInt class" should "have a setter for an vector int key returning a vector type" in {
     assume(coreVectorInt.setVectorInt("scaldb_first_key",Vector(4,7,2,8)).isInstanceOf[Vector[Int]])
   }
+
+  "The coreVectorInt class" should "have a gettter for a vector int key" in {
+    coreVectorInt.getVectorInt("scaldb_first_key") shouldEqual Vector(4,7,2,8)
+  }
 }
 
 class CoreSpec extends FlatSpec with Matchers {
