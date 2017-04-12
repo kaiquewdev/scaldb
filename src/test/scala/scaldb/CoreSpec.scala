@@ -303,25 +303,25 @@ class CoreListStringSpec extends FlatSpec with Matchers {
     coreListString.setListString("scaldb_three_key",List("scaldb_three_value")) shouldEqual List("scaldb_three_value")
   }
 
-  "The coreList class" should "have a setter for an list key returning a list type" in {
+  "The coreListString class" should "have a setter for an list key returning a list type" in {
     assume(coreListString.setListString("scaldb_first_key",List("scaldb_first_value")).isInstanceOf[List[Any]])
     assume(coreListString.setListString("scaldb_second_key",List("scaldb_second_value")).isInstanceOf[List[Any]])
     assume(coreListString.setListString("scaldb_three_key",List("scaldb_three_value")).isInstanceOf[List[Any]])
   }
 
-  "The coreList class" should "have a getter for a list key" in {
+  "The coreListString class" should "have a getter for a list key" in {
     coreListString.getListString("scaldb_first_key") shouldEqual List("scaldb_first_value")
     coreListString.getListString("scaldb_second_key") shouldEqual List("scaldb_second_value")
     coreListString.getListString("scaldb_three_key") shouldEqual List("scaldb_three_value")
   }
 
-  "The coreList class" should "have a getter for list the same type as itself" in {
+  "The coreListString class" should "have a getter for list the same type as itself" in {
     coreListString.getListString("scaldb_first_key_non_presence",List("default_value")) shouldEqual List("default_value")
     coreListString.getListString("scaldb_second_key_non_presence",List("default_value")) shouldEqual List("default_value")
     coreListString.getListString("scaldb_three_key_non_presence",List("default_value")) shouldEqual List("default_value")
   }
 
-  "The coreList class" should "have a setter overwrite key" in {
+  "The coreListString class" should "have a setter overwrite key" in {
     coreListString.setListString("scaldb_first_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
     coreListString.getListString("scaldb_first_key") should not equal List("scaldb_first_value")
     coreListString.getListString("scaldb_first_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
@@ -331,6 +331,30 @@ class CoreListStringSpec extends FlatSpec with Matchers {
     coreListString.setListString("scaldb_three_key",List("scaldb_first_value","scaldb_second_value")) shouldEqual List("scaldb_first_value","scaldb_second_value")
     coreListString.getListString("scaldb_three_key") should not equal List("scaldb_second_value")
     coreListString.getListString("scaldb_three_key") shouldEqual List("scaldb_first_value","scaldb_second_value")
+  }
+}
+
+class CoreListIntSpec extends FlatSpec with Matchers {
+  val coreListInt = new CoreListInt()
+
+  "The coreListInt class" should "have an type" in {
+    assume(coreListInt.isInstanceOf[CoreListInt])
+  }
+
+  "The coreListInt class" should "have a setter for list" in {
+    coreListInt.setListInt("scaldb_first_key",List(10,100,157)) shouldEqual List(10,100,157)
+  }
+
+  "The coreListInt class" should "have a setter for an list key returning a list type" in {
+    assume(coreListInt.setListInt("scaldb_first_key",List(275,387,297,10)).isInstanceOf[List[Int]])
+  }
+
+  "The coreListInt class" should "have a getter for a list key" in {
+    coreListInt.getListInt("scaldb_first_key") shouldEqual List(275,387,297,10)
+  }
+
+  "The coreListInt class" should "have a getter for list the same type as itself" in {
+    coreListInt.getListInt("scaldb_first_key_non_presence",List(1,2,3)) shouldEqual List(1,2,3)
   }
 }
 

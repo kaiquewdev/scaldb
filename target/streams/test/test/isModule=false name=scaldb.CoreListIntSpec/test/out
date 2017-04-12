@@ -1,0 +1,11 @@
+[0m[[0minfo[0m] [0m[32mCoreListIntSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreListInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have an type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreListInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for list[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreListInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for an list key returning a list type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreListInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for a list key[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreListInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for list the same type as itself[0m[0m
