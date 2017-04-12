@@ -285,6 +285,14 @@ class CoreVectorInt extends Object with CoreVectorIntGetterSetter {
     }
     value
   }
+  /*def getVectorInt(key: String, value: Vector[Int] = Vector.empty): Vector[Int] = {
+    if (CoreLogic.hasKeyStringArray(key,VectorKeys)) {
+      VectorValues(CoreLogic.stringBinarySearchArray(VectorKeys,key)) = value
+    } else {
+      VectorKeys = VectorKeys :+ key
+      VectorValues = VectorValues :+ value
+    }
+  }*/
 }
 
 class Core extends Object with CoreGetterSetter {
