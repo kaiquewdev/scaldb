@@ -359,6 +359,7 @@ class CoreListIntSpec extends FlatSpec with Matchers {
 
   "The coreListInt class" should "have a setter overwrite key" in {
     coreListInt.getListInt("scaldb_first_key") should not equal List(10,100,157)
+    coreListInt.getListInt("scaldb_first_key") shouldEqual List(275,387,297,10)
   }
 }
 
