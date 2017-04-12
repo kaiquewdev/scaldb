@@ -1,14 +1,14 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreListStringSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreListIntSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreArrayStringSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreVectorStringSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreArrayIntSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreLogicSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreArrayDoubleSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreStringSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreIntSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreDoubleSpec, org.scalatest.tools.Framework$$anon$1@55903805, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreVectorStringSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreListStringSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreListIntSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreArrayStringSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreArrayIntSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreLogicSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreArrayDoubleSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreStringSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreIntSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(scaldb.CoreDoubleSpec, org.scalatest.tools.Framework$$anon$1@37b48d8f, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0m[36mRun completed in 539 milliseconds.[0m[0m
 [0m[[0minfo[0m] [0m[36mTotal number of tests run: 80[0m[0m
 [0m[[0minfo[0m] [0m[36mSuites: completed 11, aborted 0[0m[0m

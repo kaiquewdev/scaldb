@@ -9,3 +9,5 @@
 [0m[[0minfo[0m] [0m[32m- should have a getter for a list key[0m[0m
 [0m[[0minfo[0m] [0m[32mThe coreListInt class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a getter for list the same type as itself[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreListInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter overwrite key[0m[0m

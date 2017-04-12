@@ -343,23 +343,29 @@ class CoreListIntSpec extends FlatSpec with Matchers {
 
   "The coreListInt class" should "have a setter for list" in {
     coreListInt.setListInt("scaldb_first_key",List(10,100,157)) shouldEqual List(10,100,157)
+    coreListInt.setListInt("scaldb_second_key",List(500,320,483,927)) shouldEqual List(500,320,483,927)
   }
 
   "The coreListInt class" should "have a setter for an list key returning a list type" in {
     assume(coreListInt.setListInt("scaldb_first_key",List(275,387,297,10)).isInstanceOf[List[Int]])
+    assume(coreListInt.setListInt("scaldb_second_key",List(847,538,127)).isInstanceOf[List[Int]])
   }
 
   "The coreListInt class" should "have a getter for a list key" in {
     coreListInt.getListInt("scaldb_first_key") shouldEqual List(275,387,297,10)
+    coreListInt.getListInt("scaldb_second_key") shouldEqual List(847,538,127)
   }
 
   "The coreListInt class" should "have a getter for list the same type as itself" in {
     coreListInt.getListInt("scaldb_first_key_non_presence",List(1,2,3)) shouldEqual List(1,2,3)
+    coreListInt.getListInt("scaldb_second_key_non_presence",List(3,8,9)) shouldEqual List(3,8,9)
   }
 
   "The coreListInt class" should "have a setter overwrite key" in {
     coreListInt.getListInt("scaldb_first_key") should not equal List(10,100,157)
     coreListInt.getListInt("scaldb_first_key") shouldEqual List(275,387,297,10)
+    coreListInt.getListInt("scaldb_second_key") should not equal List(500,320,483,927)
+    coreListInt.getListInt("scaldb_second_key") shouldEqual List(847,538,127)
   }
 }
 
