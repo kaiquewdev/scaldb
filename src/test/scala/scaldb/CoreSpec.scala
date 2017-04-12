@@ -416,6 +416,18 @@ class CoreVectorStringSpec extends FlatSpec with Matchers {
   }
 }
 
+class CoreVectorIntSpec extends FlatSpec with Matchers {
+  val coreVectorInt = new CoreVectorInt()
+
+  "The coreVectorInt class" should "have an type" in {
+    assume(coreVectorInt.isInstanceOf[CoreVectorInt])
+  }
+
+  "The coreVectorInt class" should "have a setter for vector int" in {
+    coreVectorInt.setVectorInt("scaldb_first_key",Vector(7,2,0,8)) shouldEqual Vector(7,2,0,8)
+  }
+}
+
 class CoreSpec extends FlatSpec with Matchers {
   val core = new Core()
 

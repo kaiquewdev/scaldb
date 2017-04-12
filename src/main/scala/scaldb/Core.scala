@@ -47,9 +47,13 @@ trait CoreListIntGetterSetter {
   /*def getListInt(key: String, value: List[Int] = List.empty): List[Int]*/
 }
 
-trait CoreVectorGetterSetter {
+trait CoreVectorStringGetterSetter {
   def setVectorString(key: String, value: Vector[String]): Vector[String]
   def getVectorString(key: String, value: Vector[String] = Vector.empty): Vector[String]
+}
+
+trait CoreVectorIntGetterSetter {
+  def setVectorInt(key: String, value: Vector[Int]): Vector[Int]
 }
 
 trait CoreGetterSetter {
@@ -246,7 +250,7 @@ class CoreListInt extends Object with CoreListIntGetterSetter {
   }
 }
 
-class CoreVectorString extends Object with CoreVectorGetterSetter {
+class CoreVectorString extends Object with CoreVectorStringGetterSetter {
   var VectorKeys: Array[String] = Array.empty
   var VectorValues: Array[Vector[String]] = Array.empty
 
@@ -265,6 +269,21 @@ class CoreVectorString extends Object with CoreVectorGetterSetter {
     } else {
       value
     }
+  }
+}
+
+class CoreVectorInt extends Object with CoreVectorIntGetterSetter {
+  var VectorKeys: Array[String] = Array.empty
+  var VectorValues: Array[Vector[Int]] = Array.empty
+
+  def setVectorInt(key: String, value: Vector[Int] = Vector.empty): Vector[Int] = {
+    if (CoreLogic.hasKeyStringArray(key,VectorKeys)) {
+      VectorValues(CoreLogic.stringBinarySearchArray(VectorKeys,key)) = value
+    } else {
+      VectorKeys = VectorKeys :+ key
+      VectorValues = VectorValues :+ value
+    }
+    value
   }
 }
 
