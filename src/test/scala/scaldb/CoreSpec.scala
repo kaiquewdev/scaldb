@@ -356,6 +356,10 @@ class CoreListIntSpec extends FlatSpec with Matchers {
   "The coreListInt class" should "have a getter for list the same type as itself" in {
     coreListInt.getListInt("scaldb_first_key_non_presence",List(1,2,3)) shouldEqual List(1,2,3)
   }
+
+  "The coreListInt class" should "have a setter overwrite key" in {
+    coreListInt.getListInt("scaldb_first_key") should not equal List(10,100,157)
+  }
 }
 
 class CoreVectorStringSpec extends FlatSpec with Matchers {
