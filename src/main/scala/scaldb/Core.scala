@@ -43,8 +43,8 @@ trait CoreListStringGetterSetter {
 }
 
 trait CoreVectorGetterSetter {
-  def setVector(key: String, value: Vector[Any]): Vector[Any]
-  def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any]
+  def setVectorString(key: String, value: Vector[String]): Vector[String]
+  def getVectorString(key: String, value: Vector[String] = Vector.empty): Vector[String]
 }
 
 trait CoreGetterSetter {
@@ -56,8 +56,8 @@ trait CoreGetterSetter {
   def getArrayString(key: String, value: Array[String] = Array.empty): Array[String]
   def setListString(key: String, value: List[String] = List.empty): List[String]
   def getListString(key: String, value: List[String] = List.empty): List[String]
-  def setVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any]
-  def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any]
+  def setVectorString(key: String, value: Vector[String] = Vector.empty): Vector[String]
+  def getVectorString(key: String, value: Vector[String] = Vector.empty): Vector[String]
 }
 
 object CoreLogic extends CoreLogicOperations {
@@ -219,11 +219,11 @@ class CoreListString extends Object with CoreListStringGetterSetter {
   }
 }
 
-class CoreVector extends Object with CoreVectorGetterSetter {
+class CoreVectorString extends Object with CoreVectorGetterSetter {
   var VectorKeys: Array[String] = Array.empty
-  var VectorValues: Array[Vector[Any]] = Array.empty
+  var VectorValues: Array[Vector[String]] = Array.empty
 
-  def setVector(key: String, value: Vector[Any]): Vector[Any] = {
+  def setVectorString(key: String, value: Vector[String]): Vector[String] = {
     if (CoreLogic.hasKeyStringArray(key,VectorKeys)) {
       VectorValues(CoreLogic.stringBinarySearchArray(VectorKeys,key)) = value
     } else {
@@ -232,7 +232,7 @@ class CoreVector extends Object with CoreVectorGetterSetter {
     }
     value
   }
-  def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any] = {
+  def getVectorString(key: String, value: Vector[String] = Vector.empty): Vector[String] = {
     if (CoreLogic.hasKeyStringArray(key,VectorKeys)) {
       VectorValues(CoreLogic.stringBinarySearchArray(VectorKeys,key))
     } else {
@@ -246,7 +246,7 @@ class Core extends Object with CoreGetterSetter {
   private val coreInt: CoreInt = new CoreInt()
   private val coreArrayString: CoreArrayString = new CoreArrayString()
   private val coreListString: CoreListString = new CoreListString()
-  private val coreVector: CoreVector = new CoreVector()
+  private val coreVectorString: CoreVectorString = new CoreVectorString()
 
   def setString(key: String, value: String): String = coreString.setString(key,value)
   def getString(key: String, value: String = ""): String = coreString.getString(key,value)
@@ -256,6 +256,6 @@ class Core extends Object with CoreGetterSetter {
   def getArrayString(key: String, value: Array[String] = Array.empty): Array[String] = coreArrayString.getArrayString(key,value)
   def setListString(key: String, value: List[String] = List.empty): List[String] = coreListString.setListString(key,value)
   def getListString(key: String, value: List[String] = List.empty): List[String] = coreListString.getListString(key,value)
-  def setVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any] = coreVector.setVector(key,value)
-  def getVector(key: String, value: Vector[Any] = Vector.empty): Vector[Any] = coreVector.getVector(key,value)
+  def setVectorString(key: String, value: Vector[String] = Vector.empty): Vector[String] = coreVectorString.setVectorString(key,value)
+  def getVectorString(key: String, value: Vector[String] = Vector.empty): Vector[String] = coreVectorString.getVectorString(key,value)
 }

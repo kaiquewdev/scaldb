@@ -334,44 +334,44 @@ class CoreListStringSpec extends FlatSpec with Matchers {
   }
 }
 
-class CoreVectorSpec extends FlatSpec with Matchers {
-  val coreVector = new CoreVector()
+class CoreVectorStringSpec extends FlatSpec with Matchers {
+  val coreVectorString = new CoreVectorString()
 
-  "The coreVector class" should "have an type" in {
-    assume(coreVector.isInstanceOf[CoreVector])
+  "The coreVectorString class" should "have an type" in {
+    assume(coreVectorString.isInstanceOf[CoreVectorString])
   }
 
-  "The coreVector class" should "have a setter for vector" in {
-    coreVector.setVector("scaldb_first_key",Vector("scaldb_first_value")) shouldEqual Vector("scaldb_first_value")
-    coreVector.setVector("scaldb_second_key",Vector("scaldb_second_value")) shouldEqual Vector("scaldb_second_value")
-    coreVector.setVector("scaldb_third_key",Vector("scaldb_third_value")) shouldEqual Vector("scaldb_third_value")
+  "The coreVectorString class" should "have a setter for vector string" in {
+    coreVectorString.setVectorString("scaldb_first_key",Vector("scaldb_first_value")) shouldEqual Vector("scaldb_first_value")
+    coreVectorString.setVectorString("scaldb_second_key",Vector("scaldb_second_value")) shouldEqual Vector("scaldb_second_value")
+    coreVectorString.setVectorString("scaldb_third_key",Vector("scaldb_third_value")) shouldEqual Vector("scaldb_third_value")
   }
 
-  "The coreVector class" should "have a setter for an vector key returning a vector type" in {
-    assume(coreVector.setVector("scaldb_first_key",Vector("scaldb_first_value")).isInstanceOf[Vector[Any]])
-    assume(coreVector.setVector("scaldb_second_key",Vector("scaldb_second_value")).isInstanceOf[Vector[Any]])
-    assume(coreVector.setVector("scaldb_third_key",Vector("scaldb_third_value")).isInstanceOf[Vector[Any]])
+  "The coreVectorString class" should "have a setter for an vector string key returning a vector type" in {
+    assume(coreVectorString.setVectorString("scaldb_first_key",Vector("scaldb_first_value")).isInstanceOf[Vector[String]])
+    assume(coreVectorString.setVectorString("scaldb_second_key",Vector("scaldb_second_value")).isInstanceOf[Vector[String]])
+    assume(coreVectorString.setVectorString("scaldb_third_key",Vector("scaldb_third_value")).isInstanceOf[Vector[String]])
   }
 
   "The coreVector class" should "have a getter for a vector key" in {
-    coreVector.getVector("scaldb_first_key") shouldEqual Vector("scaldb_first_value")
-    coreVector.getVector("scaldb_second_key") shouldEqual Vector("scaldb_second_value")
-    coreVector.getVector("scaldb_third_key") shouldEqual Vector("scaldb_third_value")
+    coreVectorString.getVectorString("scaldb_first_key") shouldEqual Vector("scaldb_first_value")
+    coreVectorString.getVectorString("scaldb_second_key") shouldEqual Vector("scaldb_second_value")
+    coreVectorString.getVectorString("scaldb_third_key") shouldEqual Vector("scaldb_third_value")
   }
 
   "The coreVector class" should "have a getter for vector the same type as itself" in {
-    coreVector.getVector("scaldb_first_key_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
-    coreVector.getVector("scaldb_second_key_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
-    coreVector.getVector("scaldb_third_key_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
+    coreVectorString.getVectorString("scaldb_first_key_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
+    coreVectorString.getVectorString("scaldb_second_key_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
+    coreVectorString.getVectorString("scaldb_third_key_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
   }
 
   "The coreVector class" should "have a setter overwrite key" in {
-    coreVector.setVector("scaldb_first_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
-    coreVector.setVector("scaldb_second_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
-    coreVector.setVector("scaldb_third_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
-    coreVector.getVector("scaldb_first_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
-    coreVector.getVector("scaldb_second_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
-    coreVector.getVector("scaldb_third_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
+    coreVectorString.setVectorString("scaldb_first_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
+    coreVectorString.setVectorString("scaldb_second_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
+    coreVectorString.setVectorString("scaldb_third_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
+    coreVectorString.getVectorString("scaldb_first_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
+    coreVectorString.getVectorString("scaldb_second_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
+    coreVectorString.getVectorString("scaldb_third_key") shouldEqual Vector("scaldb_first_value","scaldb_second_value")
   }
 }
 
@@ -491,34 +491,34 @@ class CoreSpec extends FlatSpec with Matchers {
   }
 
   "The core class" should "have a vector setter" in {
-    core.setVector("scaldb_first_key_vector",Vector("scaldb_first_key_value")) shouldEqual Vector("scaldb_first_key_value")
-    core.setVector("scaldb_second_key_vector",Vector("scaldb_second_key_value")) shouldEqual Vector("scaldb_second_key_value")
-    core.setVector("scaldb_three_key_vector",Vector("scaldb_three_key_value")) shouldEqual Vector("scaldb_three_key_value")
-    core.setVector("scaldb_four_key_vector",Vector("scaldb_four_key_value")) shouldEqual Vector("scaldb_four_key_value")
-    core.setVector("scaldb_five_key_vector",Vector("scaldb_five_key_value")) shouldEqual Vector("scaldb_five_key_value")
+    core.setVectorString("scaldb_first_key_vector",Vector("scaldb_first_key_value")) shouldEqual Vector("scaldb_first_key_value")
+    core.setVectorString("scaldb_second_key_vector",Vector("scaldb_second_key_value")) shouldEqual Vector("scaldb_second_key_value")
+    core.setVectorString("scaldb_three_key_vector",Vector("scaldb_three_key_value")) shouldEqual Vector("scaldb_three_key_value")
+    core.setVectorString("scaldb_four_key_vector",Vector("scaldb_four_key_value")) shouldEqual Vector("scaldb_four_key_value")
+    core.setVectorString("scaldb_five_key_vector",Vector("scaldb_five_key_value")) shouldEqual Vector("scaldb_five_key_value")
   }
 
   "The core class" should "have a vector getter" in {
-    core.getVector("scaldb_first_key_vector") shouldEqual Vector("scaldb_first_key_value")
-    core.getVector("scaldb_second_key_vector") shouldEqual Vector("scaldb_second_key_value")
-    core.getVector("scaldb_three_key_vector") shouldEqual Vector("scaldb_three_key_value")
-    core.getVector("scaldb_four_key_vector") shouldEqual Vector("scaldb_four_key_value")
-    core.getVector("scaldb_five_key_vector") shouldEqual Vector("scaldb_five_key_value")
+    core.getVectorString("scaldb_first_key_vector") shouldEqual Vector("scaldb_first_key_value")
+    core.getVectorString("scaldb_second_key_vector") shouldEqual Vector("scaldb_second_key_value")
+    core.getVectorString("scaldb_three_key_vector") shouldEqual Vector("scaldb_three_key_value")
+    core.getVectorString("scaldb_four_key_vector") shouldEqual Vector("scaldb_four_key_value")
+    core.getVectorString("scaldb_five_key_vector") shouldEqual Vector("scaldb_five_key_value")
   }
 
   "The core class" should "have a default getter value to return when the key is not present for vector" in {
-    core.getVector("scaldb_first_key_vector_non_presence",Vector("first_default_value")) shouldEqual Vector("first_default_value")
-    core.getVector("scaldb_second_key_vector_non_presence",Vector("second_default_value")) shouldEqual Vector("second_default_value")
-    core.getVector("scaldb_three_key_vector_non_presence",Vector("three_default_value")) shouldEqual Vector("three_default_value")
-    core.getVector("scaldb_four_key_vector_non_presence",Vector("four_default_value")) shouldEqual Vector("four_default_value")
-    core.getVector("scaldb_five_key_vector_non_presence",Vector("five_default_value")) shouldEqual Vector("five_default_value")
+    core.getVectorString("scaldb_first_key_vector_non_presence",Vector("first_default_value")) shouldEqual Vector("first_default_value")
+    core.getVectorString("scaldb_second_key_vector_non_presence",Vector("second_default_value")) shouldEqual Vector("second_default_value")
+    core.getVectorString("scaldb_three_key_vector_non_presence",Vector("three_default_value")) shouldEqual Vector("three_default_value")
+    core.getVectorString("scaldb_four_key_vector_non_presence",Vector("four_default_value")) shouldEqual Vector("four_default_value")
+    core.getVectorString("scaldb_five_key_vector_non_presence",Vector("five_default_value")) shouldEqual Vector("five_default_value")
   }
 
   "The core class" should "have a vector setter overwrite key" in {
-    core.setVector("scaldb_first_key_vector",Vector("scaldb_first_key_value_overwritted")) shouldEqual Vector("scaldb_first_key_value_overwritted")
-    core.setVector("scaldb_second_key_vector",Vector("scaldb_second_key_value_overwritted")) shouldEqual Vector("scaldb_second_key_value_overwritted")
-    core.setVector("scaldb_three_key_vector",Vector("scaldb_three_key_value_overwritted")) shouldEqual Vector("scaldb_three_key_value_overwritted")
-    core.setVector("scaldb_four_key_vector",Vector("scaldb_four_key_value_overwritted")) shouldEqual Vector("scaldb_four_key_value_overwritted")
-    core.setVector("scaldb_five_key_vector",Vector("scaldb_five_key_value_overwritted")) shouldEqual Vector("scaldb_five_key_value_overwritted")
+    core.setVectorString("scaldb_first_key_vector",Vector("scaldb_first_key_value_overwritted")) shouldEqual Vector("scaldb_first_key_value_overwritted")
+    core.setVectorString("scaldb_second_key_vector",Vector("scaldb_second_key_value_overwritted")) shouldEqual Vector("scaldb_second_key_value_overwritted")
+    core.setVectorString("scaldb_three_key_vector",Vector("scaldb_three_key_value_overwritted")) shouldEqual Vector("scaldb_three_key_value_overwritted")
+    core.setVectorString("scaldb_four_key_vector",Vector("scaldb_four_key_value_overwritted")) shouldEqual Vector("scaldb_four_key_value_overwritted")
+    core.setVectorString("scaldb_five_key_vector",Vector("scaldb_five_key_value_overwritted")) shouldEqual Vector("scaldb_five_key_value_overwritted")
   }
 }
