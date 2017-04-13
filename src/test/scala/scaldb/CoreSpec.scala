@@ -394,19 +394,19 @@ class CoreVectorStringSpec extends FlatSpec with Matchers {
     assume(coreVectorString.setVectorString("scaldb_third_key",Vector("scaldb_third_value")).isInstanceOf[Vector[String]])
   }
 
-  "The coreVector class" should "have a getter for a vector key" in {
+  "The coreVectorString class" should "have a getter for a vector key" in {
     coreVectorString.getVectorString("scaldb_first_key") shouldEqual Vector("scaldb_first_value")
     coreVectorString.getVectorString("scaldb_second_key") shouldEqual Vector("scaldb_second_value")
     coreVectorString.getVectorString("scaldb_third_key") shouldEqual Vector("scaldb_third_value")
   }
 
-  "The coreVector class" should "have a getter for vector the same type as itself" in {
+  "The coreVectorString class" should "have a getter for vector the same type as itself" in {
     coreVectorString.getVectorString("scaldb_first_key_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
     coreVectorString.getVectorString("scaldb_second_key_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
     coreVectorString.getVectorString("scaldb_third_key_non_presence",Vector("default_value")) shouldEqual Vector("default_value")
   }
 
-  "The coreVector class" should "have a setter overwrite key" in {
+  "The coreVectorString class" should "have a setter overwrite key" in {
     coreVectorString.setVectorString("scaldb_first_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
     coreVectorString.setVectorString("scaldb_second_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
     coreVectorString.setVectorString("scaldb_third_key",Vector("scaldb_first_value","scaldb_second_value")) shouldEqual Vector("scaldb_first_value","scaldb_second_value")
