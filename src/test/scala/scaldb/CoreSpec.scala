@@ -435,15 +435,19 @@ class CoreVectorIntSpec extends FlatSpec with Matchers {
 
   "The coreVectorInt class" should "have a gettter for a vector int key" in {
     coreVectorInt.getVectorInt("scaldb_first_key") shouldEqual Vector(4,7,2,8)
+    coreVectorInt.getVectorInt("scaldb_second_key") shouldEqual Vector(20,90,180,7002)
   }
 
   "The coreVectorInt class" should "have a getter for vector int the same type as itself" in {
     coreVectorInt.getVectorInt("scaldb_first_key_non_presence",Vector(1,4,5)) shouldEqual Vector(1,4,5)
+    coreVectorInt.getVectorInt("scaldb_second_key_non_presence",Vector(7,2,10,579)) shouldEqual Vector(7,2,10,579)
   }
 
   "The coreVectorInt class" should "have a setter overwrite key" in {
     coreVectorInt.setVectorInt("scaldb_first_key",Vector(100,524,324)) shouldEqual Vector(100,524,324)
     coreVectorInt.getVectorInt("scaldb_first_key") should not equal Vector(7,2,0,8)
+    coreVectorInt.setVectorInt("scaldb_second_key",Vector(300,20,70,7009)) shouldEqual Vector(300,20,70,7009)
+    coreVectorInt.getVectorInt("scaldb_second_key") should not equal Vector(10,75,300,17)
   }
 }
 
