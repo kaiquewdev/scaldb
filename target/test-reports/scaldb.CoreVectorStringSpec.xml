@@ -8,13 +8,13 @@
                                                  
                                                </testcase><testcase classname="scaldb.CoreVectorStringSpec" name="The coreVectorString class should have a setter for vector string" time="0.0">
                                                  
-                                               </testcase><testcase classname="scaldb.CoreVectorStringSpec" name="The coreVectorString class should have a setter for an vector string key returning a vector type" time="0.0">
+                                               </testcase><testcase classname="scaldb.CoreVectorStringSpec" name="The coreVectorString class should have a setter for an vector string key returning a vector type" time="0.001">
                                                  
                                                </testcase><testcase classname="scaldb.CoreVectorStringSpec" name="The coreVector class should have a getter for a vector key" time="0.0">
                                                  
                                                </testcase><testcase classname="scaldb.CoreVectorStringSpec" name="The coreVector class should have a getter for vector the same type as itself" time="0.0">
                                                  
-                                               </testcase><testcase classname="scaldb.CoreVectorStringSpec" name="The coreVector class should have a setter overwrite key" time="0.001">
+                                               </testcase><testcase classname="scaldb.CoreVectorStringSpec" name="The coreVector class should have a setter overwrite key" time="0.0">
                                                  
                                                </testcase>
                      <system-out></system-out>
