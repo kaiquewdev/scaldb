@@ -4,7 +4,7 @@
 		module="scaldb-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170404132203"
+		publication="20170929000936"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

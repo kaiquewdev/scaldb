@@ -69,6 +69,14 @@ class CoreStringSpec extends FlatSpec with Matchers {
   }
 }
 
+class CoreFieldStringSpec extends FlatSpec with Matchers {
+  val coreFieldString = new CoreFieldString()
+
+  "The Core Field String Class" should "have a specific type" in {
+   assume(coreFieldString.isInstanceOf[CoreFieldString])
+  }
+}
+
 class CoreIntSpec extends FlatSpec with Matchers {
   val coreInt = new CoreInt()
 

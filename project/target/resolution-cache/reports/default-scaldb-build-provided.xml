@@ -9,7 +9,7 @@
 		extra-sbtVersion="0.13"
 		conf="provided"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170404132203"/>
+		date="20170929000936"/>
 	<dependencies>
 		<module organisation="org.scala-sbt" name="sbt">
 			<revision name="0.13.13" status="release" pubdate="20161028130837" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
@@ -79,13 +79,13 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="template-resolver">
-			<revision name="0.1" status="release" pubdate="20160821234715" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/template-resolver" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="49">
+			<revision name="0.1" status="release" pubdate="20170407160222" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/template-resolver" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="49">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="2559" time="0" location="/home/kaique/.ivy2/cache/org.scala-sbt/template-resolver/ivy-0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1.pom"/>
+				<metadata-artifact status="no" details="" size="2548" time="0" location="/home/kaique/.ivy2/cache/org.scala-sbt/template-resolver/ivy-0.1.xml" searched="false" origin-is-local="false" origin-location="file:////home/kaique/.sbt/preloaded/org.scala-sbt/template-resolver/0.1/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="command" conf="compile" rev="0.1" rev-constraint-default="0.1" rev-constraint-dynamic="0.1" callerrev="0.13.13"/>
 				<artifacts>
 					<artifact name="template-resolver" type="jar" ext="jar" status="no" details="" size="807" time="0" location="/home/kaique/.ivy2/cache/org.scala-sbt/template-resolver/jars/template-resolver-0.1.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1.jar"/>
+						<origin-location is-local="false" location="file:////home/kaique/.sbt/preloaded/org.scala-sbt/template-resolver/0.1/jars/template-resolver.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -135,14 +135,14 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="test-interface">
-			<revision name="1.0" status="release" pubdate="20130628194435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="45">
+			<revision name="1.0" status="release" pubdate="20150507162859" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="45">
 				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
-				<metadata-artifact status="no" details="" size="2589" time="0" location="/home/kaique/.ivy2/cache/org.scala-sbt/test-interface/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.pom"/>
+				<metadata-artifact status="no" details="" size="2584" time="0" location="/home/kaique/.ivy2/cache/org.scala-sbt/test-interface/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="file:////home/kaique/.sbt/preloaded/org.scala-sbt/test-interface/1.0/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="testing" conf="compile" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.13.13"/>
 				<caller organisation="org.scala-sbt" name="test-agent" conf="compile" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.13.13"/>
 				<artifacts>
 					<artifact name="test-interface" type="jar" ext="jar" status="no" details="" size="14755" time="0" location="/home/kaique/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"/>
+						<origin-location is-local="false" location="file:////home/kaique/.sbt/preloaded/org.scala-sbt/test-interface/1.0/jars/test-interface.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -332,7 +332,7 @@
 		<module organisation="com.jcraft" name="jsch">
 			<revision name="0.1.50" status="release" pubdate="20130509052222" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jcraft.com/jsch/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="29">
 				<license name="Revised BSD" url="http://www.jcraft.com/jsch/LICENSE.txt"/>
-				<metadata-artifact status="no" details="" size="3103" time="0" location="/home/kaique/.ivy2/cache/com.jcraft/jsch/ivy-0.1.50.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50.pom"/>
+				<metadata-artifact status="no" details="" size="3235" time="0" location="/home/kaique/.ivy2/cache/com.jcraft/jsch/ivy-0.1.50.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50.pom"/>
 				<caller organisation="org.scala-sbt" name="ivy" conf="compile" rev="0.1.50" rev-constraint-default="0.1.50" rev-constraint-dynamic="0.1.50" callerrev="0.13.13"/>
 				<artifacts>
 					<artifact name="jsch" type="jar" ext="jar" status="no" details="" size="254408" time="0" location="/home/kaique/.ivy2/cache/com.jcraft/jsch/jars/jsch-0.1.50.jar">
@@ -520,7 +520,7 @@
 		<module organisation="jline" name="jline">
 			<revision name="2.13" status="release" pubdate="20150810133856" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
 				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
-				<metadata-artifact status="no" details="" size="4449" time="0" location="/home/kaique/.ivy2/cache/jline/jline/ivy-2.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/jline/jline/2.13/jline-2.13.pom"/>
+				<metadata-artifact status="no" details="" size="4605" time="0" location="/home/kaique/.ivy2/cache/jline/jline/ivy-2.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/jline/jline/2.13/jline-2.13.pom"/>
 				<caller organisation="org.scala-sbt" name="logging" conf="compile" rev="2.13" rev-constraint-default="2.13" rev-constraint-dynamic="2.13" callerrev="0.13.13"/>
 				<caller organisation="org.scala-sbt" name="completion" conf="compile" rev="2.13" rev-constraint-default="2.13" rev-constraint-dynamic="2.13" callerrev="0.13.13"/>
 				<artifacts>
@@ -531,7 +531,7 @@
 			</revision>
 		</module>
 		<module organisation="org.fusesource.jansi" name="jansi">
-			<revision name="1.11" status="release" pubdate="20130513102123" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="14">
+			<revision name="1.11" status="release" pubdate="20130513102123" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
 				<metadata-artifact status="no" details="" size="3811" time="0" location="/home/kaique/.ivy2/cache/org.fusesource.jansi/jansi/ivy-1.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11.pom"/>
 				<caller organisation="jline" name="jline" conf="default, compile, runtime, master" rev="1.11" rev-constraint-default="1.11" rev-constraint-dynamic="1.11" callerrev="2.13"/>
 				<artifacts>

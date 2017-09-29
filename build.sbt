@@ -10,5 +10,6 @@ lazy val root = (project in file(".")).
     )),
     name := "Scal DB",
     libraryDependencies += scalaTest % Test,
-    libraryDependencies += "io.reactivex" %% "rxscala" % "0.26.5"
+    libraryDependencies += "io.reactivex" %% "rxscala" % "0.26.5",
+    libraryDependencies += "com.outr" %% "lucene4s" % "1.5.0"
   )

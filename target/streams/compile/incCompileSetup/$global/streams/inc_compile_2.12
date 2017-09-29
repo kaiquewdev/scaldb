@@ -4,7 +4,7 @@ output mode:
 0 -> single
 output directories:
 1 items
-output dir -> /home/kaique/war/scaldb/target/scala-2.12/classes
+output dir -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes
 compile options:
 0 items
 javac options:
@@ -19,37 +19,39 @@ name hashing:
 1 items
 0 -> true
 products:
-25 items
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/Core.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayDouble.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayDoubleGetterSetter.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayInt.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayIntGetterSetter.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayString.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayStringGetterSetter.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreDouble.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreDoubleGetterSetter.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreGetterSetter.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreInt.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreIntGetterSetter.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreListInt.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreListIntGetterSetter.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreListString.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreListStringGetterSetter.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreLogic$.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreLogic.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreLogicOperations.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreString.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreStringGetterSetter.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreVectorInt.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreVectorIntGetterSetter.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreVectorString.class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreVectorStringGetterSetter.class
+26 items
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/Core.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayDouble.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayDoubleGetterSetter.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayInt.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayIntGetterSetter.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayString.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayStringGetterSetter.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreDouble.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreDoubleGetterSetter.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreFieldString.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreGetterSetter.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreInt.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreIntGetterSetter.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreListInt.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreListIntGetterSetter.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreListString.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreListStringGetterSetter.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreLogic$.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreLogic.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreLogicOperations.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreString.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreStringGetterSetter.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreVectorInt.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreVectorIntGetterSetter.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreVectorString.class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreVectorStringGetterSetter.class
 binary dependencies:
-3 items
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/.ivy2/cache/io.reactivex/rxscala_2.12/jars/rxscala_2.12-0.26.5.jar
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
+4 items
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/.ivy2/cache/com.outr/lucene4s_2.12/jars/lucene4s_2.12-1.5.0.jar
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/.ivy2/cache/io.reactivex/rxscala_2.12/jars/rxscala_2.12-0.26.5.jar
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> /home/kaique/.sdkman/candidates/java/8u144-zulu/jre/lib/rt.jar
 direct source dependencies:
 0 items
 direct external dependencies:
@@ -67,203 +69,223 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-25 items
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.Core
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayDouble
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayDoubleGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayIntGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayStringGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreDouble
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreDoubleGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreIntGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreListInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreListIntGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreListString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreListStringGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreLogic
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreLogic$
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreLogicOperations
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreStringGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreVectorInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreVectorIntGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreVectorString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreVectorStringGetterSetter
+26 items
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.Core
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayDouble
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayDoubleGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayIntGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreArrayStringGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreDouble
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreDoubleGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreFieldString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreIntGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreListInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreListIntGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreListString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreListStringGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreLogic
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreLogic$
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreLogicOperations
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreStringGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreVectorInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreVectorIntGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreVectorString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb.CoreVectorStringGetterSetter
 used names:
-117 items
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> :+
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> <init>
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> >
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> A
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Any
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> AnyRef
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Array
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ArrayKeys
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ArrayKeys_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ArrayOps
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ArrayValues
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ArrayValues_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> B
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Boolean
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Class
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ClassTag
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Core
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayDouble
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayDoubleGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayIntGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayStringGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreDouble
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreDoubleGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreIntGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreListInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreListIntGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreListString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreListStringGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreLogic
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreLogicOperations
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreStringGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreVectorInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreVectorIntGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreVectorString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> CoreVectorStringGetterSetter
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Double
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> DoubleKeys
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> DoubleKeys_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> DoubleValues
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> DoubleValues_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Int
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> IntKeys
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> IntKeys_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> IntValues
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> IntValues_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> List
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ListKeys
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ListKeys_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ListValues
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ListValues_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Nothing
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Object
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Observable
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Predef
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ScalaRunTime
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> String
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> StringKeys
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> StringKeys_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> StringValues
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> StringValues_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> T
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Unit
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> Vector
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> VectorKeys
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> VectorKeys_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> VectorValues
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> VectorValues_=
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> _$2
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> _$3
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> _$7
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> apply
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> arrayClass
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> collection
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> coreArrayString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> coreInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> coreListString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> coreString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> coreVectorString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> doubleArrayOps
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> empty
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> getArrayString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> getInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> getListString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> getString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> getVectorString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> hasKeyStringArray
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> immutable
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> indexOf
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> intArrayOps
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> java
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> key
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> keys
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> lang
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> materializeClassTag
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ofDouble
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ofInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> ofRef
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> package
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> refArrayOps
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> reflect
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> runtime
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> rx
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scala
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> scaldb
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> setArrayString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> setInt
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> setListString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> setString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> setVectorString
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> stringBinarySearchArray
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> update
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> value
+133 items
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> :+
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> <init>
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> <repeated...>
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> >
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> A
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Any
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> AnyRef
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Array
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ArrayKeys
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ArrayKeys_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ArrayOps
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ArrayValues
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ArrayValues_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> B
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Boolean
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Class
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ClassTag
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Core
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayDouble
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayDoubleGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayIntGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreArrayStringGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreDouble
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreDoubleGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreFieldString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreIntGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreListInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreListIntGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreListString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreListStringGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreLogic
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreLogicOperations
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreStringGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreVectorInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreVectorIntGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreVectorString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> CoreVectorStringGetterSetter
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Double
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> DoubleKeys
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> DoubleKeys_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> DoubleValues
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> DoubleValues_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Int
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> IntKeys
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> IntKeys_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> IntValues
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> IntValues_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> List
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ListKeys
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ListKeys_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ListValues
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ListValues_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Lucene
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Nothing
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Object
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Observable
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Option
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Path
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Paths
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Predef
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ScalaRunTime
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Sort
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> String
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> StringKeys
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> StringKeys_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> StringValues
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> StringValues_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> T
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Unit
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> Vector
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> VectorKeys
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> VectorKeys_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> VectorValues
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> VectorValues_=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> _$2
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> _$3
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> _$7
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> apply
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> arrayClass
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> collection
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> com
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> coreArrayString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> coreInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> coreListString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> coreString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> coreVectorString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> directory
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> doubleArrayOps
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> empty
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> file
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> get
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> getArrayString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> getInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> getListString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> getString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> getVectorString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> hasKeyStringArray
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> immutable
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> indexOf
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> intArrayOps
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> java
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> key
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> keys
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> lang
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> lucene
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> lucene4s
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> materializeClassTag
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> nio
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ofDouble
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ofInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> ofRef
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> outr
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> package
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> query
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> refArrayOps
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> reflect
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> runtime
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> rx
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scala
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> scaldb
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> setArrayString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> setInt
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> setListString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> setString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> setVectorString
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> stringBinarySearchArray
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> update
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> value
 product stamps:
-25 items
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/Core.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayDouble.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayDoubleGetterSetter.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayInt.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayIntGetterSetter.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayString.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreArrayStringGetterSetter.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreDouble.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreDoubleGetterSetter.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreGetterSetter.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreInt.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreIntGetterSetter.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreListInt.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreListIntGetterSetter.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreListString.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreListStringGetterSetter.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreLogic$.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreLogic.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreLogicOperations.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreString.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreStringGetterSetter.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreVectorInt.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreVectorIntGetterSetter.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreVectorString.class -> lastModified(1492020234000)
-/home/kaique/war/scaldb/target/scala-2.12/classes/scaldb/CoreVectorStringGetterSetter.class -> lastModified(1492020234000)
+26 items
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/Core.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayDouble.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayDoubleGetterSetter.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayInt.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayIntGetterSetter.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayString.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreArrayStringGetterSetter.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreDouble.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreDoubleGetterSetter.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreFieldString.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreGetterSetter.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreInt.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreIntGetterSetter.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreListInt.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreListIntGetterSetter.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreListString.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreListStringGetterSetter.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreLogic$.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreLogic.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreLogicOperations.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreString.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreStringGetterSetter.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreVectorInt.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreVectorIntGetterSetter.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreVectorString.class -> lastModified(1506657207000)
+/home/kaique/Kernels/scaldb/target/scala-2.12/classes/scaldb/CoreVectorStringGetterSetter.class -> lastModified(1506657207000)
 source stamps:
 1 items
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> hash(d33f029bdde0f4803474c4ea03cb2fad1dc762ab)
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> hash(73413ae6f4eeee79d42e9836dbd1582aa6e510b7)
 binary stamps:
-3 items
+4 items
+/home/kaique/.ivy2/cache/com.outr/lucene4s_2.12/jars/lucene4s_2.12-1.5.0.jar -> lastModified(1502461633000)
 /home/kaique/.ivy2/cache/io.reactivex/rxscala_2.12/jars/rxscala_2.12-0.26.5.jar -> lastModified(1482952975000)
 /home/kaique/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar -> lastModified(1480936165000)
-/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar -> lastModified(1488985924000)
+/home/kaique/.sdkman/candidates/java/8u144-zulu/jre/lib/rt.jar -> lastModified(1501079094000)
 class names:
-3 items
-/home/kaique/.ivy2/cache/io.reactivex/rxscala_2.12/jars/rxscala_2.12-0.26.5.jar -> rx.lang.scala.Observable$
-/home/kaique/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar -> scala.collection.GenSeqLike
-/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar -> java.lang.Object
+4 items
+/home/kaique/.ivy2/cache/com.outr/lucene4s_2.12/jars/lucene4s_2.12-1.5.0.jar -> com.outr.lucene4s.query.Sort
+/home/kaique/.ivy2/cache/io.reactivex/rxscala_2.12/jars/rxscala_2.12-0.26.5.jar -> rx.lang.scala.Observable
+/home/kaique/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar -> scala.collection.immutable.List
+/home/kaique/.sdkman/candidates/java/8u144-zulu/jre/lib/rt.jar -> java.lang.Object
 internal apis:
 1 items
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwthfBHAAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAABbc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwoBtZH3QAFkNvcmVEb3VibGVHZXR0ZXJTZXR0ZXJzcQB+AAzh0X/NdAAGbm90aWZ5c3EAfgAMR6/MUHQAGkNvcmVMaXN0U3RyaW5nR2V0dGVyU2V0dGVyc3EAfgAMUK6+I3QADnNldEFycmF5RG91Ymxlc3EAfgAMvD1RV3QACUNvcmVMb2dpY3NxAH4ADE/PKEV0AAR3YWl0c3EAfgAMU59bbXQADENvcmVBcnJheUludHNxAH4ADMcyLb90ABdzZXRMaXN0U3RyaW5nJGRlZmF1bHQkMnNxAH4ADKXVkLR0AA5nZXRBcnJheVN0cmluZ3NxAH4ADBMgkaV0AA0kYXNJbnN0YW5jZU9mc3EAfgAMJYDYGXQADWdldExpc3RTdHJpbmdzcQB+AAxsbYqmdAAKZ2V0TGlzdEludHNxAH4ADNhv/Up0AAxTdHJpbmdWYWx1ZXNzcQB+AAy3P/FQdAAKU3RyaW5nS2V5c3NxAH4ADJGQLeZ0AApzZXRMaXN0SW50c3EAfgAMUrQNZXQADmdldEFycmF5RG91Ymxlc3EAfgAMysWIxnQAFGdldExpc3RJbnQkZGVmYXVsdCQyc3EAfgAMBCP+ZXQACkNvcmVTdHJpbmdzcQB+AAxKEc3YdAAGZXF1YWxzc3EAfgAMzkCjTnQADkNvcmVMaXN0U3RyaW5nc3EAfgAMDIbr23QACkRvdWJsZUtleXNzcQB+AAzVACjMdAAPZ2V0VmVjdG9yU3RyaW5nc3EAfgAMdpo42XQACXNldFN0cmluZ3NxAH4ADJhcVat0ABNnZXRTdHJpbmckZGVmYXVsdCQyc3EAfgAMtPGTtnQADGFzSW5zdGFuY2VPZnNxAH4ADC2BYF10AA1zZXRMaXN0U3RyaW5nc3EAfgAMK+FgU3QACWdldERvdWJsZXNxAH4ADC+M9W50ABBnZXRJbnQkZGVmYXVsdCQyc3EAfgAMZqFPjnQACWdldFN0cmluZ3NxAH4ADPNGq810AA9Db3JlQXJyYXlTdHJpbmdzcQB+AAyU5618dAAMc3luY2hyb25pemVkc3EAfgAMmlBk4XQAGUNvcmVWZWN0b3JJbnRHZXR0ZXJTZXR0ZXJzcQB+AAwCQ1g0dAANJGlzSW5zdGFuY2VPZnNxAH4ADOe2H4l0AAtBcnJheVZhbHVlc3NxAH4ADKjwzJl0ABlzZXRWZWN0b3JTdHJpbmckZGVmYXVsdCQyc3EAfgAMt6/2hnQAGWdldFZlY3RvclN0cmluZyRkZWZhdWx0JDJzcQB+AAx4B/5KdAARaGFzS2V5U3RyaW5nQXJyYXlzcQB+AAxUxue9dAAbQ29yZUFycmF5RG91YmxlR2V0dGVyU2V0dGVyc3EAfgAMAdSWQ3QAGGdldEFycmF5U3RyaW5nJGRlZmF1bHQkMnNxAH4ADIIoibZ0AAdDb3JlSW50c3EAfgAMXOqB/3QADGdldFZlY3RvckludHNxAH4ADCNXNe50ABdzdHJpbmdCaW5hcnlTZWFyY2hBcnJheXNxAH4ADIBeh5V0AAlub3RpZnlBbGxzcQB+AAyNhQXIdAAGc2V0SW50c3EAfgAMsCXw93QADGlzSW5zdGFuY2VPZnNxAH4ADFL8KRl0AA9zZXRWZWN0b3JTdHJpbmdzcQB+AAxhMWYjdAAJSW50VmFsdWVzc3EAfgAM9CFhxHQADnNldEFycmF5U3RyaW5nc3EAfgAMNkJhrHQAF2dldExpc3RTdHJpbmckZGVmYXVsdCQyc3EAfgAM29r2QnQABjxpbml0PnNxAH4ADKcHi6V0AA9Db3JlQXJyYXlEb3VibGVzcQB+AAxC5XqndAAMc2V0VmVjdG9ySW50c3EAfgAMOARgjnQAGGdldEFycmF5RG91YmxlJGRlZmF1bHQkMnNxAH4ADFdEqsx0ABtDb3JlQXJyYXlTdHJpbmdHZXR0ZXJTZXR0ZXJzcQB+AAwVUSQvdAACPT1zcQB+AAzHUp+hdAATQ29yZUxvZ2ljT3BlcmF0aW9uc3NxAH4ADIN2MH10ABxDb3JlVmVjdG9yU3RyaW5nR2V0dGVyU2V0dGVyc3EAfgAMS2eWs3QABWNsb25lc3EAfgAMgXTSy3QAClZlY3RvcktleXNzcQB+AAxZBjCqdAAKTGlzdFZhbHVlc3NxAH4ADL/xG1h0AAZnZXRJbnRzcQB+AAxxU7k/dAATZ2V0RG91YmxlJGRlZmF1bHQkMnNxAH4ADNqY20B0ABZnZXRWZWN0b3JJbnQkZGVmYXVsdCQyc3EAfgAM8Xk/Y3QAFnNldFZlY3RvckludCRkZWZhdWx0JDJzcQB+AAx/V6cHdAAKQ29yZURvdWJsZXNxAH4ADDdzGFJ0AAxEb3VibGVWYWx1ZXNzcQB+AAymB6fTdAAHSW50S2V5c3NxAH4ADMMAR9x0AAtDb3JlTGlzdEludHNxAH4ADJBmXWN0AAh0b1N0cmluZ3NxAH4ADDl2Lfl0AAIhPXNxAH4ADH2DSeJ0ABhDb3JlQXJyYXlJbnRHZXR0ZXJTZXR0ZXJzcQB+AAz8TiCkdAAIZ2V0Q2xhc3NzcQB+AAwAU1i8dAAQQ29yZVZlY3RvclN0cmluZ3NxAH4ADDXRPu90AAtzZXRBcnJheUludHNxAH4ADCaiPe10AAJuZXNxAH4ADDS2IQ90AAlBcnJheUtleXNzcQB+AAztvl1DdAAWQ29yZVN0cmluZ0dldHRlclNldHRlcnNxAH4ADIMo7r50AA1Db3JlVmVjdG9ySW50c3EAfgAMzUqvOXQAAmVxc3EAfgAMbfzCEnQABENvcmVzcQB+AAzekQfmdAAQQ29yZUdldHRlclNldHRlcnNxAH4ADEI+rUZ0AAxWZWN0b3JWYWx1ZXNzcQB+AAxbIqnQdAATQ29yZUludEdldHRlclNldHRlcnNxAH4ADI6h3e10ABdDb3JlTGlzdEludEdldHRlclNldHRlcnNxAH4ADJOpupt0AAIjI3NxAH4ADIYxchZ0AAhmaW5hbGl6ZXNxAH4ADBjhopt0AAhoYXNoQ29kZXNxAH4ADKVbLsV0ABVnZXRBcnJheUludCRkZWZhdWx0JDJzcQB+AAz+V7y9dAAITGlzdEtleXNzcQB+AAz4/uNtdAAJc2V0RG91Ymxlc3EAfgAMkwjpNnQAC2dldEFycmF5SW50c3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAGHNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AzXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAXQAGnNjYWxkYi5Db3JlTG9naWNPcGVyYXRpb25zdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAFVHJhaXR1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AOVzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AzUwACWluaGVyaXRlZHEAfgDNTAAHcGFyZW50c3EAfgDNeHEAfgDqc3EAfgDldXEAfgDIAAAAAHNxAH4A5XVxAH4AyAAAAABzcQB+AOV1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AOl0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AOlzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hz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c3EAfgD9dXEAfgEAAAAAA3NxAH4BAnEAfgEFc3EAfgECcQB+AQdxAH4BCXNxAH4A9nEAfgELc3EAfgD6c3EAfgD9dXEAfgEAAAAAAnNxAH4BAnEAfgEQcQB+AQlzcQB+AMpxAH4A13VxAH4A2AAAAABzcQB+ANoAdAAUc2NhbGRiLkNvcmVWZWN0b3JJbnR1cQB+AN0AAAAAcQB+Ald1cQB+AOMAAAAAc3EAfgDlcQB+AOtzcQB+AOVzcQB+AO1zcQB+AOV1cQB+AMgAAAAAc3EAfgDldXEAfgDIAAAAAHNxAH4A5XVxAH4A9AAAAANzcQB+APZ0ABlDb3JlVmVjdG9ySW50R2V0dGVyU2V0dGVyc3EAfgD6c3EAfgD9dXEAfgEAAAAAAnNxAH4BAnQABnNjYWxkYnEAfgEJc3EAfgD2cQB+APlzcQB+APpzcQB+AP11cQB+AQAAAAADc3EAfgECcQB+AQVzcQB+AQJxAH4BB3EAfgEJc3EAfgD2cQB+AQtzcQB+APpzcQB+AP11cQB+AQAAAAACc3EAfgECcQB+ARBxAH4BCXNxAH4AynEAfgDXdXEAfgDYAAAAAHNxAH4A2gB0AAtzY2FsZGIuQ29yZXVxAH4A3QAAAABxAH4CV3VxAH4A4wAAAABzcQB+AOVxAH4A63NxAH4A5XNxAH4A7XNxAH4A5XVxAH4AyAAAAABzcQB+AOV1cQB+AMgAAAAAc3EAfgDldXEAfgD0AAAAA3NxAH4A9nQAEENvcmVHZXR0ZXJTZXR0ZXJzcQB+APpzcQB+AP11cQB+AQAAAAACc3EAfgECdAAGc2NhbGRicQB+AQlzcQB+APZxAH4A+XNxAH4A+nNxAH4A/XVxAH4BAAAAAANzcQB+AQJxAH4BBXNxAH4BAnEAfgEHcQB+AQlzcQB+APZxAH4BC3NxAH4A+nNxAH4A/XVxAH4BAAAAAAJzcQB+AQJxAH4BEHEAfgEJdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAGc2NhbGRic3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFbY1XxjHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0ADEvaG9tZS9rYWlxdWUvd2FyL3NjYWxkYi90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU0z8Cm93g9IA0dMTqA8svrR3HYqs=
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw3C5dXgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAABec3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw+eem+XQABmx1Y2VuZXNxAH4ADKAbWR90ABZDb3JlRG91YmxlR2V0dGVyU2V0dGVyc3EAfgAMUunxV3QABm5vdGlmeXNxAH4ADEevzFB0ABpDb3JlTGlzdFN0cmluZ0dldHRlclNldHRlcnNxAH4ADFCuviN0AA5zZXRBcnJheURvdWJsZXNxAH4ADLw9UVd0AAlDb3JlTG9naWNzcQB+AAw0feFOdAAEd2FpdHNxAH4ADFOfW210AAxDb3JlQXJyYXlJbnRzcQB+AAzHMi2/dAAXc2V0TGlzdFN0cmluZyRkZWZhdWx0JDJzcQB+AAyl1ZC0dAAOZ2V0QXJyYXlTdHJpbmdzcQB+AAyBs8N7dAANJGFzSW5zdGFuY2VPZnNxAH4ADCWA2Bl0AA1nZXRMaXN0U3RyaW5nc3EAfgAMbG2KpnQACmdldExpc3RJbnRzcQB+AAzYb/1KdAAMU3RyaW5nVmFsdWVzc3EAfgAMtz/xUHQAClN0cmluZ0tleXNzcQB+AAyRkC3mdAAKc2V0TGlzdEludHNxAH4ADFK0DWV0AA5nZXRBcnJheURvdWJsZXNxAH4ADMrFiMZ0ABRnZXRMaXN0SW50JGRlZmF1bHQkMnNxAH4ADAQj/mV0AApDb3JlU3RyaW5nc3EAfgAM/dCyZnQABmVxdWFsc3NxAH4ADM5Ao050AA5Db3JlTGlzdFN0cmluZ3NxAH4ADAyG69t0AApEb3VibGVLZXlzc3EAfgAM1QAozHQAD2dldFZlY3RvclN0cmluZ3NxAH4ADHaaONl0AAlzZXRTdHJpbmdzcQB+AAyYXFWrdAATZ2V0U3RyaW5nJGRlZmF1bHQkMnNxAH4ADMRT+790AAxhc0luc3RhbmNlT2ZzcQB+AAwtgWBddAANc2V0TGlzdFN0cmluZ3NxAH4ADCvhYFN0AAlnZXREb3VibGVzcQB+AAwvjPVudAAQZ2V0SW50JGRlZmF1bHQkMnNxAH4ADGahT450AAlnZXRTdHJpbmdzcQB+AAzzRqvNdAAPQ29yZUFycmF5U3RyaW5nc3EAfgAMOC7qm3QADHN5bmNocm9uaXplZHNxAH4ADJpQZOF0ABlDb3JlVmVjdG9ySW50R2V0dGVyU2V0dGVyc3EAfgAMYvzOSXQADSRpc0luc3RhbmNlT2ZzcQB+AAznth+JdAALQXJyYXlWYWx1ZXNzcQB+AAyo8MyZdAAZc2V0VmVjdG9yU3RyaW5nJGRlZmF1bHQkMnNxAH4ADLev9oZ0ABlnZXRWZWN0b3JTdHJpbmckZGVmYXVsdCQyc3EAfgAMeAf+SnQAEWhhc0tleVN0cmluZ0FycmF5c3EAfgAMVMbnvXQAG0NvcmVBcnJheURvdWJsZUdldHRlclNldHRlcnNxAH4ADAHUlkN0ABhnZXRBcnJheVN0cmluZyRkZWZhdWx0JDJzcQB+AAyCKIm2dAAHQ29yZUludHNxAH4ADFzqgf90AAxnZXRWZWN0b3JJbnRzcQB+AAwjVzXudAAXc3RyaW5nQmluYXJ5U2VhcmNoQXJyYXlzcQB+AAxfF6TDdAAJbm90aWZ5QWxsc3EAfgAMjYUFyHQABnNldEludHNxAH4ADNdKhoV0AAxpc0luc3RhbmNlT2ZzcQB+AAxS/CkZdAAPc2V0VmVjdG9yU3RyaW5nc3EAfgAMYTFmI3QACUludFZhbHVlc3NxAH4ADPQhYcR0AA5zZXRBcnJheVN0cmluZ3NxAH4ADDZCYax0ABdnZXRMaXN0U3RyaW5nJGRlZmF1bHQkMnNxAH4ADCaQlA50AAY8aW5pdD5zcQB+AAynB4uldAAPQ29yZUFycmF5RG91Ymxlc3EAfgAMQuV6p3QADHNldFZlY3RvckludHNxAH4ADDgEYI50ABhnZXRBcnJheURvdWJsZSRkZWZhdWx0JDJzcQB+AAxXRKrMdAAbQ29yZUFycmF5U3RyaW5nR2V0dGVyU2V0dGVyc3EAfgAMieVwE3QAAj09c3EAfgAMx1KfoXQAE0NvcmVMb2dpY09wZXJhdGlvbnNzcQB+AAyDdjB9dAAcQ29yZVZlY3RvclN0cmluZ0dldHRlclNldHRlcnNxAH4ADKoOhtp0AAVjbG9uZXNxAH4ADIF00st0AApWZWN0b3JLZXlzc3EAfgAMWQYwqnQACkxpc3RWYWx1ZXNzcQB+AAy/8RtYdAAGZ2V0SW50c3EAfgAMcVO5P3QAE2dldERvdWJsZSRkZWZhdWx0JDJzcQB+AAzamNtAdAAWZ2V0VmVjdG9ySW50JGRlZmF1bHQkMnNxAH4ADPF5P2N0ABZzZXRWZWN0b3JJbnQkZGVmYXVsdCQyc3EAfgAMf1enB3QACkNvcmVEb3VibGVzcQB+AAw3cxhSdAAMRG91YmxlVmFsdWVzc3EAfgAMpgen03QAB0ludEtleXNzcQB+AAzDAEfcdAALQ29yZUxpc3RJbnRzcQB+AAxhkzjEdAAIdG9TdHJpbmdzcQB+AAx8CrwwdAACIT1zcQB+AAx9g0nidAAYQ29yZUFycmF5SW50R2V0dGVyU2V0dGVyc3EAfgAM+CyZF3QACGdldENsYXNzc3EAfgAMAFNYvHQAEENvcmVWZWN0b3JTdHJpbmdzcQB+AAw10T7vdAALc2V0QXJyYXlJbnRzcQB+AAxKKxcXdAACbmVzcQB+AAw0tiEPdAAJQXJyYXlLZXlzc3EAfgAM7b5dQ3QAFkNvcmVTdHJpbmdHZXR0ZXJTZXR0ZXJzcQB+AAyDKO6+dAANQ29yZVZlY3RvckludHNxAH4ADH48q250AAJlcXNxAH4ADG38whJ0AARDb3Jlc3EAfgAM3pEH5nQAEENvcmVHZXR0ZXJTZXR0ZXJzcQB+AAxCPq1GdAAMVmVjdG9yVmFsdWVzc3EAfgAMWyKp0HQAE0NvcmVJbnRHZXR0ZXJTZXR0ZXJzcQB+AAyOod3tdAAXQ29yZUxpc3RJbnRHZXR0ZXJTZXR0ZXJzcQB+AAzDX0fKdAACIyNzcQB+AAyPDtH9dAAIZmluYWxpemVzcQB+AAy5bgx7dAAIaGFzaENvZGVzcQB+AAylWy7FdAAVZ2V0QXJyYXlJbnQkZGVmYXVsdCQyc3EAfgAMaHEBCXQAD0NvcmVGaWVsZFN0cmluZ3NxAH4ADP5XvL10AAhMaXN0S2V5c3NxAH4ADPlwjH50AAlkaXJlY3RvcnlzcQB+AAz4/uNtdAAJc2V0RG91Ymxlc3EAfgAMkwjpNnQAC2dldEFycmF5SW50c3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAGXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4A03hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAXQAGnNjYWxkYi5Db3JlTG9naWNPcGVyYXRpb25zdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAFVHJhaXR1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AOtzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4A00wACWluaGVyaXRlZHEAfgDTTAAHcGFyZW50c3EAfgDTeHEAfgDwc3EAfgDrdXEAfgDOAAAAAHNxAH4A63VxAH4AzgAAAABzcQB+AOt1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AO90AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AO9zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGh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
 external apis:
 0 items
 source infos:
 1 items
-/home/kaique/war/scaldb/src/main/scala/scaldb/Core.scala -> 
+/home/kaique/Kernels/scaldb/src/main/scala/scaldb/Core.scala -> 
 AAAAAAAAAAA=
 compilations:
-12 items
+14 items
 00 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW1g1geh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMS9ob21lL2thaXF1ZS93YXIvc2NhbGRiL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
 01 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW13SK9h1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMS9ob21lL2thaXF1ZS93YXIvc2NhbGRiL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
 02 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW1+5RDJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMS9ob21lL2thaXF1ZS93YXIvc2NhbGRiL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
@@ -276,3 +298,5 @@ compilations:
 09 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW2L3TTt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMS9ob21lL2thaXF1ZS93YXIvc2NhbGRiL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
 10 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW2L7ynl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMS9ob21lL2thaXF1ZS93YXIvc2NhbGRiL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
 11 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW2NV8Yx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMS9ob21lL2thaXF1ZS93YXIvc2NhbGRiL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
+12 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXsudr2Z1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANS9ob21lL2thaXF1ZS9LZXJuZWxzL3NjYWxkYi90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
+13 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXsvESOZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANS9ob21lL2thaXF1ZS9LZXJuZWxzL3NjYWxkYi90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==

@@ -4,7 +4,7 @@
 		module="scal-db_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20170410111232"
+		publication="20170929000953"
 	>
 		<description>
 		Scal DB
@@ -36,5 +36,6 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.1" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.1" conf="test->default(compile)"/>
 		<dependency org="io.reactivex" name="rxscala_2.12" rev="0.26.5" conf="compile->default(compile)"/>
+		<dependency org="com.outr" name="lucene4s_2.12" rev="1.5.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

@@ -10,5 +10,4 @@
 [0m[[0minfo[0m] [0m[32mThe coreVectorInt class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a getter for vector int the same type as itself[0m[0m
 [0m[[0minfo[0m] [0m[32mThe coreVectorInt class[0m[0m
-[0m[[0minfo[0m] [0m[31m- should have a setter overwrite key *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  Vector() did not equal Vector(300, 20, 70, 7009) (CoreSpec.scala:449)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter overwrite key[0m[0m

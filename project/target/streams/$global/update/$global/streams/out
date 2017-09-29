@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/kaique/war/scaldb/project/}scaldb-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/kaique/Kernels/scaldb/project/}scaldb-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#scaldb-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -363,7 +363,7 @@
 [0m[[0mdebug[0m] [0m	found jline#jline;2.13 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
@@ -375,7 +375,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.fusesource.jansi#jansi;1.11 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.11 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.11[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.11 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->compile(*)][0m
@@ -2212,7 +2212,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
@@ -4184,7 +4184,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
@@ -6074,19 +6074,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1426ms :: artifacts dl 23ms[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT compile produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT runtime produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT test produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT provided produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT optional produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT compile-internal produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT runtime-internal produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT test-internal produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT plugin produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT sources produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT docs produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT pom produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT scala-tool produced in /home/kaique/war/scaldb/project/target/resolution-cache/reports/default-scaldb-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1426ms resolve - 23ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3834ms :: artifacts dl 113ms[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT compile produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT runtime produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT test produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT provided produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT optional produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT compile-internal produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT runtime-internal produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT test-internal produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT plugin produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT sources produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT docs produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT pom produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scaldb-build;0.1-SNAPSHOT scala-tool produced in /home/kaique/Kernels/scaldb/project/target/resolution-cache/reports/default-scaldb-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (3834ms resolve - 113ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
