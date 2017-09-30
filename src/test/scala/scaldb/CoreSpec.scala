@@ -75,6 +75,10 @@ class CoreFieldStringSpec extends FlatSpec with Matchers {
   "The Core Field String Class" should "have a specific type" in {
    assume(coreFieldString.isInstanceOf[CoreFieldString])
   }
+
+  "The Core Field String Class" should "have a setter for name" in {
+    coreFieldString.setNameWithValue("scaldb_first_field_key","scaldb_first_field_value") shouldEqual "scaldb_first_field_value"
+  }
 }
 
 class CoreIntSpec extends FlatSpec with Matchers {

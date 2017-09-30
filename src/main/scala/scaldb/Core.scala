@@ -29,10 +29,9 @@ trait CoreStringGetterSetter {
   def getString(key: String, value: String = ""): String
 }
 
-//trait CoreFieldStringGetterSetter {
-//  def setFieldString(key: String, value)
-//  def getFieldString(key: String, value)
-//}
+sealed trait CoreFieldStringGetterSetter {
+  def setNameWithValue(key: String, value: String): String
+}
 
 trait CoreIntGetterSetter {
   def setInt(key: String, value: Int): Int
@@ -119,7 +118,25 @@ class CoreString extends Object with CoreStringGetterSetter {
   }
 }
 
-class CoreFieldString extends Object {}
+class CoreFieldString extends Object with CoreFieldStringGetterSetter {
+  val directory = Paths.get("core-field-string-index")
+  val lucene = new Lucene(directory = Option(directory))
+  var FieldStringKeys: Array[String] = Array.empty
+  var FieldStringValues: Array[String] = Array.empty
+
+  def setNameWithValue(key: String, value: String): String = {
+    val field = lucene.create.field[String](key)
+    if (CoreLogic.hasKeyStringArray(key,FieldStringKeys)) {
+      FieldStringValues(CoreLogic.stringBinarySearchArray(FieldStringKeys,key)) = value
+      lucene.doc().fields(field(value)).index()
+    } else {
+      FieldStringKeys = FieldStringKeys :+ key
+      FieldStringValues = FieldStringValues :+ value
+      lucene.doc().fields(field(value)).index()
+    }
+    value
+  }
+}
 
 class CoreInt extends Object with CoreIntGetterSetter {
   var IntKeys: Array[String] = Array.empty
@@ -326,8 +343,8 @@ class Core extends Object with CoreGetterSetter {
   private val coreListString: CoreListString = new CoreListString()
   private val coreVectorString: CoreVectorString = new CoreVectorString()
 
-  val directory = Paths.get("index")
-  val lucene = new Lucene(directory = Option(directory))
+  //val directory = Paths.get("index")
+  //val lucene = new Lucene(directory = Option(directory))
 
   def setString(key: String, value: String): String = coreString.setString(key,value)
   def getString(key: String, value: String = ""): String = coreString.getString(key,value)

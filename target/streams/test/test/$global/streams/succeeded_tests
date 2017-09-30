@@ -1,17 +1,17 @@
 #Successful Tests
-#Fri Sep 29 00:54:39 BRT 2017
-scaldb.CoreListIntSpec=1506657279170
-scaldb.CoreLogicSpec=1506657279331
-scaldb.CoreListStringSpec=1506657279325
-scaldb.CoreVectorIntSpec=1506657279325
+#Sat Sep 30 15:54:54 BRT 2017
+scaldb.CoreListIntSpec=1506797693814
+scaldb.CoreLogicSpec=1506797693700
+scaldb.CoreListStringSpec=1506797693642
+scaldb.CoreVectorIntSpec=1506797693644
 scaldb.CoreVectorSpec=1491927719158
-scaldb.CoreIntSpec=1506657279071
-scaldb.CoreDoubleSpec=1506657279154
-scaldb.CoreStringSpec=1506657279299
+scaldb.CoreIntSpec=1506797693804
+scaldb.CoreDoubleSpec=1506797693841
+scaldb.CoreStringSpec=1506797693765
 scaldb.CoreListSpec=1491924537073
-scaldb.CoreSpec=1506657279444
-scaldb.CoreArrayIntSpec=1506657279073
-scaldb.CoreArrayDoubleSpec=1506657279114
-scaldb.CoreFieldStringSpec=1506657279177
-scaldb.CoreVectorStringSpec=1506657279017
-scaldb.CoreArrayStringSpec=1506657279236
+scaldb.CoreSpec=1506797693870
+scaldb.CoreArrayIntSpec=1506797693777
+scaldb.CoreArrayDoubleSpec=1506797693650
+scaldb.CoreFieldStringSpec=1506797694642
+scaldb.CoreVectorStringSpec=1506797693638
+scaldb.CoreArrayStringSpec=1506797693769
