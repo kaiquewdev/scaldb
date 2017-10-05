@@ -1,6 +1,7 @@
 package scaldb
 
 import org.scalatest._
+import com.outr.lucene4s.query.PagedResults
 
 class CoreLogicSpec extends FlatSpec with Matchers {
   "The coreLogic object" should "have a string binary search" in {
@@ -78,6 +79,10 @@ class CoreFieldStringSpec extends FlatSpec with Matchers {
 
   "The Core Field String Class" should "have a setter for name" in {
     coreFieldString.setNameWithValue("scaldb_first_field_key","scaldb_first_field_value") shouldEqual "scaldb_first_field_value"
+  }
+
+  "The Core Field String Class" should "have a search for field value" in {
+    coreFieldString.search("scaldb_first_field_value").results.length shouldEqual 1
   }
 }
 

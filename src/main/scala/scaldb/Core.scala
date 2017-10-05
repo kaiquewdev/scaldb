@@ -18,6 +18,8 @@ import rx.lang.scala.Observable
 import java.nio.file.Paths
 import com.outr.lucene4s._
 import com.outr.lucene4s.query.Sort
+import com.outr.lucene4s.query.PagedResults
+import com.outr.lucene4s.query.SearchResult
 
 trait CoreLogicOperations {
   def stringBinarySearchArray(keys: Array[String], value: String): Int
@@ -135,6 +137,12 @@ class CoreFieldString extends Object with CoreFieldStringGetterSetter {
       lucene.doc().fields(field(value)).index()
     }
     value
+  }
+
+  def search(key: String): PagedResults[SearchResult] = {
+    val field = lucene.create.field[String](key)
+    val paged = lucene.query().sort(Sort(field)).search()
+    paged
   }
 }
 
@@ -342,9 +350,6 @@ class Core extends Object with CoreGetterSetter {
   private val coreArrayString: CoreArrayString = new CoreArrayString()
   private val coreListString: CoreListString = new CoreListString()
   private val coreVectorString: CoreVectorString = new CoreVectorString()
-
-  //val directory = Paths.get("index")
-  //val lucene = new Lucene(directory = Option(directory))
 
   def setString(key: String, value: String): String = coreString.setString(key,value)
   def getString(key: String, value: String = ""): String = coreString.getString(key,value)
