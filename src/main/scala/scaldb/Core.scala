@@ -12,7 +12,7 @@ trait CoreLogicOperations {
   def hasKeyStringArray(value: String, keys: Array[String]): Boolean
 }
 
-trait CoreStringGetterSetter {
+sealed trait CoreStringGetterSetter {
   def setString(key: String, value: String): String
   def getString(key: String, value: String = ""): String
 }

@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0m[32mCoreVectorIntSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreVectorInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have an type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreVectorInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for vector int[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreVectorInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter for an vector int key returning a vector type[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreVectorInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a gettter for a vector int key[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreVectorInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a getter for vector int the same type as itself[0m[0m
+[0m[[0minfo[0m] [0m[32mThe coreVectorInt class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a setter overwrite key[0m[0m
