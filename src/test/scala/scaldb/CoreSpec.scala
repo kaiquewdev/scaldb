@@ -79,10 +79,11 @@ class CoreFieldStringSpec extends FlatSpec with Matchers {
 
   "The Core Field String Class" should "have a setter for name" in {
     coreFieldString.setNameWithValue("scaldb_first_field_key","scaldb_first_field_value") shouldEqual "scaldb_first_field_value"
+    coreFieldString.setNameWithValue("scaldb_second_field_key","scaldb_second_field_value") shouldEqual "scaldb_second_field_value"
   }
 
   "The Core Field String Class" should "have a search for field value" in {
-    coreFieldString.search("scaldb_first_field_value").results.length shouldEqual 1
+    coreFieldString.search("scaldb_first_field_value").results.length shouldEqual 2
   }
 }
 

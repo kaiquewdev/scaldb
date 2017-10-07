@@ -1,17 +1,3 @@
-//  val directory = Paths.get("index")
-//  val lucene = new Lucene(directory = Option(directory))
-//  val name = lucene.create.field[String]("name")
-//  val address = lucene.create.field[String]("address")
-//  lucene.doc().fields(name("Jhon Jairo Valazques Vasquez"), address("123 Somewhere Rd.")).index()
-//  lucene.doc().fields(name("Jhon Jairo Valazques Vasquez"), address("123 Somewhere Rd.")).index()
-//  lucene.doc().fields(name("Jhon Jairo Valazques Vasquez"), address("123 Somewhere Rd.")).index()
-//  lucene.doc().fields(name("Jhon Jairo Valazques Vasquez"), address("123 Somewhere Rd.")).index()
-//  lucene.doc().fields(name("Jhon Jairo Valazques Vasquez"), address("123 Somewhere Rd.")).index()
-//  val paged = lucene.query().sort(Sort(name)).search()
-//  paged.results.foreach { searchResult =>
-//    println(s"Name: ${searchResult(name)}, Adrress: ${searchResult(address)}")
-//  }
-
 package scaldb
 
 import rx.lang.scala.Observable

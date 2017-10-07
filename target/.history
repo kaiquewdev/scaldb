@@ -185,3 +185,5 @@ test
 compile
 inspect tree compile
 import dispatch._, Defaults._
+val coreFieldString = new CoreFieldString()
+import CoreFieldString
