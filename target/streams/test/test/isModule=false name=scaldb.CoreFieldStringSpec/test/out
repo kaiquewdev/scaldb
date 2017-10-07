@@ -5,3 +5,5 @@
 [0m[[0minfo[0m] [0m[32m- should have a setter for name[0m[0m
 [0m[[0minfo[0m] [0m[32mThe Core Field String Class[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have a search for field value[0m[0m
+[0m[[0minfo[0m] [0m[32mThre Core Field String Class[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a paged results instance the search[0m[0m

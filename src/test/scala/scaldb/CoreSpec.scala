@@ -2,6 +2,7 @@ package scaldb
 
 import org.scalatest._
 import com.outr.lucene4s.query.PagedResults
+import com.outr.lucene4s.query.SearchResult
 
 class CoreLogicSpec extends FlatSpec with Matchers {
   "The coreLogic object" should "have a string binary search" in {
@@ -84,6 +85,10 @@ class CoreFieldStringSpec extends FlatSpec with Matchers {
 
   "The Core Field String Class" should "have a search for field value" in {
     coreFieldString.search("scaldb_first_field_value").results.length shouldEqual 2
+  }
+
+  "Thre Core Field String Class" should "have a paged results instance the search" in {
+    assume(coreFieldString.search("scaldb_first_field_value").results.isInstanceOf[Vector[SearchResult]])
   }
 }
 
